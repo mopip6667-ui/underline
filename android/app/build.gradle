@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "io.github.mopip6667ui.underline"
+    namespace = "io.github.mopip6667ui.eera"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.github.mopip6667ui.underline"
+        applicationId "io.github.mopip6667ui.eera"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode((System.getenv("BUILD_NUMBER") ?: "1").toInteger())

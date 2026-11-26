@@ -1,6 +1,6 @@
 {
-  "appId": "io.github.mopip6667ui.underline",
-  "appName": "Underline",
+  "appId": "io.github.mopip6667ui.eera",
+  "appName": "EERA",
   "webDir": "www",
   "backgroundColor": "#0b0c0f",
   "ios": { "contentInset": "never", "backgroundColor": "#0b0c0f" },

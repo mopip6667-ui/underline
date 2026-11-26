@@ -28,6 +28,6 @@ jobs:
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: chmod +x gradlew && ./gradlew --no-daemon assembleDebug bundleRelease
       - uses: actions/upload-artifact@v4
-        with: { name: underline-android-test-apk, path: android/app/build/outputs/apk/debug/*.apk }
+        with: { name: eera-android-test-apk, path: android/app/build/outputs/apk/debug/*.apk }
       - uses: actions/upload-artifact@v4
-        with: { name: underline-play-store-bundle, path: android/app/build/outputs/bundle/release/*.aab }
+        with: { name: eera-play-store-bundle, path: android/app/build/outputs/bundle/release/*.aab }

@@ -1,4 +1,4 @@
-package io.github.mopip6667ui.underline;
+package io.github.mopip6667ui.eera;
 
 import com.getcapacitor.BridgeActivity;
 

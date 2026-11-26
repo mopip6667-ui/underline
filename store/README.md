@@ -1,6 +1,6 @@
-# Underline: store release kit
+# EERA: store release kit
 
-Everything needed to put Underline on the App Store and Google Play. Screenshots and graphics are in this folder.
+Everything needed to put EERA on the App Store and Google Play. Screenshots and graphics are in this folder.
 
 ## Your accounts and setup, in order
 
@@ -8,12 +8,12 @@ Everything needed to put Underline on the App Store and Google Play. Screenshots
 
 1. **Enroll.** Go to developer.apple.com/programs and tap Enroll. Choose **Individual**. Your Apple ID needs two-factor sign-in. Apple may ask you to verify your ID in the Apple Developer app on your iPhone. Approval usually takes 1–2 days.
 2. **Register the app ID.** In developer.apple.com → Account → Certificates, Identifiers & Profiles → Identifiers → **+** → App IDs → App:
-   - Description: `Underline`
-   - Bundle ID (Explicit): `io.github.mopip6667ui.underline`
+   - Description: `EERA`
+   - Bundle ID (Explicit): `io.github.mopip6667ui.eera`
    - Capabilities: leave all off. Tap Continue, then Register.
 3. **Create the app listing.** In appstoreconnect.apple.com → Apps → **+** → New App:
-   - Platform: iOS · Name: `Underline – Ideas from Books` · Language: English (U.S.)
-   - Bundle ID: the one above · SKU: `underline-001` · Access: Full
+   - Platform: iOS · Name: `EERA – Ideas from Books` · Language: English (U.S.)
+   - Bundle ID: the one above · SKU: `eera-001` · Access: Full
 4. **Create an upload key.** In App Store Connect → Users and Access → **Integrations** → App Store Connect API → Team Keys → **+**:
    - Name: `GitHub builds` · Access: **Admin** (needed so the cloud build can create signing certificates)
    - Download the `.p8` file. **You can only download it once.** Note the **Key ID**, and the **Issuer ID** shown above the list.
@@ -30,8 +30,8 @@ Everything needed to put Underline on the App Store and Google Play. Screenshots
 ### Google Play ($25 one-time)
 
 1. **Sign up** at play.google.com/console as a **Personal** account. Google verifies your ID, and you need an Android phone for the account checks.
-2. **Add the 4 Android signing secrets** in GitHub, from the private file Claude gave you (`underline-android-secrets.txt`). Then run **Actions → Android build → Run workflow**. When it finishes, open the run and download **underline-play-store-bundle** (the `.aab` file).
-3. **Create the app.** Play Console → Create app: name `Underline – Ideas from Books`, App, Free. Accept the declarations.
+2. **Add the 4 Android signing secrets** in GitHub, from the private file Claude gave you (`underline-android-secrets.txt`). Then run **Actions → Android build → Run workflow**. When it finishes, open the run and download **eera-play-store-bundle** (the `.aab` file).
+3. **Create the app.** Play Console → Create app: name `EERA – Ideas from Books`, App, Free. Accept the declarations.
 4. **Set up the app** (Dashboard → "Set up your app"):
    - Privacy policy: `https://mopip6667-ui.github.io/underline/privacy.html`
    - App access: all functionality available without login
@@ -43,11 +43,11 @@ Everything needed to put Underline on the App Store and Google Play. Screenshots
 5. **Test.** Testing → Closed testing → Create track → upload the `.aab`. Add at least **12 testers** (friends' Gmail addresses) and keep the test running for **14 days**. New personal accounts must do this before going public.
 6. **Go to production.** After 14 days, Dashboard → Apply for production. Once approved, create a production release with the same `.aab`.
 
-The test APK (`underline-android-test-apk` in each Android build run) installs directly on an Android phone for quick checks.
+The test APK (`eera-android-test-apk` in each Android build run) installs directly on an Android phone for quick checks.
 
 ## Store listing text
 
-**App name** (30 max): Underline – Ideas from Books
+**App name** (30 max): EERA – Ideas from Books
 **Subtitle, Apple** (30 max): Big ideas, one swipe at a time
 **Short description, Google** (80 max): Swipe the best ideas from great books. Plus 19 classics to read in full, free.
 
@@ -55,7 +55,7 @@ The test APK (`underline-android-test-apk` in each Android build run) installs d
 New books every week across finance, science, history and philosophy. Save the ideas that hit, and read the classics in full.
 
 **Description:**
-Underline turns great books into ideas you can actually use. Each card is one key idea or short line from a book, what it means, and one thing to try this week. Swipe up for the next.
+EERA turns great books into ideas you can actually use. Each card is one key idea or short line from a book, what it means, and one thing to try this week. Swipe up for the next.
 
 Browse a library organised like a bookstore for curious minds:
 • Finance & Investing, sector by sector: tech, industrials, aviation, materials and energy, real estate, banks, consumer, healthcare, macro
@@ -82,7 +82,7 @@ Ideas are summarised in our own words. Quotes are short and attributed.
 **Support URL:** https://mopip6667-ui.github.io/underline/support.html
 **Privacy policy URL:** https://mopip6667-ui.github.io/underline/privacy.html
 **Marketing URL:** https://mopip6667-ui.github.io/underline/
-**Copyright:** 2026 Underline
+**Copyright:** 2026 EERA
 
 **App Review notes, Apple:**
 No login is required. The app bundles a library of original book-summary cards plus complete public-domain books (Standard Ebooks editions) for offline reading. Native features: daily card local notification (⋯ menu → Daily card), the native share sheet for cards, haptic feedback on save, and on-device storage for saved cards and reading progress. New cards are downloaded weekly from our public library files on GitHub Pages; no personal data is sent.
