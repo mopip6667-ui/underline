@@ -1206,5 +1206,90 @@
     "type": "idea"
    }
   ]
+ },
+ {
+  "id": "the-selfish-gene-2026112614",
+  "author": "Richard Dawkins",
+  "cards": [
+   {
+    "apply": "This week, find one process at work that 'copies' itself (a template, a checklist) and check what errors it is spreading.",
+    "meaning": "Dawkins starts in the primordial soup with 'replicators': molecules that happened to make copies of themselves. Copying errors created variety, and versions that copied faster or more faithfully outcompeted the rest. Everything alive descends from that contest.",
+    "text": "Life began with molecules that copy themselves",
+    "type": "idea"
+   },
+   {
+    "apply": "When judging a company, ask what is the durable 'replicator' (brand, process, culture) and what is just the current vehicle.",
+    "meaning": "Replicators gradually built protective shells around themselves; those shells became cells, then bodies. In Dawkins's view an organism is a temporary vehicle, while the genes riding in it can persist for millions of years through copying.",
+    "text": "Bodies are survival machines built by genes",
+    "type": "idea"
+   },
+   {
+    "apply": "Before trusting that a team will act 'for the common good', check what each person is actually rewarded for.",
+    "meaning": "Dawkins argues the best level to view natural selection is the gene, because genes are what get copied across generations. Explanations that animals act 'for the good of the species' usually fail, since a cheater gene would spread at the group's expense.",
+    "text": "Selection acts on genes, not on the good of the species",
+    "type": "idea"
+   },
+   {
+    "apply": "Next time you call a colleague's behaviour selfish, describe the incentive producing it instead. It points you to a fix.",
+    "meaning": "Genes have no minds or intentions. 'Selfish' is shorthand: genes that cause effects which help copies of themselves spread become common. Dawkins stresses that selfish genes can still build generous, cooperative animals.",
+    "text": "'Selfish' describes the effect, not a motive",
+    "type": "idea"
+   },
+   {
+    "apply": "Map the strategies your competitors use in a market. Ask which one a newcomer could exploit, and which mix is stable.",
+    "meaning": "Borrowing John Maynard Smith's idea of an evolutionarily stable strategy, Dawkins shows how a population settles on a mix of behaviours (like 'hawk' and 'dove') that no rival strategy can invade. Restraint in fights can be stable, not noble.",
+    "text": "Stable strategies decide how animals fight",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice where loyalty in your organisation follows 'kin' lines (old teams, alumni) and factor it into how you staff projects.",
+    "meaning": "Following W. D. Hamilton, Dawkins explains kin selection: a gene for helping relatives can spread because relatives are likely to carry copies of it. Full siblings share half their genes on average, so sacrifice for kin can pay genetically.",
+    "text": "Helping relatives helps your shared genes",
+    "type": "idea"
+   },
+   {
+    "apply": "In any negotiation this week, write down where the other side's interests genuinely differ from yours rather than assuming alignment.",
+    "meaning": "Using Robert Trivers's work, Dawkins shows that a child is selected to want more care than a parent is selected to give, since the parent also values future and other offspring. Weaning conflicts follow from this split of interests.",
+    "text": "Parents and offspring want different things",
+    "type": "idea"
+   },
+   {
+    "apply": "When two parties have invested unequally in a deal, expect the bigger investor to be choosier, and plan around it.",
+    "meaning": "Females make fewer, larger sex cells and usually invest more in each offspring; males make many small ones. Dawkins argues this initial asymmetry shapes different mating strategies, from choosiness to the 'he-man' and 'domestic bliss' patterns.",
+    "text": "The battle of the sexes starts with egg and sperm",
+    "type": "idea"
+   },
+   {
+    "apply": "Keep a simple record of favours given and received with key contacts, and make sure your side of the ledger stays generous.",
+    "meaning": "Grooming partners and cleaner fish show that 'you scratch my back, I'll scratch mine' can evolve between non-relatives. The risk is cheats who take help and never return it, so cooperators must remember and punish them.",
+    "text": "Reciprocity lets unrelated animals cooperate",
+    "type": "idea"
+   },
+   {
+    "apply": "In a long-term relationship, open with cooperation, respond in kind to bad faith, and forgive quickly once behaviour improves.",
+    "meaning": "In a chapter added to the 1989 edition, Dawkins discusses Robert Axelrod's tournaments, where 'Tit for Tat' (cooperate first, then copy the other player) beat cleverer strategies. Being nice, retaliatory, forgiving and clear won over repeated games.",
+    "text": "Nice guys can finish first",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one idea you want to spread at work and make it easy to copy: short, memorable, and easy to repeat.",
+    "meaning": "Dawkins coined 'meme' for units of culture, such as tunes, catchphrases or fashions, that spread by imitation from brain to brain. Memes compete and mutate like genes, and may spread whether or not they help the people carrying them.",
+    "text": "Ideas replicate too: the birth of the 'meme'",
+    "type": "idea"
+   },
+   {
+    "apply": "Look at what your daily habits build outside you (files, tools, routines) and change one that works against your long-term goals.",
+    "meaning": "In the closing chapter of later editions, Dawkins previews his 'extended phenotype': a gene's effects can extend outside its body, as with beaver dams or parasites altering their hosts. He also argues humans, uniquely, can rebel against their replicators through foresight.",
+    "text": "Genes reach beyond the body",
+    "type": "idea"
+   }
+  ],
+  "color": "#5a2a3a",
+  "createdAt": 1795722695000,
+  "library": "science",
+  "order": 138,
+  "shelf": "life",
+  "source": "hourly",
+  "title": "The Selfish Gene"
  }
 ]
