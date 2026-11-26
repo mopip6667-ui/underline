@@ -16,7 +16,7 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
 };
 
-let books = [], config = { libraries: [] }, saved = store.get('underline.saved', []), scope = { kind: 'all' }, shuffled = null, nav = [];
+let texts = { books: {}, titles: {} }, books = [], config = { libraries: [] }, saved = store.get('underline.saved', []), scope = { kind: 'all' }, shuffled = null, nav = [];
 
 /* ---------- taxonomy ---------- */
 function sortedBooks() { return books.slice().sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9) || (a.createdAt || 0) - (b.createdAt || 0)); }
@@ -127,7 +127,7 @@ feed.addEventListener('click', e => {
     const c = cardMap()[card.dataset.id]; if (!c) return;
     if (a === 'save') toggleSave(c.id);
     if (a === 'copy') copyText(`${c.type === 'quote' ? '“' + c.text + '”' : c.text}\n— ${c.book.title}${c.book.author ? ', ' + c.book.author : ''}\n\nWhat it means: ${c.meaning || ''}${c.apply ? '\nTry this: ' + c.apply : ''}`, 'Shared');
-    if (a === 'book') setScope({ kind: 'book', book: c.book.id });
+    if (a === 'book') openBook(c.book.id);
     return;
   }
   if (!card || !card.dataset.id) return;
@@ -173,10 +173,18 @@ function openLib() {
 function renderLib() {
   const L = libs(), P = $('#libPanel');
   const close = '<button type="button" class="x" data-close aria-label="Close">✕</button>';
+  if (nav[0] === '__read') {
+    const all = Object.entries(allTexts()).sort((a, b) => a[1].title.localeCompare(b[1].title));
+    P.innerHTML = `<button class="back" data-back>‹ Library</button><div class="hd"><div><h3>Full books</h3><p class="sub">Public-domain classics, complete and free. Your place is saved.</p></div>${close}</div>
+    ${continueHTML()}<ul class="rows">${all.map(([f, m]) => { const pr = progressOf(f); return `<li><button class="open" data-read="${esc(f)}"><span><b>${esc(m.title)}</b><small>${esc(m.author || '')}${pr ? ` · ${pr.pct}% read` : ''}</small></span><span class="chev">›</span></button></li>`; }).join('')}</ul>`;
+    return;
+  }
   const l = nav[0] && L.find(x => x.id === nav[0]), s = l && nav[1] && l.shelves.find(x => x.id === nav[1]);
   if (!l) {
+    const nt = Object.keys(allTexts()).length;
     P.innerHTML = `<div class="hd"><div><h3>Library</h3><p class="sub">${L.length} libraries · ${books.length} books · ${countCards(books)} cards</p></div>${close}</div>
-    <div class="tiles">${L.map(x => { const bs = x.shelves.flatMap(y => y.books); return `<button class="tile" data-lib="${esc(x.id)}" style="--c:${x.color}"><b>${esc(x.name)}</b><span>${x.shelves.length} shelves · ${countCards(bs)} cards</span></button>`; }).join('')}</div>`;
+    ${continueHTML()}
+    <div class="tiles">${nt ? `<button class="tile" data-fullbooks style="--c:#3a2a12"><b>Full books</b><span>${nt} free classics to read</span></button>` : ''}${L.map(x => { const bs = x.shelves.flatMap(y => y.books); return `<button class="tile" data-lib="${esc(x.id)}" style="--c:${x.color}"><b>${esc(x.name)}</b><span>${x.shelves.length} shelves · ${countCards(bs)} cards</span></button>`; }).join('')}</div>`;
     return;
   }
   if (!s) {
@@ -189,8 +197,8 @@ function renderLib() {
   const have = new Set(s.books.map(b => norm(b.title)));
   const sug = s.suggest.filter(x => x && x.t && !have.has(norm(x.t)));
   P.innerHTML = `<button class="back" data-back>‹ ${esc(l.name)}</button><div class="hd"><div><h3>${esc(s.name)}</h3><p class="sub">${s.books.length} on the shelf · ${countCards(s.books)} cards</p></div>${close}</div>
-  ${s.books.length ? `<button class="btn swipe" data-swipe="shelf">Swipe this shelf</button><h4>On this shelf</h4><ul class="rows">${s.books.map(b => `<li><button class="open" data-book="${esc(b.id)}"><span class="dot" style="background:${okColor(b.color)}"></span><span><b>${esc(b.title)}</b><small>${esc(b.author || '')}${b.author ? ' · ' : ''}${cardsOf(b).length} cards</small></span><span class="chev">›</span></button></li>`).join('')}</ul>` : ''}
-  ${sug.length ? `<h4>Coming up on this shelf</h4><ul class="rows">${sug.map(x => `<li><span class="open" style="cursor:default"><span><b>${esc(x.t)}${x.free ? '<span class="pd">Free</span>' : ''}</b><small>${esc(x.a || '')}${x.free ? ` · <a class="free" href="${freeLink(x.t)}" target="_blank" rel="noopener">Read it free</a>` : ''}</small></span></span></li>`).join('')}</ul>` : ''}`;
+  ${s.books.length ? `<button class="btn swipe" data-swipe="shelf">Swipe this shelf</button><h4>On this shelf</h4><ul class="rows">${s.books.map(b => `<li><button class="open" data-book="${esc(b.id)}"><span class="dot" style="background:${okColor(b.color)}"></span><span><b>${esc(b.title)}</b><small>${esc(b.author || '')}${b.author ? ' · ' : ''}${cardsOf(b).length} cards${textFor(b) ? ' · full book' : ''}</small></span><span class="chev">›</span></button></li>`).join('')}</ul>` : ''}
+  ${sug.length ? `<h4>Coming up on this shelf</h4><ul class="rows">${sug.map(x => { const f = texts.titles[norm(x.t)]; return `<li><span class="open" style="cursor:default"><span><b>${esc(x.t)}${f ? '<span class="readtag">Full book</span>' : x.free ? '<span class="pd">Free</span>' : ''}</b><small>${esc(x.a || '')}${!f && x.free ? ` · <a class="free" href="${freeLink(x.t)}" target="_blank" rel="noopener">Read it free</a>` : ''}</small></span></span>${f ? `<button class="mini" data-read="${esc(f)}">Read</button>` : ''}</li>`; }).join('')}</ul>` : ''}`;
 }
 $('#libPanel').addEventListener('click', e => {
   const t = e.target;
@@ -198,11 +206,14 @@ $('#libPanel').addEventListener('click', e => {
   const sh = t.closest('[data-shelf]'); if (sh) { nav = [nav[0], sh.dataset.shelf]; renderLib(); $('#libPanel').scrollTop = 0; return; }
   if (t.closest('[data-back]')) { nav = nav.slice(0, -1); renderLib(); return; }
   const sw = t.closest('[data-swipe]'); if (sw) { closeSheets(); setScope(sw.dataset.swipe === 'library' ? { kind: 'library', lib: nav[0] } : { kind: 'shelf', lib: nav[0], shelf: nav[1] }); return; }
-  const bk = t.closest('[data-book]'); if (bk) { closeSheets(); setScope({ kind: 'book', book: bk.dataset.book }); }
+  const bk = t.closest('[data-book]'); if (bk) { closeSheets(); openBook(bk.dataset.book); return; }
+  const rd = t.closest('[data-read]'); if (rd) { closeSheets(); openReader(rd.dataset.read); return; }
+  if (t.closest('[data-fullbooks]')) { nav = ['__read']; renderLib(); $('#libPanel').scrollTop = 0; }
 });
 
 document.addEventListener('keydown', e => {
   const sheetOpen = !!document.querySelector('.scrim:not([hidden])');
+  if (!$('#reader').hidden && !sheetOpen) { if (e.key === 'Escape') $('#rClose').click(); return; }
   if (e.key === 'Escape') { closeSheets(); return; }
   if (sheetOpen) return;
   if (e.key === 'ArrowDown' || e.key === 'j') { e.preventDefault(); feed.scrollBy({ top: feed.clientHeight }); }
@@ -213,12 +224,101 @@ const feedRO = new ResizeObserver(() => { const id = currentId(); if (id) { cons
 feedRO.observe(feed);
 let posT; feed.addEventListener('scroll', () => { clearTimeout(posT); posT = setTimeout(() => { if (scope.kind === 'all') store.set('underline.pos', currentId()); }, 300); }, { passive: true });
 
+
+/* ---------- full books: book page + reader ---------- */
+const textFor = b => b && (texts.books[b.id] || texts.titles[norm(b.title)]) || null;
+function allTexts() {
+  const m = {};
+  for (const [k, f] of Object.entries(texts.titles)) m[f] = m[f] || { title: (texts.meta && texts.meta[f] && texts.meta[f].title) || titleFromFile(f), author: (texts.meta && texts.meta[f] && texts.meta[f].author) || '' };
+  return m;
+}
+function titleFromFile(f) { for (const b of books) if (textFor(b) === f) return b.title; return f.replace(/\.json$/, '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()); }
+function progressOf(f) { const p = store.get('underline.read.' + f, null); return p && typeof p.ch === 'number' ? p : null; }
+function continueHTML() {
+  const last = store.get('underline.lastRead', null); if (!last || !last.f) return '';
+  const p = progressOf(last.f); if (!p) return '';
+  return `<button class="cont" data-read="${esc(last.f)}"><span><b>${esc(last.title || 'Continue reading')}</b><small>${esc(p.chTitle || '')} · ${p.pct}% read</small></span><span>Continue ›</span></button>`;
+}
+const findLinks = t => [
+  ['Fulton County Library (Libby)', 'Free with a library card', `https://fulcolibrary.overdrive.com/search?query=${encodeURIComponent(t)}`],
+  ['Hoopla', 'Free with a library card, no waitlist', `https://www.hoopladigital.com/search?q=${encodeURIComponent(t)}`],
+  ['Open Library', 'Free digital borrowing', `https://openlibrary.org/search?q=${encodeURIComponent(t)}&mode=ebooks`]
+];
+function openBook(id) {
+  const b = books.find(x => x.id === id); if (!b) return;
+  const L = libs(), p = placeOf(b, L), n = cardsOf(b).length, f = textFor(b), pr = f && progressOf(f);
+  $('#bookPanel').innerHTML = `<div class="hd"><div class="bookhd"><span class="cover" style="background:${okColor(b.color)}"></span><div><h3>${esc(b.title)}</h3><p class="sub">${esc(b.author || '')}${p.s && p.l.id !== 'unsorted' ? `<br>${esc(p.l.name)} · ${esc(p.s.name)}` : ''}</p></div></div><button type="button" class="x" data-close aria-label="Close">✕</button></div>
+  ${n ? `<button class="btn swipe" data-bookswipe="${esc(b.id)}">Swipe ${n} cards</button>` : ''}
+  ${f ? `<button class="btn wide" data-read="${esc(f)}">${pr ? `Continue reading · ${pr.pct}%` : 'Read the full book'}</button><p class="sub" style="margin-top:10px">Complete public-domain edition. Your place is saved on this device.</p>`
+      : `<h4>Read the full book</h4><p class="sub">This book is still under copyright, so it can’t be included here. You can usually borrow it free:</p><div class="links">${findLinks(b.title).map(([a, s2, u]) => `<a href="${u}" target="_blank" rel="noopener"><span>${esc(a)}<br><small>${esc(s2)}</small></span><span>›</span></a>`).join('')}</div>`}`;
+  $('#bookSheet').hidden = false;
+}
+$('#bookPanel').addEventListener('click', e => {
+  const sw = e.target.closest('[data-bookswipe]'); if (sw) { closeSheets(); setScope({ kind: 'book', book: sw.dataset.bookswipe }); return; }
+  const rd = e.target.closest('[data-read]'); if (rd) { closeSheets(); openReader(rd.dataset.read); }
+});
+
+const R = { f: null, book: null, ch: 0 };
+const SIZES = [16, 18, 19, 21, 24];
+const textCache = new Map();
+const rScroll = $('#rScroll');
+function applyReaderPrefs() {
+  const pref = store.get('underline.readerPrefs', { size: 2, light: false });
+  $('#reader').style.setProperty('--rfs', SIZES[pref.size ?? 2] + 'px');
+  $('#reader').classList.toggle('light', !!pref.light);
+  return pref;
+}
+async function openReader(f) {
+  $('#reader').hidden = false; applyReaderPrefs();
+  $('#rBook').textContent = 'Loading…'; $('#rChap').textContent = ''; $('#rBody').innerHTML = '';
+  try {
+    let book = textCache.get(f);
+    if (!book) { book = await getJSON('data/texts/' + f); if (!book || !Array.isArray(book.chapters) || !book.chapters.length) throw 0; textCache.set(f, book); }
+    R.f = f; R.book = book;
+    const pr = progressOf(f);
+    showChapter(pr ? Math.min(pr.ch, book.chapters.length - 1) : 0, pr ? pr.y : 0);
+  } catch {
+    $('#rBook').textContent = 'Couldn’t open this book';
+    $('#rBody').innerHTML = '<p>Check your connection and try again. Books you have opened before work offline.</p>';
+  }
+}
+function showChapter(i, y) {
+  const b = R.book, c = b.chapters[i]; R.ch = i;
+  $('#rBook').textContent = b.title; $('#rChap').textContent = `${c.title} · ${i + 1} of ${b.chapters.length}`;
+  const src = i === 0 ? `<p class="src">${esc(b.author || '')}${b.translator ? ' · translated by ' + esc(b.translator) : ''}<br>${b.source && b.source.url ? `<a href="${esc(b.source.url)}" target="_blank" rel="noopener">${esc(b.source.name || 'Source')}</a>` : ''}</p>` : '';
+  $('#rBody').innerHTML = `${src}<h2>${esc(c.title)}</h2>${(c.paras || []).map(t => String(t).startsWith('§ ') ? `<h3>${esc(String(t).slice(2))}</h3>` : `<p>${esc(t)}</p>`).join('')}
+  <div class="rnav"><button data-rch="${i - 1}" ${i ? '' : 'disabled'}>‹ Previous</button><button class="next" data-rch="${i + 1}" ${i < b.chapters.length - 1 ? '' : 'disabled'}>${i < b.chapters.length - 1 ? 'Next chapter ›' : 'The end'}</button></div>`;
+  requestAnimationFrame(() => { rScroll.scrollTop = (y || 0) * Math.max(0, rScroll.scrollHeight - rScroll.clientHeight); saveProgress(); });
+}
+function saveProgress() {
+  if (!R.book || $('#reader').hidden || !rScroll.clientHeight) return;
+  const max = Math.max(1, rScroll.scrollHeight - rScroll.clientHeight), y = Math.min(1, rScroll.scrollTop / max), n = R.book.chapters.length;
+  const pct = Math.min(100, Math.round(((R.ch + y) / n) * 100));
+  $('#rProg').style.width = pct + '%';
+  store.set('underline.read.' + R.f, { ch: R.ch, y, pct, chTitle: R.book.chapters[R.ch].title, t: Date.now() });
+  store.set('underline.lastRead', { f: R.f, title: R.book.title });
+}
+let rT; rScroll.addEventListener('scroll', () => { clearTimeout(rT); rT = setTimeout(saveProgress, 250); }, { passive: true });
+$('#rBody').addEventListener('click', e => { const b = e.target.closest('[data-rch]'); if (b && !b.disabled) showChapter(+b.dataset.rch, 0); });
+$('#rClose').addEventListener('click', () => { clearTimeout(rT); saveProgress(); $('#reader').hidden = true; });
+$('#rSize').addEventListener('click', () => { const p = applyReaderPrefs(), y = rScroll.scrollTop / Math.max(1, rScroll.scrollHeight - rScroll.clientHeight); p.size = ((p.size ?? 2) + 1) % SIZES.length; store.set('underline.readerPrefs', p); applyReaderPrefs(); rScroll.scrollTop = y * (rScroll.scrollHeight - rScroll.clientHeight); toast('Text size ' + (p.size + 1) + ' of ' + SIZES.length); });
+$('#rTheme').addEventListener('click', () => { const p = applyReaderPrefs(); p.light = !p.light; store.set('underline.readerPrefs', p); applyReaderPrefs(); });
+$('#rToc').addEventListener('click', () => {
+  if (!R.book) return;
+  $('#tocPanel').innerHTML = `<div class="hd"><div><h3>${esc(R.book.title)}</h3><p class="sub">${R.book.chapters.length} chapters</p></div><button type="button" class="x" data-close aria-label="Close">✕</button></div>
+  <ul class="rows toc">${R.book.chapters.map((c, i) => `<li><button class="open${i === R.ch ? ' cur' : ''}" data-toc="${i}"><span><b>${esc(c.title)}</b></span><span class="chev">›</span></button></li>`).join('')}</ul>`;
+  $('#tocSheet').hidden = false;
+  const cur = $('#tocPanel .cur'); if (cur) cur.scrollIntoView({ block: 'center' });
+});
+$('#tocPanel').addEventListener('click', e => { const b = e.target.closest('[data-toc]'); if (b) { $('#tocSheet').hidden = true; showChapter(+b.dataset.toc, 0); } });
+
 /* ---------- load ---------- */
 async function getJSON(p) { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); }
 async function load() {
   phase = 'loading';
   try {
-    const [cfg, idx] = await Promise.all([getJSON('data/libraries.json'), getJSON('data/index.json')]);
+    const [cfg, idx, tix] = await Promise.all([getJSON('data/libraries.json'), getJSON('data/index.json'), getJSON('data/texts/index.json').catch(() => null)]);
+    if (tix && typeof tix === 'object') texts = { books: tix.books || {}, titles: tix.titles || {}, meta: tix.meta || {} };
     const files = Array.isArray(idx.files) ? idx.files : [];
     const parts = await Promise.all(files.map(f => getJSON('data/' + f).catch(() => [])));
     const byId = new Map();

@@ -1,5 +1,5 @@
 // Underline service worker: app shell cache-first, library data network-first (falls back to cache offline).
-const SHELL = 'underline-shell-v1';
+const SHELL = 'underline-shell-v2';
 const DATA = 'underline-data';
 const SHELL_FILES = ['./', './index.html', './app.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 

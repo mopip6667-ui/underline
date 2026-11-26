@@ -27,6 +27,10 @@ The library lives in `data/`:
 
 To add books, drop a new `books-YYYY-MM-DD.json` into `data/` and add its name to `index.json`. The app picks it up on next launch. Once GitHub is connected to Claude, the weekly scheduled task can commit these files for you.
 
+## Full books
+
+`data/texts/` holds complete public-domain books (from Standard Ebooks) in reader format: `{title, author, translator, source, chapters:[{title, paras:[...]}]}`. A paragraph starting with `§ ` is a subheading. `data/texts/index.json` maps book ids (`books`) and normalised titles (`titles`) to files, with `meta` for the Full books list. To add one: `git clone --depth 1 https://github.com/standardebooks/<repo>` then `python3 -I tools/se2json.py <repo> data/texts/<name>.json` and add it to the index. Copyrighted books are never included; the app links to free library borrowing instead.
+
 ## Content notes
 
 Ideas are summarised in original words. Quotes are short, and quotes from copyrighted books are limited. Public-domain books are marked Free and link to Project Gutenberg.

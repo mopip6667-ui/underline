@@ -100,6 +100,30 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
 .toast{position:fixed;left:50%;bottom:calc(28px + var(--sb));transform:translateX(-50%);z-index:30;background:#fff;color:#14161a;font-weight:700;font-size:14px;padding:10px 16px;border-radius:99px;box-shadow:0 6px 20px rgba(0,0,0,.3);max-width:calc(100vw - 32px)}
 .toast[hidden]{display:none}
 .steps{padding-left:20px;margin:0 0 12px}.steps li{margin-bottom:6px}
+.reader{position:fixed;inset:0;z-index:40;background:var(--rbg);color:var(--rink);display:flex;flex-direction:column;--rbg:#121317;--rink:#e9e6df;--rmut:#9a978f;--rline:#2a2c31;--rfs:19px}
+.reader[hidden]{display:none}
+.reader.light{--rbg:#f7f3ea;--rink:#26221c;--rmut:#6f685c;--rline:#e3dccd}
+.rbar{display:flex;align-items:center;gap:6px;padding:calc(8px + var(--st)) 10px 8px;border-bottom:1px solid var(--rline);flex:none}
+.rbar button{width:44px;height:44px;border-radius:50%;border:0;background:transparent;color:inherit;font-weight:800;font-size:16px;display:grid;place-items:center;flex:none}
+.rtitle{flex:1;min-width:0;line-height:1.2}.rtitle b,.rtitle small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rtitle small{color:var(--rmut);font-size:12px;font-weight:700}
+.rprog{height:3px;background:var(--rline);flex:none}.rprog i{display:block;height:100%;width:0;background:var(--hl)}
+.rscroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.rbody{max-width:38em;margin:0 auto;padding:28px 22px calc(40px + var(--sb));font:400 var(--rfs)/1.62 Newsreader,Georgia,serif}
+.rbody h2{font:500 1.6em/1.15 Newsreader,Georgia,serif;margin:.4em 0 1em;text-wrap:balance}
+.rbody h3{font:700 .8em/1.3 Manrope,system-ui,sans-serif;margin:2em 0 .6em;color:var(--rmut)}
+.rbody p{margin:0 0 1em;hyphens:auto;-webkit-hyphens:auto}
+.rbody .src{font:600 13px/1.5 Manrope,system-ui,sans-serif;color:var(--rmut);margin-bottom:22px}
+.rnav{display:flex;gap:10px;margin-top:32px;font-family:Manrope,system-ui,sans-serif}.rnav button{flex:1;height:52px;border-radius:14px;border:1px solid var(--rline);background:transparent;color:inherit;font-weight:800;font-size:15px}
+.rnav button:disabled{opacity:.35}
+.rnav .next{background:var(--hl);color:#14161a;border-color:var(--hl)}
+.toc li .open.cur b{color:var(--hl)}
+#tocSheet{z-index:50}.toast{z-index:60}
+.bookhd{display:flex;gap:14px;align-items:flex-start;margin-bottom:6px}.bookhd .cover{width:54px;height:76px;border-radius:6px;flex:none;box-shadow:inset 6px 0 0 rgba(255,255,255,.18)}
+.links{display:grid;gap:8px;margin-top:8px}.links a{display:flex;align-items:center;justify-content:space-between;min-height:50px;padding:0 16px;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:800;font-size:15px}
+.links a small{font-weight:600;color:var(--muted)}
+.readtag{display:inline-block;font-size:11px;font-weight:800;padding:1px 7px;border-radius:99px;background:#16372c;color:#9fe3c4;margin-left:4px;vertical-align:1px}
+.mini{border:1px solid var(--line);background:transparent;color:inherit;font-weight:800;font-size:13px;min-height:40px;padding:0 14px;border-radius:99px;white-space:nowrap;touch-action:manipulation}
+.cont{display:flex;align-items:center;gap:12px;width:100%;min-height:64px;margin:0 0 14px;padding:10px 14px;border:0;border-radius:16px;background:var(--soft);color:inherit;text-align:left}.cont b{display:block}.cont small{color:var(--muted);font-size:13px}.cont span:last-child{margin-left:auto;color:var(--hl);font-weight:800;font-size:14px;white-space:nowrap}
 @media (max-height:620px){.card{padding-top:calc(92px + var(--st,0px));padding-bottom:calc(52px + var(--sb,0px));gap:10px}.q,.i{font-size:21px;line-height:1.12}.meaning{font-size:14px;line-height:1.42}.apply{font-size:13.5px;line-height:1.4;padding:9px 12px}.apply strong{font-size:12px}.foot{bottom:calc(16px + var(--sb,0px))}.card.isq::after{display:none}}
 @media (max-width:360px){.card{padding-left:24px;padding-right:70px}.chip{padding:0 10px}.tile{min-height:130px}}
 </style>
@@ -139,6 +163,20 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
   </div>
 </div>
 
+
+<div class="scrim" id="bookSheet" hidden><div class="panel" id="bookPanel"></div></div>
+<div class="scrim" id="tocSheet" hidden><div class="panel tall" id="tocPanel"></div></div>
+<div class="reader" id="reader" hidden role="dialog" aria-label="Reader">
+  <header class="rbar">
+    <button id="rClose" aria-label="Close reader">✕</button>
+    <div class="rtitle"><b id="rBook"></b><small id="rChap"></small></div>
+    <button id="rToc" aria-label="Chapters"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button id="rSize" aria-label="Text size">Aa</button>
+    <button id="rTheme" aria-label="Light or dark page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+  </header>
+  <div class="rprog"><i id="rProg"></i></div>
+  <div class="rscroll" id="rScroll"><article class="rbody" id="rBody"></article></div>
+</div>
 <div class="toast" id="toast" role="status" hidden></div>
 <script src="app.js"></script>
 </body>
