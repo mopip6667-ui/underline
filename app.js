@@ -251,7 +251,7 @@ function continueHTML() {
   return `<button class="cont" data-read="${esc(last.f)}"><span><b>${esc(last.title || 'Continue reading')}</b><small>${esc(p.chTitle || '')} · ${p.pct}% read</small></span><span>Continue ›</span></button>`;
 }
 const findLinks = t => [
-  ['Fulton County Library (Libby)', 'Free with a library card', `https://fulcolibrary.overdrive.com/search?query=${encodeURIComponent(t)}`],
+  ['Your library (Libby / OverDrive)', 'Free with a library card', `https://www.overdrive.com/search?q=${encodeURIComponent(t)}`],
   ['Hoopla', 'Free with a library card, no waitlist', `https://www.hoopladigital.com/search?q=${encodeURIComponent(t)}`],
   ['Open Library', 'Free digital borrowing', `https://openlibrary.org/search?q=${encodeURIComponent(t)}&mode=ebooks`]
 ];
