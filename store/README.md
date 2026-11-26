@@ -48,8 +48,8 @@ The test APK (`eera-android-test-apk` in each Android build run) installs direct
 ## Store listing text
 
 **App name** (30 max): EERA – Ideas from Books
-**Subtitle, Apple** (30 max): Big ideas, one swipe at a time
-**Short description, Google** (80 max): Swipe the best ideas from great books. Plus 19 classics to read in full, free.
+**Subtitle, Apple** (30 max): She reads so you don't have to
+**Short description, Google** (80 max): She reads so you don't have to. Swipe the best ideas from great books.
 
 **Promotional text, Apple** (170 max):
 New books every week across finance, science, history and philosophy. Save the ideas that hit, and read the classics in full.

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build-www.mjs",
     "sync": "npm run build && npx cap sync",
-    "assets": "npx capacitor-assets generate --iconBackgroundColor '#13242e' --iconBackgroundColorDark '#13242e' --splashBackgroundColor '#0b0c0f' --splashBackgroundColorDark '#0b0c0f'"
+    "assets": "npx capacitor-assets generate --iconBackgroundColor '#6b1f33' --iconBackgroundColorDark '#6b1f33' --splashBackgroundColor '#0b0c0f' --splashBackgroundColorDark '#0b0c0f'"
   },
   "dependencies": {
     "@capacitor/android": "^8.6.3",

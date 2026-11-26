@@ -1,7 +1,7 @@
 {
   "name": "EERA",
   "short_name": "EERA",
-  "description": "Swipe through the best ideas from books: finance, science, history and philosophy.",
+  "description": "She reads so you don't have to. Swipe through the best ideas from books: finance, science, history and philosophy.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

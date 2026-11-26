@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pre-render the Reels narration in the "Ryan" voice (Microsoft en-GB-RyanNeural).
+"""Pre-render the Reels narration in the "Sonia" voice (Microsoft en-GB-SoniaNeural).
 
 Uses the official Azure Speech API when AZURE_SPEECH_KEY + AZURE_SPEECH_REGION are set (free tier),
 otherwise the free edge-tts route.
@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 OUT = os.path.join(DATA, 'audio')
 MANIFEST = os.path.join(OUT, 'manifest.json')
-VOICE, SPEED, LANG = 'en-GB-RyanNeural', 1.0, 'en-gb'
+VOICE, SPEED, LANG = 'en-GB-SoniaNeural', 1.0, 'en-gb'
 
 
 def clean(t):

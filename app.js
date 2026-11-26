@@ -455,7 +455,7 @@ function stopPlayer() { clearInterval(RV.timer); RV.timer = null; if (RV.anim) {
 function pickVoice() {
   if (!TTS) return null; const vs = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
   const en = vs.filter(v => /^en(-|_|$)/i.test(v.lang)); if (!en.length) return null;
-  const gb = v => /en[-_]GB/i.test(v.lang), rank = v => (gb(v) && /premium|enhanced|neural|natural/i.test(v.name) ? 0 : gb(v) && /daniel|arthur|oliver|google uk english male/i.test(v.name) ? 1 : gb(v) ? 2 : /premium|enhanced|neural/i.test(v.name) ? 3 : 4);   // stand-in for Ryan when a clip has no recording yet
+  const gb = v => /en[-_]GB/i.test(v.lang), rank = v => (gb(v) && /premium|enhanced|neural|natural/i.test(v.name) && /female|sonia|serena|kate|martha|stephanie|libby/i.test(v.name) ? 0 : gb(v) && /sonia|serena|kate|martha|stephanie|google uk english female/i.test(v.name) ? 1 : gb(v) ? 2 : /premium|enhanced|neural/i.test(v.name) ? 3 : 4);   // stand-in for Sonia when a clip has no recording yet
   return en.slice().sort((a, b) => rank(a) - rank(b))[0];
 }
 function activate(i) {
@@ -614,7 +614,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '5';
+const APP_VERSION = '6';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
