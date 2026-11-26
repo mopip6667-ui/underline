@@ -1376,5 +1376,90 @@
   "shelf": "tech",
   "source": "hourly",
   "title": "Zero to One"
+ },
+ {
+  "id": "the-campaigns-of-alexander-2026112616",
+  "author": "Arrian",
+  "cards": [
+   {
+    "apply": "Before using a number in your next memo, write down who produced it, whether they saw it first-hand, and what they gain if it's wrong.",
+    "meaning": "Writing in the 2nd century AD, Arrian built his history mainly on Ptolemy and Aristobulus, who both marched with Alexander. He says he chose them because they were eyewitnesses and because a king like Ptolemy had more reason than most to keep to the truth.",
+    "text": "Trust the sources who had the most to lose by lying",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice where one visible, consistent response to a broken commitment would prevent many future ones. Decide in advance what yours will be.",
+    "meaning": "When Thebes revolted in 335 BC, Alexander took the city and had it razed, sparing only temples and, by tradition, the poet Pindar's house. The brutal lesson kept the rest of Greece quiet while he left for Asia.",
+    "text": "Alexander made an example of Thebes to secure Greece",
+    "type": "idea"
+   },
+   {
+    "apply": "This week, take on the hardest, least glamorous piece of a team project yourself, and let the team see you do it.",
+    "meaning": "In his first battle against the Persians (334 BC), Alexander led the cavalry charge across the river himself and was nearly killed in the melee. Arrian shows a leader whose men followed because he took the same risks they did.",
+    "text": "At the Granicus, the commander rode into the river first",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick a problem your team has 'tried everything' on. List the rules everyone assumes, then test what happens if one of them is ignored.",
+    "meaning": "Arrian gives two versions of the Gordian knot: the famous sword stroke, and Aristobulus's account that Alexander simply pulled out the pin holding the knot. Either way, he refused to play by the puzzle's assumed rules.",
+    "text": "He struck the cord with his sword and cut it through",
+    "type": "quote"
+   },
+   {
+    "apply": "When analysing a competitor or a deal, find the single point everything depends on: one founder, one customer, one contract. Weigh it accordingly.",
+    "meaning": "Arrian shows Alexander leading his right wing across the river at a run and driving for the Persian king. In a huge army held together by one man, breaking the centre of command broke the whole force.",
+    "text": "At Issus he aimed his charge straight at Darius",
+    "type": "idea"
+   },
+   {
+    "apply": "If a key goal keeps failing, ask what slow, unglamorous groundwork would make it inevitable, then schedule the first piece.",
+    "meaning": "The island city of Tyre seemed untakeable, so Alexander had a causeway built out to it and attacked from ships and siege towers. The siege took about seven months in 332 BC, but it left no Persian naval base behind him.",
+    "text": "Tyre fell because he built a road across the sea",
+    "type": "idea"
+   },
+   {
+    "apply": "Before your next big push, list what could hit you from behind: an unpaid vendor, a weak control, a key-person risk. Close one first.",
+    "meaning": "After Issus, Alexander didn't race inland after Darius. He first took the Mediterranean coast and Egypt, cutting off the Persian fleet, and only then marched east to win at Gaugamela in 331 BC.",
+    "text": "He secured the coast before chasing the Persian king",
+    "type": "idea"
+   },
+   {
+    "apply": "When you win a negotiation, give the other side something to keep their dignity. Today's opponent is often tomorrow's partner.",
+    "meaning": "After the hard-fought battle at the Hydaspes (326 BC), the defeated Indian king Porus gave this reply when asked how he wished to be treated. Arrian says Alexander was pleased, restored his kingdom and later enlarged it, gaining a loyal ally.",
+    "text": "Treat me, O Alexander, in a kingly way!",
+    "type": "quote"
+   },
+   {
+    "apply": "Recognise one long-serving colleague publicly this week for steady work that never gets headlines.",
+    "meaning": "Alexander founded two cities near the Hydaspes: Nicaea for the victory, and Bucephala for his horse, who Arrian says died of toil and old age, not wounds. It shows how Alexander tied loyalty and memory to his campaigns.",
+    "text": "Even Bucephalas got a city named after him",
+    "type": "idea"
+   },
+   {
+    "apply": "Ask the people doing the work whether a goal is still realistic, and listen. Ambition without buy-in stalls.",
+    "meaning": "Coenus closed his speech at the Hyphasis River with this line, when the exhausted army refused to march further into India. Alexander sulked for days, then turned back: the limit of his empire was set by his men, not his ambition.",
+    "text": "Self-control in the midst of success is the noblest of all virtues, O king!",
+    "type": "quote"
+   },
+   {
+    "apply": "Look at a plan you're championing: who bears the cost if it goes wrong? Make sure you share that cost, not just the credit.",
+    "meaning": "On the way back from India, Alexander led his army through the Gedrosian desert, and Arrian describes heavy losses to heat and thirst. Famously, offered a little water in a helmet, Alexander poured it out rather than drink while his men could not.",
+    "text": "The Gedrosian desert march cost a huge share of the army",
+    "type": "idea"
+   },
+   {
+    "apply": "Write a short review of a leader you admire: three things to copy, one thing to avoid. Keep both lists honest.",
+    "meaning": "Arrian condemns acts like the drunken killing of his friend Cleitus, yet credits Alexander for openly regretting his mistakes, which he saw as rare among kings. Admiration, he shows, need not mean blindness.",
+    "text": "Arrian praises Alexander but refuses to excuse his crimes",
+    "type": "idea"
+   }
+  ],
+  "color": "#123a4a",
+  "createdAt": 1795730063358,
+  "library": "history",
+  "order": 140,
+  "shelf": "commanders",
+  "source": "hourly",
+  "title": "The Campaigns of Alexander"
  }
 ]
