@@ -28,6 +28,36 @@ const haptic = () => { if (NATIVE && P.Haptics) P.Haptics.impact({ style: 'LIGHT
 
 let texts = { books: {}, titles: {} }, books = [], config = { libraries: [] }, saved = store.get('underline.saved', []), scope = { kind: 'all' }, shuffled = null, nav = [];
 
+/* ---------- Eerah Pro: free daily limits + full-book lock ----------
+   Free: 20 new cards and 20 new Reels a day (cards already seen today stay open), no full-book reader.
+   underline.pro is set by the in-app purchase once Pro is live; nothing sets it yet. */
+const FREE_DAILY = 20;
+const isPro = () => store.get('underline.pro', false) === true;
+const dayKey = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`; };
+function quota() { const q = store.get('underline.quota', null); return q && q.d === dayKey() && Array.isArray(q.f) && Array.isArray(q.r) ? q : { d: dayKey(), f: [], r: [] }; }
+function markSeen(kind, id) {
+  if (isPro() || !id) return;
+  const q = quota(); if (q[kind].includes(id) || q[kind].length >= FREE_DAILY) return;
+  q[kind].push(id); store.set('underline.quota', q);
+}
+function capList(l, kind) {
+  if (isPro()) return { list: l, capped: false };
+  const q = quota(), had = new Set(q[kind]); let left = FREE_DAILY - q[kind].length, capped = false;
+  const out = l.filter(c => { if (had.has(c.id)) return true; if (left > 0) { left--; return true; } capped = true; return false; });
+  return { list: out, capped };
+}
+const leftToday = kind => isPro() ? Infinity : Math.max(0, FREE_DAILY - quota()[kind].length);
+function openPro(why) {
+  const head = why === 'books' ? 'Full books are part of Eerah Pro' : why === 'reels' ? 'That’s today’s 20 Reels' : 'That’s today’s 20 cards';
+  const nt = Object.keys(allTexts()).length;
+  $('#proPanel').innerHTML = `<div class="hd"><div><h3>${head}</h3><p class="sub">The free plan includes 20 cards and 20 Reels a day. They refresh at midnight.</p></div><button type="button" class="x" data-close aria-label="Close">✕</button></div>
+  <h4>Eerah Pro</h4>
+  <ul class="perks"><li>Unlimited cards and Reels</li>${nt ? `<li>${nt} complete classics to read, with your place saved</li>` : ''}</ul>
+  <p class="sub" style="margin-top:16px"><b>Coming soon.</b> Eerah Pro launches in an update shortly.</p>
+  <button class="btn wide" data-close>Got it</button>`;
+  $('#proSheet').hidden = false;
+}
+
 /* ---------- taxonomy ---------- */
 function sortedBooks() { return books.slice().sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9) || (a.createdAt || 0) - (b.createdAt || 0)); }
 function libs() {
@@ -94,16 +124,21 @@ function render(keepId) {
   const lab = scopeLabel(); $('#scope').hidden = !lab; $('#scopeTxt').textContent = lab;
   if (phase === 'loading') return;
   if (phase === 'error' && !books.length) { feed.innerHTML = msg('Can’t load the library', 'Check your connection and reopen the app. Once it loads, it works offline.', '<button class="btn" data-act="retry">Try again</button>'); return; }
-  const L = libs(), l = list();
-  if (!l.length) {
+  const L = libs(), full = list();
+  if (!full.length) {
     if (scope.kind === 'saved') feed.innerHTML = msg('Nothing saved yet', 'Double-tap any card, or tap the bookmark, to keep it here.', '<button class="btn" data-act="home">Back to the feed</button>');
     else feed.innerHTML = msg('This shelf is empty', 'New books arrive every week. Browse the library for the suggested reads.', '<button class="btn" data-act="browse">Open the library</button>');
     return;
   }
-  feed.innerHTML = l.map((c, i) => cardHTML(c, i, l.length, L)).join('');
+  const { list: l, capped } = scope.kind === 'saved' ? { list: full, capped: false } : capList(full, 'f');
+  const pos = new Map(full.map((c, i) => [c.id, i]));
+  feed.innerHTML = l.map(c => cardHTML(c, pos.get(c.id), full.length, L)).join('')
+    + (capped ? msg('That’s today’s 20 cards', 'Come back tomorrow for 20 more, or go unlimited with Eerah Pro.', '<button class="btn" data-act="pro">See Eerah Pro</button>') : '');
   const k = keepId ? l.findIndex(c => c.id === keepId) : -1;
   feed.scrollTop = k > 0 ? k * feed.clientHeight : 0;
+  countCurrent();
 }
+function countCurrent() { if (scope.kind !== 'saved') markSeen('f', currentId()); }
 function setScope(s) { scope = s; if (s.kind !== 'all') shuffled = null; render(); }
 function syncSaveButtons() {
   feed.querySelectorAll('.card[data-id]').forEach(el => { const b = el.querySelector('[data-act=save]'); if (b) b.setAttribute('aria-pressed', String(saved.includes(el.dataset.id))); });
@@ -134,6 +169,7 @@ feed.addEventListener('click', e => {
     if (a === 'home') setScope({ kind: 'all' });
     if (a === 'browse') openLib();
     if (a === 'retry') load();
+    if (a === 'pro') { openPro('cards'); return; }
     if (!card || !card.dataset.id) return;
     const c = cardMap()[card.dataset.id]; if (!c) return;
     if (a === 'save') toggleSave(c.id);
@@ -154,7 +190,7 @@ $('#shuffleBtn').addEventListener('click', () => {
 });
 $('#moreBtn').addEventListener('click', () => {
   const nc = books.reduce((n, b) => n + cardsOf(b).length, 0);
-  $('#aboutSub').textContent = `${libs().length} libraries · ${books.length} books · ${nc} cards · ${Object.keys(allTexts()).length} full books · version ${APP_VERSION}`;
+  $('#aboutSub').textContent = `${libs().length} libraries · ${books.length} books · ${nc} cards · ${Object.keys(allTexts()).length} full books · version ${APP_VERSION}${isPro() ? ' · Eerah Pro' : ` · Free plan: ${leftToday('f')} cards and ${leftToday('r')} Reels left today`}`;
   $('#installBox').hidden = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   $('#moreSheet').hidden = false;
 });
@@ -186,16 +222,16 @@ function renderLib() {
   const close = '<button type="button" class="x" data-close aria-label="Close">✕</button>';
   if (nav[0] === '__read') {
     const all = Object.entries(allTexts()).sort((a, b) => a[1].title.localeCompare(b[1].title));
-    P.innerHTML = `<button class="back" data-back>‹ Library</button><div class="hd"><div><h3>Full books</h3><p class="sub">Public-domain classics, complete and free. Your place is saved.</p></div>${close}</div>
-    ${continueHTML()}<ul class="rows">${all.map(([f, m]) => { const pr = progressOf(f); return `<li><button class="open" data-read="${esc(f)}"><span><b>${esc(m.title)}</b><small>${esc(m.author || '')}${pr ? ` · ${pr.pct}% read` : ''}</small></span><span class="chev">›</span></button></li>`; }).join('')}</ul>`;
+    P.innerHTML = `<button class="back" data-back>‹ Library</button><div class="hd"><div><h3>Full books</h3><p class="sub">${isPro() ? 'Public-domain classics, complete. Your place is saved.' : 'Complete public-domain classics, included with Eerah Pro.'}</p></div>${close}</div>
+    ${isPro() ? continueHTML() : ''}<ul class="rows">${all.map(([f, m]) => { const pr = progressOf(f); return `<li><button class="open" data-read="${esc(f)}"><span><b>${esc(m.title)}${isPro() ? '' : '<span class="protag">Pro</span>'}</b><small>${esc(m.author || '')}${pr ? ` · ${pr.pct}% read` : ''}</small></span><span class="chev">›</span></button></li>`; }).join('')}</ul>`;
     return;
   }
   const l = nav[0] && L.find(x => x.id === nav[0]), s = l && nav[1] && l.shelves.find(x => x.id === nav[1]);
   if (!l) {
     const nt = Object.keys(allTexts()).length;
     P.innerHTML = `<div class="hd"><div><h3>Library</h3><p class="sub">${L.length} libraries · ${books.length} books · ${countCards(books)} cards</p></div>${close}</div>
-    ${continueHTML()}
-    <div class="tiles">${nt ? `<button class="tile" data-fullbooks style="--c:#3a2a12"><b>Full books</b><span>${nt} free classics to read</span></button>` : ''}${L.map(x => { const bs = x.shelves.flatMap(y => y.books); return `<button class="tile" data-lib="${esc(x.id)}" style="--c:${x.color}"><b>${esc(x.name)}</b><span>${x.shelves.length} shelves · ${countCards(bs)} cards</span></button>`; }).join('')}</div>`;
+    ${isPro() ? continueHTML() : ''}
+    <div class="tiles">${nt ? `<button class="tile" data-fullbooks style="--c:#3a2a12"><b>Full books</b><span>${nt} complete classics${isPro() ? '' : ' · Pro'}</span></button>` : ''}${L.map(x => { const bs = x.shelves.flatMap(y => y.books); return `<button class="tile" data-lib="${esc(x.id)}" style="--c:${x.color}"><b>${esc(x.name)}</b><span>${x.shelves.length} shelves · ${countCards(bs)} cards</span></button>`; }).join('')}</div>`;
     return;
   }
   if (!s) {
@@ -244,7 +280,7 @@ document.addEventListener('keydown', e => {
 });
 const feedRO = new ResizeObserver(() => { const id = currentId(); if (id) { const k = [...feed.children].findIndex(c => c.dataset.id === id); if (k >= 0) feed.scrollTop = k * feed.clientHeight; } });
 feedRO.observe(feed);
-let posT; feed.addEventListener('scroll', () => { clearTimeout(posT); posT = setTimeout(() => { if (scope.kind === 'all') store.set('underline.pos', currentId()); }, 300); }, { passive: true });
+let posT; feed.addEventListener('scroll', () => { clearTimeout(posT); posT = setTimeout(() => { countCurrent(); if (scope.kind === 'all') store.set('underline.pos', currentId()); }, 300); }, { passive: true });
 
 
 /* ---------- full books: book page + reader ---------- */
@@ -271,7 +307,7 @@ function openBook(id) {
   const L = libs(), p = placeOf(b, L), n = cardsOf(b).length, f = textFor(b), pr = f && progressOf(f);
   $('#bookPanel').innerHTML = `<div class="hd"><div class="bookhd"><span class="cover" style="background:${okColor(b.color)}"></span><div><h3>${esc(b.title)}</h3><p class="sub">${esc(b.author || '')}${p.s && p.l.id !== 'unsorted' ? `<br>${esc(p.l.name)} · ${esc(p.s.name)}` : ''}</p></div></div><button type="button" class="x" data-close aria-label="Close">✕</button></div>
   ${n ? `<button class="btn swipe" data-bookswipe="${esc(b.id)}">Swipe ${n} cards</button>` : ''}
-  ${f ? `<button class="btn wide" data-read="${esc(f)}">${pr ? `Continue reading · ${pr.pct}%` : 'Read the full book'}</button><p class="sub" style="margin-top:10px">Complete public-domain edition. Your place is saved on this device.</p>`
+  ${f ? `<button class="btn wide" data-read="${esc(f)}">${!isPro() ? 'Read the full book · Pro' : pr ? `Continue reading · ${pr.pct}%` : 'Read the full book'}</button><p class="sub" style="margin-top:10px">${isPro() ? 'Complete public-domain edition. Your place is saved on this device.' : 'The complete public-domain edition is included with Eerah Pro.'}</p>`
       : `<h4>Read the full book</h4><p class="sub">This book is still under copyright, so it can’t be included here. You can usually borrow it free:</p><div class="links">${findLinks(b.title).map(([a, s2, u]) => `<a href="${u}" target="_blank" rel="noopener"><span>${esc(a)}<br><small>${esc(s2)}</small></span><span>›</span></a>`).join('')}</div>`}`;
   $('#bookSheet').hidden = false;
 }
@@ -291,6 +327,7 @@ function applyReaderPrefs() {
   return pref;
 }
 async function openReader(f) {
+  if (!isPro()) { openPro('books'); return; }
   $('#reader').hidden = false; applyReaderPrefs();
   $('#rBook').textContent = 'Loading…'; $('#rChap').textContent = ''; $('#rBody').innerHTML = '';
   try {
@@ -436,9 +473,11 @@ function dress(i) {
 function undress(i) { const el = rfeed.children[i]; if (!el || !el.dataset.d) return; el.querySelectorAll('.blob,.ghost,.stage').forEach(n => n.remove()); delete el.dataset.d; el._scenes = null; el.classList.remove('act'); }
 function openReels() {
   if (phase !== 'ready') { toast('Still loading'); return; }
-  const l = list(); if (!l.length) { toast(scope.kind === 'saved' ? 'Save a card first' : 'Nothing to play here'); return; }
+  const full = list(); if (!full.length) { toast(scope.kind === 'saved' ? 'Save a card first' : 'Nothing to play here'); return; }
+  const cap = scope.kind === 'saved' ? { list: full, capped: false } : capList(full, 'r'), l = cap.list;
+  if (!l.length) { openPro('reels'); return; }
   const start = currentId();
-  RV.list = l; RV.open = true; RV.idx = -1; RV.s = -1; RV.hold = RV.user = false; RV.cover = false; reels.hidden = false;
+  RV.list = l; RV.capped = cap.capped; RV.counts = scope.kind !== 'saved'; RV.open = true; RV.idx = -1; RV.s = -1; RV.hold = RV.user = false; RV.cover = false; reels.hidden = false;
   rfeed.innerHTML = l.map(reelShell).join('');
   $('#rCount').textContent = scope.kind === 'saved' ? 'Saved' : (scopeLabel() || '');
   $('#rvSound').hidden = false; syncSound(); applyPause(true);
@@ -466,6 +505,7 @@ function activate(i) {
   for (let j = Math.max(0, RV.idx - 3); j <= Math.min(RV.list.length - 1, RV.idx + 3); j++) if (RV.idx >= 0 && Math.abs(j - i) > 1) undress(j);
   RV.idx = i; RV.user = false; RV.s = -1;
   const el = rfeed.children[i], c = RV.list[i]; RV.el = el; RV.scenes = el._scenes; el.classList.add('act');
+  if (RV.counts) markSeen('r', c.id);
   segsEl.innerHTML = RV.scenes.map(() => '<i><b></b></i>').join('');
   const sv = $('#rvSave'); sv.innerHTML = I.save; sv.setAttribute('aria-pressed', String(saved.includes(c.id)));
   $('#rvShare').innerHTML = I.copy; $('#rvBook').innerHTML = I.book;
@@ -531,7 +571,7 @@ function slideTo(k, ms) {
 function goReel(k) { if (k < 0 || k >= RV.list.length) return false; activate(k); slideTo(k); return true; }   // clip starts as it slides in, no dead pause
 function nextScene() {
   if (RV.s < RV.scenes.length - 1) { playScene(RV.s + 1); return; }
-  if (!goReel(RV.idx + 1)) { clearInterval(RV.timer); stopVoice(); toast('That’s all for now'); }
+  if (!goReel(RV.idx + 1)) { clearInterval(RV.timer); stopVoice(); if (RV.capped) openPro('reels'); else toast('That’s all for now'); }
 }
 function prevScene() {
   if (RV.elapsed > 1500 || RV.s > 0) { playScene(RV.elapsed > 1500 ? RV.s : RV.s - 1); return; }
@@ -614,7 +654,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '7';
+const APP_VERSION = '8';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
