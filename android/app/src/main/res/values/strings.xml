@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Underline</string>
+    <string name="title_activity_main">Underline</string>
+    <string name="package_name">io.github.mopip6667ui.underline</string>
+    <string name="custom_url_scheme">io.github.mopip6667ui.underline</string>
+</resources>

@@ -1,0 +1,26 @@
+{
+  "name": "underline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Swipe through the best ideas from books.",
+  "scripts": {
+    "build": "node scripts/build-www.mjs",
+    "sync": "npm run build && npx cap sync",
+    "assets": "npx capacitor-assets generate --iconBackgroundColor '#13242e' --iconBackgroundColorDark '#13242e' --splashBackgroundColor '#0b0c0f' --splashBackgroundColorDark '#0b0c0f'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.3",
+    "@capacitor/core": "^8.6.3",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/ios": "^8.6.3",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.3"
+  }
+}

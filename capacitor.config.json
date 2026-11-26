@@ -1,0 +1,13 @@
+{
+  "appId": "io.github.mopip6667ui.underline",
+  "appName": "Underline",
+  "webDir": "www",
+  "backgroundColor": "#0b0c0f",
+  "ios": { "contentInset": "never", "backgroundColor": "#0b0c0f" },
+  "android": { "backgroundColor": "#0b0c0f" },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 600, "launchAutoHide": true, "backgroundColor": "#0b0c0f", "showSpinner": false },
+    "LocalNotifications": { "smallIcon": "ic_stat_underline", "iconColor": "#ffd23f" },
+    "StatusBar": { "style": "DARK", "overlaysWebView": true }
+  }
+}

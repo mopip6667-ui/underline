@@ -11,10 +11,20 @@ const feed = $('#feed');
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const okColor = c => /^#[0-9a-f]{6}$/i.test(c || '') ? c : '#13242e';
 const norm = s => String(s || '').toLowerCase().replace(/^the\s+/, '').replace(/[:(].*$/, '').replace(/[^a-z0-9]/g, '');
+const CAP = window.Capacitor;
+const NATIVE = !!(CAP && CAP.isNativePlatform && CAP.isNativePlatform());
+const P = NATIVE ? CAP.Plugins : {};
+const REMOTE = 'https://mopip6667-ui.github.io/underline/';
+// localStorage for speed; on the native apps every write is mirrored to device storage (Preferences), which the OS won't purge.
 const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
-  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+  set(k, v) { const j = JSON.stringify(v); try { localStorage.setItem(k, j); } catch {} if (NATIVE && P.Preferences) P.Preferences.set({ key: k, value: j }).catch(() => {}); }
 };
+async function hydrateNative() {
+  if (!NATIVE || !P.Preferences) return;
+  try { const { keys } = await P.Preferences.keys(); for (const k of keys) if (k.startsWith('underline.')) { const { value } = await P.Preferences.get({ key: k }); if (value != null) try { localStorage.setItem(k, value); } catch {} } } catch {}
+}
+const haptic = () => { if (NATIVE && P.Haptics) P.Haptics.impact({ style: 'LIGHT' }).catch(() => {}); };
 
 let texts = { books: {}, titles: {} }, books = [], config = { libraries: [] }, saved = store.get('underline.saved', []), scope = { kind: 'all' }, shuffled = null, nav = [];
 
@@ -105,12 +115,13 @@ function toggleSave(id, onlyOn) {
   const has = saved.includes(id);
   if (onlyOn && has) return true;
   saved = has ? saved.filter(x => x !== id) : [id, ...saved];
-  store.set('underline.saved', saved); syncSaveButtons();
+  store.set('underline.saved', saved); syncSaveButtons(); if (!has) haptic();
   if (!onlyOn) toast(has ? 'Removed from Saved' : 'Saved');
   return !has;
 }
 function pop(card) { const d = document.createElement('div'); d.className = 'pop'; d.innerHTML = I.save; card.appendChild(d); setTimeout(() => d.remove(), 800); }
 async function copyText(t, ok) {
+  if (NATIVE && P.Share && ok === 'Shared') { try { await P.Share.share({ text: t, dialogTitle: 'Share this card' }); } catch {} return; }
   try { if (navigator.share && matchMedia('(pointer:coarse)').matches && ok === 'Shared') { await navigator.share({ text: t }); return; } await navigator.clipboard.writeText(t); toast(ok || 'Copied'); }
   catch (e) { if (e && e.name !== 'AbortError') toast('Couldn’t copy'); }
 }
@@ -312,10 +323,71 @@ $('#rToc').addEventListener('click', () => {
 });
 $('#tocPanel').addEventListener('click', e => { const b = e.target.closest('[data-toc]'); if (b) { $('#tocSheet').hidden = true; showChapter(+b.dataset.toc, 0); } });
 
+/* ---------- daily card (native apps) ---------- */
+const DAILY_IDS = Array.from({ length: 14 }, (_, i) => 1000 + i);
+async function scheduleDaily() {
+  const LN = P.LocalNotifications; if (!NATIVE || !LN) return;
+  const pref = store.get('underline.daily', { on: false, hour: 8 });
+  try { await LN.cancel({ notifications: DAILY_IDS.map(id => ({ id })) }); } catch {}
+  if (!pref.on) return;
+  const pool = Object.values(cardMap()); if (!pool.length) return;
+  const now = new Date(), notifications = [];
+  for (let d = 0; d < DAILY_IDS.length; d++) {
+    const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + d, pref.hour, 0, 0);
+    if (at <= now) continue;
+    const c = pool[Math.floor(Math.random() * pool.length)];
+    notifications.push({ id: DAILY_IDS[d], title: c.book.title, body: (c.type === 'quote' ? '“' + c.text + '”' : c.text), schedule: { at }, extra: { card: c.id } });
+  }
+  try { await LN.schedule({ notifications }); } catch {}
+}
+async function setDaily(on, hour) {
+  const LN = P.LocalNotifications; if (!LN) return;
+  if (on) {
+    let perm = await LN.checkPermissions().catch(() => ({ display: 'denied' }));
+    if (perm.display !== 'granted') perm = await LN.requestPermissions().catch(() => ({ display: 'denied' }));
+    if (perm.display !== 'granted') { toast('Turn on notifications for Underline in Settings'); on = false; }
+  }
+  store.set('underline.daily', { on, hour }); await scheduleDaily(); renderDaily();
+  if (on) toast(`Daily card at ${fmtHour(hour)}`);
+}
+const fmtHour = h => `${((h + 11) % 12) + 1}:00 ${h < 12 ? 'AM' : 'PM'}`;
+function renderDaily() {
+  const box = $('#dailyBox'); if (!box) return;
+  box.hidden = !NATIVE;
+  const pref = store.get('underline.daily', { on: false, hour: 8 });
+  $('#dailyBtn').textContent = pref.on ? `On · ${fmtHour(pref.hour)}` : 'Off';
+  $('#dailyBtn').setAttribute('aria-pressed', String(pref.on));
+  $('#dailyHour').value = String(pref.hour);
+}
+if ($('#dailyBtn')) {
+  $('#dailyBtn').addEventListener('click', () => { const p = store.get('underline.daily', { on: false, hour: 8 }); setDaily(!p.on, p.hour); });
+  $('#dailyHour').addEventListener('change', e => { const p = store.get('underline.daily', { on: false, hour: 8 }); setDaily(p.on, +e.target.value); });
+}
+if (NATIVE && P.LocalNotifications) P.LocalNotifications.addListener('localNotificationActionPerformed', ev => {
+  const id = ev && ev.notification && ev.notification.extra && ev.notification.extra.card; if (!id) return;
+  const go = () => { closeSheets(); setScope({ kind: 'all' }); const k = list().findIndex(c => c.id === id); if (k >= 0) feed.scrollTop = k * feed.clientHeight; };
+  if (phase === 'ready') go(); else setTimeout(go, 1500);
+});
+
 /* ---------- load ---------- */
-async function getJSON(p) { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); }
+async function localJSON(p) { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); }
+async function getJSON(p) {
+  const isText = p.includes('/texts/') && !p.endsWith('index.json');
+  if (NATIVE && isText) { try { return await localJSON(p); } catch {} } // bundled full books open instantly; only new ones download
+  if (NATIVE) {
+    try {
+      const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 3000);
+      const r = await fetch(REMOTE + p, { cache: 'no-cache', signal: ctl.signal }); clearTimeout(timer);
+      if (r.ok) { const j = await r.json(); if (!p.includes('/texts/') || p.endsWith('index.json')) try { localStorage.setItem('underline.remote.' + p, JSON.stringify(j)); } catch {} return j; }
+    } catch {}
+    const cached = localStorage.getItem('underline.remote.' + p);
+    if (cached) try { return JSON.parse(cached); } catch {}
+  }
+  return localJSON(p);
+}
 async function load() {
   phase = 'loading';
+  if (NATIVE && !load.hydrated) { await hydrateNative(); load.hydrated = true; saved = store.get('underline.saved', []); }
   try {
     const [cfg, idx, tix] = await Promise.all([getJSON('data/libraries.json'), getJSON('data/index.json'), getJSON('data/texts/index.json').catch(() => null)]);
     if (tix && typeof tix === 'object') texts = { books: tix.books || {}, titles: tix.titles || {}, meta: tix.meta || {} };
@@ -328,10 +400,11 @@ async function load() {
     phase = 'ready';
   } catch (e) { phase = 'error'; }
   render(store.get('underline.pos', null));
+  if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
 const APP_VERSION = '3';
-if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController && !reloaded) { reloaded = true; location.reload(); } });

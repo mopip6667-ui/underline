@@ -99,6 +99,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
 .ghost{background:transparent;color:inherit;border:1px solid var(--line)}
 .toast{position:fixed;left:50%;bottom:calc(28px + var(--sb));transform:translateX(-50%);z-index:30;background:#fff;color:#14161a;font-weight:700;font-size:14px;padding:10px 16px;border-radius:99px;box-shadow:0 6px 20px rgba(0,0,0,.3);max-width:calc(100vw - 32px)}
 .toast[hidden]{display:none}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .steps{padding-left:20px;margin:0 0 12px}.steps li{margin-bottom:6px}
 .reader{position:fixed;inset:0;z-index:40;background:var(--rbg);color:var(--rink);display:flex;flex-direction:column;--rbg:#121317;--rink:#e9e6df;--rmut:#9a978f;--rline:#2a2c31;--rfs:19px}
 .reader[hidden]{display:none}
@@ -154,6 +155,12 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
     <div id="installBox">
       <h4>Put it on your home screen</h4>
       <ol class="steps"><li>Open this page in Safari (iPhone) or Chrome (Android).</li><li>Tap Share, then <b>Add to Home Screen</b> (Android: menu, then <b>Install app</b>).</li><li>Open it from the icon. It works offline after the first load.</li></ol>
+    </div>
+    <div id="dailyBox" hidden>
+      <h4>Daily card</h4>
+      <p class="sub">One card from your library as a notification each day.</p>
+      <div class="row2"><button class="btn ghost" id="dailyBtn" aria-pressed="false">Off</button>
+      <select id="dailyHour" aria-label="Time" class="btn ghost" style="appearance:auto"><option value="6">6:00 AM</option><option value="7">7:00 AM</option><option value="8">8:00 AM</option><option value="9">9:00 AM</option><option value="12">12:00 PM</option><option value="17">5:00 PM</option><option value="19">7:00 PM</option><option value="21">9:00 PM</option></select></div>
     </div>
     <h4>Your saved cards</h4>
     <p class="sub">Saved cards stay on this device. Copy a backup to move them to another phone.</p>
