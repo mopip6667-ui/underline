@@ -1121,5 +1121,90 @@
   "shelf": "macro",
   "source": "hourly",
   "title": "Extraordinary Popular Delusions and the Madness of Crowds"
+ },
+ {
+  "id": "the-box-2026112613",
+  "title": "The Box",
+  "author": "Marc Levinson",
+  "color": "#2c3a12",
+  "library": "finance",
+  "shelf": "industrials",
+  "order": 137,
+  "source": "hourly",
+  "createdAt": 1795719147307,
+  "cards": [
+   {
+    "apply": "When you analyse an innovation this week, map the whole system it needs, not just the product. Ask which pieces must change for it to pay off.",
+    "meaning": "Levinson argues the steel container mattered less as an invention than as the core of a new system: ships, cranes, trucks, trains and ports redesigned to move freight without ever unpacking it.",
+    "text": "The box itself was simple; the system around it was revolutionary.",
+    "type": "idea"
+   },
+   {
+    "apply": "Find the slowest hand-off in one of your workflows and estimate what it really costs in time. Bottlenecks often hide between steps, not inside them.",
+    "meaning": "Break-bulk freight was loaded piece by piece by gangs of longshoremen. Ships sat in port for days, theft and damage were common, and port handling could eat up a large share of a shipment's total cost.",
+    "text": "Before containers, loading cargo was slow, costly and leaky.",
+    "type": "idea"
+   },
+   {
+    "apply": "Describe your business or a company you cover by the customer's job, not the industry label. Note one rival that view reveals.",
+    "meaning": "A North Carolina trucking entrepreneur, McLean thought about freight from origin to destination. That outsider view let him question why cargo had to be unloaded from trucks and reloaded onto ships at all.",
+    "text": "Malcom McLean saw he was in transport, not shipping.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for a step you could cut by an order of magnitude, not by 10%. Big cost drops, not small ones, are what reshape a market.",
+    "meaning": "In April 1956 McLean's converted tanker carried 58 containers from Newark to Houston. Levinson cites McLean's estimate that loading cost fell from about $5.83 a ton to under 16 cents.",
+    "text": "The Ideal X sailed in 1956 with 58 boxes aboard.",
+    "type": "idea"
+   },
+   {
+    "apply": "When a new technology looks like a dud, check whether the complementary infrastructure is ready yet. Timing the ecosystem matters as much as the idea.",
+    "meaning": "Savings took years to appear. Ports needed new cranes and land, ships needed cell guides, and railroads and truckers had to adapt. Early on, containers often cost more because the rest of the chain lagged.",
+    "text": "Cheap transport only came once every link was rebuilt.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before committing to a tool or format, ask what standard is likely to win and who controls it. Being incompatible can strand your investment.",
+    "meaning": "Sea-Land used 35-foot boxes and others used their own sizes, which meant containers couldn't move between carriers. Through the 1960s, US and then international bodies battled over 20- and 40-foot standards and corner fittings.",
+    "text": "Standards fights decided who would win the box era.",
+    "type": "idea"
+   },
+   {
+    "apply": "If your work could be automated, negotiate early for what you want in the transition, as Bridges did, rather than only resisting the change.",
+    "meaning": "The longshore unions knew containers would wipe out most dock jobs. On the West Coast, Harry Bridges's ILWU agreed to mechanisation in 1960 in return for job guarantees and payouts; East Coast talks were longer and more bitter.",
+    "text": "Dockworkers faced the end of a whole way of life.",
+    "type": "idea"
+   },
+   {
+    "apply": "In real estate or infrastructure work, test whether a location's advantage depends on an old technology. Ask what happens to it if that technology shifts.",
+    "meaning": "Container terminals needed huge flat areas next to highways. Manhattan's and Brooklyn's piers faded as Port Newark-Elizabeth boomed; in the Bay Area, Oakland overtook San Francisco. Geography and early commitment beat tradition.",
+    "text": "Old ports declined while new ones rose almost overnight.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for your own 'backhaul': capacity you already pay for that sits idle on the return trip. Fill it with something a customer will pay for.",
+    "meaning": "US military supply lines to Vietnam were jammed. Sea-Land showed containers could clear the mess at Cam Ranh Bay, and its empty ships began stopping in Japan on the way back, opening a lucrative transpacific trade.",
+    "text": "Vietnam turned containers into a proven, global business.",
+    "type": "idea"
+   },
+   {
+    "apply": "When you assess a company's moat, ask how much depends on distance or shipping costs. If transport gets cheaper, can a distant rival reach its customers?",
+    "meaning": "As the cost of moving goods collapsed, factories no longer had to sit near their customers. Manufacturers could split production across countries, and retailers could build just-in-time systems around reliable schedules.",
+    "text": "Cheap shipping made global supply chains possible.",
+    "type": "idea"
+   },
+   {
+    "apply": "In any capital-heavy sector you analyse, track the industry's order book and capacity growth, not just demand. Too much new supply can sink good operators.",
+    "meaning": "Carriers kept ordering bigger vessels to cut cost per box, which flooded the market with capacity and set off rate wars. Being the low-cost operator didn't spare lines from boom-and-bust cycles.",
+    "text": "Giant ships brought economies of scale and brutal overcapacity.",
+    "type": "idea"
+   },
+   {
+    "apply": "For your biggest position or project, write down the single macro assumption it rests on. Plan what you'd do if that assumption reversed.",
+    "meaning": "McLean's United States Lines ordered huge, slow, fuel-efficient ships expecting high oil prices. When oil collapsed in the mid-1980s, the bet failed and the company went bankrupt in 1986. Vision didn't protect him from one macro miss.",
+    "text": "Even the inventor of the box went bust on a bet.",
+    "type": "idea"
+   }
+  ]
  }
 ]
