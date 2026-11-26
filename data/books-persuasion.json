@@ -1,0 +1,172 @@
+[
+ {
+  "id": "influence-cialdini",
+  "title": "Influence: The Psychology of Persuasion",
+  "author": "Robert B. Cialdini, PhD",
+  "color": "#5a1f2e",
+  "library": "psych",
+  "shelf": "behavioral",
+  "order": 121,
+  "source": "manual",
+  "createdAt": 1795666814718,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Most of our yeses are on autopilot",
+    "meaning": "Cialdini shows that people use mental shortcuts to decide quickly, reacting to a single trigger feature rather than weighing everything. These shortcuts usually work, which is exactly why persuaders can exploit them.",
+    "apply": "This week, notice one decision you made in seconds and name the cue that actually triggered it."
+   },
+   {
+    "type": "idea",
+    "text": "Contrast changes how big things look",
+    "meaning": "What we see second is judged against what we saw first. A price, request or offer feels smaller or larger depending on what it's placed next to.",
+    "apply": "When presenting options, think about the order; when buying, compare against your own benchmark, not the seller's anchor."
+   },
+   {
+    "type": "idea",
+    "text": "Reciprocity: we feel bound to repay",
+    "meaning": "People feel obliged to return favours, gifts and concessions, even small or unrequested ones. The pull is strong enough that a tiny first gift can win a much bigger return.",
+    "apply": "Give first in a work relationship this week (an intro, a useful article, help on a model) with no ask attached."
+   },
+   {
+    "type": "idea",
+    "text": "Concessions are reciprocated too",
+    "meaning": "When someone makes a large request, then retreats to a smaller one, the retreat feels like a concession that we want to match. It's why a rejected big ask often makes the second ask succeed.",
+    "apply": "When negotiating, notice if a 'reasonable' second offer only feels reasonable because of an extreme first one."
+   },
+   {
+    "type": "idea",
+    "text": "Commitment and consistency: we act like we've promised",
+    "meaning": "Once people take a stand, especially a public, written or effortful one, they feel pressure to behave consistently with it. Small commitments can grow into much larger ones.",
+    "apply": "Get a small written yes on a next step at the end of your next meeting, rather than a vague agreement."
+   },
+   {
+    "type": "idea",
+    "text": "Social proof: we follow people like us",
+    "meaning": "When unsure, we look at what others are doing, especially similar others, and assume it's correct. That's useful in daily life but dangerous when the crowd is wrong or the numbers are staged.",
+    "apply": "Before following a market or team consensus, ask what evidence exists beyond the fact that everyone believes it."
+   },
+   {
+    "type": "idea",
+    "text": "Liking: we say yes to people we like",
+    "meaning": "Similarity, compliments, cooperation and familiarity all make us like someone more, and we agree more readily with people we like. Even the likeability of the messenger rubs off on the message.",
+    "apply": "Find one genuine thing in common with a new contact before getting to business."
+   },
+   {
+    "type": "idea",
+    "text": "Authority: titles and uniforms move us",
+    "meaning": "People defer to perceived experts, often responding to symbols of authority (titles, clothing, trappings) rather than real expertise. Ask whether the authority is truly expert and truthful here.",
+    "apply": "When an 'expert' view drives a decision, ask what their actual track record is on this exact question."
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity: less available feels more valuable",
+    "meaning": "Things seem more desirable when they're rare or becoming harder to get, and losing a chance hurts more than gaining one. Deadlines and limited numbers exploit this.",
+    "apply": "Next time a deadline pushes you, ask whether you'd still want it if there were plenty available."
+   },
+   {
+    "type": "idea",
+    "text": "Unity: 'we' persuades more than 'like me'",
+    "meaning": "The new seventh principle: we're most influenced by people we see as part of our own group (family, place, team, shared identity). It goes beyond similarity to a sense of shared self.",
+    "apply": "Frame your next proposal around a shared goal or identity ('our team', 'our fund'), not just your own interest."
+   },
+   {
+    "type": "idea",
+    "text": "Use influence ethically, or it backfires",
+    "meaning": "Cialdini stresses using these principles honestly, by pointing to real social proof, real scarcity and real expertise. Faking them may win once but destroys trust and repeat business.",
+    "apply": "Review one pitch or listing you've written and remove any claim of urgency or popularity that isn't true."
+   },
+   {
+    "type": "idea",
+    "text": "Defend yourself by spotting the trigger",
+    "meaning": "The best defence isn't avoiding shortcuts but noticing when one is being pulled artificially. Feel the pressure, name the principle, then decide on the merits.",
+    "apply": "When you feel an unusual urge to agree, pause and ask which of the seven principles is at work."
+   }
+  ]
+ },
+ {
+  "id": "art-of-persuasion-burg",
+  "title": "The Art of Persuasion: Winning Without Intimidation",
+  "author": "Bob Burg",
+  "color": "#21485c",
+  "library": "psych",
+  "shelf": "behavioral",
+  "order": 122,
+  "source": "manual",
+  "createdAt": 1795666814719,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Persuade without making anyone lose",
+    "meaning": "Burg's core idea is that the best persuasion gets you what you want while leaving the other person feeling good about it. Intimidation may win once, but it costs the relationship.",
+    "apply": "In your next request, decide what the other person gains, and say it first."
+   },
+   {
+    "type": "idea",
+    "text": "Respond, don't react",
+    "meaning": "Reacting is an emotional reflex; responding is a chosen action. Staying in control of your own emotions is the starting point for influencing anyone else.",
+    "apply": "When a message annoys you, wait before replying and draft the response you'd be proud of later."
+   },
+   {
+    "type": "idea",
+    "text": "Parent, Adult or Child: watch the state",
+    "meaning": "Burg draws on the idea that people slip into Parent, Adult or Child modes in a conversation. Speaking from the calm, rational Adult state invites the other person to meet you there.",
+    "apply": "If a discussion turns into scolding or sulking, deliberately switch to calm, factual questions."
+   },
+   {
+    "type": "idea",
+    "text": "Make people feel important",
+    "meaning": "People respond to those who sincerely value them. Recognising someone's worth, time and effort makes them far more willing to help you.",
+    "apply": "Thank one person this week specifically for something they did, and mention its effect."
+   },
+   {
+    "type": "idea",
+    "text": "Everything is negotiable",
+    "meaning": "Burg encourages treating most terms, policies and prices as starting points, not fixed facts. Politely asking often works where people assume it won't.",
+    "apply": "Ask for one better term this week (a fee, a deadline, a scope) that you'd normally accept as given."
+   },
+   {
+    "type": "idea",
+    "text": "Know, like and trust come first",
+    "meaning": "All things being equal, people do business with and refer business to those they know, like and trust. Building that relationship is what makes persuasion easy later.",
+    "apply": "Schedule a no-agenda check-in with a client or colleague you only contact when you need something."
+   },
+   {
+    "type": "idea",
+    "text": "Let the other person save face",
+    "meaning": "Backing someone into a corner makes them dig in, even when they know they're wrong. Giving them a dignified way out makes agreement possible.",
+    "apply": "When you correct someone, offer an explanation that lets them be reasonable, like 'the data was unclear'."
+   },
+   {
+    "type": "idea",
+    "text": "Set the frame early",
+    "meaning": "How a conversation is framed at the start shapes how everything after is understood. Opening with shared goals and goodwill sets up cooperation instead of conflict.",
+    "apply": "Begin your next tough conversation by stating what you both want to achieve."
+   },
+   {
+    "type": "idea",
+    "text": "Tact turns no into yes",
+    "meaning": "The same point can be accepted or rejected depending on how it's delivered. Courtesy, empathy and careful words make it easy for people to agree.",
+    "apply": "Rewrite one blunt email this week with the same content but a kinder opening and close."
+   },
+   {
+    "type": "idea",
+    "text": "Handle difficult people with calm, not force",
+    "meaning": "Difficult people often want to provoke a reaction. Staying polite and steady takes away their leverage and often turns them around.",
+    "apply": "With your most difficult contact, plan two calm phrases in advance to use when they push."
+   },
+   {
+    "type": "idea",
+    "text": "Ask for help, don't demand it",
+    "meaning": "Asking for help, rather than demanding or complaining, puts the other person in the position of a helper, which most people like. It's especially powerful with service staff and gatekeepers.",
+    "apply": "Next time you need something from a gatekeeper, open with 'I wonder if you could help me...'"
+   },
+   {
+    "type": "idea",
+    "text": "Give value first",
+    "meaning": "Burg's wider philosophy is that success comes from consistently providing value to others. Persuasion is easiest when people already see you as someone who helps them.",
+    "apply": "Find one way to make a colleague's job easier this week without being asked."
+   }
+  ]
+ }
+]
