@@ -1291,5 +1291,90 @@
   "shelf": "life",
   "source": "hourly",
   "title": "The Selfish Gene"
+ },
+ {
+  "id": "zero-to-one-2026112615",
+  "author": "Peter Thiel with Blake Masters",
+  "cards": [
+   {
+    "apply": "List three things your team does only because a successful rival does them. Ask what you would do if that rival didn't exist.",
+    "meaning": "Thiel's opening line: the next Bill Gates won't build an operating system and the next Google won't build a search engine. Copying a past winner's model only takes the world from 1 to n; real value comes from doing something new.",
+    "text": "Every moment in business happens only once.",
+    "type": "quote"
+   },
+   {
+    "apply": "For a company you follow, label each growth driver as 'copying' or 'creating'. Weight the creating ones more in your view of its long-term value.",
+    "meaning": "Thiel splits progress in two: horizontal (copying what works, i.e. globalisation) and vertical (inventing something new, i.e. technology). He argues the world over-rewards the first and that durable growth needs the second.",
+    "text": "Going from 0 to 1 beats going from 1 to n",
+    "type": "idea"
+   },
+   {
+    "apply": "Write one sentence answering this question about your industry. Then list the evidence that would prove you wrong.",
+    "meaning": "Thiel's favourite interview question. It is hard because it needs a view that is both true and unpopular, and saying it costs something. Every great business, he argues, is built around such a contrarian truth.",
+    "text": "What important truth do very few people agree with you on?",
+    "type": "quote"
+   },
+   {
+    "apply": "Pick one 'rule' your team treats as settled wisdom. Spend 15 minutes arguing the opposite case honestly.",
+    "meaning": "After 2000, Silicon Valley learned to move in small steps, stay lean, improve on competitors and focus on product over sales. Thiel argues the opposite of each is often truer: bold plans beat tinkering, and distribution matters.",
+    "text": "The dot-com lessons may be the wrong lessons",
+    "type": "idea"
+   },
+   {
+    "apply": "When screening a stock, ask how much of its margin would survive a well-funded copycat. Favour firms with no close substitute.",
+    "meaning": "In perfect competition, profits are competed away. Creative monopolies, firms so much better that no one offers a close substitute, keep their profits and can invest in the long term. Thiel sees this as the condition of every lasting business.",
+    "text": "Competition is for losers; monopoly is the goal",
+    "type": "idea"
+   },
+   {
+    "apply": "Rewrite a company's market definition two ways, narrowly and broadly. See which one its management prefers and ask why.",
+    "meaning": "Dominant firms describe their market as huge to avoid scrutiny, so Google calls itself a tech company, not a search engine. Small firms shrink their market definition to look special. Both stories hide the true competitive picture.",
+    "text": "Monopolies pretend to compete; rivals pretend to be unique",
+    "type": "idea"
+   },
+   {
+    "apply": "Score one holding or target company 0 to 3 on each of the four traits. A total under 5 means its moat needs a harder look.",
+    "meaning": "Proprietary technology at least ten times better than the next best, network effects, economies of scale, and branding. Together they let a firm stay dominant for years, which matters because most of its value lies in distant future cash flows.",
+    "text": "Durable monopolies share four traits",
+    "type": "idea"
+   },
+   {
+    "apply": "Name the smallest group of customers your product could win outright this quarter. Focus one initiative on just them.",
+    "meaning": "A startup should first own a tiny market, as Amazon did with books and PayPal with eBay power sellers, then widen in concentric circles. Chasing a big market at the start means facing big rivals with nothing that sets you apart.",
+    "text": "Start small, dominate a niche, then expand",
+    "type": "idea"
+   },
+   {
+    "apply": "Write down one specific outcome you want in 12 months and the three steps that make it likely. Swap one vague goal for it.",
+    "meaning": "Thiel faults a culture that expects the future to improve but makes no concrete plans, relying on diversification and process instead. Great companies, he says, are built by people with a specific vision they work to make real.",
+    "text": "Be a definite optimist: plan, don't just hope",
+    "type": "idea"
+   },
+   {
+    "apply": "Rank your portfolio or project list by realistic upside, not probability. Put more attention on the top one or two.",
+    "meaning": "The best investment in a successful fund can return more than all the others combined. So each bet should be able to return the whole fund. The same logic applies to careers: a few decisions drive most of the results.",
+    "text": "Venture returns follow a power law",
+    "type": "idea"
+   },
+   {
+    "apply": "Check one partnership or deal you're in: are ownership, control and incentives clearly written down? Fix any gap this week.",
+    "meaning": "Thiel's law: a startup messed up at its foundation cannot be fixed. Choosing co-founders, splitting ownership, control and pay, and aligning everyone for the long term matter more than almost anything that follows.",
+    "text": "Foundations can't be fixed later",
+    "type": "idea"
+   },
+   {
+    "apply": "For a company you analyse, work out what it costs to win a customer and what that customer is worth. If the first is near the second, be cautious.",
+    "meaning": "Engineers often assume the best product wins on its own. Thiel argues poor sales and distribution, not weak products, cause most failures, and that a business needs at least one channel that works, from viral growth to direct sales.",
+    "text": "Great products still need great distribution",
+    "type": "idea"
+   }
+  ],
+  "color": "#2a1a4a",
+  "createdAt": 1795726308000,
+  "library": "finance",
+  "order": 139,
+  "shelf": "tech",
+  "source": "hourly",
+  "title": "Zero to One"
  }
 ]
