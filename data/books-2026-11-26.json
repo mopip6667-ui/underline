@@ -1461,5 +1461,90 @@
   "shelf": "commanders",
   "source": "hourly",
   "title": "The Campaigns of Alexander"
+ },
+ {
+  "id": "the-world-for-sale-2026112617",
+  "title": "The World for Sale",
+  "author": "Javier Blas & Jack Farchy",
+  "color": "#47320c",
+  "library": "finance",
+  "shelf": "materials",
+  "order": 141,
+  "source": "hourly",
+  "createdAt": 1795733566103,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Commodity traders are the hidden middlemen of the physical economy.",
+    "meaning": "Blas and Farchy show that a handful of firms such as Vitol, Glencore, Trafigura and Cargill move much of the world's oil, metals and grain. Few people know their names, yet they shape what fuel and food cost almost everywhere.",
+    "apply": "Pick one raw material your company or a holding depends on. Find out who actually moves it from mine or well to buyer."
+   },
+   {
+    "type": "idea",
+    "text": "Traders profit from gaps in place, time and quality.",
+    "meaning": "The core business is arbitrage: buy where a commodity is cheap and sell where it is dear, store it when future prices are higher, or blend grades to meet a buyer's spec. Margins on each barrel are thin, so scale and information decide who wins.",
+    "apply": "List the price gaps your business lives on: geography, timing or quality. Ask which ones are shrinking as information spreads."
+   },
+   {
+    "type": "idea",
+    "text": "Marc Rich helped break Big Oil's grip on pricing.",
+    "meaning": "When the 1970s oil shocks weakened the major companies' long-term contracts, Rich and other traders built a spot market, buying directly from producing states. Oil stopped being priced only inside the majors and began trading freely.",
+    "apply": "When an industry's fixed contracts crack, look for the new middleman who gains. Note one market where that shift is happening now."
+   },
+   {
+    "type": "idea",
+    "text": "The Soviet 'Great Grain Robbery' showed traders' quiet power.",
+    "meaning": "In 1972 Moscow secretly bought huge amounts of US grain through traders such as Continental and Cargill before Washington grasped the scale. US prices jumped, and the deal revealed how much a few private firms knew compared with governments.",
+    "apply": "Before a big decision, ask who on the other side sees more of the market than you. Close one information gap this week."
+   },
+   {
+    "type": "idea",
+    "text": "Traders go where others won't, and that is the business model.",
+    "meaning": "From the collapsing Soviet Union to war zones and sanctioned states, the authors show traders thriving in chaos. Risk that scares banks and oil majors away leaves fat margins for those willing to take it.",
+    "apply": "Look for one opportunity others avoid because it is messy rather than truly bad. Write down exactly which risk you would be paid for."
+   },
+   {
+    "type": "idea",
+    "text": "Money became the traders' sharpest tool, not just oil.",
+    "meaning": "Firms began lending to producers against future deliveries, known as prepayments. Cash up front bought them supply and influence with cash-hungry governments and companies, turning traders into financiers of last resort.",
+    "apply": "When you analyse a supplier or borrower, check whether their output is pledged to someone else. Hidden prepayments change who really controls the cash."
+   },
+   {
+    "type": "idea",
+    "text": "Traders financed rebels and breakaway regions directly.",
+    "meaning": "The book describes Vitol supplying fuel to Libya's rebels in 2011 and taking their oil in payment, and traders funding Iraqi Kurdistan's oil exports outside Baghdad's control. In such deals, a trading house can matter as much as a foreign government.",
+    "apply": "Map the non-government players with real leverage in a market you follow. Add one to your watch list."
+   },
+   {
+    "type": "idea",
+    "text": "China's boom made traders rich and powerful.",
+    "meaning": "China's hunger for iron ore, copper, coal and oil in the 2000s drove a commodities supercycle. Traders who had locked in mines, ports and supply contracts earned record profits and moved from pure trading into owning assets.",
+    "apply": "Identify the single biggest buyer driving demand in a sector you cover. Ask what happens to prices if its appetite slows."
+   },
+   {
+    "type": "idea",
+    "text": "Glencore shows the shift from trader to mining giant.",
+    "meaning": "Born from Marc Rich's firm, Glencore went public in 2011 and later merged with Xstrata. Owning mines alongside its trading desk gave it supply and data, but also the debts and scrutiny of a public company.",
+    "apply": "When a business moves up or down its value chain, check what it gains in control and what it takes on in capital and risk."
+   },
+   {
+    "type": "idea",
+    "text": "Russia's oil drew traders close to the Kremlin.",
+    "meaning": "The authors trace how traders bought Russian oil through prepayment deals with Rosneft and joined Qatar in buying a stake in it in 2016. These ties showed how commercial deals can tangle with geopolitics and later sanctions.",
+    "apply": "For each counterparty in a big deal, ask what a sanctions or political shock would do. Price that tail risk explicitly."
+   },
+   {
+    "type": "idea",
+    "text": "Scandal is a recurring cost of the trade.",
+    "meaning": "The book covers cases such as Trafigura's toxic waste dumped in Abidjan in 2006 and bribery probes into major traders. Operating in opaque markets with weak rules invites misconduct and, eventually, legal and reputational bills.",
+    "apply": "In due diligence, weigh how a firm earns its margin, not just the margin. Flag any profit that depends on weak oversight."
+   },
+   {
+    "type": "idea",
+    "text": "Transparency is slowly squeezing the traders' edge.",
+    "meaning": "As data, regulation and public listings spread, the information gaps traders exploited are narrowing. The authors suggest the industry's future depends on whether it can keep its influence as markets become more open and scrutinised.",
+    "apply": "Ask where your own edge comes from secrecy rather than skill. Start building one advantage that survives full transparency."
+   }
+  ]
  }
 ]
