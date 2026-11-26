@@ -39,8 +39,19 @@ def kokoro():
     for v, name, lang in [('af_heart', '10-kokoro-current', 'en-us'), ('am_puck', '11-kokoro-playful', 'en-us')]:
         s, sr = k.create(TEXT, voice=v, speed=1.0, lang=lang); sf.write('/tmp/k.wav', s, sr); mp3('/tmp/k.wav', name)
 
+async def gb():
+    import edge_tts
+    for v, name, rate, pitch in [
+        ('en-GB-LibbyNeural', 'A-libby-soft', '-4%', '-2Hz'),
+        ('en-GB-SoniaNeural', 'B-sonia-warm', '-6%', '-3Hz'),
+        ('en-GB-SoniaNeural', 'C-sonia-bright', '+0%', '+0Hz'),
+        ('en-GB-LibbyNeural', 'D-libby-natural', '+0%', '+0Hz')]:
+        try:
+            await edge_tts.Communicate(TEXT, v, rate=rate, pitch=pitch).save('/tmp/e.mp3'); mp3('/tmp/e.mp3', name)
+        except Exception: traceback.print_exc()
+
 import sys
 for part in sys.argv[1:]:
     try:
-        {'edge': lambda: asyncio.run(edge()), 'chatter': chatter, 'kokoro': kokoro}[part]()
+        {'gb': lambda: asyncio.run(gb()), 'edge': lambda: asyncio.run(edge()), 'chatter': chatter, 'kokoro': kokoro}[part]()
     except Exception: traceback.print_exc()
