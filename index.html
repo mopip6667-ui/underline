@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Underline</title>
+<meta name="description" content="Swipe through the best ideas from books: finance, science, history and philosophy.">
+<meta name="theme-color" content="#0b0c0f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Underline">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b0c0f;--sheet:#1a1c21;--sink:#eceef2;--muted:#a3a8b3;--line:#30333b;--soft:#24272e;--hl:#ffd23f;--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root{--sheet:#ffffff;--sink:#14161a;--muted:#5a5f69;--line:#dfe2e8;--soft:#f0f2f5}}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+html{touch-action:manipulation;-webkit-text-size-adjust:100%}
+.card,.rail button,.chip,.icon,.tile,.rows button,.btn{touch-action:manipulation}
+body{margin:0;background:var(--bg);color:#fff;font:16px/1.5 Manrope,system-ui,sans-serif;overflow:hidden;overscroll-behavior:none}
+button{font:inherit;cursor:pointer}
+a{color:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:2px}
+.app{position:relative;height:100dvh;max-width:520px;margin:0 auto;box-shadow:0 0 0 1px #ffffff10}
+.feed{height:100%;overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.card{position:relative;height:100%;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,2.2vh,20px);padding:calc(110px + var(--st)) 78px calc(70px + var(--sb)) 30px;background:var(--c,#13242e);overflow:hidden;user-select:none;-webkit-user-select:none}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:rgba(255,255,255,.2);box-shadow:3px 0 0 rgba(0,0,0,.18)}
+.card.isq::after{content:"\201C";position:absolute;right:-6px;top:calc(56px + var(--st));font:500 300px/1 Newsreader,Georgia,serif;color:#fff;opacity:.07;pointer-events:none}
+.tag{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700;color:rgba(255,255,255,.78);white-space:nowrap;overflow:hidden}
+.tag b{background:rgba(255,255,255,.16);color:#fff;padding:3px 10px;border-radius:99px;flex:none}
+.tag span{overflow:hidden;text-overflow:ellipsis}
+.q{margin:0;font:500 clamp(24px,min(7.4vw,4.6vh),40px)/1.16 Newsreader,Georgia,serif;text-wrap:balance}
+.i{margin:0;font-weight:800;font-size:clamp(24px,min(7vw,4.4vh),38px);line-height:1.1;letter-spacing:-.01em;text-wrap:balance}
+.meaning{margin:0;color:rgba(255,255,255,.88);font-size:clamp(15px,2.1vh,17px)}
+.apply{background:rgba(0,0,0,.24);border-radius:14px;padding:12px 14px;font-size:clamp(14px,2vh,16px)}
+.apply strong{display:block;font-size:13px;color:var(--hl);margin-bottom:2px}
+.foot{position:absolute;left:30px;right:78px;bottom:calc(24px + var(--sb));font-size:13px;color:rgba(255,255,255,.72);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rail{position:absolute;right:14px;bottom:calc(70px + var(--sb));display:flex;flex-direction:column;gap:14px}
+.rail button{width:48px;height:48px;border-radius:50%;border:0;background:rgba(0,0,0,.26);color:#fff;display:grid;place-items:center}
+.rail button[aria-pressed=true]{color:var(--hl)}
+.rail button[aria-pressed=true] path{fill:currentColor}
+.pop{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;color:var(--hl)}
+.pop svg{width:120px;height:120px;animation:pop .75s ease-out forwards}
+.pop path{fill:currentColor}
+@keyframes pop{0%{transform:scale(.4);opacity:0}30%{transform:scale(1.12);opacity:1}100%{transform:scale(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){.pop svg{animation:none;opacity:0}}
+.msg{background:#1b2130}
+.msg h2{margin:0;font:500 clamp(30px,8vw,44px)/1.08 Newsreader,Georgia,serif}
+.msg p{margin:0;color:rgba(255,255,255,.8);max-width:34ch}
+.msg .btn{align-self:flex-start;background:var(--hl);color:#14161a}
+.top{position:absolute;top:0;left:0;right:0;z-index:5;padding:calc(12px + var(--st)) 12px 26px;background:linear-gradient(rgba(0,0,0,.55),transparent);pointer-events:none}
+.top>*{pointer-events:auto}
+.bar{display:flex;align-items:center;gap:4px}
+.chip{height:38px;padding:0 13px;border-radius:99px;border:0;background:transparent;color:rgba(255,255,255,.78);font-weight:800;font-size:15px;white-space:nowrap}
+.chip[aria-current=true]{color:#fff;background:rgba(255,255,255,.18)}
+.chip small{font-weight:700;opacity:.75}
+.sp{flex:1}
+.icon{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;flex:none}
+.scope{display:inline-flex;align-items:center;gap:6px;margin:8px 0 0 4px;max-width:calc(100% - 8px);height:34px;padding:0 6px 0 14px;border-radius:99px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:14px;font-weight:700}
+.scope[hidden]{display:none}
+.scope span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.scope button{width:26px;height:26px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;flex:none;font-size:13px}
+.scrim{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center}
+.scrim[hidden]{display:none}
+.panel{width:100%;max-width:520px;max-height:92dvh;overflow:auto;background:var(--sheet);color:var(--sink);border-radius:22px 22px 0 0;padding:20px 20px calc(28px + var(--sb))}
+.panel.tall{min-height:72dvh}
+.panel h3{margin:0 0 4px;font:500 30px/1.1 Newsreader,Georgia,serif}
+.panel h4{margin:22px 0 4px;font-size:13px;font-weight:800;color:var(--muted)}
+.panel .sub{margin:0 0 16px;color:var(--muted);font-size:15px}
+.panel p{margin:0 0 10px}
+.hd{display:flex;align-items:flex-start;gap:12px}.hd>div{flex:1}
+.x{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:inherit;flex:none}
+.back{border:0;background:none;color:var(--muted);font-weight:800;font-size:14px;min-height:40px;padding:0;margin-bottom:2px}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{position:relative;min-height:150px;border:0;border-radius:18px;padding:16px;text-align:left;color:#fff;background:var(--c);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.tile::before{content:"";position:absolute;left:14px;right:14px;top:14px;height:34px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.22) 0 7px,transparent 7px 11px,rgba(255,255,255,.12) 11px 20px,transparent 20px 24px);border-bottom:3px solid rgba(255,255,255,.25)}
+.tile b{font:500 22px/1.1 Newsreader,Georgia,serif}
+.tile span{font-size:13px;opacity:.82;margin-top:4px}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line)}
+.rows .open{flex:1;display:flex;align-items:center;gap:12px;min-height:62px;border:0;background:none;color:inherit;text-align:left;padding:8px 0}
+.rows .open>span:last-child{flex:1}
+.rows b{display:block;line-height:1.25}
+.rows small{display:block;font-size:13px;color:var(--muted)}
+.chev{color:var(--muted);font-size:20px;flex:none}
+.dot{width:12px;height:40px;border-radius:4px;flex:none}
+.pd{display:inline-block;font-size:11px;font-weight:800;padding:1px 7px;border-radius:99px;background:#4a3f12;color:#ffe48a;margin-left:4px;vertical-align:1px}
+.free{font-size:13px;font-weight:700;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.btn{height:50px;padding:0 20px;border:0;border-radius:14px;background:var(--sink);color:var(--sheet);font-weight:800;font-size:16px}
+.swipe{width:100%;margin:6px 0 4px;background:var(--hl);color:#14161a}
+.wide{width:100%;margin-top:14px}
+.ghost{background:transparent;color:inherit;border:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:calc(28px + var(--sb));transform:translateX(-50%);z-index:30;background:#fff;color:#14161a;font-weight:700;font-size:14px;padding:10px 16px;border-radius:99px;box-shadow:0 6px 20px rgba(0,0,0,.3);max-width:calc(100vw - 32px)}
+.toast[hidden]{display:none}
+.steps{padding-left:20px;margin:0 0 12px}.steps li{margin-bottom:6px}
+@media (max-height:620px){.card{padding-top:calc(92px + var(--st,0px));padding-bottom:calc(52px + var(--sb,0px));gap:10px}.q,.i{font-size:21px;line-height:1.12}.meaning{font-size:14px;line-height:1.42}.apply{font-size:13.5px;line-height:1.4;padding:9px 12px}.apply strong{font-size:12px}.foot{bottom:calc(16px + var(--sb,0px))}.card.isq::after{display:none}}
+@media (max-width:360px){.card{padding-left:24px;padding-right:70px}.chip{padding:0 10px}.tile{min-height:130px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="bar">
+      <button class="chip" data-view="all" aria-current="true">For you</button>
+      <button class="chip" data-view="saved">Saved <small id="savedN"></small></button>
+      <button class="chip" data-view="lib">Library</button>
+      <span class="sp"></span>
+      <button class="icon" id="shuffleBtn" aria-label="Shuffle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h4l10 10h4M3 17h4l3-3M14 10l3-3h4M18 4l3 3-3 3M18 14l3 3-3 3"/></svg></button>
+      <button class="icon" id="moreBtn" aria-label="More"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg></button>
+    </div>
+    <div class="scope" id="scope" hidden><span id="scopeTxt"></span><button id="scopeX" aria-label="Back to all books">✕</button></div>
+  </header>
+  <main class="feed" id="feed" tabindex="-1">
+    <article class="card msg"><h2>Opening your library…</h2><p>Loading books.</p></article>
+  </main>
+</div>
+
+<div class="scrim" id="libSheet" hidden><div class="panel tall" id="libPanel"></div></div>
+
+<div class="scrim" id="moreSheet" hidden>
+  <div class="panel">
+    <div class="hd"><div><h3>Underline</h3><p class="sub" id="aboutSub"></p></div><button type="button" class="x" data-close aria-label="Close">✕</button></div>
+    <div id="installBox">
+      <h4>Put it on your home screen</h4>
+      <ol class="steps"><li>Open this page in Safari (iPhone) or Chrome (Android).</li><li>Tap Share, then <b>Add to Home Screen</b> (Android: menu, then <b>Install app</b>).</li><li>Open it from the icon. It works offline after the first load.</li></ol>
+    </div>
+    <h4>Your saved cards</h4>
+    <p class="sub">Saved cards stay on this device. Copy a backup to move them to another phone.</p>
+    <button class="btn wide ghost" id="backupBtn">Copy backup code</button>
+    <button class="btn wide ghost" id="restoreBtn">Restore from backup code</button>
+    <p class="sub" style="margin-top:18px">New books are added every week. Ideas are summarised in our own words; quotes are short and attributed.</p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
