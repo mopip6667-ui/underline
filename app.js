@@ -143,7 +143,7 @@ $('#shuffleBtn').addEventListener('click', () => {
 });
 $('#moreBtn').addEventListener('click', () => {
   const nc = books.reduce((n, b) => n + cardsOf(b).length, 0);
-  $('#aboutSub').textContent = `${libs().length} libraries · ${books.length} books · ${nc} cards`;
+  $('#aboutSub').textContent = `${libs().length} libraries · ${books.length} books · ${nc} cards · ${Object.keys(allTexts()).length} full books · version ${APP_VERSION}`;
   $('#installBox').hidden = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   $('#moreSheet').hidden = false;
 });
@@ -330,5 +330,12 @@ async function load() {
   render(store.get('underline.pos', null));
 }
 load();
-if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(() => {});
+const APP_VERSION = '3';
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController && !reloaded) { reloaded = true; location.reload(); } });
+  navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()).catch(() => {});
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') navigator.serviceWorker.getRegistration().then(r => r && r.update()).catch(() => {}); });
+}
 })();
