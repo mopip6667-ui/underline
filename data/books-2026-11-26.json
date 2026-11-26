@@ -1546,5 +1546,90 @@
     "apply": "Ask where your own edge comes from secrecy rather than skill. Start building one advantage that survives full transparency."
    }
   ]
+ },
+ {
+  "author": "Plato",
+  "cards": [
+   {
+    "apply": "Next time a rule at work feels self-serving, ask who wrote it and who it protects. Then ask what a fair version would look like.",
+    "meaning": "Thrasymachus opens Book I with the cynic's case: rules are written by the powerful for themselves. Socrates spends the whole Republic answering him, which is why the book still matters to anyone who suspects ethics is just a cover for power.",
+    "text": "I proclaim that justice is nothing else than the interest of the stronger.",
+    "type": "quote"
+   },
+   {
+    "apply": "Pick one decision you've been leaving to someone less informed. Volunteer to own it this week.",
+    "meaning": "Socrates argues good people don't crave office, so their real payment for leading is avoiding something worse: being governed by the unfit. Stepping back from responsibility is never neutral.",
+    "text": "He who refuses to rule is liable to be ruled by one who is worse than himself.",
+    "type": "quote"
+   },
+   {
+    "apply": "Notice one shortcut you'd take if no one would ever check. Do the honest version anyway and see how it feels.",
+    "meaning": "Glaucon retells the myth of a shepherd whose ring makes him invisible; he uses it to seduce the queen and seize the throne. The challenge: if no one could ever see you, would you still act justly? Plato wants justice valued for itself, not for reputation.",
+    "text": "The Ring of Gyges: would you be just if invisible?",
+    "type": "idea"
+   },
+   {
+    "apply": "Put extra care into the first week of any new hire, project or habit. Set the standard early, before defaults harden.",
+    "meaning": "Socrates says this about raising the young, when character is still soft and easily shaped. First habits and first stories set patterns that are hard to undo later.",
+    "text": "The beginning is the most important part of any work.",
+    "type": "quote"
+   },
+   {
+    "apply": "Stuck on a personal problem? Map it onto a team or organisation. The structure often becomes clearer at larger scale.",
+    "meaning": "Socrates says justice is easier to spot in a state than in one person, like reading big print before small. So he designs an ideal city, then uses it as a model of the soul.",
+    "text": "Build a city in words to see justice in large letters.",
+    "type": "idea"
+   },
+   {
+    "apply": "List your team's roles. Find one place where people keep doing each other's jobs, and clarify who owns what.",
+    "meaning": "Plato's city has three classes: rulers, auxiliaries and producers. It is just when each does the work it is suited for and doesn't meddle in the others. Specialisation and order, not equality of roles, are his idea of a healthy whole.",
+    "text": "Justice means each part doing its own job well.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before a big decision, name what each part wants: the logical case, your pride, your craving. Let reason cast the deciding vote.",
+    "meaning": "The soul mirrors the city: reason should rule, spirit (pride, courage) should back it, and appetite should obey. A just person is one in whom these are in harmony, with reason in charge.",
+    "text": "Your soul has three parts: reason, spirit and appetite.",
+    "type": "idea"
+   },
+   {
+    "apply": "Judge the next leader you hire or follow by their grasp of the problem, not their confidence. Ask them to explain it from first principles.",
+    "meaning": "Plato's most famous claim: power and wisdom must meet in the same person. He knew it sounded absurd, and Socrates expects to be laughed at for it. The lasting point is that leaders need real understanding, not just ambition.",
+    "text": "Until philosophers are kings… cities will never have rest from their evils.",
+    "type": "quote"
+   },
+   {
+    "apply": "Pick a belief you hold only second-hand, like a market narrative. Go to the primary source this week and test it.",
+    "meaning": "Prisoners chained in a cave see only shadows on a wall and take them for the real world. One is dragged into the sunlight, is dazzled, then finally sees truth, and is mocked when he returns. Education is that painful turning towards the light.",
+    "text": "The Allegory of the Cave: most of us mistake shadows for reality.",
+    "type": "idea"
+   },
+   {
+    "apply": "When the room dismisses someone as too theoretical, hear them out fully before deciding. The quiet expert may be the only one reading the weather.",
+    "meaning": "In the parable of the ship, sailors mutiny and fight to steer, ignoring the true pilot who studies the stars and winds. Plato's point: crowds often mock real expertise as useless talk.",
+    "text": "Will he not be called by them a prater, a stargazer, a good-for-nothing?",
+    "type": "quote"
+   },
+   {
+    "apply": "Look at a team or system with no rules at all. Add one light structure before chaos makes someone impose a heavy one.",
+    "meaning": "Book VIII traces how regimes decay: timocracy to oligarchy, oligarchy to democracy, democracy to tyranny. Unchecked freedom breeds disorder, and disorder invites a strongman who promises order.",
+    "text": "The excess of liberty, whether in States or individuals, seems only to pass into excess of slavery.",
+    "type": "quote"
+   },
+   {
+    "apply": "Write down one choice you've been blaming on circumstances. Decide what you'd choose if the responsibility were fully yours.",
+    "meaning": "In the closing Myth of Er, souls choose their next lives. Many pick badly, dazzled by wealth or power. Plato ends on choice: we are responsible for the lives we select.",
+    "text": "Virtue is free… the responsibility is with the chooser—God is justified.",
+    "type": "quote"
+   }
+  ],
+  "color": "#1f3d2a",
+  "createdAt": 1795737151169,
+  "library": "mind",
+  "order": 142,
+  "shelf": "greeks",
+  "source": "hourly",
+  "title": "The Republic",
+  "id": "the-republic-2026112618"
  }
 ]
