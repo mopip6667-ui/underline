@@ -1,0 +1,87 @@
+[
+ {
+  "id": "made-in-america-2026112523",
+  "title": "Made in America",
+  "author": "Sam Walton with John Huey",
+  "color": "#1e3a2a",
+  "library": "finance",
+  "shelf": "consumer",
+  "order": 123,
+  "source": "hourly",
+  "createdAt": 1795668186761,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Walton learned retail running a small-town variety store.",
+    "meaning": "In 1945 Walton bought a Ben Franklin variety-store franchise in Newport, Arkansas, using money that was largely borrowed from his father-in-law. He turned it into the top store in its region by experimenting constantly, and that is where his instincts on price, volume and merchandising took shape.",
+    "apply": "Pick one small corner of your work this week (one model or one process) and treat it as a test lab: try one change and measure the result."
+   },
+   {
+    "type": "idea",
+    "text": "A missing lease clause cost him his best store.",
+    "meaning": "His Newport lease had no renewal option, so in 1950 the landlord took the thriving store back for his own son. Walton had to restart in Bentonville, and he called it a lesson to read the fine print on every deal.",
+    "apply": "Before your next deal review, pull the lease or contract and check renewal, assignment and termination terms yourself rather than relying on the summary."
+   },
+   {
+    "type": "idea",
+    "text": "Cut the price, sell far more, and make more overall.",
+    "meaning": "Walton found that dropping prices on an item could raise volume so much that total profit went up even as each sale earned less. That simple observation about volume and margin became the basis of discount retailing.",
+    "apply": "When you look at a company or property this week, ask whether it earns its returns from margin or from turnover, and what a price cut would do to each."
+   },
+   {
+    "type": "idea",
+    "text": "Most of his ideas he openly borrowed from competitors.",
+    "meaning": "Walton toured rival stores constantly, notebook and tape recorder in hand, and was frank that much of what Wal-Mart did was copied from others and then improved. He saw learning from competitors as a skill, not something to be embarrassed about.",
+    "apply": "Study one competitor's or peer's best work (a model, a deck, a store) and list two things worth adopting."
+   },
+   {
+    "type": "idea",
+    "text": "He bet on small towns the big chains ignored.",
+    "meaning": "The first Wal-Mart opened in Rogers, Arkansas, in 1962. While national discounters like Kmart went after larger cities, Walton put big discount stores in small towns that rivals thought could not support them, and he largely had those markets to himself.",
+    "apply": "Look for one market, tenant segment or niche in your area that bigger players dismiss, and sketch what winning there would take."
+   },
+   {
+    "type": "idea",
+    "text": "Stores were clustered around a distribution center and the region filled in.",
+    "meaning": "Wal-Mart grew by placing stores within roughly a day's drive of a warehouse, then filling in the territory before moving on. Saturating a region kept logistics cheap and made advertising and management efficient.",
+    "apply": "In industrial or retail analysis, map where a company's sites sit relative to its distribution hubs and ask how density drives its costs."
+   },
+   {
+    "type": "idea",
+    "text": "Spend on information systems before the payoff is obvious.",
+    "meaning": "Wal-Mart invested early in computers to track inventory and later in its own satellite network linking stores, warehouses and headquarters. Better data on what was selling let it restock faster and carry less inventory than rivals.",
+    "apply": "Find one report you build by hand every week and estimate what it would save to automate or systematize it."
+   },
+   {
+    "type": "idea",
+    "text": "Associates became partners through profit sharing and stock.",
+    "meaning": "Walton called employees associates and added profit sharing and stock purchase plans so they shared in the company's growth. He admitted that early on he had paid people poorly and saw that as a mistake he corrected.",
+    "apply": "Think about one person who helps your work succeed and find a concrete way this week to give them a real share of credit or ownership."
+   },
+   {
+    "type": "idea",
+    "text": "Keep costs lower than any competitor.",
+    "meaning": "Expense control was one of Walton's ten rules for building a business. He kept offices plain and business travel frugal, because every dollar saved could be passed on in lower prices.",
+    "apply": "Review one line of spending you control and cut or renegotiate the item least connected to results."
+   },
+   {
+    "type": "idea",
+    "text": "Exceed the customer's expectations and they'll come back.",
+    "meaning": "Walton's rules put the customer at the center: give people what they want and a bit more, and stand behind it with easy returns. Satisfied customers return, and returning customers build the business.",
+    "apply": "Ask one internal or external client what would make your next deliverable more useful, then go slightly beyond it."
+   },
+   {
+    "type": "idea",
+    "text": "Listen to the people closest to the customer.",
+    "meaning": "Walton visited stores constantly and asked clerks and managers what was selling and what was not. He believed good ideas usually came from the front line, not from headquarters.",
+    "apply": "Ask a colleague who is closer to the work than you (a site manager, broker or analyst) what they see that leadership is missing."
+   },
+   {
+    "type": "idea",
+    "text": "Swim upstream and ignore the conventional wisdom.",
+    "meaning": "The last of Walton's ten rules was to go the opposite way from everyone else. Much of Wal-Mart's success came from choices others thought foolish, such as small towns and very low margins.",
+    "apply": "Write down one consensus view in your market and spend 20 minutes building the honest case against it."
+   }
+  ]
+ }
+]

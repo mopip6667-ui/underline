@@ -74,7 +74,9 @@ function scopeLabel() {
 function cardHTML(c, i, n, L) {
   const b = c.book, q = c.type === 'quote', on = saved.includes(c.id), p = placeOf(b, L);
   const where = p.l && p.l.id !== 'unsorted' ? `${p.l.name} · ${p.s.name}` : b.title;
-  return `<article class="card${q ? ' isq' : ''}" data-id="${esc(c.id)}" style="--c:${okColor(b.color)}">
+  const len = (c.text || '').length * 1.6 + (c.meaning || '').length + (c.apply || '').length;
+  const dense = len > 470 ? ' xlong' : len > 400 ? ' long' : '';   // long cards get slightly smaller type on short screens
+  return `<article class="card${q ? ' isq' : ''}${dense}" data-id="${esc(c.id)}" style="--c:${okColor(b.color)}">
   <div class="tag"><b>${q ? 'Quote' : 'Idea'}</b><span>${esc(where)}</span></div>
   ${q ? `<blockquote class="q">“${esc(c.text)}”</blockquote>` : `<h2 class="i">${esc(c.text)}</h2>`}
   ${c.meaning ? `<p class="meaning">${esc(c.meaning)}</p>` : ''}
@@ -614,7 +616,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '7';
+const APP_VERSION = '8';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
