@@ -22,23 +22,12 @@ jobs:
       - name: Install
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install kokoro-onnx soundfile numpy
-      - name: Cache voice model
-        id: model
-        uses: actions/cache@v4
-        with:
-          path: model
-          key: kokoro-v1.0-int8
-      - name: Download voice model
-        if: steps.model.outputs.cache-hit != 'true'
-        run: |
-          mkdir -p model
-          B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
-          curl -sL --retry 3 -o model/kokoro-v1.0.int8.onnx $B/kokoro-v1.0.int8.onnx
-          curl -sL --retry 3 -o model/voices-v1.0.bin $B/voices-v1.0.bin
-          ls -la model
+          pip install edge-tts
       - name: Render
-        run: python tools/voice.py --model-dir model --budget 300
+        run: python tools/voice.py --budget 300
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
       - name: Commit audio
         run: |
           git config user.name "underline-bot"; git config user.email "underline-bot@users.noreply.github.com"

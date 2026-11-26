@@ -455,7 +455,7 @@ function stopPlayer() { clearInterval(RV.timer); RV.timer = null; if (RV.anim) {
 function pickVoice() {
   if (!TTS) return null; const vs = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
   const en = vs.filter(v => /^en(-|_|$)/i.test(v.lang)); if (!en.length) return null;
-  const rank = v => (/premium|enhanced|neural|natural/i.test(v.name) ? 0 : /siri|samantha|ava|zoe|serena|daniel|google (us|uk) english/i.test(v.name) ? 1 : /en[-_]US/i.test(v.lang) ? 2 : 3);
+  const gb = v => /en[-_]GB/i.test(v.lang), rank = v => (gb(v) && /premium|enhanced|neural|natural/i.test(v.name) ? 0 : gb(v) && /daniel|arthur|oliver|google uk english male/i.test(v.name) ? 1 : gb(v) ? 2 : /premium|enhanced|neural/i.test(v.name) ? 3 : 4);   // stand-in for Ryan when a clip has no recording yet
   return en.slice().sort((a, b) => rank(a) - rank(b))[0];
 }
 function activate(i) {
