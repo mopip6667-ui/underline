@@ -21,6 +21,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
+      - name: Use the newest stable Xcode 26+ (Apple requires the iOS 26 SDK)
+        run: |
+          X=$(ls -d /Applications/Xcode_2[6-9]*.app 2>/dev/null | grep -v -i -E 'beta|release_candidate|_rc' | sort -V | tail -1)
+          if [ -z "$X" ]; then echo "No stable Xcode 26+ on this runner. Available:"; ls -d /Applications/Xcode*.app; exit 1; fi
+          sudo xcode-select -s "$X/Contents/Developer"; xcodebuild -version
       - run: npm ci
       - run: npm run build && npx cap sync ios
       - name: Compile check (simulator, no signing)
