@@ -1,4 +1,4 @@
-"""Draw EERA's icon, splash and store artwork from brand/eera-face.svg (needs rsvg-convert + Pillow)."""
+"""Draw Eerah's icon, splash and store artwork from brand/eera-face.svg (needs rsvg-convert + Pillow)."""
 import io, re, subprocess
 from PIL import Image, ImageDraw, ImageFont
 BURGUNDY, NAVY, IVORY, GOLD, DARK = '#6b1f33', (19, 36, 46), (245, 239, 226), (232, 184, 74), (11, 12, 15)
@@ -24,7 +24,7 @@ def splash(n):
     im.paste(face, ((n - face.size[0]) // 2, int(n * 0.26)), m)
     d = ImageDraw.Draw(im); f = ImageFont.truetype(SERIF_B, int(n * 0.05)); t = ImageFont.truetype(SANS, int(n * 0.016))
     y = int(n * 0.26) + face.size[1] + int(n * 0.03)
-    d.text((n / 2, y), 'EERA', font=f, fill=IVORY, anchor='mt')
+    d.text((n / 2, y), 'Eerah', font=f, fill=IVORY, anchor='mt')
     d.text((n / 2, y + int(n * 0.075)), TAG, font=t, fill=(200, 196, 188), anchor='mt')
     return im
 
@@ -32,8 +32,8 @@ def feature():
     im = Image.new('RGB', (1024, 500), DARK); d = ImageDraw.Draw(im)
     face = svg(380, 1.0); m = Image.new('L', face.size, 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, 380, 380), radius=84, fill=255)
     im.paste(face, (600, 60), m)
-    d.text((60, 130), 'EERA', font=ImageFont.truetype(SERIF_B, 110), fill=IVORY)
-    d.rounded_rectangle((62, 262, 360, 272), radius=4, fill=GOLD)
+    fb = ImageFont.truetype(SERIF_B, 110); d.text((60, 130), 'Eerah', font=fb, fill=IVORY)
+    d.rounded_rectangle((62, 262, d.textbbox((60, 130), 'Eerah', font=fb)[2], 272), radius=4, fill=GOLD)
     s = ImageFont.truetype(SANS, 30)
     d.text((62, 300), TAG, font=s, fill=(225, 228, 234))
     d.text((62, 344), 'Big ideas from great books, one swipe at a time.', font=ImageFont.truetype(SANS, 21), fill=(170, 174, 182))

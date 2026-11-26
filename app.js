@@ -356,7 +356,7 @@ async function setDaily(on, hour) {
   if (on) {
     let perm = await LN.checkPermissions().catch(() => ({ display: 'denied' }));
     if (perm.display !== 'granted') perm = await LN.requestPermissions().catch(() => ({ display: 'denied' }));
-    if (perm.display !== 'granted') { toast('Turn on notifications for EERA in Settings'); on = false; }
+    if (perm.display !== 'granted') { toast('Turn on notifications for Eerah in Settings'); on = false; }
   }
   store.set('underline.daily', { on, hour }); await scheduleDaily(); renderDaily();
   if (on) toast(`Daily card at ${fmtHour(hour)}`);
@@ -614,7 +614,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '6';
+const APP_VERSION = '7';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;

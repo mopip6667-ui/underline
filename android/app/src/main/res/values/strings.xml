@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">EERA</string>
-    <string name="title_activity_main">EERA</string>
+    <string name="app_name">Eerah</string>
+    <string name="title_activity_main">Eerah</string>
     <string name="package_name">io.github.mopip6667ui.eera</string>
     <string name="custom_url_scheme">io.github.mopip6667ui.eera</string>
 </resources>
