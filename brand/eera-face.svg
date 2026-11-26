@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <g id="eera">
     <g transform="translate(0 36)">
-    <path d="M378 318 C282 318 222 398 220 520 C218 640 256 724 300 786 C290 700 298 610 328 540 C348 488 368 438 396 392 Z" fill="#4a2a18"/>
-    <path d="M646 318 C742 318 802 398 804 520 C806 640 768 724 724 786 C734 700 726 610 696 540 C676 488 656 438 628 392 Z" fill="#4a2a18"/>
-    <path d="M262 470 C250 560 262 650 296 730" fill="none" stroke="#6e4128" stroke-width="9" stroke-linecap="round"/>
-    <path d="M762 470 C774 560 762 650 728 730" fill="none" stroke="#6e4128" stroke-width="9" stroke-linecap="round"/>
+    <path d="M380 312 C268 306 196 396 192 524 C190 640 236 730 292 792 C300 800 316 796 312 784 C292 704 300 612 330 540 C350 488 370 438 398 392 Z" fill="#4a2a18"/>
+    <path d="M644 312 C756 306 828 396 832 524 C834 640 788 730 732 792 C724 800 708 796 712 784 C732 704 724 612 694 540 C674 488 654 438 626 392 Z" fill="#4a2a18"/>
+    <path d="M240 470 C226 566 240 660 290 744" fill="none" stroke="#6e4128" stroke-width="9" stroke-linecap="round"/>
+    <path d="M784 470 C798 566 784 660 734 744" fill="none" stroke="#6e4128" stroke-width="9" stroke-linecap="round"/>
     </g>
     <path d="M200 1024 C214 852 338 760 512 760 C686 760 810 852 824 1024 Z" fill="#13243a"/>
     <path d="M512 772 L436 1024 L366 1024 C384 904 420 820 470 784 Z" fill="#1c3352"/>
@@ -17,10 +17,12 @@
     <circle cx="344" cy="508" r="11" fill="#e8b84a"/>
     <circle cx="680" cy="508" r="11" fill="#e8b84a"/>
     <ellipse cx="512" cy="452" rx="168" ry="196" fill="#ecc4a2"/>
-    <path d="M338 470 C320 318 418 238 520 240 C636 242 714 322 690 470 C680 410 654 368 612 346 C566 392 470 410 372 398 C352 420 342 444 338 470 Z" fill="#4a2a18"/>
+    <path d="M330 476 C300 300 410 206 520 208 C648 210 734 300 698 476 C686 410 658 366 614 344 C566 392 470 410 372 398 C350 420 336 446 330 476 Z" fill="#4a2a18"/>
+    <path d="M414 252 C456 228 524 222 584 240" fill="none" stroke="#6e4128" stroke-width="10" stroke-linecap="round"/>
+    <path d="M0 0 Z" fill="#4a2a18"/>
     <path d="M612 346 C580 372 520 392 448 398" fill="none" stroke="#6e4128" stroke-width="10" stroke-linecap="round"/>
-    <path d="M410 426 Q446 404 486 420" fill="none" stroke="#3a2214" stroke-width="11" stroke-linecap="round"/>
-    <path d="M538 420 Q578 404 614 426" fill="none" stroke="#3a2214" stroke-width="11" stroke-linecap="round"/>
+    <path d="M486 428 C476 420 456 410 434 410 C418 410 406 418 400 430 C412 424 424 421 436 422 C454 423 470 430 482 438 Q492 436 486 428 Z" fill="#3a2214" stroke="#3a2214" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M538 428 C548 420 568 410 590 410 C606 410 618 418 624 430 C612 424 600 421 588 422 C570 423 554 430 542 438 Q532 436 538 428 Z" fill="#3a2214" stroke="#3a2214" stroke-width="4" stroke-linejoin="round"/>
     <path d="M412 474 Q448 448 484 474 Q448 492 412 474 Z" fill="#ffffff"/>
     <path d="M540 474 Q576 448 612 474 Q576 492 540 474 Z" fill="#ffffff"/>
     <circle cx="450" cy="472" r="14" fill="#3b2416"/>
