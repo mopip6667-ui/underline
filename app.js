@@ -226,11 +226,11 @@ document.addEventListener('keydown', e => {
   const sheetOpen = !!document.querySelector('.scrim:not([hidden])');
   if (RV && RV.open && !sheetOpen && $('#reader').hidden) {
     if (e.key === 'Escape') closeReels();
-    else if (e.key === ' ') { e.preventDefault(); RV.held = false; setPaused(!RV.paused); }
+    else if (e.key === ' ') { e.preventDefault(); toggleUserPause(); }
     else if (e.key === 'ArrowRight') nextScene();
     else if (e.key === 'ArrowLeft') prevScene();
-    else if (e.key === 'ArrowDown' || e.key === 'j') { e.preventDefault(); rfeed.scrollBy({ top: rfeed.clientHeight, behavior: 'smooth' }); }
-    else if (e.key === 'ArrowUp' || e.key === 'k') { e.preventDefault(); rfeed.scrollBy({ top: -rfeed.clientHeight, behavior: 'smooth' }); }
+    else if (e.key === 'ArrowDown' || e.key === 'j') { e.preventDefault(); goReel(RV.idx + 1); }
+    else if (e.key === 'ArrowUp' || e.key === 'k') { e.preventDefault(); goReel(RV.idx - 1); }
     else if (e.key === 'm') $('#rvSound').click();
     else if (e.key === 's') $('#rvSave').click();
     return;
@@ -385,10 +385,14 @@ if (NATIVE && P.LocalNotifications) P.LocalNotifications.addListener('localNotif
 const reels = $('#reels'), rfeed = $('#rfeed'), segsEl = $('#segs');
 const TTS = 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
-let RV = { list: [], el: null, idx: -1, scenes: [], s: 0, elapsed: 0, dur: 0, paused: false, timer: null, spoke: false, speechDone: true, minDone: false, sound: store.get('underline.reels.sound', true) !== false, held: false, open: false };
+const AU = new Audio(); AU.preload = 'auto'; AU.setAttribute('playsinline', '');   // one persistent player: iOS only lets an element that was started by a tap keep playing
+const PRE = new Audio(); PRE.preload = 'auto';                                    // warms the next clip's file
+let AUD = {};                                                                     // narration manifest (data/audio/manifest.json), filled by the weekly voice job
+let RV = { list: [], el: null, idx: -1, scenes: [], s: -1, elapsed: 0, dur: 0, paused: false, hold: false, user: false, cover: false, timer: null, voice: 'none', speechDone: true, sound: store.get('underline.reels.sound', true) !== false, open: false, anim: 0 };
 const CHECK = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
 const ARROW = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
 const wordCount = t => String(t || '').trim().split(/\s+/).filter(Boolean).length;
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
 function kinetic(text, hlWord) {
   const words = String(text || '').trim().split(/\s+/).filter(Boolean);
   let hi = -1;
@@ -396,116 +400,184 @@ function kinetic(text, hlWord) {
   return words.map((w, i) => `<span class="w${i === hi ? ' hl' : ''}" style="--i:${i}">${esc(w)}</span>${i < words.length - 1 ? ' ' : ''}`).join('');
 }
 function scenesOf(c) {
-  const b = c.book, q = c.type === 'quote', S = [];
-  S.push({ say: q ? c.text + (b.author ? '. ' + b.author + '.' : '') : c.text, n: wordCount(c.text), html: `<span class="kick">${q ? 'Quote' : 'The idea'}</span><p class="rt ${q ? 'q' : 'big'}">${q ? '“' : ''}${kinetic(c.text)}${q ? '”' : ''}</p>${q && b.author ? `<div class="by" style="--byd:${(wordCount(c.text) * 0.34 + 0.5).toFixed(2)}s">— ${esc(b.author)}</div>` : ''}`, step: .34 });
-  if (c.meaning) S.push({ say: c.meaning, n: wordCount(c.meaning), html: `<span class="kick">What it means</span><p class="rt mid">${kinetic(c.meaning, false)}</p>`, step: .3 });
-  if (c.apply) S.push({ say: 'Try this. ' + c.apply, n: wordCount(c.apply) + 2, html: `<span class="kick y">Try this</span><div class="tryc"><div class="tick">${CHECK}</div><p class="rt mid">${kinetic(c.apply, false)}</p></div>`, step: .3 });
-  S.push({ say: b.title + (b.author ? ', by ' + b.author : ''), n: 6, fixed: 4200, end: true, html: `<div class="cover2">${esc(b.title)}</div><h3 class="endt">${esc(b.title)}</h3>${b.author ? `<div class="by" style="--byd:.5s">${esc(b.author)}</div>` : ''}<div class="next">${ARROW} Swipe up for the next one</div>` });
-  S.forEach(s => { s.dur = s.fixed || Math.min(11000, Math.max(3000, (s.n * (s.step || .34) + 1.7) * 1000)); });
-  return S;
+  const b = c.book, q = c.type === 'quote', ent = AUD[c.id];
+  const D = [{ role: 'idea', say: q ? c.text + (b.author ? '. ' + b.author + '.' : '') : c.text, n: wordCount(c.text) }];
+  if (c.meaning) D.push({ role: 'meaning', say: c.meaning, n: wordCount(c.meaning) });
+  if (c.apply) D.push({ role: 'apply', say: 'Try this. ' + c.apply, n: wordCount(c.apply) });
+  D.push({ role: 'end', say: b.title + (b.author ? ', by ' + b.author : ''), n: 0, end: true });
+  for (const s of D) {
+    const a = ent && Array.isArray(ent.s) ? ent.s.find(x => x.r === s.role) : null;
+    if (a && a.d > 0) { s.ad = a.d; s.path = `data/audio/${ent.f}/${s.role}.m4a`; }
+    s.d0 = s.role === 'apply' ? (s.ad ? .85 : .5) : .15;
+    if (s.end) { s.step = .3; s.dur = Math.max(3000, (s.ad || 0) * 1000 + 900); continue; }
+    if (s.ad) { s.step = clamp((s.ad - s.d0 - .3) / Math.max(1, s.n), .15, .5); s.dur = Math.max(2800, (s.ad + .6) * 1000); }   // words land in time with the voice
+    else { s.step = s.role === 'idea' ? .34 : .3; s.dur = clamp((s.n * s.step + s.d0 + 1.7) * 1000, 3000, 11000); }
+  }
+  return D;
 }
-function reelShell(c, i) {
-  const where = placeOf(c.book, libs()), tag = where.s && where.l && where.l.id !== 'unsorted' ? where.s.name : (c.type === 'quote' ? 'Quote' : 'Idea');
-  return `<section class="reel" data-id="${esc(c.id)}" data-i="${i}" style="--c:${okColor(c.book.color)}"><div class="bg"></div><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="ghost">${esc(tag)}</div><div class="stage"></div></section>`;
+function sceneHTML(s, c) {
+  const b = c.book, q = c.type === 'quote', st = `style="--step:${s.step}s;--d0:${s.d0}s"`;
+  let h;
+  if (s.role === 'idea') h = `<span class="kick">${q ? 'Quote' : 'The idea'}</span><p class="rt ${q ? 'q' : 'big'}">${kinetic(q ? '“' + c.text + '”' : c.text)}</p>${q && b.author ? `<div class="by" style="--byd:${(s.n * s.step + s.d0 + .25).toFixed(2)}s">— ${esc(b.author)}</div>` : ''}`;
+  else if (s.role === 'meaning') h = `<span class="kick">What it means</span><p class="rt mid">${kinetic(c.meaning, false)}</p>`;
+  else if (s.role === 'apply') h = `<span class="kick y">Try this</span><div class="tryc"><div class="tick">${CHECK}</div><p class="rt mid">${kinetic(c.apply, false)}</p></div>`;
+  else h = `<div class="cover2">${esc(b.title)}</div><h3 class="endt">${esc(b.title)}</h3>${b.author ? `<div class="by" style="--byd:.5s">${esc(b.author)}</div>` : ''}<div class="next">${ARROW} Swipe up for the next one</div>`;
+  return `<div class="scene${s.end ? ' endc' : ''}" data-k="${s.k}" ${st}>${h}</div>`;
 }
+function reelShell(c, i) { return `<section class="reel" data-id="${esc(c.id)}" data-i="${i}" style="--c:${okColor(c.book.color)}"><div class="bg"></div></section>`; }
+// Only the playing clip and its two neighbours carry the heavy layers (blobs, text, scenes); the other ~290 stay as flat colour. This is what keeps swiping smooth.
+function dress(i) {
+  const el = rfeed.children[i]; if (!el || el.dataset.d) return;
+  const c = RV.list[i], where = placeOf(c.book, libs()), tag = where.s && where.l && where.l.id !== 'unsorted' ? where.s.name : (c.type === 'quote' ? 'Quote' : 'Idea');
+  const sc = scenesOf(c); sc.forEach((s, k) => { s.k = k; });
+  el._scenes = sc; el.dataset.d = '1';
+  el.insertAdjacentHTML('beforeend', `<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="ghost">${esc(tag)}</div><div class="stage">${sc.map(s => sceneHTML(s, c)).join('')}<div class="rfoot">${esc(c.book.title)}${c.book.author ? ' · ' + esc(c.book.author) : ''} · ${i + 1} of ${RV.list.length}</div></div>`);
+}
+function undress(i) { const el = rfeed.children[i]; if (!el || !el.dataset.d) return; el.querySelectorAll('.blob,.ghost,.stage').forEach(n => n.remove()); delete el.dataset.d; el._scenes = null; el.classList.remove('act'); }
 function openReels() {
   if (phase !== 'ready') { toast('Still loading'); return; }
   const l = list(); if (!l.length) { toast(scope.kind === 'saved' ? 'Save a card first' : 'Nothing to play here'); return; }
   const start = currentId();
-  RV.list = l; RV.open = true; reels.hidden = false; reels.classList.remove('paused'); RV.paused = false;
+  RV.list = l; RV.open = true; RV.idx = -1; RV.s = -1; RV.hold = RV.user = false; RV.cover = false; reels.hidden = false;
   rfeed.innerHTML = l.map(reelShell).join('');
   $('#rCount').textContent = scope.kind === 'saved' ? 'Saved' : (scopeLabel() || '');
-  $('#rvSound').hidden = !TTS; syncSound();
+  $('#rvSound').hidden = false; syncSound(); applyPause(true);
   const k = Math.max(0, start ? l.findIndex(c => c.id === start) : 0);
   rfeed.scrollTop = k * rfeed.clientHeight;
-  RV.idx = -1; requestAnimationFrame(() => activate(k));
-  if (!store.get('underline.reels.hint', false)) { store.set('underline.reels.hint', true); $('#rvHint').style.display = ''; } else $('#rvHint').style.display = 'none';
+  activate(k);                     // synchronous, inside the tap: lets iOS start the voice
+  const hint = $('#rvHint'); if (!store.get('underline.reels.hint', false)) { store.set('underline.reels.hint', true); hint.style.display = ''; } else hint.style.display = 'none';
   haptic();
 }
-function closeReels() { stopPlayer(); RV.open = false; reels.hidden = true; rfeed.innerHTML = ''; const id = RV.list[RV.idx] && RV.list[RV.idx].id; RV.idx = -1; if (id && scope.kind !== 'library' && scope.kind !== 'shelf') { const k = list().findIndex(c => c.id === id); if (k >= 0) feed.scrollTop = k * feed.clientHeight; } }
-function syncSound() { const on = RV.sound && TTS, b = $('#rvSound'); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? 'Voice on' : 'Voice off'); b.style.opacity = on ? 1 : .55; reels.querySelector('.wv').style.display = on ? '' : 'none'; }
-function stopPlayer() { clearInterval(RV.timer); RV.timer = null; if (TTS) try { speechSynthesis.cancel(); } catch {} }
+function closeReels() { stopPlayer(); RV.open = false; reels.hidden = true; const id = RV.list[RV.idx] && RV.list[RV.idx].id; rfeed.innerHTML = ''; RV.idx = -1; if (id && scope.kind !== 'library' && scope.kind !== 'shelf') { const k = list().findIndex(c => c.id === id); if (k >= 0) feed.scrollTop = k * feed.clientHeight; } }
+function syncSound() { const on = RV.sound, b = $('#rvSound'); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? 'Voice on' : 'Voice off'); b.style.opacity = on ? 1 : .55; reels.querySelector('.wv').style.display = on ? '' : 'none'; }
+function stopVoice() { RV.voice = 'none'; RV.speechDone = true; try { AU.pause(); } catch {} if (TTS) try { speechSynthesis.cancel(); } catch {} }
+function stopPlayer() { clearInterval(RV.timer); RV.timer = null; if (RV.anim) { cancelAnimationFrame(RV.anim); RV.anim = 0; rfeed.style.scrollSnapType = ''; } stopVoice(); }
 function pickVoice() {
   if (!TTS) return null; const vs = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
   const en = vs.filter(v => /^en(-|_|$)/i.test(v.lang)); if (!en.length) return null;
-  return en.find(v => /samantha|daniel|google us english|karen|aaron|alex/i.test(v.name)) || en.find(v => /en-US/i.test(v.lang)) || en[0];
+  const rank = v => (/premium|enhanced|neural|natural/i.test(v.name) ? 0 : /siri|samantha|ava|zoe|serena|daniel|google (us|uk) english/i.test(v.name) ? 1 : /en[-_]US/i.test(v.lang) ? 2 : 3);
+  return en.slice().sort((a, b) => rank(a) - rank(b))[0];
 }
 function activate(i) {
   if (!RV.open || i < 0 || i >= RV.list.length || i === RV.idx) return;
-  stopPlayer();
-  const prev = rfeed.children[RV.idx]; if (prev) prev.querySelector('.stage').innerHTML = '';
-  RV.idx = i; const el = rfeed.children[i], c = RV.list[i]; RV.el = el;
-  RV.scenes = scenesOf(c);
-  el.querySelector('.stage').innerHTML = RV.scenes.map((s, k) => `<div class="scene${s.end ? ' endc' : ''}" data-k="${k}">${s.html}</div>`).join('') + `<div class="rfoot">${esc(c.book.title)}${c.book.author ? ' · ' + esc(c.book.author) : ''} · ${i + 1} of ${RV.list.length}</div>`;
+  stopVoice();
+  const old = rfeed.children[RV.idx]; if (old) { old.classList.remove('act'); old.querySelectorAll('.scene').forEach(s => s.classList.remove('on', 'out')); }
+  for (const j of [i - 1, i, i + 1]) dress(j);
+  for (let j = Math.max(0, RV.idx - 3); j <= Math.min(RV.list.length - 1, RV.idx + 3); j++) if (RV.idx >= 0 && Math.abs(j - i) > 1) undress(j);
+  RV.idx = i; RV.user = false; RV.s = -1;
+  const el = rfeed.children[i], c = RV.list[i]; RV.el = el; RV.scenes = el._scenes; el.classList.add('act');
   segsEl.innerHTML = RV.scenes.map(() => '<i><b></b></i>').join('');
   const sv = $('#rvSave'); sv.innerHTML = I.save; sv.setAttribute('aria-pressed', String(saved.includes(c.id)));
   $('#rvShare').innerHTML = I.copy; $('#rvBook').innerHTML = I.book;
-  RV.paused = RV.held || !!document.querySelector('.scrim:not([hidden])') || document.hidden; reels.classList.toggle('paused', RV.paused);
+  RV.cover = coverUp(); applyPause(true);
   playScene(0);
+  warm(i + 1);
 }
+function warm(i) { const sc = rfeed.children[i] && rfeed.children[i]._scenes; if (sc && sc[0] && sc[0].path) { try { PRE.src = sc[0].path; } catch {} } }
 function playScene(k) {
   const S = RV.scenes[k]; if (!S) return;
-  RV.s = k; RV.elapsed = 0; RV.dur = S.dur; RV.minDone = false; RV.spoke = false; RV.speechDone = true;
+  const els = RV.el.querySelectorAll('.scene'), prev = RV.s;
+  els.forEach((e, j) => {
+    if (j === k) { if (e.classList.contains('on')) { e.classList.remove('on'); void e.offsetWidth; } e.classList.remove('out'); e.classList.add('on'); }
+    else if (e.classList.contains('on')) { e.classList.remove('on'); e.classList.add('out'); setTimeout(() => e.classList.remove('out'), 650); }
+  });
+  RV.s = k; RV.elapsed = 0; RV.dur = S.dur; RV.voice = 'none'; RV.speechDone = true;
   RV.el.style.setProperty('--s', k);
-  RV.el.querySelectorAll('.scene').forEach((e, j) => { e.classList.toggle('on', j === k); e.style.setProperty('--step', (S.step || .34) + 's'); });
-  [...segsEl.children].forEach((e, j) => { e.className = j < k ? 'done' : j === k ? 'cur' : ''; e.style.setProperty('--d', (S.dur / 1000) + 's'); if (j === k) { void e.offsetWidth; } });
-  if (RV.sound && TTS && !RV.paused) speak(S);
-  clearInterval(RV.timer);
-  RV.timer = setInterval(tick, 100);
+  [...segsEl.children].forEach((e, j) => { e.className = j < k ? 'done' : j === k ? 'cur' : ''; e.style.setProperty('--d', (S.dur / 1000) + 's'); });
+  try { AU.pause(); if (TTS) speechSynthesis.cancel(); } catch {}
+  if (RV.sound && !RV.paused) startVoice(S);
+  clearInterval(RV.timer); RV.timer = setInterval(tick, 100);
 }
-function speak(S) {
-  RV.spoke = true; RV.speechDone = false; const my = RV.idx + ':' + RV.s;
+function startVoice(S) {
+  RV.speechDone = false;
+  if (S.path) {
+    RV.voice = 'audio'; RV.tried = 0;
+    try { AU.src = S.path; AU.currentTime = 0; const p = AU.play(); if (p && p.catch) p.catch(() => audioFail()); } catch { audioFail(); }
+  } else speakTTS(S);
+}
+function audioFail() {
+  if (RV.voice !== 'audio') return; const S = RV.scenes[RV.s]; if (!S) return;
+  if (NATIVE && !RV.tried && S.path) { RV.tried = 1; try { AU.src = REMOTE + S.path; const p = AU.play(); if (p && p.catch) p.catch(() => audioFail()); return; } catch {} }   // new weekly clips aren't in the app bundle yet
+  speakTTS(S);
+}
+function speakTTS(S) {
+  if (!TTS) { RV.voice = 'none'; RV.speechDone = true; return; }
+  RV.voice = 'tts'; RV.speechDone = false; const tok = RV.idx + ':' + RV.s;
   try {
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(S.say), v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; } u.rate = 1.05; u.pitch = 1;
-    const done = () => { if (RV.idx + ':' + RV.s === my) RV.speechDone = true; };
-    u.onend = done; u.onerror = done;
-    speechSynthesis.speak(u);
-  } catch { RV.speechDone = true; }
+    const u = new SpeechSynthesisUtterance(S.say), v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; } u.rate = 0.98; u.pitch = 1;
+    const done = () => { if (RV.idx + ':' + RV.s === tok) RV.speechDone = true; };
+    u.onend = done; u.onerror = done; speechSynthesis.speak(u);
+  } catch { RV.voice = 'none'; RV.speechDone = true; }
 }
+AU.addEventListener('ended', () => { if (RV.voice === 'audio') RV.speechDone = true; });
+AU.addEventListener('error', () => { if (RV.voice === 'audio') audioFail(); });
 function tick() {
   if (RV.paused || !RV.open) return;
   RV.elapsed += 100;
-  if (RV.sound && TTS && !RV.spoke) speak(RV.scenes[RV.s]);   // sound was switched on mid-scene
-  if (RV.elapsed >= RV.dur) RV.minDone = true;
-  const waiting = RV.sound && TTS && RV.spoke && !RV.speechDone && RV.elapsed < RV.dur * 2.2 + 2500;
-  if (RV.minDone && !waiting) nextScene(true);
+  if (RV.sound && RV.voice === 'none' && RV.scenes[RV.s] && RV.elapsed <= 200) startVoice(RV.scenes[RV.s]);   // voice switched on, or was blocked until now
+  const voicing = RV.sound && RV.voice !== 'none' && !RV.speechDone && RV.elapsed < RV.dur * 2.2 + 2500;
+  if (RV.elapsed >= RV.dur && !voicing) nextScene();
 }
-function nextScene(auto) {
+function slideTo(k, ms) {
+  if (RV.anim) cancelAnimationFrame(RV.anim);
+  const from = rfeed.scrollTop, to = k * rfeed.clientHeight;
+  if (REDUCED || from === to) { rfeed.scrollTop = to; return; }
+  rfeed.style.scrollSnapType = 'none';
+  const t0 = performance.now(), ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const step = now => { const t = Math.min(1, (now - t0) / (ms || 480)); rfeed.scrollTop = from + (to - from) * ease(t); if (t < 1) RV.anim = requestAnimationFrame(step); else { RV.anim = 0; rfeed.style.scrollSnapType = ''; rfeed.scrollTop = to; } };
+  RV.anim = requestAnimationFrame(step);
+}
+function goReel(k) { if (k < 0 || k >= RV.list.length) return false; activate(k); slideTo(k); return true; }   // clip starts as it slides in, no dead pause
+function nextScene() {
   if (RV.s < RV.scenes.length - 1) { playScene(RV.s + 1); return; }
-  if (RV.idx < RV.list.length - 1) { clearInterval(RV.timer); if (TTS) try { speechSynthesis.cancel(); } catch {} rfeed.scrollTo({ top: (RV.idx + 1) * rfeed.clientHeight, behavior: REDUCED ? 'auto' : 'smooth' }); }
-  else { clearInterval(RV.timer); toast('That’s all for now'); }
+  if (!goReel(RV.idx + 1)) { clearInterval(RV.timer); stopVoice(); toast('That’s all for now'); }
 }
-function prevScene() { if (RV.elapsed > 1500 || RV.s === 0) { if (RV.s === 0 && RV.elapsed <= 1500 && RV.idx > 0) { rfeed.scrollTo({ top: (RV.idx - 1) * rfeed.clientHeight, behavior: REDUCED ? 'auto' : 'smooth' }); return; } playScene(RV.s); } else playScene(RV.s - 1); }
-function setPaused(p) {
-  if (RV.paused === p) return; RV.paused = p; reels.classList.toggle('paused', p);
-  if (TTS) try { if (p) speechSynthesis.pause(); else if (RV.spoke && !RV.speechDone) speechSynthesis.resume(); } catch {}
+function prevScene() {
+  if (RV.elapsed > 1500 || RV.s > 0) { playScene(RV.elapsed > 1500 ? RV.s : RV.s - 1); return; }
+  if (!goReel(RV.idx - 1)) playScene(0);
 }
-let rvScrollT; rfeed.addEventListener('scroll', () => { clearTimeout(rvScrollT); rvScrollT = setTimeout(() => { const k = Math.round(rfeed.scrollTop / Math.max(1, rfeed.clientHeight)); if (k !== RV.idx) activate(k); }, 120); }, { passive: true });
-// touch: tap right/left = next/previous scene, hold = pause, double-tap = save
-let rvDown = null, rvTapT = null, rvLast = 0;
-rfeed.addEventListener('pointerdown', e => { rvDown = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false }; clearTimeout(rvDown.h); rvDown.h = setTimeout(() => { if (rvDown && !rvDown.moved) { RV.held = true; setPaused(true); } }, 260); });
-rfeed.addEventListener('pointermove', e => { if (rvDown && (Math.abs(e.clientX - rvDown.x) > 10 || Math.abs(e.clientY - rvDown.y) > 10)) { rvDown.moved = true; clearTimeout(rvDown.h); if (RV.held) { RV.held = false; setPaused(false); } } });
+function coverUp() { return !!document.querySelector('.scrim:not([hidden])') || !$('#reader').hidden || document.hidden; }
+function applyPause(force) {
+  const p = RV.hold || RV.user || RV.cover; if (p === RV.paused && !force) return;
+  const was = RV.paused; RV.paused = p; reels.classList.toggle('paused', p); reels.classList.toggle('showbadge', RV.hold || RV.user);
+  if (p === was) return;
+  if (p) { try { if (RV.voice === 'audio') AU.pause(); else if (TTS && RV.voice === 'tts') speechSynthesis.pause(); } catch {} }
+  else { try { if (RV.voice === 'audio' && !RV.speechDone) { const q = AU.play(); if (q && q.catch) q.catch(() => audioFail()); } else if (RV.voice === 'tts' && !RV.speechDone) speechSynthesis.resume(); } catch {} }
+}
+function toggleUserPause() { RV.user = !RV.user; applyPause(); }
+// feed scrolling by finger: switch clips as soon as the next one is half on screen, so its text starts while it slides in
+let rvRaf = 0;
+rfeed.addEventListener('scroll', () => { if (RV.anim || rvRaf) return; rvRaf = requestAnimationFrame(() => { rvRaf = 0; if (!RV.open || RV.anim) return; const k = Math.round(rfeed.scrollTop / Math.max(1, rfeed.clientHeight)); if (k !== RV.idx) activate(k); }); }, { passive: true });
+// touch: sides skip a scene instantly, middle pauses (double-tap saves), hold pauses
+let rvDown = null, rvMid = 0;
+rfeed.addEventListener('pointerdown', e => {
+  if (RV.anim) { cancelAnimationFrame(RV.anim); RV.anim = 0; rfeed.style.scrollSnapType = ''; }
+  rvDown = { x: e.clientX, y: e.clientY, moved: false, held: false };
+  const d = rvDown; d.h = setTimeout(() => { if (rvDown === d && !d.moved) { d.held = true; RV.hold = true; applyPause(); } }, 280);
+});
+rfeed.addEventListener('pointermove', e => { const d = rvDown; if (d && !d.moved && (Math.abs(e.clientX - d.x) > 10 || Math.abs(e.clientY - d.y) > 10)) { d.moved = true; clearTimeout(d.h); if (d.held) { d.held = false; RV.hold = false; applyPause(); } } });
 const rvEnd = e => {
-  if (!rvDown) return; const d = rvDown; rvDown = null; clearTimeout(d.h);
-  if (RV.held) { RV.held = false; setPaused(!!document.querySelector('.scrim:not([hidden])')); return; }
+  const d = rvDown; if (!d) return; rvDown = null; clearTimeout(d.h);
+  if (d.held) { RV.hold = false; applyPause(); return; }
   if (d.moved || e.type === 'pointercancel') return;
-  const r = reels.getBoundingClientRect(), right = e.clientX - r.left > r.width * 0.35, now = Date.now();
-  if (now - rvLast < 320) { clearTimeout(rvTapT); rvLast = 0; const id = RV.list[RV.idx] && RV.list[RV.idx].id; if (id) { toggleSave(id, true); $('#rvSave').setAttribute('aria-pressed', 'true'); pop(RV.el); } return; }
-  rvLast = now; clearTimeout(rvTapT); rvTapT = setTimeout(() => { rvLast = 0; if (RV.paused && !RV.held) setPaused(false); right ? nextScene() : prevScene(); }, 300);
+  const r = reels.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, now = Date.now();
+  if (x < .33) { rvMid = 0; prevScene(); }
+  else if (x > .67) { rvMid = 0; nextScene(); }
+  else if (now - rvMid < 340) { rvMid = 0; toggleUserPause(); const id = RV.list[RV.idx] && RV.list[RV.idx].id; if (id) { toggleSave(id, true); $('#rvSave').setAttribute('aria-pressed', 'true'); pop(RV.el); } }
+  else { rvMid = now; toggleUserPause(); }
 };
 rfeed.addEventListener('pointerup', rvEnd); rfeed.addEventListener('pointercancel', rvEnd);
 rfeed.addEventListener('contextmenu', e => e.preventDefault());
 $('#rvClose').addEventListener('click', closeReels);
-$('#rvSound').addEventListener('click', () => { RV.sound = !RV.sound; store.set('underline.reels.sound', RV.sound); if (!RV.sound && TTS) try { speechSynthesis.cancel(); } catch {} else RV.spoke = false; syncSound(); toast(RV.sound ? 'Voice on' : 'Voice off'); });
+$('#rvSound').addEventListener('click', () => { RV.sound = !RV.sound; store.set('underline.reels.sound', RV.sound); if (!RV.sound) stopVoice(); syncSound(); toast(RV.sound ? 'Voice on' : 'Voice off'); });
 $('#rvSave').addEventListener('click', () => { const id = RV.list[RV.idx] && RV.list[RV.idx].id; if (!id) return; const on = toggleSave(id); $('#rvSave').setAttribute('aria-pressed', String(on)); });
 $('#rvShare').addEventListener('click', () => { const c = RV.list[RV.idx]; if (c) copyText(`${c.type === 'quote' ? '“' + c.text + '”' : c.text}\n— ${c.book.title}${c.book.author ? ', ' + c.book.author : ''}\n\nWhat it means: ${c.meaning || ''}${c.apply ? '\nTry this: ' + c.apply : ''}`, 'Shared'); });
 $('#rvBook').addEventListener('click', () => { const c = RV.list[RV.idx]; if (c) openBook(c.book.id); });
-// pause under any sheet / reader, when the app is hidden
-const rvGuard = () => { if (!RV.open) return; const cover = !!document.querySelector('.scrim:not([hidden])') || !$('#reader').hidden || document.hidden; setPaused(cover || RV.held); };
+// pause under any sheet or the reader, and when the app is hidden
+const rvGuard = () => { if (!RV.open) return; RV.cover = coverUp(); applyPause(); };
 new MutationObserver(rvGuard).observe(document.body, { subtree: true, attributes: true, attributeFilter: ['hidden'] });
 document.addEventListener('visibilitychange', rvGuard);
-if (TTS && speechSynthesis.addEventListener) speechSynthesis.addEventListener('voiceschanged', () => {});
 
 /* ---------- load ---------- */
 async function localJSON(p) { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); }
@@ -527,7 +599,8 @@ async function load() {
   phase = 'loading';
   if (NATIVE && !load.hydrated) { await hydrateNative(); load.hydrated = true; saved = store.get('underline.saved', []); }
   try {
-    const [cfg, idx, tix] = await Promise.all([getJSON('data/libraries.json'), getJSON('data/index.json'), getJSON('data/texts/index.json').catch(() => null)]);
+    const [cfg, idx, tix, aud] = await Promise.all([getJSON('data/libraries.json'), getJSON('data/index.json'), getJSON('data/texts/index.json').catch(() => null), getJSON('data/audio/manifest.json').catch(() => null)]);
+    AUD = aud && typeof aud === 'object' && !Array.isArray(aud) ? aud : {};
     if (tix && typeof tix === 'object') texts = { books: tix.books || {}, titles: tix.titles || {}, meta: tix.meta || {} };
     const files = Array.isArray(idx.files) ? idx.files : [];
     const parts = await Promise.all(files.map(f => getJSON('data/' + f).catch(() => [])));
@@ -541,7 +614,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '4';
+const APP_VERSION = '5';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;

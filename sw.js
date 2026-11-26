@@ -1,7 +1,7 @@
 // Underline service worker.
 // App code and library data: network-first (always the newest version when online), cached copy when offline.
 // Icons: cache-first. Bump VERSION on every app release.
-const VERSION = 'v4';
+const VERSION = 'v5';
 const SHELL = 'underline-shell-' + VERSION;
 const DATA = 'underline-data';
 const SHELL_FILES = ['./', './index.html', './app.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
@@ -39,6 +39,7 @@ async function networkFirst(req, cacheName) {
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
+  if (/\.m4a$/.test(url.pathname)) return; // narration: let the browser stream it (Safari needs Range requests)
   if (url.pathname.includes('/icons/')) {
     e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request)));
     return;
