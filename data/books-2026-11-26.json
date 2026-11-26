@@ -945,5 +945,181 @@
     "apply": "When a company touts a new product, ask which of the seven Powers it could plausibly turn that product into."
    }
   ]
+ },
+ {
+  "id": "essentialism-2026112611",
+  "author": "Greg McKeown",
+  "cards": [
+   {
+    "apply": "List everything on your plate this week, then circle the two items that would matter most if they were the only ones you finished.",
+    "meaning": "The book's subtitle is its whole thesis. McKeown argues that doing fewer things, chosen deliberately, produces more meaningful progress than spreading effort thin across everything that asks for it.",
+    "text": "The disciplined pursuit of less.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before accepting a new task, ask whether it beats the weakest thing already on your list. If not, decline or drop something.",
+    "meaning": "McKeown adopts Dieter Rams's design motto. The Essentialist isn't doing less for its own sake; they cut the trivial many so they can give their best to the vital few.",
+    "text": "Less, but better: borrow a designer's rule for your work.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one recurring meeting or report you assumed was required and ask its owner whether it still needs you.",
+    "meaning": "Many professionals slip into a learned helplessness where every request feels mandatory. McKeown says the first step is reclaiming the power to choose how to spend your time and energy.",
+    "text": "You always have a choice, even when it feels like you don't.",
+    "type": "idea"
+   },
+   {
+    "apply": "On your current biggest decision, write down what you are explicitly giving up, so the trade-off is chosen rather than accidental.",
+    "meaning": "Saying yes to one thing always means saying no to another. Instead of asking how to do it all, McKeown asks which problem you'd rather have, and accepts the cost openly.",
+    "text": "Trade-offs are not a failure; they are the strategy.",
+    "type": "idea"
+   },
+   {
+    "apply": "Block one hour this week with no screens to review your pipeline or coverage list and decide what deserves focus.",
+    "meaning": "Exploring options takes time away from noise. McKeown recommends deliberately blocking time to read, think and observe, because you can't pick the essential if you never step back.",
+    "text": "Create space to think before you decide what matters.",
+    "type": "idea"
+   },
+   {
+    "apply": "Set a fixed shutdown time for three nights this week and track whether your morning analysis feels sharper.",
+    "meaning": "Your mind is the tool that does the work. McKeown argues rest and play sharpen judgment and creativity, while chronic exhaustion quietly degrades every choice you make.",
+    "text": "Protect the asset: sleep and play are not luxuries.",
+    "type": "idea"
+   },
+   {
+    "apply": "Write three must-have criteria for deals or ideas you'll pursue, and pass on anything that fails even one.",
+    "meaning": "McKeown proposes extreme criteria: score an opportunity against your most important standard, and reject anything that doesn't score near the top. Middling options crowd out exceptional ones.",
+    "text": "If it isn't a clear yes, treat it as a no.",
+    "type": "idea"
+   },
+   {
+    "apply": "Rewrite your quarter's goal as one sentence that tells you what to say no to, then share it with your manager.",
+    "meaning": "A mission statement too broad to guide decisions is useless. An essential intent is specific and inspiring enough that once it's set, a thousand later choices are already made.",
+    "text": "Turn vague goals into one concrete essential intent.",
+    "type": "idea"
+   },
+   {
+    "apply": "Prepare one polite script, such as 'I can't take this on, but here's who might', and use it on the next low-value request.",
+    "meaning": "Declining feels like rejecting a person, so we say yes to avoid discomfort. McKeown shows that a clear, kind no often earns more respect than a reluctant yes delivered badly.",
+    "text": "Say no gracefully: separate the decision from the relationship.",
+    "type": "idea"
+   },
+   {
+    "apply": "Apply that test to one model, position or side project you're holding mainly because you've already invested in it.",
+    "meaning": "We overvalue what we already own or started. McKeown suggests asking: if I weren't already in this, how hard would I work to get in? If the answer is not very, it's time to exit.",
+    "text": "Uncommit: don't let sunk costs keep you in bad projects.",
+    "type": "idea"
+   },
+   {
+    "apply": "Add a 50% buffer to the next deadline you give, and use the slack for review rather than new commitments.",
+    "meaning": "People routinely underestimate how long things take. McKeown recommends padding timelines and preparing for the unexpected so one surprise doesn't derail everything essential.",
+    "text": "Build in a buffer, because plans always run long.",
+    "type": "idea"
+   },
+   {
+    "apply": "Identify the single step that most often delays your deliverables, whether data, approvals or formatting, and fix it this week.",
+    "meaning": "Rather than pushing harder, find the constraint slowing the whole system and take it away. Subtracting a bottleneck often achieves more than adding new resources.",
+    "text": "Remove obstacles instead of adding more effort.",
+    "type": "idea"
+   },
+   {
+    "apply": "Create a daily 30-minute routine for your most important work and tick it off on a visible tracker.",
+    "meaning": "Small wins build momentum. McKeown favours minimal viable progress and routines that make the essential the default, so the right things happen without heroic willpower.",
+    "text": "Start small and celebrate visible progress.",
+    "type": "idea"
+   }
+  ],
+  "color": "#0f3a2e",
+  "createdAt": 1795711367154,
+  "library": "work",
+  "order": 135,
+  "shelf": "focus",
+  "source": "hourly",
+  "title": "Essentialism"
+ },
+ {
+  "id": "extraordinary-popular-delusions-and-the-madness-of-crowds-2026112612",
+  "author": "Charles Mackay",
+  "cards": [
+   {
+    "apply": "Pick one asset everyone around you is excited about. Write down what would have to be true for its price to make sense.",
+    "meaning": "Mackay's 1841 book collects episodes where entire societies fixed on one obsession, from bubbles to witch hunts. His point: sane individuals can form an insane crowd, and finance is where it shows most clearly.",
+    "text": "Whole nations can lose their minds over money at once",
+    "type": "idea"
+   },
+   {
+    "apply": "When a trade feels obvious because everyone agrees, slow down. Ask who is still left to buy.",
+    "meaning": "Mackay's most famous line, from his preface. Manias spread fast because people copy each other; recovery is slow because each person has to admit the mistake alone.",
+    "text": "Men, it has been well said, think in herds; it will be seen that they go mad in herds, while they only recover their senses slowly, and one by one.",
+    "type": "quote"
+   },
+   {
+    "apply": "Check how a company you follow funds its growth. Rising value built on newly issued paper deserves extra scrutiny.",
+    "meaning": "In 1716–1720 the Scottish financier John Law founded a bank in France and the Mississippi Company. Shares soared on promises of riches from Louisiana, paid for with ever more paper notes.",
+    "text": "John Law turned paper money into a national lottery",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice when the venue of speculation becomes the story. Packed seminars and viral trading apps are signals, not proof of value.",
+    "meaning": "Mackay describes crowds packing a narrow Paris street to trade Mississippi shares, with rents soaring. He tells of a hunchback earning money by lending his hump as a writing desk.",
+    "text": "Rue Quincampoix: when the street itself became the market",
+    "type": "idea"
+   },
+   {
+    "apply": "When analysing a valuation, trace profits back to real cash flows. If they rely on fresh money arriving, model what happens when it stops.",
+    "meaning": "When Mississippi profits never matched the hype, holders tried to swap notes for gold. Law restricted conversion, confidence broke in 1720, and France's finances were left in ruin.",
+    "text": "Printed money can't create real wealth",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for 'debt-for-equity' stories that depend on rising share prices. Stress-test them with the price cut in half.",
+    "meaning": "The South Sea Company swapped government debt for shares and talked up trade with Spanish America. Its stock surged that year, then collapsed, ruining many investors.",
+    "text": "The South Sea Bubble: Britain's copycat mania of 1720",
+    "type": "idea"
+   },
+   {
+    "apply": "Count new IPOs, SPACs or token launches in a hot sector. A flood of vague issuers is a classic late-cycle sign.",
+    "meaning": "Mackay lists the 'bubble companies' launched alongside the South Sea: wheels of perpetual motion, and one, he says, for 'an undertaking of great advantage, but nobody to know what it is.'",
+    "text": "A bubble spawns a hundred smaller bubbles",
+    "type": "idea"
+   },
+   {
+    "apply": "Read one sceptical history of a famous bubble. Learn to separate the legend of a mania from its documented facts.",
+    "meaning": "In the 1630s rare tulip bulbs fetched astonishing prices, and Mackay says people of every class joined in. Modern historians think he exaggerated how widespread the ruin was.",
+    "text": "Tulip bulbs once traded like gold in Holland",
+    "type": "idea"
+   },
+   {
+    "apply": "For each position you hold, name the underlying asset and what it earns. If you can't, you own a promise.",
+    "meaning": "Late in tulip mania, people bought and sold bulbs still in the ground through contracts. Prices floated free of any flower anyone could hold, then fell suddenly in 1637.",
+    "text": "Trading the promise, not the thing",
+    "type": "idea"
+   },
+   {
+    "apply": "Treat any pitch promising outsized returns with little risk as alchemy until proven otherwise. Ask for audited numbers.",
+    "meaning": "Mackay spends long chapters on alchemists who promised to turn base metal to gold. Many fooled patrons for years, because hope made the patrons want to believe.",
+    "text": "Alchemists sold the dream of gold from nothing",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice a management fad spreading through your industry. Ask what evidence exists that it works before adopting it.",
+    "meaning": "The book also covers witch hunts, crusades, fortune-telling and fads in hair and beards. Mackay shows the same contagion of belief in faith, fashion and fear.",
+    "text": "Manias aren't only financial",
+    "type": "idea"
+   },
+   {
+    "apply": "Keep a short list of bubble warning signs and review it whenever an asset doubles quickly in your portfolio.",
+    "meaning": "Mackay wrote before the railway mania, 1929 or dot-com, yet each followed his pattern: a new story, easy credit, mass participation, then collapse. That is why investors still read him.",
+    "text": "History rhymes because human nature doesn't change",
+    "type": "idea"
+   }
+  ],
+  "color": "#5a1a12",
+  "createdAt": 1795715885167,
+  "library": "finance",
+  "order": 136,
+  "shelf": "macro",
+  "source": "hourly",
+  "title": "Extraordinary Popular Delusions and the Madness of Crowds"
  }
 ]
