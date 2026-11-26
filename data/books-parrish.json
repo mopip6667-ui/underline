@@ -1,0 +1,427 @@
+[
+ {
+  "id": "clear-thinking-parrish",
+  "title": "Clear Thinking",
+  "author": "Shane Parrish",
+  "color": "#1d3b57",
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Good judgment is decided in ordinary moments",
+    "meaning": "Parrish argues our results come less from big, deliberate decisions than from countless small reactions we barely notice. A curt email or a rushed reply can put us in a worse position before any 'real' decision arrives.",
+    "apply": "Today, notice one routine moment (a meeting reply, a Slack ping) where you'd normally react on autopilot, and pause before answering."
+   },
+   {
+    "type": "idea",
+    "text": "Your defaults think for you unless you stop them",
+    "meaning": "He names four built-in defaults that hijack judgment: emotion, ego, social pressure and inertia. They're not flaws to eliminate but tendencies to recognise and work around.",
+    "apply": "Write down which of the four defaults tripped you most recently and what it cost you."
+   },
+   {
+    "type": "idea",
+    "text": "The emotion default: feelings make fast, bad calls",
+    "meaning": "When you're angry, afraid or excited, you respond to how a situation feels rather than what it is. The fix is creating space between the trigger and your response.",
+    "apply": "Adopt a rule: no important reply sent while you're upset; draft it, then reread it an hour later."
+   },
+   {
+    "type": "idea",
+    "text": "The ego default: protecting your image over the truth",
+    "meaning": "Ego makes us defend positions, avoid admitting mistakes and seek credit instead of results. It quietly trades good outcomes for feeling right.",
+    "apply": "In your next review or model check, ask 'what would I see if I wanted to be wrong here?'"
+   },
+   {
+    "type": "idea",
+    "text": "The social default: doing what the group does",
+    "meaning": "We copy the crowd to belong, even when the crowd is wrong. Thinking for yourself means being willing to look different when the evidence says so.",
+    "apply": "Before agreeing in a meeting, write your own view down first so the room can't overwrite it."
+   },
+   {
+    "type": "idea",
+    "text": "The inertia default: comfort keeps you stuck",
+    "meaning": "We resist change and stick with whatever we're already doing, even when it no longer serves us. Familiar feels safe, so the status quo wins by default.",
+    "apply": "List one process you keep 'because we've always done it' and test removing it for a week."
+   },
+   {
+    "type": "idea",
+    "text": "Build strengths that make defaults weaker",
+    "meaning": "Parrish highlights self-accountability, self-knowledge, self-control and self-confidence as the strengths that let reason win. They're built through habits and standards, not willpower in the moment.",
+    "apply": "Pick one of the four strengths and set a concrete weekly standard for it."
+   },
+   {
+    "type": "idea",
+    "text": "Set safeguards instead of relying on discipline",
+    "meaning": "Willpower fails under stress, so smart people design rules and environments that protect them from their weakest moments. Pre-commitments and checklists do the work when you can't.",
+    "apply": "Create one 'if this, then that' rule for a decision you tend to rush, such as a deal checklist."
+   },
+   {
+    "type": "idea",
+    "text": "Positioning: avoid putting yourself in a bad spot",
+    "meaning": "The best decisions often happen early, by staying out of situations where you have no good options. A strong position makes later choices easy; a weak one makes them desperate.",
+    "apply": "Ask what would leave you with no good options in your current project, and act now to avoid it."
+   },
+   {
+    "type": "idea",
+    "text": "Define the problem before solving it",
+    "meaning": "Many bad decisions solve the wrong problem quickly. Parrish stresses spending time understanding what's really going on before jumping to options.",
+    "apply": "Before your next analysis, write the problem in one sentence and get a colleague to confirm it."
+   },
+   {
+    "type": "idea",
+    "text": "Judge options by the worst case too",
+    "meaning": "Good decision-makers ask what happens if they're wrong, not just what happens if they're right. Knowing the downside lets you size bets you can survive.",
+    "apply": "For your next big decision, write the realistic worst case and confirm you could live with it."
+   },
+   {
+    "type": "idea",
+    "text": "Learn from outcomes without being fooled by luck",
+    "meaning": "A good result doesn't prove a good decision, and a bad one doesn't prove a mistake. Separate the quality of your process from the luck of the result.",
+    "apply": "Keep a short decision journal: what you decided, why, and what you expected, then review it monthly."
+   }
+  ],
+  "library": "psych",
+  "shelf": "thinking",
+  "order": 116,
+  "source": "manual",
+  "createdAt": 1795664676081
+ },
+ {
+  "id": "great-mental-models-1",
+  "title": "The Great Mental Models, Vol. 1: General Thinking Concepts",
+  "author": "Shane Parrish & Rhiannon Beaubien",
+  "color": "#2a2f5c",
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Collect mental models from many fields",
+    "meaning": "A mental model is a simplified picture of how something works. The more models you hold from different disciplines, the fewer blind spots you have when facing a new problem.",
+    "apply": "Pick one model from this list each week and look for it in your work."
+   },
+   {
+    "type": "idea",
+    "text": "The map is not the territory",
+    "meaning": "Every model, report or spreadsheet simplifies reality and leaves things out. Useful maps help, but mistaking them for the real thing leads to surprises.",
+    "apply": "Ask of your next model or forecast: what does this leave out that could matter?"
+   },
+   {
+    "type": "idea",
+    "text": "Know your circle of competence",
+    "meaning": "You have an edge only where you truly understand how things work. Knowing where that circle ends matters as much as what's inside it.",
+    "apply": "List three areas where you have real expertise and one decision this month that sits outside them."
+   },
+   {
+    "type": "idea",
+    "text": "First principles: rebuild from the basics",
+    "meaning": "Break a problem down to what is fundamentally true, then reason up from there instead of copying how it's usually done. It opens options that convention hides.",
+    "apply": "Take one 'that's just how it costs' assumption at work and break it into its basic components."
+   },
+   {
+    "type": "idea",
+    "text": "Run thought experiments",
+    "meaning": "Imagining a scenario through, step by step, lets you test ideas without real-world cost. It is how you explore what would happen before committing.",
+    "apply": "Before a decision, imagine it's a year later and it failed; write the likeliest reasons."
+   },
+   {
+    "type": "idea",
+    "text": "Second-order thinking: and then what?",
+    "meaning": "Most people stop at the immediate effect of a choice. Asking what happens next, and after that, reveals consequences that first-order thinking misses.",
+    "apply": "For your next proposal, write the second- and third-order effects alongside the first."
+   },
+   {
+    "type": "idea",
+    "text": "Think in probabilities, not certainties",
+    "meaning": "The future is a range of outcomes with different likelihoods. Estimating those odds, and updating them as evidence arrives, beats treating guesses as facts.",
+    "apply": "Put rough probabilities on your three biggest assumptions this quarter."
+   },
+   {
+    "type": "idea",
+    "text": "Inversion: solve problems backwards",
+    "meaning": "Instead of asking how to succeed, ask what would guarantee failure and avoid it. Removing the obvious mistakes is often easier than finding brilliance.",
+    "apply": "List five ways your current project could fail, then fix the most likely one."
+   },
+   {
+    "type": "idea",
+    "text": "Occam's razor: prefer the simpler explanation",
+    "meaning": "When several explanations fit the facts, the one needing fewest assumptions is usually more likely. Complexity should be earned, not assumed.",
+    "apply": "When a result surprises you, check the simplest explanation (a data error?) before the exotic one."
+   },
+   {
+    "type": "idea",
+    "text": "Hanlon's razor: don't assume malice",
+    "meaning": "Bad outcomes are more often caused by mistakes, ignorance or busyness than by bad intent. Assuming malice damages relationships and misreads situations.",
+    "apply": "Next time someone drops the ball, ask what they might have missed before assuming bad faith."
+   },
+   {
+    "type": "idea",
+    "text": "Update your beliefs as new evidence arrives",
+    "meaning": "Bayesian thinking means starting from what you already know (your prior) and adjusting it by how strong the new evidence is. One surprising data point should nudge your view, not flip it, unless it's very strong.",
+    "apply": "Next time a headline or one-off number changes your mind, ask how much it should move your estimate, not whether it overturns it."
+   },
+   {
+    "type": "idea",
+    "text": "Correlation is not causation",
+    "meaning": "Two things moving together doesn't mean one causes the other; a third factor or plain chance may explain both. Mistaking the two leads to fixes that don't work.",
+    "apply": "Before acting on 'X drives Y' in a deck or model, write down one other thing that could explain both, and check it."
+   }
+  ],
+  "library": "psych",
+  "shelf": "thinking",
+  "order": 117,
+  "source": "manual",
+  "createdAt": 1795664676082
+ },
+ {
+  "id": "great-mental-models-2",
+  "title": "The Great Mental Models, Vol. 2: Physics, Chemistry and Biology",
+  "author": "Shane Parrish & Rhiannon Beaubien",
+  "color": "#18414a",
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Borrow laws from science to think about life",
+    "meaning": "This volume takes ideas from physics, chemistry and biology and shows how they explain people, organisations and markets. Science models are tested, which makes them reliable analogies.",
+    "apply": "Pick one idea below and use it to explain something happening at work this week."
+   },
+   {
+    "type": "idea",
+    "text": "Relativity: your view depends on where you stand",
+    "meaning": "What you see is shaped by your position, so others standing elsewhere may see something just as true. Understanding their frame reduces conflict and blind spots.",
+    "apply": "Before a negotiation, write down how the deal looks from the other side's seat."
+   },
+   {
+    "type": "idea",
+    "text": "Inertia: things in motion stay in motion",
+    "meaning": "Habits, organisations and projects resist changes in direction, whether stopped or moving. Starting is hard, but momentum, once built, carries you.",
+    "apply": "Identify one stalled task and do the smallest first step today to get it moving."
+   },
+   {
+    "type": "idea",
+    "text": "Friction: the hidden force slowing everything",
+    "meaning": "Small obstacles add up to large drag on people and systems. Often removing friction does more than adding more force.",
+    "apply": "Find one step in a process people skip or delay, and remove or simplify it."
+   },
+   {
+    "type": "idea",
+    "text": "Leverage: small inputs, outsized outputs",
+    "meaning": "With the right lever, modest effort moves heavy loads. In work, leverage comes from capital, code, people and well-placed effort.",
+    "apply": "Ask which single task this week would multiply the results of everything else."
+   },
+   {
+    "type": "idea",
+    "text": "Activation energy: the push needed to start",
+    "meaning": "Reactions need an initial burst of energy before they proceed. Many changes fail not because they're wrong but because starting costs too much.",
+    "apply": "Lower the start-up cost of a habit you want: prepare everything the night before."
+   },
+   {
+    "type": "idea",
+    "text": "Catalysts speed change without being used up",
+    "meaning": "A catalyst makes a reaction happen faster or more easily. In teams, the right person or tool can unlock change without doing all the work.",
+    "apply": "Who or what could act as a catalyst for a stuck initiative? Bring them in."
+   },
+   {
+    "type": "idea",
+    "text": "Alloying: combinations beat pure elements",
+    "meaning": "Mixing metals can create something stronger than any one alone. Diverse skills and people often produce more than specialists working apart.",
+    "apply": "Pair two skills you have (e.g. modelling and writing) into one stronger deliverable."
+   },
+   {
+    "type": "idea",
+    "text": "Natural selection rewards fit, not effort",
+    "meaning": "Traits that suit the environment survive; when the environment changes, what worked can fail. Adaptation matters more than past success.",
+    "apply": "Ask which of your strengths depend on conditions that might change soon."
+   },
+   {
+    "type": "idea",
+    "text": "The Red Queen: run just to stay in place",
+    "meaning": "In competitive systems, rivals keep adapting, so standing still means falling behind. Constant improvement is the cost of keeping your position.",
+    "apply": "List one skill your field now expects that it didn't three years ago, and start on it."
+   },
+   {
+    "type": "idea",
+    "text": "Find your niche",
+    "meaning": "Species thrive by fitting a specific role in an ecosystem rather than competing head-on with everyone. Specialising can reduce competition and increase value.",
+    "apply": "Describe in one line the niche where you're hardest to replace."
+   },
+   {
+    "type": "idea",
+    "text": "Incentives drive behaviour",
+    "meaning": "Organisms and people respond to what's rewarded. If you want to understand or change behaviour, look at the incentives first.",
+    "apply": "Before judging a colleague's or company's behaviour, map what they're paid or praised for."
+   }
+  ],
+  "library": "psych",
+  "shelf": "thinking",
+  "order": 118,
+  "source": "manual",
+  "createdAt": 1795664676083
+ },
+ {
+  "id": "great-mental-models-3",
+  "title": "The Great Mental Models, Vol. 3: Systems and Mathematics",
+  "author": "Shane Parrish & Rhiannon Beaubien",
+  "color": "#3b2552",
+  "cards": [
+   {
+    "type": "idea",
+    "text": "See the system, not just the parts",
+    "meaning": "Systems are sets of parts that interact, and their behaviour comes from those interactions. Fixing one part without seeing the whole often backfires.",
+    "apply": "Draw a quick diagram of how one process at work connects to its inputs and outputs."
+   },
+   {
+    "type": "idea",
+    "text": "Feedback loops amplify or stabilise",
+    "meaning": "Reinforcing loops make things grow or collapse faster; balancing loops push them back toward stability. Spotting which loop is running explains a lot.",
+    "apply": "Identify one reinforcing loop in your business or habits and decide whether to feed or break it."
+   },
+   {
+    "type": "idea",
+    "text": "Bottlenecks set the pace of the whole system",
+    "meaning": "A system can only move as fast as its slowest step. Improving anything else first is mostly wasted effort.",
+    "apply": "Find the slowest step in your weekly workflow and fix that before anything else."
+   },
+   {
+    "type": "idea",
+    "text": "Margin of safety: build in room for error",
+    "meaning": "Engineers design for loads far beyond the expected because estimates are wrong and surprises happen. Buffers turn mistakes into inconveniences instead of disasters.",
+    "apply": "Add a cushion to your next estimate, budget or deadline and note what it protects against."
+   },
+   {
+    "type": "idea",
+    "text": "Compounding: small gains grow enormous",
+    "meaning": "Growth on growth produces results that look slow, then suddenly large. It works for money, knowledge and relationships, and also for bad habits.",
+    "apply": "Pick one skill to improve 1% weekly and track it for a quarter."
+   },
+   {
+    "type": "idea",
+    "text": "Regression to the mean",
+    "meaning": "Unusually good or bad results tend to be followed by more ordinary ones. Mistaking this for cause and effect leads to false lessons.",
+    "apply": "Before crediting or blaming a strategy for an extreme quarter, check whether it's just reverting."
+   },
+   {
+    "type": "idea",
+    "text": "Sampling: small samples mislead",
+    "meaning": "Conclusions drawn from too few or unrepresentative observations are unreliable. Ask how the data was gathered before trusting it.",
+    "apply": "For the next statistic you rely on, check the sample size and how it was chosen."
+   },
+   {
+    "type": "idea",
+    "text": "Multiplying by zero wipes out everything",
+    "meaning": "In a chain of factors, one zero makes the whole product zero, however big the rest. A single fatal weakness can erase every strength.",
+    "apply": "List the 'zero' risks in your plan, the ones that would sink it regardless of upside."
+   },
+   {
+    "type": "idea",
+    "text": "Distributions: not everything is average",
+    "meaning": "Some outcomes cluster around an average; others have long tails where extremes dominate. Knowing which you face changes how you plan.",
+    "apply": "Ask whether your key metric has a fat tail, and plan for the extreme, not just the average."
+   },
+   {
+    "type": "idea",
+    "text": "Scale changes how things behave",
+    "meaning": "What works at small size may fail at large size, and vice versa. Systems don't just grow; they change character as they scale.",
+    "apply": "Before scaling a process that works, list what might break at ten times the volume."
+   },
+   {
+    "type": "idea",
+    "text": "Diminishing returns: more isn't always better",
+    "meaning": "After a point, each extra unit of effort or money produces less. Knowing where that point is saves wasted resources.",
+    "apply": "Find one area where more effort no longer moves results, and redirect that time."
+   },
+   {
+    "type": "idea",
+    "text": "Emergence: the whole does things no part can",
+    "meaning": "Complex behaviour can arise from simple parts interacting, like traffic jams or market moves. You can't predict it by studying pieces alone.",
+    "apply": "When something surprising happens in a team or market, look at interactions, not just individuals."
+   }
+  ],
+  "library": "psych",
+  "shelf": "thinking",
+  "order": 119,
+  "source": "manual",
+  "createdAt": 1795664676084
+ },
+ {
+  "id": "great-mental-models-4",
+  "title": "The Great Mental Models, Vol. 4: Economics and Art",
+  "author": "Shane Parrish & Rhiannon Beaubien",
+  "color": "#4a2a1e",
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Economics and art both explain how people choose",
+    "meaning": "The final volume pairs economics with art to show how resources, desires and creativity shape decisions and outcomes. Both fields are studies of human behaviour.",
+    "apply": "Notice one purchase or creative choice you made this week and ask what drove it."
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity sits at the heart of economics",
+    "meaning": "Desires are effectively unlimited while resources such as money, time and materials are finite. Almost every economic decision is a response to that gap.",
+    "apply": "List your three scarcest resources this month and decide where each goes first."
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity sparks invention",
+    "meaning": "Running into limits pushes people to find ways to stretch supply or reduce demand. Much of technology's history is a story of overcoming scarcity.",
+    "apply": "Treat one constraint you face as a design prompt: how would you do it with half the budget?"
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity narrows your thinking",
+    "meaning": "Feeling short of time or money pulls attention to the immediate shortage and crowds out longer-term thinking. Decisions made in that tunnel often disappoint in hindsight.",
+    "apply": "When you feel rushed, pause and ask what you'd decide if you had twice the time."
+   },
+   {
+    "type": "idea",
+    "text": "Supply and demand set prices",
+    "meaning": "Prices move as the amount available and the amount wanted shift. Reading those forces helps explain markets from housing to labour.",
+    "apply": "Pick one market you follow (rents, a stock, talent) and name what's shifting supply and demand."
+   },
+   {
+    "type": "idea",
+    "text": "Every choice is a trade-off",
+    "meaning": "Choosing one thing means giving up others; there's no option without a cost. Making trade-offs explicit leads to better, more honest decisions.",
+    "apply": "For your next decision, write down what you're giving up, not just what you're getting."
+   },
+   {
+    "type": "idea",
+    "text": "Optimisation: get the most from what you have",
+    "meaning": "Optimising means finding the best outcome within your constraints. But optimising for the wrong goal, or for one goal only, can make the overall result worse.",
+    "apply": "Check that the metric you're optimising actually reflects the outcome you want."
+   },
+   {
+    "type": "idea",
+    "text": "Genre: work lives inside expectations",
+    "meaning": "Every creative work sits within a genre shaped by shared norms. Works can bend or play with those expectations, but none exists entirely outside them.",
+    "apply": "Identify the 'genre' of your next presentation or memo and decide which convention to break on purpose."
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity can be manufactured",
+    "meaning": "Keeping supply deliberately limited is a big part of why luxury goods command high prices. Perceived rarity raises what people will pay, whether or not the item costs more to make.",
+    "apply": "When a price looks high, ask whether it reflects real cost or controlled supply, and whether that control can last."
+   },
+   {
+    "type": "idea",
+    "text": "Scarcity habits outlast the scarcity",
+    "meaning": "People who lived through hard times, like the Great Depression, often kept resource-saving habits long after it ended. Past shortages shape behaviour well into times of plenty.",
+    "apply": "Notice one habit you keep from a leaner period of your life or career, and decide if it still serves you."
+   },
+   {
+    "type": "idea",
+    "text": "Creative destruction: the new displaces the old",
+    "meaning": "Progress often requires letting existing products, firms or jobs fail so better ones can replace them. Protecting the status quo can block the innovation that creates more value.",
+    "apply": "In your sector, name one incumbent business model that a newer one is quietly eroding, and what that means for its valuation."
+   },
+   {
+    "type": "idea",
+    "text": "Representation: how you depict an idea shapes it",
+    "meaning": "Ideas can be shown through pictures, symbols, numbers or stories, and each form highlights some things and hides others. Choosing the right representation makes an idea easier to grasp and act on.",
+    "apply": "Take your next key finding and try it as one chart, one sentence and one example; keep the form that lands fastest."
+   }
+  ],
+  "library": "psych",
+  "shelf": "thinking",
+  "order": 120,
+  "source": "manual",
+  "createdAt": 1795664676085
+ }
+]
