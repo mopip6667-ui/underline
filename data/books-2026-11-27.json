@@ -1194,5 +1194,90 @@
     "type": "idea"
    }
   ]
+ },
+ {
+  "id": "the-machine-that-changed-the-world-2026112714",
+  "author": "James P. Womack, Daniel T. Jones & Daniel Roos",
+  "cards": [
+   {
+    "apply": "Sketch which 'era' your own company or a holding operates in: bespoke, scale-driven, or continuously improving.",
+    "meaning": "The authors trace auto production from hand-built cars for the rich, through Ford's mass production, to Toyota's lean system. Each era didn't just make cars cheaper; it reorganised work, suppliers and customers around a new logic.",
+    "text": "Car-making has had three eras: craft, mass, and lean.",
+    "type": "idea"
+   },
+   {
+    "apply": "When you analyse a manufacturer, compare hours per unit and defect rates with its best peer, not just margins.",
+    "meaning": "The book's headline claim: compared with mass production, lean uses about half the human effort, factory space, tooling investment and engineering hours, and develops new models in about half the time, with far fewer defects.",
+    "text": "Lean does more with roughly half of everything.",
+    "type": "idea"
+   },
+   {
+    "apply": "Find one process at work that still needs 'fitting' by hand each time, and standardise its inputs.",
+    "meaning": "Ford's moving assembly line (1913) only worked because every part fit every car without fiddling. That consistency let him deskill each job into a few seconds of repeated motion and drive costs down for decades.",
+    "text": "Ford's breakthrough was interchangeable parts, not just the moving line.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look at a company's inventory days and rework or warranty costs as signs of how much waste its system tolerates.",
+    "meaning": "To keep expensive machines and lines running, mass producers carried huge inventories, tolerated defects to be fixed at the end of the line, and treated workers as interchangeable. Waste was built into the system and rarely seen.",
+    "text": "Mass production's hidden cost was stockpiles, rework and bored workers.",
+    "type": "idea"
+   },
+   {
+    "apply": "Study the industry leader closely, then ask which of its assumptions don't fit your constraints.",
+    "meaning": "After visiting Ford's Rouge complex in 1950, Eiji Toyoda and Taiichi Ohno concluded that copying it wouldn't work in a small, capital-poor Japanese market. They built a system around flexibility, small batches and zero waste instead.",
+    "text": "Toyota learned from Ford, then rejected its core assumptions.",
+    "type": "idea"
+   },
+   {
+    "apply": "Time one recurring setup or handoff in your workflow and try to cut it in half; smaller batches will follow.",
+    "meaning": "Mass producers ran each stamping die for weeks because swapping one took a day. Ohno's teams cut changeovers to minutes, which made short runs cheap, cut inventory, and exposed defects before thousands of bad parts piled up.",
+    "text": "Changing dies in minutes made small batches economical.",
+    "type": "idea"
+   },
+   {
+    "apply": "When an error recurs, stop and ask 'why' five times before patching it again.",
+    "meaning": "Toyota gave workers a cord to halt the line when they spotted a defect, then traced it back with the 'five whys'. Output dipped at first, but rework nearly vanished as root causes were removed.",
+    "text": "Let any worker stop the line to fix a problem at its root.",
+    "type": "idea"
+   },
+   {
+    "apply": "Hand one improvement decision to the person closest to the work this week, and back their call.",
+    "meaning": "In lean plants, small teams own their work area, do their own quality checks, minor maintenance and improvement ideas. This demands more skill and engagement, and the authors note it only works if workers feel secure in return.",
+    "text": "Teams, not cogs: lean pushes responsibility down.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before blaming a team for poor results, examine the process and incentives they work inside.",
+    "meaning": "At NUMMI, the GM–Toyota joint venture in Fremont, California, largely the same workforce from a troubled GM plant reached quality and productivity close to Toyota's Japanese plants. The system, not the people, had been the problem.",
+    "text": "Same workers, different system, dramatically better results.",
+    "type": "idea"
+   },
+   {
+    "apply": "Ask one key vendor what you could change on your side to lower their cost, and split the savings.",
+    "meaning": "Mass producers squeezed suppliers with short-term competitive bids and shared little information. Toyota worked with tiered suppliers for the long term, set target prices together, and shared the gains from cutting costs.",
+    "text": "Lean suppliers are partners sharing costs, not rivals bidding.",
+    "type": "idea"
+   },
+   {
+    "apply": "Give your next cross-functional project one clearly accountable owner with real decision rights.",
+    "meaning": "Japanese lean developers gave a powerful project leader (the shusa) authority over a dedicated team from concept to launch. Conflicts surfaced early, so designs changed less late in the process, cutting time and engineering hours.",
+    "text": "A strong chief engineer gets new models out faster.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one lean idea, such as small batches or root-cause fixes, and apply it outside production this week.",
+    "meaning": "The authors argue lean runs from design and suppliers to dealers and customers, and predicted it would spread beyond cars to every industry. Companies that adopt only the tools without the thinking tend to be disappointed.",
+    "text": "Lean is a whole enterprise, not a factory trick.",
+    "type": "idea"
+   }
+  ],
+  "color": "#2d3a40",
+  "createdAt": 1795809169646,
+  "library": "finance",
+  "order": 162,
+  "shelf": "industrials",
+  "source": "hourly",
+  "title": "The Machine That Changed the World"
  }
 ]
