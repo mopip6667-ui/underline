@@ -854,5 +854,90 @@
   "shelf": "rome",
   "source": "hourly",
   "title": "The Twelve Caesars"
+ },
+ {
+  "id": "the-wealth-of-nations-2026112710",
+  "author": "Adam Smith",
+  "cards": [
+   {
+    "apply": "When you value a company this week, start from the goods and services it actually produces and sells, not the cash pile on its balance sheet.",
+    "meaning": "Smith opens by defining a nation's wealth as the yearly produce of its labour, measured against how many people share it. That was a direct challenge to the mercantilist habit of equating prosperity with stockpiles of gold and silver.",
+    "text": "Wealth is what a nation produces, not the gold it hoards",
+    "type": "idea"
+   },
+   {
+    "apply": "Map one recurring team process into its steps and assign the most repeated step to whoever does it best.",
+    "meaning": "In his famous pin factory, about eighteen distinct operations shared among ten workers yielded roughly 4,800 pins per person daily, where one man working alone might struggle to make twenty. Specialisation multiplies output through skill, saved time and better tools.",
+    "text": "Ten men splitting pin-making into steps made 48,000 pins a day",
+    "type": "idea"
+   },
+   {
+    "apply": "Rewrite your next pitch or request so the first line states what the other person gains.",
+    "meaning": "Smith's point is that exchange works because each side serves the other's interest, not out of charity. He adds that we address ourselves 'not to their humanity but to their self-love,' so good offers are framed around the other side's advantage.",
+    "text": "“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner…”",
+    "type": "quote"
+   },
+   {
+    "apply": "When screening a niche business, ask whether its market is large enough to sustain specialised scale, or whether it needs to widen distribution first.",
+    "meaning": "Because exchange is what makes the division of labour worthwhile, a tiny market can't support specialists: a village can't keep a full-time nail-maker. Wider markets, opened by cheap transport like water carriage, let work become finer and more productive.",
+    "text": "Specialisation is limited by the size of the market",
+    "type": "idea"
+   },
+   {
+    "apply": "Price a purchase this week in hours of your own work, not dollars, and see if it still looks worth it.",
+    "meaning": "Smith separates what something really costs, the effort given up to get it, from its money price, which fluctuates with the value of gold and silver. Labour becomes his yardstick for comparing value across time and places.",
+    "text": "“The real price of everything… is the toil and trouble of acquiring it.”",
+    "type": "quote"
+   },
+   {
+    "apply": "For any stock earning well above normal margins, identify what force (barrier, patent, regulation) is stopping competition from pulling them back.",
+    "meaning": "When supply falls short of demand, prices rise above the natural level of wages, profit and rent; when supply floods in, they fall below it. Competition keeps pulling them back toward that centre, unless monopolies or regulations hold them apart.",
+    "text": "Market prices orbit a 'natural price' set by costs",
+    "type": "idea"
+   },
+   {
+    "apply": "When an industry consolidates, check whether pricing power, not efficiency, is driving the margins you're paying for.",
+    "meaning": "Smith was no simple champion of business: he warns that merchants and manufacturers constantly seek to raise prices and limit competition. He also says the law can't stop such meetings, but shouldn't facilitate them.",
+    "text": "“People of the same trade seldom meet together… but the conversation ends in a conspiracy against the public…”",
+    "type": "quote"
+   },
+   {
+    "apply": "Automate a fixed share of this month's income into investments before you see it in your spending account.",
+    "meaning": "Hard work produces goods, but only saving turns them into capital that funds future production. For Smith, frugality accumulates the stock that employs productive labour, while waste and misconduct shrink it.",
+    "text": "“Parsimony, and not industry, is the immediate cause of the increase of capital.”",
+    "type": "quote"
+   },
+   {
+    "apply": "In macro analysis, weigh household and business saving trends alongside headline government spending before drawing conclusions.",
+    "meaning": "Smith argues great nations are never impoverished by private extravagance, though sometimes by public prodigality. The steady, uninterrupted effort of ordinary people to better their condition is strong enough to drive growth despite government excess.",
+    "text": "Private thrift usually outweighs public waste",
+    "type": "idea"
+   },
+   {
+    "apply": "Before citing the 'invisible hand' in a memo, check that the incentives you're relying on actually point toward the outcome you want.",
+    "meaning": "The phrase appears only once in the book, in a passage on why merchants prefer investing at home. Smith's claim is narrow: pursuing one's own gain often benefits society, but he does not say markets are always right.",
+    "text": "“…led by an invisible hand to promote an end which was no part of his intention.”",
+    "type": "quote"
+   },
+   {
+    "apply": "List one task you do in-house that someone else does cheaper and better, and price outsourcing it.",
+    "meaning": "A family buys what others can make more cheaply and focuses on its own trade; Smith argues nations should do the same. Tariffs that force people to buy dearer local goods misdirect capital and make the country poorer.",
+    "text": "“What is prudence in the conduct of every private family, can scarce be folly in that of a great kingdom.”",
+    "type": "quote"
+   },
+   {
+    "apply": "Judge your next product or investment decision by how much better off it leaves the end customer.",
+    "meaning": "Smith closes his attack on mercantilism by insisting producers' interests matter only insofar as they serve consumers. Mercantile policy, he says, inverted this, sacrificing consumers to protect merchants and manufacturers.",
+    "text": "“Consumption is the sole end and purpose of all production…”",
+    "type": "quote"
+   }
+  ],
+  "color": "#2b3d1a",
+  "createdAt": 1795794783123,
+  "library": "finance",
+  "order": 158,
+  "shelf": "macro",
+  "source": "hourly",
+  "title": "The Wealth of Nations"
  }
 ]
