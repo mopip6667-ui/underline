@@ -1024,5 +1024,90 @@
     "apply": "Block one hour this week for a 'Friday night experiment': explore a question outside your normal work with no deliverable attached."
    }
   ]
+ },
+ {
+  "id": "tao-te-ching-2026112712",
+  "author": "Laozi",
+  "cards": [
+   {
+    "apply": "This week, write down one mental model you rely on at work and note one situation where it fails.",
+    "meaning": "The famous opening (ch. 1, Legge's translation) warns that the deepest reality can't be captured in words or formulas. Any model you name is a simplification of the thing itself.",
+    "text": "The Tao that can be trodden is not the enduring and unchanging Tao.",
+    "type": "quote"
+   },
+   {
+    "apply": "Take on one unglamorous task your team keeps avoiding, and do it without announcing it.",
+    "meaning": "Water benefits everything without competing, and settles in the low places people avoid (ch. 8). Laozi's ideal is usefulness without the need for status.",
+    "text": "The highest excellence is like (that of) water.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before adding one more feature or revision to a finished project, ask whether it's needed, then ship it.",
+    "meaning": "Chapter 9 warns that a vessel filled to the brim spills and a blade honed too often dulls. Overreaching on success invites its own collapse; withdrawing once the job is done is 'the way of Heaven.'",
+    "text": "Know when the work is done, and step back.",
+    "type": "idea"
+   },
+   {
+    "apply": "Block one empty hour on your calendar this week and protect it from meetings.",
+    "meaning": "A wheel works because of its hollow hub, a pot because of its hollow inside, a room because of the space within (ch. 11). What isn't there matters as much as what is.",
+    "text": "Empty space is what makes things useful.",
+    "type": "idea"
+   },
+   {
+    "apply": "On your next team win, give credit to the people who did the work and keep your own role in the background.",
+    "meaning": "Chapter 17 ranks rulers: the best the people hardly knew existed; then the loved, then the feared, then the despised. When the best finish their work, people say 'we did it ourselves.'",
+    "text": "The best leaders are barely noticed.",
+    "type": "idea"
+   },
+   {
+    "apply": "In your next meeting, make your point once, clearly, and resist repeating it to be noticed.",
+    "meaning": "Chapter 24 says one standing on tiptoe can't stand firm, and those who display and boast themselves aren't recognised. Chapter 22 adds the sage shines because he is free from self-display.",
+    "text": "Stop showing off, and people will see you.",
+    "type": "idea"
+   },
+   {
+    "apply": "Write three sentences on a recent decision you got wrong and what in you drove it.",
+    "meaning": "Chapter 33 contrasts outer and inner mastery: overcoming others is strength, but overcoming yourself is might. Self-knowledge is the rarer and more valuable skill.",
+    "text": "He who knows other men is discerning; he who knows himself is intelligent.",
+    "type": "quote"
+   },
+   {
+    "apply": "Define 'enough' for one goal this year, such as a savings target or title, and write it down.",
+    "meaning": "Chapters 44 and 46 ask which is dearer, fame or life, and say no calamity is greater than discontent with one's lot. Knowing when you have enough keeps you out of danger.",
+    "text": "Contentment is the only lasting wealth.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one process or report you tweak constantly and leave it alone for a full month.",
+    "meaning": "Chapter 60: poke a small fish too often in the pan and it falls apart. Constant meddling ruins what light, steady handling would preserve.",
+    "text": "Governing a great state is like cooking small fish.",
+    "type": "quote"
+   },
+   {
+    "apply": "Find one small problem in a model, client or project that you've been ignoring, and fix it today.",
+    "meaning": "Chapter 63 says every difficult thing begins easy and every great thing begins small, so the sage tackles them early. Treating easy tasks as trivial is how they become hard.",
+    "text": "Handle hard things while they are still easy.",
+    "type": "idea"
+   },
+   {
+    "apply": "Break a project you've stalled on into a first step under 20 minutes, and do it now.",
+    "meaning": "The source of the famous 'thousand miles' saying (ch. 64; a li is about a third of a mile). The same chapter warns that people ruin affairs on the eve of success by losing the care they had at the start.",
+    "text": "The journey of a thousand li commenced with a single step.",
+    "type": "quote"
+   },
+   {
+    "apply": "In your next disagreement, ask one genuine question before defending your position.",
+    "meaning": "Water is the softest thing yet wears down the hardest (ch. 78); living things are supple, dead ones stiff (ch. 76). Laozi notes everyone knows this, but no one practises it.",
+    "text": "Soft and flexible outlasts hard and rigid.",
+    "type": "idea"
+   }
+  ],
+  "color": "#1d3b36",
+  "createdAt": 1795802006314,
+  "library": "mind",
+  "order": 160,
+  "shelf": "classics",
+  "source": "hourly",
+  "title": "Tao Te Ching"
  }
 ]
