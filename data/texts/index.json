@@ -6,7 +6,8 @@
 "shortness-of-life": "shortness-of-life.json",
 "aristotle": "aristotle.json",
 "the-republic-2026112618": "the-republic.json",
-"enchiridion-2026112706": "enchiridion.json"
+"enchiridion-2026112706": "enchiridion.json",
+"the-twelve-caesars-2026112709": "the-twelve-caesars.json"
 },
 "titles": {
 "apology": "apology.json",
@@ -27,7 +28,9 @@
 "prince": "the-prince.json",
 "republic": "the-republic.json",
 "walden": "walden.json",
-"wealthofnations": "wealth-of-nations.json"
+"wealthofnations": "wealth-of-nations.json",
+"twelvecaesars": "the-twelve-caesars.json",
+"livesofthecaesars": "the-twelve-caesars.json"
 },
 "meta": {
 "apology.json": {
@@ -124,6 +127,11 @@
 "title": "The Wealth of Nations",
 "author": "Adam Smith",
 "chapters": 74
+},
+"the-twelve-caesars.json": {
+"title": "The Twelve Caesars",
+"author": "Suetonius",
+"chapters": 12
 }
 }
 }

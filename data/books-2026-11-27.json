@@ -769,5 +769,90 @@
   "shelf": "realestate",
   "source": "hourly",
   "title": "Triumph of the City"
+ },
+ {
+  "id": "the-twelve-caesars-2026112709",
+  "author": "Suetonius",
+  "cards": [
+   {
+    "apply": "Before trusting a CEO's strategy this week, read how they actually allocate time and capital, not just what the investor deck says.",
+    "meaning": "Suetonius, an imperial secretary with access to the palace archives, wrote around AD 121 about twelve rulers from Julius Caesar to Domitian. He sorts each life by topic: deeds, sayings, spending, vices, omens. Character, he implies, shows in daily habits more than in official records.",
+    "text": "Judge rulers by their habits, not their press releases",
+    "type": "idea"
+   },
+   {
+    "apply": "Name one decision you've been hovering over. Set a date, decide, and then commit resources instead of hedging.",
+    "meaning": "Caesar's words as he crossed the Rubicon in 49 BC, leading an army into Italy and starting a civil war. Suetonius shows he hesitated first, then committed fully. Some choices can't be half-made; once you cross, you play it out.",
+    "text": "“The die is cast,” said he.",
+    "type": "quote"
+   },
+   {
+    "apply": "Pick one task you can close out fast this week and report it in one line. Brevity signals control.",
+    "meaning": "After beating Pharnaces at Zela in 47 BC, Caesar paraded these three words in his Pontic triumph. Suetonius notes they boasted not of the war's events but of how fast it was finished. Speed itself became the message.",
+    "text": "“I came, I saw, I conquered.”",
+    "type": "quote"
+   },
+   {
+    "apply": "On your next deadline, ask what “well enough” means for the client, and hit that standard rather than racing to the clock.",
+    "meaning": "One of Augustus's favourite sayings, beside “More haste, less speed” and “Better a safe commander than a bold.” Caesar won by speed; his heir built a 40-year reign by distrusting rashness. Both temperaments can win, but only the careful one tends to last.",
+    "text": "“That is done quickly enough which is done well enough.”",
+    "type": "quote"
+   },
+   {
+    "apply": "Review one position or bet you hold. If the upside is small and the downside is the capital itself, cut it.",
+    "meaning": "Augustus refused to start a war or battle unless the hope of gain clearly beat the fear of loss. He compared chasing small gains at big risk to fishing with a golden hook: lose the hook and no catch can repay it. It's an early lesson in asymmetric risk.",
+    "text": "Never fish with a golden hook",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one shared process or document at work and leave it clearly better than you found it this week.",
+    "meaning": "Suetonius says Augustus could justly make this boast after rebuilding Rome, which had been exposed to flood and fire. He also made it safer for the future. Great leaders leave institutions and infrastructure, not just victories.",
+    "text": "He had found it built of brick and left it in marble.",
+    "type": "quote"
+   },
+   {
+    "apply": "Check one important task you've delegated. Ask for a short status update before small problems become a lost legion.",
+    "meaning": "After three legions were wiped out in Germany in AD 9, Augustus reportedly let his hair grow for months and cried this, beating his head on a door. Even the most careful ruler can delegate to the wrong person. The loss haunted him and set Rome's frontier at the Rhine.",
+    "text": "“Quintilius Varus, give me back my legions!”",
+    "type": "quote"
+   },
+   {
+    "apply": "Look at one client or supplier relationship. Are you pricing for this deal or for the next ten? Adjust if needed.",
+    "meaning": "Tiberius's reply to governors who wanted heavier taxes in their provinces. Take too much and you destroy the source of future income. It's a durable rule for taxation, pricing and any recurring relationship.",
+    "text": "It was the part of a good shepherd to shear his flock, not skin it.",
+    "type": "quote"
+   },
+   {
+    "apply": "Notice where you rely on pressure rather than trust to get results. Replace one threat with a clear reason this week.",
+    "meaning": "A line from the tragic poet Accius that Caligula liked to repeat. Suetonius records his cruelty in detail; he ruled under four years before his own guards murdered him in AD 41. Rule by fear breeds the enemies who end it.",
+    "text": "“Let them hate me, so they but fear me.”",
+    "type": "quote"
+   },
+   {
+    "apply": "Ask a colleague how they'd describe your role. If it differs from how you see it, ask which work matters most.",
+    "meaning": "Nero kept repeating this as he prepared for his own death in AD 68, with the Senate against him and his support gone. To the end he saw himself as a performer, not a ruler. Self-image can blind people to the job they actually hold.",
+    "text": "“What an artist the world is losing!”",
+    "type": "quote"
+   },
+   {
+    "apply": "Find one dull but reliable income line or cost saving in a business you follow, and size it properly.",
+    "meaning": "Vespasian, rebuilding finances after the civil wars of AD 69, taxed public urinals; when his son objected he held a coin to his nose. The later saying “money doesn't smell” comes from this story, not from Suetonius's exact words. Revenue counts even when its source is unglamorous.",
+    "text": "When Titus said “No,” he replied, “Yet it comes from urine.”",
+    "type": "quote"
+   },
+   {
+    "apply": "Before logging off each day this week, name one thing you did for someone else. If none, do one small thing.",
+    "meaning": "Titus said this at dinner on remembering he had done no one a favour all day. Suetonius calls it memorable and praiseworthy, and Titus is the one emperor the book loves. Measuring a day by help given is a simple test of character.",
+    "text": "“Friends, I have lost a day.”",
+    "type": "quote"
+   }
+  ],
+  "color": "#4a1238",
+  "createdAt": 1795791214674,
+  "library": "history",
+  "order": 157,
+  "shelf": "rome",
+  "source": "hourly",
+  "title": "The Twelve Caesars"
  }
 ]
