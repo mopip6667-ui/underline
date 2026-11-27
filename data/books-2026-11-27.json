@@ -1364,5 +1364,90 @@
   "shelf": "tech",
   "source": "hourly",
   "title": "Only the Paranoid Survive"
+ },
+ {
+  "id": "the-fifteen-decisive-battles-of-the-world-2026112716",
+  "author": "Edward Creasy",
+  "cards": [
+   {
+    "apply": "List the three decisions in your work this year whose reversal would change the most. Give those the deepest diligence.",
+    "meaning": "Creasy borrows Hallam's test: a battle is decisive if the opposite result would have reshaped the whole later course of history. Size and bloodshed don't count; consequences do.",
+    "text": "A decisive battle is one that changed everything after it",
+    "type": "idea"
+   },
+   {
+    "apply": "Find one fragile early-stage project of yours that needs defending now, before it can prove itself, and protect its time.",
+    "meaning": "At Marathon in 490 BC Athens beat a Persian invasion. Creasy argues the win let Athenian democracy, art and thought flourish, a legacy the West still draws on.",
+    "text": "Marathon kept Greek freedom alive in its infancy",
+    "type": "idea"
+   },
+   {
+    "apply": "Before your next big expansion, write down what happens if it fails completely. Size the bet so that outcome is survivable.",
+    "meaning": "Athens sent a vast expedition against Syracuse and lost it entirely in 413 BC. Creasy shows ambition outrunning judgment, a disaster that stopped Athens growing into a western empire.",
+    "text": "Overreach at Syracuse broke Athens' power",
+    "type": "idea"
+   },
+   {
+    "apply": "When you win a deal or role, plan the follow-through. Lasting value comes from what you build after the win.",
+    "meaning": "Alexander's victory over Darius in 331 BC ended the Persian Empire. Creasy stresses the aftermath: Greek language and ideas spread across the East for centuries.",
+    "text": "Arbela opened Asia to Greek culture",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for where two threats or opportunities could combine against you. Act to deal with one before they join.",
+    "meaning": "In 207 BC the consul Nero slipped away to join his colleague and crush Hasdrubal before he could reach his brother Hannibal. Creasy treats this as the turning point that secured Rome over Carthage.",
+    "text": "Metaurus: one forced march decided Rome versus Carthage",
+    "type": "idea"
+   },
+   {
+    "apply": "Audit a key assumption you trust because a partner or boss supports it. Varus trusted Arminius; check where loyalty is assumed, not earned.",
+    "meaning": "In AD 9 Arminius destroyed three legions under Varus in the Teutoburg Forest. Creasy argues this kept the Germanic peoples outside Rome's empire, and he traces English roots to that independence.",
+    "text": "Arminius kept Rome out of Germany",
+    "type": "idea"
+   },
+   {
+    "apply": "When you read a dramatic 'turning point' story, look for a dissenting historian or analyst before repeating it.",
+    "meaning": "At Châlons in 451 a Roman-Gothic alliance checked Attila; at Tours in 732 Charles Martel stopped an Umayyad army. Creasy frames both as saving Christian Europe, a view many modern historians think overstates Tours.",
+    "text": "Châlons and Tours turned back conquest of Western Europe",
+    "type": "idea"
+   },
+   {
+    "apply": "Merging two teams? Name which practices from each side you'll keep, rather than letting the stronger side erase the other.",
+    "meaning": "William's victory in 1066 put a Norman elite over England. Creasy sees the blend of Norman and Saxon as forging the English nation, its law and much of its vocabulary.",
+    "text": "Hastings remade England's language and institutions",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice where your team has lost belief rather than ability. A single visible early win can reset morale; pick one and deliver it.",
+    "meaning": "In 1429 the relief of Orleans reversed English success in the Hundred Years' War. Creasy credits Joan's effect on French morale, showing how conviction can change a campaign's momentum.",
+    "text": "Joan of Arc turned belief into victory at Orleans",
+    "type": "idea"
+   },
+   {
+    "apply": "Rank your business's real risks by impact, not frequency. Prepare hardest for the rare event that could end the game.",
+    "meaning": "Spain's 1588 fleet was beaten by English ships and storms. Creasy argues it preserved English independence and, with it, the rise of English sea power and liberty.",
+    "text": "The Armada's defeat secured Protestant England",
+    "type": "idea"
+   },
+   {
+    "apply": "Map who could dominate your market in five years. Back the moves, alliances or suppliers that keep any single player from controlling it.",
+    "meaning": "Marlborough's 1704 win checked Louis XIV's bid to dominate Europe; Peter the Great's 1709 win over Charles XII at Pultowa (Poltava) made Russia a great power and ended Sweden's.",
+    "text": "Blenheim and Pultowa reshaped the balance of power",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one recent 'decisive' event in your sector and write how the world would differ had it gone the other way. Use it to test your thesis.",
+    "meaning": "Saratoga in 1777 brought France into the American war; Valmy in 1792 saved revolutionary France; Waterloo in 1815 ended Napoleon. Creasy ends here, seeing a new European order begin.",
+    "text": "Saratoga, Valmy and Waterloo decided the modern world",
+    "type": "idea"
+   }
+  ],
+  "color": "#4a2e14",
+  "createdAt": 1795816371803,
+  "library": "history",
+  "order": 164,
+  "shelf": "commanders",
+  "source": "hourly",
+  "title": "The Fifteen Decisive Battles of the World"
  }
 ]
