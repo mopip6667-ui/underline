@@ -1716,5 +1716,90 @@
     "apply": "Find one choice your team or clients face and make the better option the default, while keeping opt-out easy."
    }
   ]
+ },
+ {
+  "id": "the-death-and-life-of-great-american-cities-2026112620",
+  "title": "The Death and Life of Great American Cities",
+  "author": "Jane Jacobs",
+  "color": "#4a2410",
+  "library": "finance",
+  "shelf": "realestate",
+  "order": 144,
+  "source": "hourly",
+  "createdAt": 1795744358157,
+  "cards": [
+   {
+    "apply": "Before your next model or memo, walk the site or talk to a user. Note one thing that contradicts your spreadsheet.",
+    "meaning": "Jacobs opens by attacking orthodox planning, from Garden City suburbs to Le Corbusier's towers in parks. She argued planners worked from theory and rarely studied why lively neighbourhoods like Greenwich Village or Boston's North End succeeded.",
+    "text": "Planning ignored how real cities actually work.",
+    "type": "idea"
+   },
+   {
+    "apply": "When you look at a property, count the doors and windows facing the street and the people walking by at 9pm.",
+    "meaning": "Safety comes less from police than from people: shopkeepers, residents and passers-by who naturally watch the street. That needs buildings facing the street, clear lines between public and private space, and steady foot traffic.",
+    "text": "Eyes on the street keep sidewalks safe.",
+    "type": "idea"
+   },
+   {
+    "apply": "Build casual contact at work: take one recurring coffee or desk visit this week with someone outside your team.",
+    "meaning": "Small, repeated public encounters (a nod to the grocer, leaving a key at the deli) build a web of trust. People get help and familiarity without giving up privacy. She called the daily choreography a 'sidewalk ballet'.",
+    "text": "Casual sidewalk contact builds trust without intimacy.",
+    "type": "idea"
+   },
+   {
+    "apply": "When a project promises 'amenities', ask who will actually use them, and at what hours of the day.",
+    "meaning": "Parks don't lift neighbourhoods by themselves. A park surrounded by one kind of use sits empty for much of the day and can become unsafe, while one ringed by homes, offices and shops gets used all day.",
+    "text": "A park is only as good as the life around it.",
+    "type": "idea"
+   },
+   {
+    "apply": "Score a neighbourhood you invest or live in on the four conditions. The weakest one is the risk to watch.",
+    "meaning": "Jacobs named four conditions for a lively district: a mix of primary uses, short blocks, buildings of varying ages, and enough concentration of people. She argued all four are needed; missing one weakens the rest.",
+    "text": "City diversity needs four generators working together.",
+    "type": "idea"
+   },
+   {
+    "apply": "Check foot traffic or tenant mix at different times of day before backing a retail or mixed-use deal.",
+    "meaning": "An area with only offices dies at 6pm, and one with only housing is empty at noon. Mixing uses spreads people across the day, which supports shops, restaurants and safety.",
+    "text": "Mixed uses keep streets busy around the clock.",
+    "type": "idea"
+   },
+   {
+    "apply": "On a site map, count the intersections within a five-minute walk. More corners usually mean more active frontage.",
+    "meaning": "Long blocks funnel people onto a few paths and leave other streets dead. Short blocks give more corners, more routes and more frontage where small businesses can survive.",
+    "text": "Short blocks multiply routes and opportunities.",
+    "type": "idea"
+   },
+   {
+    "apply": "Value an older, cheap building in a strong area for the tenants it attracts, not just its condition.",
+    "meaning": "New, untested businesses can't afford new construction rents. Older, cheaper buildings are where startups, studios and odd shops get their start, so a district needs a range of building ages.",
+    "text": "Old ideas can sometimes use new buildings. New ideas must use old buildings.",
+    "type": "quote"
+   },
+   {
+    "apply": "When a debate turns on 'too dense', ask for people per room and per acre separately before taking a side.",
+    "meaning": "Jacobs separated high density (many homes per acre) from overcrowding (too many people per room). She argued that dense, diverse districts are often healthier and livelier, and that planners mixed the two up.",
+    "text": "Density is not the same as overcrowding.",
+    "type": "idea"
+   },
+   {
+    "apply": "Check what sits next to a property. A highway or rail yard nearby can cap rents however good the block is.",
+    "meaning": "Big single-use areas such as rail yards, expressways, large campuses and some huge parks create dead edges. Few people cross them, so the streets next to them lose life.",
+    "text": "Border vacuums deaden the edges of neighbourhoods.",
+    "type": "idea"
+   },
+   {
+    "apply": "Favour strategies that add value step by step, like renovating unit by unit, over one big bet that can't be undone.",
+    "meaning": "Banks blacklisting whole districts for credit, and then huge lump-sum renewal projects, both break neighbourhoods. Jacobs favoured steady, small-scale investment that lets places improve without being cleared out.",
+    "text": "Gradual money builds cities; cataclysmic money wrecks them.",
+    "type": "idea"
+   },
+   {
+    "apply": "For a complex decision, map how three or four factors affect each other instead of tuning one metric.",
+    "meaning": "In her last chapter, borrowing Warren Weaver's terms, Jacobs argues a city is neither a simple two-variable problem nor random statistics. It is many interrelated factors, best understood by studying processes and small, telling details.",
+    "text": "A city is a problem of organized complexity.",
+    "type": "idea"
+   }
+  ]
  }
 ]
