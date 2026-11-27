@@ -1,1 +1,12 @@
-{"updated": "2026-11-27", "files": ["books-core.json", "books-2026-11-23.json", "books-parrish.json", "books-persuasion.json", "books-2026-11-25.json", "books-2026-11-26.json", "books-2026-11-27.json"]}
+{
+ "updated": "2026-11-27",
+ "files": [
+  "books-core.json",
+  "books-2026-11-23.json",
+  "books-parrish.json",
+  "books-persuasion.json",
+  "books-2026-11-25.json",
+  "books-2026-11-26.json",
+  "books-2026-11-27.json"
+ ]
+}
