@@ -508,5 +508,96 @@
     "apply": "Pick a company you dismissed early and review what you'd have needed to believe then to own it. Note the lesson."
    }
   ]
+ },
+ {
+  "id": "enchiridion-2026112706",
+  "title": "Enchiridion",
+  "author": "Epictetus",
+  "color": "#4a3512",
+  "library": "mind",
+  "shelf": "stoicism",
+  "order": 154,
+  "source": "hourly",
+  "createdAt": 1795780378937,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Sort everything into: up to me, or not up to me.",
+    "meaning": "Epictetus opens with the dichotomy of control. Your judgments, intentions, desires and aversions are yours; your body, property, reputation and office are not. Freedom comes from investing effort only where you actually have power.",
+    "apply": "Before your next stressful meeting, list what you control and what you don't. Prepare only the first list."
+   },
+   {
+    "type": "quote",
+    "text": "“Men are disturbed not by the things which happen, but by the opinions about the things.”",
+    "meaning": "Events are neutral; distress comes from the judgment we attach to them. Epictetus uses Socrates' calm before death as proof that even death isn't terrible in itself. This idea later became a cornerstone of cognitive behavioural therapy.",
+    "apply": "When a deal falls through, write the bare fact, then your story about it. Challenge the story, not the fact."
+   },
+   {
+    "type": "idea",
+    "text": "Great aims demand that you drop lesser ones.",
+    "meaning": "You cannot chase inner freedom while also clutching at office and wealth; trying for both, you may lose both. Progress requires leaving some things alone entirely and postponing others.",
+    "apply": "Pick one goal that matters most this quarter and explicitly shelve two that compete with it."
+   },
+   {
+    "type": "idea",
+    "text": "Remind yourself what a thing is before you love it.",
+    "meaning": "If you love a clay jug, say it is a jug, and its breaking won't undo you. Epictetus extends this, starkly, to people we love: knowing they are mortal prepares us for loss without loving them less.",
+    "apply": "Name the fragile thing you rely on most at work (a client, a key hire) and draft a calm plan B."
+   },
+   {
+    "type": "idea",
+    "text": "Preview the friction of any act before you start.",
+    "meaning": "Going to the public baths? Expect splashing, shoving and theft, and resolve to keep your composure anyway. Anticipating the mess keeps it from knocking you off course.",
+    "apply": "Before a negotiation, list three annoyances that will likely happen and decide now how you'll respond."
+   },
+   {
+    "type": "quote",
+    "text": "“Seek not that the things which happen should happen as you wish.”",
+    "meaning": "The full line continues: wish things to happen as they do, and your life will flow tranquilly. This is acceptance, not passivity; you still act, but you stop fighting what has already occurred.",
+    "apply": "When a market move goes against you, spend five minutes accepting it before deciding the next action."
+   },
+   {
+    "type": "quote",
+    "text": "“Never say about anything, I have lost it, but say I have restored it.”",
+    "meaning": "Everything external is on loan: possessions, positions, even people. Seeing them as returned rather than lost loosens grief's grip and keeps attention on how you use what you still hold.",
+    "apply": "Treat a lost account or budget cut as a returned loan, then list what resources you still have to work with."
+   },
+   {
+    "type": "idea",
+    "text": "Life is a banquet: take your share politely, never grab.",
+    "meaning": "When the dish comes to you, take a modest portion; when it passes, don't hold it back; when it hasn't arrived, don't lean toward it. Apply that to wealth, office and family, and you live with dignity.",
+    "apply": "Next time a promotion or deal goes to someone else, congratulate them and get back to your own work."
+   },
+   {
+    "type": "quote",
+    "text": "“Remember that thou art an actor in a play, of such a kind as the teacher (author) may choose.”",
+    "meaning": "You don't choose your role, short or long, rich or poor; you choose how well you play it. Excellence lies in performance of the part, not in the part itself.",
+    "apply": "Identify a role you didn't pick (a team, a sector, a boss) and set one standard of excellence for it this week."
+   },
+   {
+    "type": "idea",
+    "text": "To improve, accept looking foolish about externals.",
+    "meaning": "Progress means being willing to seem ignorant or unfashionable to others. If people think you important, Epictetus says, distrust yourself; guarding your character and chasing approval rarely go together.",
+    "apply": "Ask one 'basic' question in a meeting this week that you've been too proud to ask."
+   },
+   {
+    "type": "quote",
+    "text": "“Everything has two handles, the one by which it may be borne, the other by which it may not.”",
+    "meaning": "If your brother wrongs you, don't grip the handle 'he wronged me'; grip 'he is my brother, raised with me'. How you pick a situation up decides whether you can carry it.",
+    "apply": "With a difficult colleague, write one true sentence about the relationship that makes it bearable."
+   },
+   {
+    "type": "idea",
+    "text": "Don't preach your principles; live by them.",
+    "meaning": "Never call yourself a philosopher or lecture others on how to eat at a banquet; just eat properly. Like a sheep, Epictetus says, show what you've digested through what you produce, not by bringing back the grass.",
+    "apply": "Skip explaining your productivity system to anyone this week. Let your output do the talking."
+   },
+   {
+    "type": "idea",
+    "text": "Stop deferring: you are no longer a youth.",
+    "meaning": "Epictetus closes by demanding urgency. You've accepted the principles, so what teacher are you waiting for? Each contest is now; Socrates became Socrates by attending to reason in everything.",
+    "apply": "Choose one principle you agree with but don't practise, and act on it before Friday."
+   }
+  ]
  }
 ]
