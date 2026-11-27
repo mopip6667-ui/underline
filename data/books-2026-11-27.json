@@ -338,5 +338,90 @@
     "apply": "Write one sentence describing the purpose your work serves. Use it to decide which of next week's commitments to keep."
    }
   ]
+ },
+ {
+  "id": "competitive-strategy-2026112704",
+  "title": "Competitive Strategy",
+  "author": "Michael E. Porter",
+  "color": "#0d3b33",
+  "library": "business",
+  "shelf": "strategy",
+  "order": 152,
+  "source": "hourly",
+  "createdAt": 1795773158630,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Competition is about more than your direct rivals.",
+    "meaning": "Porter argues that an industry's profitability is set by five forces: rivalry among existing firms, the threat of new entrants, the threat of substitutes, and the bargaining power of buyers and of suppliers. Looking only at rivals misses most of what squeezes margins.",
+    "apply": "Pick one company you follow and score each of the five forces as high, medium or low. Note which force caps its margins most."
+   },
+   {
+    "type": "idea",
+    "text": "Industry structure, not luck, explains most lasting profits.",
+    "meaning": "Some industries earn high returns for decades while others struggle, even with talented managers. Porter's point is that the structure of the industry shapes average profitability, so strategy should start by understanding it.",
+    "apply": "Compare long-run returns on capital for two industries you know. Write down which structural features explain the gap."
+   },
+   {
+    "type": "idea",
+    "text": "Entry barriers protect returns; when they fall, margins follow.",
+    "meaning": "Economies of scale, product differentiation, capital requirements, switching costs, access to distribution and government policy all deter new entrants. The book stresses that the threat of entry, not only actual entry, holds prices down.",
+    "apply": "List the barriers protecting your own business or a holding. Ask which one a well-funded newcomer could get around fastest."
+   },
+   {
+    "type": "idea",
+    "text": "Substitutes put a ceiling on what you can charge.",
+    "meaning": "A substitute is any product from another industry that performs the same function. Even without direct rivals, an industry cannot raise prices far before buyers switch to the alternative.",
+    "apply": "For one product you sell or analyse, name the closest substitute from a different industry. Estimate the price at which customers would switch."
+   },
+   {
+    "type": "idea",
+    "text": "Powerful buyers and suppliers capture the value you create.",
+    "meaning": "Buyers gain power when they are concentrated, buy in volume, face low switching costs or could make the product themselves. Suppliers gain power under the mirror-image conditions, and either side can bargain away an industry's profits.",
+    "apply": "Check what share of revenue your top three customers represent. If it is high, think about one way to reduce that dependence."
+   },
+   {
+    "type": "idea",
+    "text": "Three generic strategies: cost leadership, differentiation, or focus.",
+    "meaning": "Porter says a firm can outperform by becoming the lowest-cost producer, by offering something buyers value and will pay more for, or by serving a narrow segment better than broad competitors. Each needs different skills, structures and cultures.",
+    "apply": "Write one sentence stating which of the three your team is pursuing. If colleagues would give different answers, raise it."
+   },
+   {
+    "type": "idea",
+    "text": "Being stuck in the middle is a recipe for low profits.",
+    "meaning": "A firm that tries to be everything without committing to cost, differentiation or focus tends to lose high-volume buyers to cost leaders and high-margin buyers to differentiators. Porter warns that this middle position usually earns below-average returns.",
+    "apply": "Look for one feature or service you offer that neither lowers your cost nor makes customers pay more. Consider cutting it."
+   },
+   {
+    "type": "idea",
+    "text": "Read competitors through their goals, assumptions, strategy and capabilities.",
+    "meaning": "The book lays out a framework for competitor analysis: what drives a rival's future goals, what it assumes about itself and the industry, its current strategy, and its capabilities. Together these predict how it will move and react.",
+    "apply": "Pick your toughest competitor and fill in those four boxes on one page. Predict its most likely next move."
+   },
+   {
+    "type": "idea",
+    "text": "Market signals reveal intentions before actions do.",
+    "meaning": "Announcements, price moves, public statements and even the way a firm discloses results can signal what it plans to do. Porter discusses how to read such signals and notes that some are bluffs.",
+    "apply": "Re-read a rival's latest earnings call or press release. Note one statement that hints at future pricing or capacity plans."
+   },
+   {
+    "type": "idea",
+    "text": "Strategic groups explain why rivals in one industry earn differently.",
+    "meaning": "Within an industry, firms cluster into groups that follow similar strategies, for example national brands versus private label. Barriers between groups, called mobility barriers, explain why some groups stay more profitable than others.",
+    "apply": "Map the firms in an industry you cover on two axes such as price and breadth of product line. See which cluster earns the most."
+   },
+   {
+    "type": "idea",
+    "text": "Industries evolve, and the right strategy changes with them.",
+    "meaning": "Porter covers how strategy shifts across emerging, maturing and declining industries, and in fragmented and global ones. The transition to maturity is often where firms that keep old habits get hurt as growth slows and competition sharpens.",
+    "apply": "Decide which stage your industry is in. Name one practice that worked in an earlier stage but no longer fits."
+   },
+   {
+    "type": "idea",
+    "text": "High exit barriers keep weak competitors fighting too long.",
+    "meaning": "Specialised assets, fixed costs of leaving, emotional attachment and government pressure can keep unprofitable firms in an industry. Porter shows how these exit barriers lead to overcapacity and price wars, especially in declining industries.",
+    "apply": "When analysing a struggling sector, list what keeps the weakest players from leaving. Factor that into your margin outlook."
+   }
+  ]
  }
 ]
