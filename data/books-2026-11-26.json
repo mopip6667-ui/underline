@@ -1631,5 +1631,90 @@
   "source": "hourly",
   "title": "The Republic",
   "id": "the-republic-2026112618"
+ },
+ {
+  "id": "misbehaving-2026112619",
+  "title": "Misbehaving",
+  "author": "Richard H. Thaler",
+  "color": "#4a0f2a",
+  "library": "psych",
+  "shelf": "behavioral",
+  "order": 143,
+  "source": "hourly",
+  "createdAt": 1795740742991,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Economic models describe Econs; the world is full of Humans",
+    "meaning": "Thaler's starting point: standard economics assumes perfectly rational, unemotional optimisers he calls Econs. Real people, Humans, procrastinate, get attached to things and follow rules of thumb. Models that ignore this make systematically wrong predictions.",
+    "apply": "This week, pick one forecast or model you rely on and list which assumptions only hold for a perfectly rational customer or investor."
+   },
+   {
+    "type": "idea",
+    "text": "Supposedly irrelevant factors change what people actually do",
+    "meaning": "As a young economist Thaler kept a list of behaviours that theory says shouldn't matter but clearly do: framing, defaults, the order of options, what a price is compared to. He calls these supposedly irrelevant factors, and the book is largely a tour of that list.",
+    "apply": "Keep a running list this week of 'irrelevant' details that changed a client's or colleague's decision. Patterns will emerge."
+   },
+   {
+    "type": "idea",
+    "text": "We demand more to give something up than to acquire it",
+    "meaning": "The endowment effect: in experiments by Kahneman, Knetsch and Thaler, students given a coffee mug asked roughly twice as much to sell it as others would pay to buy it. Simply owning something raises its value to us, a direct echo of loss aversion.",
+    "apply": "Before holding a position, ask: would I buy this today at this price if I didn't already own it? Act on the answer."
+   },
+   {
+    "type": "idea",
+    "text": "Money gets sorted into mental accounts that shouldn't exist",
+    "meaning": "In theory a dollar is a dollar. In practice people label money by source and purpose: a tax refund or casino winnings get spent freely while the grocery budget is guarded. This mental accounting explains spending, saving and risk-taking that pure theory can't.",
+    "apply": "Review where a recent windfall or bonus went. Decide its use deliberately instead of treating it as 'free money'."
+   },
+   {
+    "type": "idea",
+    "text": "Sunk costs keep pulling us toward bad decisions",
+    "meaning": "An Econ ignores money already spent. Humans don't: Thaler's example is driving through a snowstorm to a game only because you paid for the ticket. Having paid makes us feel we'll 'waste' it, so past costs drive future choices.",
+    "apply": "Name one project you're continuing mainly because of what's already been spent. Judge it only on costs and benefits from here."
+   },
+   {
+    "type": "idea",
+    "text": "We care about the deal, not just the thing",
+    "meaning": "Thaler's beer-on-the-beach survey: people would pay more for the same beer from a fancy resort than from a run-down grocery store. Beyond the value of the good, people weigh 'transaction utility', whether the price feels like a fair or good deal.",
+    "apply": "When pricing a product or pitching a deal, think about the reference price the buyer is comparing you against, not only the value delivered."
+   },
+   {
+    "type": "idea",
+    "text": "Perceived fairness limits what firms can charge",
+    "meaning": "Surveys by Kahneman, Knetsch and Thaler found most people call it unfair for a store to raise snow-shovel prices after a blizzard. Firms that exploit demand spikes risk customer anger, which helps explain why prices often don't clear markets the way theory predicts.",
+    "apply": "Before a price increase, test how it will be framed: a cost pass-through reads as fair, exploiting a customer's need does not."
+   },
+   {
+    "type": "idea",
+    "text": "Each of us is a far-sighted planner and an impulsive doer",
+    "meaning": "Thaler and Hersh Shefrin modelled self-control as a conflict between a long-term planner and a short-term doer. The planner uses rules, commitments and mental accounts to restrain the doer, which is why people pay for gym memberships and savings plans that bind them.",
+    "apply": "Set one commitment device this week, such as an automatic transfer or a calendar block, that ties your future self to a goal."
+   },
+   {
+    "type": "idea",
+    "text": "Checking your portfolio often makes you fear stocks",
+    "meaning": "With Shlomo Benartzi, Thaler proposed 'myopic loss aversion': investors who evaluate returns frequently see many small losses, which hurt more than gains please. That can make stocks feel too risky and helps explain why their historical premium over bonds has been so large.",
+    "apply": "Reduce how often you check long-term holdings. Set a fixed review date, such as quarterly, and stick to it."
+   },
+   {
+    "type": "idea",
+    "text": "Yesterday's losers tend to beat yesterday's winners",
+    "meaning": "Werner De Bondt and Thaler found that portfolios of stocks with the worst past multi-year returns went on to beat the prior winners. Their reading: investors overreact to bad news and extrapolate too far, an early sign that markets themselves misbehave.",
+    "apply": "Screen your coverage universe for long-term laggards and ask whether pessimism has run ahead of the fundamentals."
+   },
+   {
+    "type": "idea",
+    "text": "Prices can break the law of one price",
+    "meaning": "When 3Com spun off Palm in 2000, the market valued 3Com's Palm stake above 3Com itself, implying the rest of the company was worth less than nothing. Short-selling constraints kept arbitrageurs from fixing it: markets can stay plainly wrong when betting against the error is hard.",
+    "apply": "When you spot a mispricing, check how easy it is to arbitrage. If it isn't, plan for it to persist longer than logic says."
+   },
+   {
+    "type": "idea",
+    "text": "Nudges use human quirks to help people",
+    "meaning": "Thaler and Benartzi's Save More Tomorrow plan asks employees to commit now to raising their savings rate with future pay rises, sidestepping loss aversion and inertia. Combined with default enrolment, such designs raised savings sharply, showing behavioural insight can improve policy.",
+    "apply": "Find one choice your team or clients face and make the better option the default, while keeping opt-out easy."
+   }
+  ]
  }
 ]
