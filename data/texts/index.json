@@ -9,11 +9,12 @@
 "enchiridion-2026112706": "enchiridion.json",
 "the-twelve-caesars-2026112709": "the-twelve-caesars.json",
 "the-wealth-of-nations-2026112710": "wealth-of-nations.json",
-"tao-te-ching-2026112712": "tao-te-ching.json"
+"tao-te-ching-2026112712": "tao-te-ching.json",
+"nicomachean-ethics-2026112718": "nicomachean-ethics.json"
 },
 "titles": {
 "apology": "apology.json",
-"nicomacheanethics": "aristotle.json",
+"nicomacheanethics": "nicomachean-ethics.json",
 "artofwar": "art-of-war.json",
 "discourses": "discourses.json",
 "enchiridion": "enchiridion.json",
@@ -133,6 +134,11 @@
 "the-twelve-caesars.json": {
 "title": "The Twelve Caesars",
 "author": "Suetonius",
+"chapters": 12
+},
+"nicomachean-ethics.json": {
+"title": "Nicomachean Ethics",
+"author": "Aristotle",
 "chapters": 12
 }
 }

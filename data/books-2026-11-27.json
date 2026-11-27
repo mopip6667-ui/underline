@@ -1534,5 +1534,90 @@
     "shelf": "materials",
     "source": "hourly",
     "title": "The Alchemy of Air"
+  },
+  {
+    "id": "nicomachean-ethics-2026112718",
+    "title": "Nicomachean Ethics",
+    "author": "Aristotle",
+    "color": "#14365e",
+    "library": "mind",
+    "shelf": "greeks",
+    "order": 166,
+    "source": "hourly",
+    "createdAt": 1795823604228,
+    "cards": [
+      {
+        "type": "quote",
+        "text": "Every art and every kind of inquiry, and likewise every act and purpose, seems to aim at some good.",
+        "meaning": "The famous opening line. Aristotle starts from the plain fact that everything we do is for something, then asks what the final aim is: the good we want for its own sake, not as a means to something else.",
+        "apply": "Pick one recurring task this week and ask \"for the sake of what?\" three times until you reach the real goal behind it."
+      },
+      {
+        "type": "idea",
+        "text": "Happiness is the one goal we never choose for something else",
+        "meaning": "Money, honour and pleasure are all wanted partly for what they bring. Eudaimonia, usually translated happiness or flourishing, is the end we pursue for its own sake, so it is the right yardstick for a whole life.",
+        "apply": "Write down what you are optimising for in your career. If it is only a means (salary, title), name the end it is meant to serve."
+      },
+      {
+        "type": "quote",
+        "text": "We must be content if we can attain to so much precision in our statement as the subject before us admits of.",
+        "meaning": "Ethics is not mathematics. Aristotle warns that human affairs only allow rough, \"for the most part\" truths, and demanding false precision is itself an error of judgement.",
+        "apply": "In your next forecast or valuation, show a range instead of a single point estimate, and say which inputs drive the spread."
+      },
+      {
+        "type": "idea",
+        "text": "Flourishing means doing your distinctive work excellently",
+        "meaning": "A good flautist is one who plays well. By analogy, a good human life is the active exercise of reason in line with virtue, not a feeling or a possession you can simply have.",
+        "apply": "Name the one skill at the core of your role and block an hour this week to practise it deliberately."
+      },
+      {
+        "type": "quote",
+        "text": "For one swallow or one fine day does not make a spring.",
+        "meaning": "Happiness is judged over \"a full term of years\", not a single good day or lucky win. Character shows in a sustained pattern of activity, which is why Aristotle hesitates to call anyone happy too soon.",
+        "apply": "Judge a hire, a fund manager or yourself on a multi-year track record, not on the last good quarter."
+      },
+      {
+        "type": "quote",
+        "text": "We become builders by building, and harpers by harping. And so by doing just acts we become just.",
+        "meaning": "Moral virtue is not inborn or learned from lectures; it is a habit formed by repeated action. You act your way into character before you fully have it.",
+        "apply": "Choose one trait you want (punctuality, candour) and do one small act of it every day this week, even when it feels forced."
+      },
+      {
+        "type": "idea",
+        "text": "Virtue is a mean between two vices",
+        "meaning": "Courage sits between cowardice and rashness; generosity between stinginess and extravagance. The mean is relative to us and the situation, set by the judgement a prudent person would use, not by an arithmetic midpoint.",
+        "apply": "List one strength you overuse (decisiveness that becomes rashness?) and one you underuse. Adjust toward the middle in your next meeting."
+      },
+      {
+        "type": "idea",
+        "text": "Anger is easy; anger at the right person and time is rare",
+        "meaning": "Aristotle says anyone can get angry or give money away, but doing it to the right person, extent, time, object and manner is hard. That difficulty is why right action is praiseworthy.",
+        "apply": "Before your next tough email, check it against those five: right person, amount, timing, purpose, tone."
+      },
+      {
+        "type": "quote",
+        "text": "Since then it is hard to hit the mean precisely, we must “row when we cannot sail.”",
+        "meaning": "When the ideal is out of reach, take the lesser of two evils, and lean away from the extreme you naturally fall into. It is practical advice for imperfect people.",
+        "apply": "Notice which way you usually err, too cautious or too aggressive, and deliberately lean the other way on one decision this week."
+      },
+      {
+        "type": "idea",
+        "text": "Practical wisdom turns good intentions into good actions",
+        "meaning": "Phronesis is the intellectual virtue of deliberating well about what to do in particular situations. Without it, the other virtues cannot find the mean; with it, they work together.",
+        "apply": "Before a key decision, write down the specifics of this case that make the general rule fit or not fit."
+      },
+      {
+        "type": "quote",
+        "text": "His friend is another self.",
+        "meaning": "Aristotle separates friendships of utility, of pleasure and of character. Only the last lasts, because each wishes good to the other for the other's own sake, as they would for themselves.",
+        "apply": "Identify one professional relationship that is purely transactional and invest in it this week without asking for anything."
+      },
+      {
+        "type": "idea",
+        "text": "The highest life is the life of contemplation",
+        "meaning": "Book X ranks study and contemplation as the most complete happiness: most continuous, most self-sufficient, loved for itself. A life of practical virtue in the community is happy too, in a secondary way.",
+        "apply": "Set aside 30 unscheduled minutes this week to think or read about a question that has no immediate payoff."
+      }
+    ]
   }
 ]
