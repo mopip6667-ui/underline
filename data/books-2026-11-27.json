@@ -253,5 +253,90 @@
     "apply": "Schedule one hour this week to read outside your sector. Note one idea you could borrow for your current work."
    }
   ]
+ },
+ {
+  "id": "flow-2026112703",
+  "title": "Flow",
+  "author": "Mihaly Csikszentmihalyi",
+  "color": "#2e1a47",
+  "library": "work",
+  "shelf": "focus",
+  "order": 151,
+  "source": "hourly",
+  "createdAt": 1795769577658,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Happiness is cultivated, not stumbled upon",
+    "meaning": "Csikszentmihalyi argues happiness isn't something that simply happens through luck or circumstance. It depends on how we direct our inner experience, so people who learn to control their attention can make life better from within.",
+    "apply": "This week, note one moment each day when you felt fully engaged. Look for what you were doing, not what you were given."
+   },
+   {
+    "type": "idea",
+    "text": "Our best moments come from stretch, not rest",
+    "meaning": "The peak experiences people report are rarely passive or relaxing. They happen when body or mind is pushed to its limits in a voluntary effort to do something difficult and worthwhile.",
+    "apply": "Pick one hard, meaningful task you've been postponing and block 90 minutes to push on it, rather than easing into lighter work."
+   },
+   {
+    "type": "idea",
+    "text": "Attention is your scarcest resource",
+    "meaning": "He calls attention 'psychic energy': we can only process so much information at once. What we choose to attend to literally shapes the content of our lives, so spending it carelessly means living carelessly.",
+    "apply": "Audit one workday: list where your attention actually went in two-hour blocks. Cut or batch the biggest leak."
+   },
+   {
+    "type": "idea",
+    "text": "Disorder in the mind is psychic entropy",
+    "meaning": "When information conflicts with our goals, through worry, threat or frustration, consciousness becomes disordered. Energy goes into fending off the disturbance instead of pursuing what we want.",
+    "apply": "When you feel scattered, write down the one goal the noise is pulling you away from, then deal with the noise in a single sitting."
+   },
+   {
+    "type": "idea",
+    "text": "Flow lives where challenge matches skill",
+    "meaning": "Flow appears when a task's difficulty roughly equals your ability. Too hard and you feel anxiety; too easy and you feel boredom. Growth comes from raising challenge as skill rises, keeping you in the channel.",
+    "apply": "Rate your main task's challenge and your skill from 1–10. If bored, add a constraint or deadline; if anxious, break it into smaller steps."
+   },
+   {
+    "type": "idea",
+    "text": "Clear goals and instant feedback make flow possible",
+    "meaning": "Activities that reliably produce flow, like games, sports and music, tell you exactly what to do and how well you're doing moment to moment. Without those signals, attention drifts.",
+    "apply": "Before your next deep-work block, define a concrete finish line and a way to check progress every 20–30 minutes."
+   },
+   {
+    "type": "idea",
+    "text": "In flow, the self and the clock disappear",
+    "meaning": "Deep absorption leaves no room for self-consciousness or worry about others' opinions, and hours can feel like minutes. Paradoxically, the self emerges stronger afterwards, having grown through the effort.",
+    "apply": "Protect one session this week from notifications and meetings long enough to lose track of time, at least 90 minutes."
+   },
+   {
+    "type": "idea",
+    "text": "The best experiences are autotelic",
+    "meaning": "Csikszentmihalyi uses 'autotelic' for activities done for their own sake, not for a reward. Even work done for pay can become autotelic once the doing itself becomes the point.",
+    "apply": "Find one part of your job you'd do even unpaid, such as modelling, writing or negotiating, and deliberately give it more of your week."
+   },
+   {
+    "type": "idea",
+    "text": "Any job can be turned into a game",
+    "meaning": "He describes an assembly-line worker who timed himself and kept trying to beat his record on a dull task. Setting your own goals and measures can turn routine work into a challenge.",
+    "apply": "Choose one repetitive task, like formatting a model or clearing email, and set a personal time or quality target to beat."
+   },
+   {
+    "type": "idea",
+    "text": "The paradox: we flow more at work than at leisure",
+    "meaning": "His research found people often reported flow more at work than in free time, yet still said they wished they were at leisure. Passive leisure like TV rarely restores us the way active pursuits do.",
+    "apply": "Swap one evening of passive screen time for an active hobby, such as an instrument, sport or craft, and compare how you feel."
+   },
+   {
+    "type": "idea",
+    "text": "Flow builds complexity in the self",
+    "meaning": "Each flow experience pushes us to master new challenges, so the self becomes more complex: more differentiated in its skills and more integrated in its goals. That combination, he argues, is what growth means.",
+    "apply": "Pick one skill to deepen and one to connect with it, for example valuation plus writing, and practise the link this week."
+   },
+   {
+    "type": "idea",
+    "text": "Unify life around a purpose worth pursuing",
+    "meaning": "The final step is turning a whole life into a single flow activity, with an overarching goal that gives every task its meaning. Coherent purpose brings order to consciousness even in hardship.",
+    "apply": "Write one sentence describing the purpose your work serves. Use it to decide which of next week's commitments to keep."
+   }
+  ]
  }
 ]
