@@ -939,5 +939,90 @@
   "shelf": "macro",
   "source": "hourly",
   "title": "The Wealth of Nations"
+ },
+ {
+  "id": "range-2026112711",
+  "title": "Range",
+  "author": "David Epstein",
+  "color": "#5a2045",
+  "library": "science",
+  "shelf": "life",
+  "order": 159,
+  "source": "hourly",
+  "createdAt": 1795798388760,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Early specialisation is the exception, not the rule",
+    "meaning": "Epstein contrasts Tiger Woods, drilled in golf from toddlerhood, with Roger Federer, who played many sports before narrowing down. Most elite performers, he argues, had a broad 'sampling period' first, and specialised later.",
+    "apply": "List the three skills outside your core job you've tried in the last five years. If the list is empty, pick one to sample this month."
+   },
+   {
+    "type": "idea",
+    "text": "Kind worlds reward drills; wicked worlds punish them",
+    "meaning": "In 'kind' learning environments like chess or golf, patterns repeat and feedback is fast and accurate, so narrow practice works. In 'wicked' ones, rules shift and feedback is delayed or misleading. Most of work, markets and life are wicked.",
+    "apply": "Classify one recurring decision you make: kind or wicked? For a wicked one, stop trusting gut pattern-matching and gather an outside base rate."
+   },
+   {
+    "type": "idea",
+    "text": "Modern work demands abstract, transferable thinking",
+    "meaning": "Using the Flynn effect and Luria's studies of pre-modern villagers, Epstein shows how modern life trained people to sort the world into abstract categories. That conceptual skill is what lets knowledge transfer to new problems.",
+    "apply": "When you learn a technique this week, write one sentence on the general principle behind it and one other domain where it would apply."
+   },
+   {
+    "type": "idea",
+    "text": "Breadth of practice can beat narrow repetition",
+    "meaning": "Vivaldi's Venice orphanage, the Ospedale della Pietà, trained its famous musicians on many instruments rather than one. Epstein uses them, and research on varied practice, to argue that breadth builds adaptable skill.",
+    "apply": "Vary your practice: rotate the type of analysis, pitch or memo you do instead of repeating the same template five times in a row."
+   },
+   {
+    "type": "idea",
+    "text": "Struggle while learning makes knowledge last",
+    "meaning": "Drawing on Robert Bjork's 'desirable difficulties', Epstein shows that testing yourself, spacing practice and mixing problem types feel slower but produce more durable, flexible learning than easy, blocked repetition.",
+    "apply": "Before rereading notes, close them and write what you remember. Then mix old and new problem types in one session."
+   },
+   {
+    "type": "idea",
+    "text": "Reach for analogies far from the problem",
+    "meaning": "Kepler leaned on distant analogies to reimagine planetary motion, and experiments show people solve problems better when they compare several unlike examples. Looking past surface features reveals a problem's deep structure.",
+    "apply": "Stuck on a problem? Ask how a completely different industry would solve it, and list two analogies before choosing an approach."
+   },
+   {
+    "type": "idea",
+    "text": "Match quality matters more than an early head start",
+    "meaning": "Epstein cites research comparing Scotland, where students specialise later, with England, where they choose early: late choosers switched fields less afterwards. Testing options first leads to a better fit between person and work.",
+    "apply": "Score your current role on fit: what energises you versus drains you. Use it to steer your next project choice, not just your next promotion."
+   },
+   {
+    "type": "idea",
+    "text": "Quitting a poor fit is a strategy, not a failure",
+    "meaning": "Grit is often praised as never quitting, but Epstein argues that switching paths when you learn something new about yourself is how people find their best fit. Van Gogh tried several careers before painting.",
+    "apply": "Name one commitment you continue mainly because of sunk cost. Decide this week whether to recommit with a reason or wind it down."
+   },
+   {
+    "type": "idea",
+    "text": "Act your way into a new identity, then reflect",
+    "meaning": "Following Herminia Ibarra's work, Epstein suggests we discover who we are by experimenting, not by introspecting first. Short, low-cost trials of 'possible selves' teach more than long planning.",
+    "apply": "Design a two-week experiment in a direction you're curious about: a side project, a shadow day or a short course."
+   },
+   {
+    "type": "idea",
+    "text": "Outsiders often crack problems that insiders can't",
+    "meaning": "On InnoCentive, where firms post unsolved problems publicly, solvers from outside the problem's field were more likely to succeed. Distance from a domain can free people from its standard assumptions.",
+    "apply": "Take a stubborn problem to a smart colleague from another team or field and ask how they'd attack it."
+   },
+   {
+    "type": "idea",
+    "text": "Old technology used in new ways can win markets",
+    "meaning": "Nintendo's Gunpei Yokoi championed 'lateral thinking with withered technology': combining cheap, well-understood parts in novel ways. The Game Boy beat technically superior rivals this way.",
+    "apply": "Before buying a new tool, check whether existing, proven ones could be combined to do the job cheaper and faster."
+   },
+   {
+    "type": "idea",
+    "text": "Drop your familiar tools when the situation changes",
+    "meaning": "Epstein uses the Challenger launch decision and wildland firefighters who died still carrying their tools to show experts clinging to habits in new conditions. Andre Geim's 'Friday night experiments', which led to graphene, show the opposite: deliberate play outside one's lane.",
+    "apply": "Block one hour this week for a 'Friday night experiment': explore a question outside your normal work with no deliverable attached."
+   }
+  ]
  }
 ]
