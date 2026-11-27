@@ -83,5 +83,90 @@
   "shelf": "consumer",
   "source": "hourly",
   "title": "Grinding It Out"
+ },
+ {
+  "id": "the-effective-executive-2026112701",
+  "author": "Peter F. Drucker",
+  "cards": [
+   {
+    "apply": "Pick one Drucker practice from this deck and run it every day this week, like a drill.",
+    "meaning": "Drucker calls anyone responsible for contributing to results an 'executive', boss or not. The effective ones he studied shared no personality type, only a handful of practices anyone can learn.",
+    "text": "Effectiveness is a habit you learn, not a gift you're born with.",
+    "type": "idea"
+   },
+   {
+    "apply": "For each task on today's list, ask: is this the right thing, or just a thing I can do well?",
+    "meaning": "Manual work is judged by efficiency; knowledge work by effectiveness. Brains, imagination and knowledge are only resources. Effectiveness is what turns them into results.",
+    "text": "Knowledge workers are paid to get the right things done.",
+    "type": "idea"
+   },
+   {
+    "apply": "Log your time in 30-minute blocks for three working days before planning anything new.",
+    "meaning": "Time is the scarcest resource and can't be stored or bought. Drucker's method: record where it actually goes, prune what's wasted, then consolidate what's left. Memory of how we spend time is badly wrong.",
+    "text": "Start with your time, not your tasks.",
+    "type": "idea"
+   },
+   {
+    "apply": "Book one 90-minute no-meeting block for your hardest task this week and guard it.",
+    "meaning": "Thinking, people decisions and relationships can't be done in 15-minute slivers. Effective executives protect a few large blocks, for example a morning at home or meetings batched into two days.",
+    "text": "Important work needs big, uninterrupted blocks of time.",
+    "type": "idea"
+   },
+   {
+    "apply": "Find one recurring meeting or report, stop it for two weeks, and see who notices.",
+    "meaning": "Pruning means cutting work nobody would miss, handing off what others can do, and asking colleagues how you waste their time. A crisis that recurs every year is a sign of a broken system, not bad luck.",
+    "text": "Ask of every activity: what if this weren't done at all?",
+    "type": "idea"
+   },
+   {
+    "apply": "Write one sentence on the contribution you'll be measured on this quarter and pin it.",
+    "meaning": "Focusing on contribution moves attention from effort to results and from your job to the whole organisation. Drucker names three areas: direct results, building values, and developing people for tomorrow.",
+    "text": "Ask 'What can I contribute?' not 'What am I paid for?'",
+    "type": "idea"
+   },
+   {
+    "apply": "On your next hire or assignment, list the one strength it needs before listing risks.",
+    "meaning": "Hiring someone with no weaknesses yields mediocrity. Ask what a person can do exceptionally well, then design work so their weaknesses don't matter. Strong people always have strong weaknesses.",
+    "text": "Staff for strengths, not for the absence of weakness.",
+    "type": "idea"
+   },
+   {
+    "apply": "Ask your manager whether they prefer a memo first or a quick talk, and adapt.",
+    "meaning": "Drucker says managing upward means learning how your superior works: is she a reader or a listener? Present ideas the way they can absorb them, and help them do what they do well.",
+    "text": "Make your boss's strengths productive too.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick the single most important deliverable this week and do it before anything else.",
+    "meaning": "Drucker's rule: first things first, one thing at a time. There are always more good tasks than time, so spreading effort thinly guarantees that nothing important gets finished.",
+    "text": "If there is any one 'secret' of effectiveness, it is concentration.",
+    "type": "quote"
+   },
+   {
+    "apply": "Review your project list and kill or pause one item you wouldn't start today.",
+    "meaning": "Systematic abandonment: regularly ask of every project, 'If we weren't already doing this, would we start now?' Drucker adds that deciding what not to do (posteriorities) takes more courage than setting priorities.",
+    "text": "Slough off yesterday before you take on anything new.",
+    "type": "idea"
+   },
+   {
+    "apply": "Next time an issue repeats, write a one-line policy so nobody has to decide it again.",
+    "meaning": "Drucker's decision process starts by asking whether a problem is unique or one of a recurring kind. Treat generic problems as one-offs and you firefight forever; a principle settles the whole class at once.",
+    "text": "Most problems are generic: answer them with a rule.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before your next big call, ask someone to argue the opposite case in writing.",
+    "meaning": "Drucker tells how Alfred Sloan postponed a decision because everyone agreed, so they could find disagreement. Effective executives begin with competing opinions, test them against reality, and build action into the decision.",
+    "text": "Good decisions start with dissent, not consensus.",
+    "type": "idea"
+   }
+  ],
+  "color": "#3a1030",
+  "createdAt": 1795762330000,
+  "library": "business",
+  "order": 149,
+  "shelf": "operators",
+  "source": "hourly",
+  "title": "The Effective Executive"
  }
 ]
