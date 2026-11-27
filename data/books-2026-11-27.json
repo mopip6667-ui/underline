@@ -599,5 +599,90 @@
     "apply": "Choose one principle you agree with but don't practise, and act on it before Friday."
    }
   ]
+ },
+ {
+  "id": "against-the-gods-2026112707",
+  "author": "Peter L. Bernstein",
+  "cards": [
+   {
+    "apply": "Pick one decision you're treating as luck this week and write down the odds and the downside you'd actually face.",
+    "meaning": "Bernstein's thesis: for most of history the future was seen as the whim of gods or fate. The idea that risk can be measured and managed is what made insurance, investing and modern enterprise possible.",
+    "text": "Mastering risk is what separates the modern world from the past.",
+    "type": "idea"
+   },
+   {
+    "apply": "Audit one key spreadsheet: are your inputs in a form you can actually calculate with, or just labels?",
+    "meaning": "Fibonacci's Liber Abaci (1202) helped bring Hindu-Arabic numerals and zero to Europe. Roman numerals made calculation clumsy; the new system made bookkeeping, interest and, later, probability practical.",
+    "text": "No probability theory without the right numbers.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before a bet on a deal or stock, list every plausible outcome, not just the one you hope for.",
+    "meaning": "Girolamo Cardano, a Renaissance physician and compulsive gambler, analysed dice systematically in Liber de Ludo Aleae. He saw that outcomes could be counted as a ratio of favourable cases to all cases.",
+    "text": "A gambling doctor wrote the first serious study of chance.",
+    "type": "idea"
+   },
+   {
+    "apply": "When splitting credit or value on an unfinished project, base it on likely outcomes, not just work done so far.",
+    "meaning": "In 1654 they solved the 'problem of points': how to split the stakes of a game stopped early. Their letters founded probability theory, shifting focus from what happened to what is likely to happen.",
+    "text": "Pascal and Fermat turned an unfinished game into a science.",
+    "type": "idea"
+   },
+   {
+    "apply": "Use a small, honest sample (ten customers, ten filings) to test an assumption before building a model on it.",
+    "meaning": "John Graunt used London's bills of mortality (1662) to estimate population and death patterns. Edmond Halley later built a life table that could price annuities: early statistical inference at work.",
+    "text": "Sampling lets you reason about a whole from a part.",
+    "type": "idea"
+   },
+   {
+    "apply": "Check how many data points sit behind a metric you rely on. If it's a handful, treat it as a hint, not a fact.",
+    "meaning": "Jacob Bernoulli's law of large numbers shows that averages from bigger samples tend toward the true value. But it needs many trials, and the past must resemble the future for it to hold.",
+    "text": "More observations bring you closer to the truth.",
+    "type": "idea"
+   },
+   {
+    "apply": "Size a position or bet by what losing would do to you, not by the expected payoff alone.",
+    "meaning": "Daniel Bernoulli (1738) argued that value lies in utility, not price: an extra dollar matters more to a poor man than a rich one. This idea of diminishing marginal utility explains why people pay to avoid risk.",
+    "text": "What something is worth depends on who you are.",
+    "type": "idea"
+   },
+   {
+    "apply": "When a business posts a record quarter, model a return toward normal before extrapolating the peak.",
+    "meaning": "De Moivre and Gauss described the bell curve; Francis Galton found regression to the mean, where extreme results tend to be followed by more ordinary ones. Bernstein warns that reversion is not guaranteed.",
+    "text": "Many things cluster around the average, and extremes pull back.",
+    "type": "idea"
+   },
+   {
+    "apply": "Identify one concentrated risk in your work or portfolio and find a way to spread or transfer it.",
+    "meaning": "Merchants at Edward Lloyd's coffeehouse in London pooled and priced shipping risks, growing into the insurance market. Spreading many independent risks across many backers makes each loss bearable.",
+    "text": "Insurance is a market for trading risk.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look at how your top holdings correlate. If they all fall together, you hold fewer bets than you think.",
+    "meaning": "Harry Markowitz (1952) showed that combining assets that don't move together can cut risk without giving up return. Diversification became a measurable, rather than intuitive, idea.",
+    "text": "Judge investments by the whole portfolio, not one by one.",
+    "type": "idea"
+   },
+   {
+    "apply": "For your biggest forecast, write which parts have real data behind them and which are pure judgment.",
+    "meaning": "Frank Knight and John Maynard Keynes separated measurable risk from true uncertainty, where no reliable odds exist. Treating uncertainty as if it were neat risk breeds false confidence in models.",
+    "text": "Not every unknown can be measured.",
+    "type": "idea"
+   },
+   {
+    "apply": "Reframe one decision you're avoiding in terms of total outcomes rather than the possible loss alone.",
+    "meaning": "Kahneman and Tversky's prospect theory showed people often break the rules of rational choice: loss aversion and framing shape decisions. Bernstein closes by asking how far numbers can tame human nature.",
+    "text": "Losses hurt more than equal gains feel good.",
+    "type": "idea"
+   }
+  ],
+  "color": "#4d1f1f",
+  "createdAt": 1795783989942,
+  "library": "psych",
+  "order": 155,
+  "shelf": "risk",
+  "source": "hourly",
+  "title": "Against the Gods"
  }
 ]
