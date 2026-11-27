@@ -1801,5 +1801,90 @@
     "type": "idea"
    }
   ]
+ },
+ {
+  "id": "nuts-2026112621",
+  "title": "Nuts!",
+  "author": "Kevin & Jackie Freiberg",
+  "color": "#1a3a5c",
+  "library": "finance",
+  "shelf": "aviation",
+  "order": 145,
+  "source": "hourly",
+  "createdAt": 1795747988149,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "A few people sketched a triangle and took on the giants",
+    "meaning": "Rollin King and Herb Kelleher founded Southwest in 1967 to fly cheaply between Dallas, Houston and San Antonio. Rival airlines tied them up in court for years, so the first flight didn't take off until 1971.",
+    "apply": "When an incumbent fights you in court instead of on price, it often means your model threatens it. Spot one rival doing that in your coverage."
+   },
+   {
+    "type": "idea",
+    "text": "Short of planes? Turn the ones you have faster",
+    "meaning": "Short on cash in 1972, Southwest sold one of its four jets but kept its schedule. Ground crews learned to turn a plane around in about ten minutes, and fast turns became a core cost advantage.",
+    "apply": "Find the asset in your business or a company you cover that sits idle most of the day. Ask what doubling its use would do to returns."
+   },
+   {
+    "type": "idea",
+    "text": "Keep it simple: one plane, point to point",
+    "meaning": "Southwest flew only Boeing 737s, served short routes directly instead of through hubs, and skipped meals and assigned seats. Every simplification cut training, maintenance and delay costs.",
+    "apply": "List the complexity your team carries for rare cases. Pick one you could drop without losing customers."
+   },
+   {
+    "type": "idea",
+    "text": "Low fares can grow the whole market",
+    "meaning": "Southwest priced against the cost of driving, not against other airlines. When it entered a route, fares fell and traffic often jumped, which the Department of Transportation later called the Southwest Effect.",
+    "apply": "When modelling a new entrant, test whether it steals share or expands the market. The answer changes everyone's revenue forecast."
+   },
+   {
+    "type": "idea",
+    "text": "Win a price war by changing the offer",
+    "meaning": "When Braniff cut its Dallas–Houston fare to $13 in 1973, Southwest let customers choose: pay $13, or the full $26 and get a free bottle of liquor. Many business travellers took the bottle and expensed the full fare.",
+    "apply": "Next time a competitor cuts price, look for a response that serves your best customers without matching the cut across the board."
+   },
+   {
+    "type": "idea",
+    "text": "Employees first, customers second",
+    "meaning": "Kelleher's view was that happy employees treat customers well, and customers then reward shareholders. He was willing to stand by staff against rude passengers rather than assume the customer was always right.",
+    "apply": "Ask how your firm's incentives treat front-line staff. That is often an early sign of how service will look in two years."
+   },
+   {
+    "type": "idea",
+    "text": "Hire for attitude, train for skill",
+    "meaning": "Southwest screened hard for humour, warmth and teamwork, even in interviews for pilots and mechanics. Skills could be taught; a sour attitude usually could not.",
+    "apply": "In your next interview, add one question that reveals how the person treats peers, not just what they know."
+   },
+   {
+    "type": "idea",
+    "text": "Fun is a business strategy, not a perk",
+    "meaning": "Flight attendants sang safety briefings and joked with passengers. The authors argue that play lowered stress, built loyalty and made a cheap, no-frills product feel generous.",
+    "apply": "Find one routine on your team that is dull by habit, not necessity, and give people licence to make it lighter."
+   },
+   {
+    "type": "idea",
+    "text": "Settle a dispute with an arm-wrestle",
+    "meaning": "In 1992 Stevens Aviation said Southwest's slogan 'Just Plane Smart' copied its own. Instead of suing, Kelleher arm-wrestled its chairman for it. He lost, but both firms got huge publicity and kept using the line.",
+    "apply": "Before escalating a dispute, ask whether a creative, cheaper settlement would leave both sides better off."
+   },
+   {
+    "type": "idea",
+    "text": "Make employees owners and they act like it",
+    "meaning": "Southwest started what it says was the airline industry's first profit-sharing plan in 1973, and staff came to own a large stake. People who share in profits watch costs and help across job lines.",
+    "apply": "Check how much of your pay, or of the management you cover, is tied to long-term ownership rather than short-term targets."
+   },
+   {
+    "type": "idea",
+    "text": "Not every customer is worth keeping",
+    "meaning": "The book tells of a passenger who complained about nearly everything. Kelleher's reply to her, in essence, was that Southwest would miss her. Defending staff against a customer who would never be satisfied protected the culture.",
+    "apply": "Identify one client relationship that costs more in morale and time than it earns. Decide whether to reset it or let it go."
+   },
+   {
+    "type": "idea",
+    "text": "Culture is the moat rivals can't copy",
+    "meaning": "Competitors copied Southwest's planes, fares and routes, and most copies failed. The book argues the real edge was a culture built over decades, which kept the airline profitable every year from 1973 into the 2000s.",
+    "apply": "When judging a moat, ask what a well-funded rival could not buy or copy in five years. Weight that above any spreadsheet advantage."
+   }
+  ]
  }
 ]
