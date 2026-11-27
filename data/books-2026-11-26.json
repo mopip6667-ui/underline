@@ -1886,5 +1886,90 @@
     "apply": "When judging a moat, ask what a well-funded rival could not buy or copy in five years. Weight that above any spreadsheet advantage."
    }
   ]
+ },
+ {
+  "id": "the-book-of-five-rings-2026112622",
+  "author": "Miyamoto Musashi",
+  "cards": [
+   {
+    "apply": "Pick one skill you rely on at work and write down what you've learned about it from experience, not from courses.",
+    "meaning": "Miyamoto Musashi wrote the book in 1645, near the end of his life, after claiming victory in over sixty duels. He frames strategy not as a trick but as a lifelong Way, learned through practice rather than theory.",
+    "text": "Written at sixty by a swordsman who never lost a duel",
+    "type": "idea"
+   },
+   {
+    "apply": "Review your team or deal pipeline this week and match each task to the person or asset best suited to it.",
+    "meaning": "Musashi compares a commander to a master carpenter who knows his tools, judges timber and assigns each worker to suit his ability. Strategy at any scale is about knowing your materials and your people.",
+    "text": "The Way of strategy is like the master carpenter's craft",
+    "type": "idea"
+   },
+   {
+    "apply": "Write the nine rules on a card and score yourself against each on Friday.",
+    "meaning": "The Earth book ends with nine principles: be honest, train constantly, know many arts and professions, weigh gain and loss, develop judgement, perceive what can't be seen, mind small things and do nothing useless.",
+    "text": "Nine rules: start with 'do not think dishonestly'",
+    "type": "idea"
+   },
+   {
+    "apply": "List every tool you have for your biggest problem now, including ones you've ignored, and use one new one.",
+    "meaning": "Musashi's school trained the long and short sword together, arguing it is wrong to die with a weapon still unused. The wider point: use every resource you have rather than clinging to one favourite tool.",
+    "text": "Fight with both swords; don't die with one sheathed",
+    "type": "idea"
+   },
+   {
+    "apply": "Before your next tough meeting, take two minutes to settle your breathing and decide to stay the same person throughout.",
+    "meaning": "In the Water book, Musashi says your mind in combat should be the same as in daily life: broad, steady and unhurried. Water takes the shape of its vessel; a settled mind can adapt to whatever happens.",
+    "text": "Keep the spirit calm, neither tense nor slack",
+    "type": "idea"
+   },
+   {
+    "apply": "In your next negotiation or review, ignore the headline number for a moment and ask what the other side really wants.",
+    "meaning": "Musashi separates surface seeing from deeper perception, which reads the overall situation and what is coming. Fixating on the opponent's sword makes you miss his intent.",
+    "text": "Look with perception, not just with your eyes",
+    "type": "idea"
+   },
+   {
+    "apply": "Look at your recurring work rituals and drop one that looks productive but doesn't move the main goal.",
+    "meaning": "Musashi warns against fancy postures and elegant technique for its own sake. Whatever you do with the sword, the aim is to cut the enemy; anything else is decoration.",
+    "text": "Every grip and stance exists for one purpose: to cut",
+    "type": "idea"
+   },
+   {
+    "apply": "Map the cycle of one market or client you deal with, then plan your next move for when they're least ready, not most busy.",
+    "meaning": "Musashi says all things have timing, from a career to a market to a duel. Strategy means sensing the opponent's rhythm and striking when it is disrupted, while keeping your own.",
+    "text": "Know the rhythm of things, and break the enemy's",
+    "type": "idea"
+   },
+   {
+    "apply": "Before pitching or competing this week, write one paragraph from your rival's or counterparty's point of view.",
+    "meaning": "In the Fire book, Musashi urges you to put yourself in the opponent's position. A cornered foe looks fearsome from outside, but from within he is often frightened and uncertain.",
+    "text": "Become the enemy: see the fight from his side",
+    "type": "idea"
+   },
+   {
+    "apply": "Name the one decision you've been circling and set a date this week to make it.",
+    "meaning": "Musashi compares key moments to crossing a river at a ford, where judging the place and the conditions lets you cross safely. Once you've chosen your moment, go through decisively.",
+    "text": "Cross at the ford: commit at the critical point",
+    "type": "idea"
+   },
+   {
+    "apply": "When someone pitches you a 'secret' method, ask for the plain mechanism and evidence before you buy in.",
+    "meaning": "The Wind book criticises other schools for favouring long swords, strength, endless techniques or hidden 'secret' teachings. Musashi says real strategy has no inner and outer gates, only what works.",
+    "text": "Beware schools that sell secrets and showy technique",
+    "type": "idea"
+   },
+   {
+    "apply": "Take one principle from your core skill and apply it to an unrelated area of your work this week.",
+    "meaning": "Musashi believed that mastering one Way deeply lets you understand others, and he applied his to painting and calligraphy. The Void book points to acting naturally once training is complete.",
+    "text": "From one thing, know ten thousand things",
+    "type": "idea"
+   }
+  ],
+  "color": "#1c2b2b",
+  "createdAt": 1795751562995,
+  "library": "history",
+  "order": 146,
+  "shelf": "warrior",
+  "source": "hourly",
+  "title": "The Book of Five Rings"
  }
 ]
