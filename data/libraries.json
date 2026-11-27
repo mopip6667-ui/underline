@@ -1,1 +1,586 @@
-{"libraries": [{"id": "finance", "name": "Finance & Investing", "color": "#1f4d3a", "blurb": "Investing principles, then sector by sector: how each industry makes money and where it breaks.", "shelves": [{"id": "foundations", "name": "Investing Foundations", "suggest": [{"t": "The Most Important Thing", "a": "Howard Marks"}, {"t": "One Up On Wall Street", "a": "Peter Lynch"}, {"t": "Common Stocks and Uncommon Profits", "a": "Philip Fisher"}, {"t": "The Little Book of Common Sense Investing", "a": "John C. Bogle"}, {"t": "Reminiscences of a Stock Operator", "a": "Edwin Lefèvre", "free": true}]}, {"id": "tech", "name": "Tech", "suggest": [{"t": "Zero to One", "a": "Peter Thiel"}, {"t": "Only the Paranoid Survive", "a": "Andrew S. Grove"}, {"t": "The Everything Store", "a": "Brad Stone"}, {"t": "The Innovators", "a": "Walter Isaacson"}]}, {"id": "industrials", "name": "Industrials", "suggest": [{"t": "The Box", "a": "Marc Levinson"}, {"t": "The Machine That Changed the World", "a": "Womack, Jones & Roos"}, {"t": "The Toyota Way", "a": "Jeffrey Liker"}, {"t": "Lean Thinking", "a": "Womack & Jones"}]}, {"id": "aviation", "name": "Aviation", "suggest": [{"t": "Nuts!", "a": "Kevin & Jackie Freiberg"}, {"t": "The Sporty Game", "a": "John Newhouse"}, {"t": "Skygods", "a": "Robert Gandt"}]}, {"id": "materials", "name": "Materials & Energy", "suggest": [{"t": "The Quest", "a": "Daniel Yergin"}, {"t": "The World for Sale", "a": "Javier Blas & Jack Farchy"}, {"t": "The Alchemy of Air", "a": "Thomas Hager"}]}, {"id": "realestate", "name": "Real Estate", "suggest": [{"t": "Triumph of the City", "a": "Edward Glaeser"}, {"t": "The Death and Life of Great American Cities", "a": "Jane Jacobs"}, {"t": "Confessions of a Real Estate Entrepreneur", "a": "James Randel"}]}, {"id": "banking", "name": "Banks & Financials", "suggest": [{"t": "Liar's Poker", "a": "Michael Lewis"}, {"t": "Too Big to Fail", "a": "Andrew Ross Sorkin"}, {"t": "The House of Morgan", "a": "Ron Chernow"}, {"t": "King of Capital", "a": "David Carey & John Morris"}, {"t": "Lombard Street", "a": "Walter Bagehot", "free": true}]}, {"id": "consumer", "name": "Consumer & Retail", "suggest": [{"t": "Made in America", "a": "Sam Walton"}, {"t": "Grinding It Out", "a": "Ray Kroc"}, {"t": "Pour Your Heart Into It", "a": "Howard Schultz"}]}, {"id": "healthcare", "name": "Healthcare", "suggest": [{"t": "An American Sickness", "a": "Elisabeth Rosenthal"}, {"t": "The Billion-Dollar Molecule", "a": "Barry Werth"}, {"t": "The Gene", "a": "Siddhartha Mukherjee"}]}, {"id": "macro", "name": "Macro & Markets", "suggest": [{"t": "Manias, Panics, and Crashes", "a": "Charles Kindleberger"}, {"t": "The Alchemy of Finance", "a": "George Soros"}, {"t": "Extraordinary Popular Delusions and the Madness of Crowds", "a": "Charles Mackay", "free": true}, {"t": "The Wealth of Nations", "a": "Adam Smith", "free": true}]}]}, {"id": "science", "name": "Science & Discovery", "color": "#0b4f6c", "blurb": "The people who worked out how the world works, and the ideas from science you can use in your own life.", "shelves": [{"id": "pioneers", "name": "Great Scientists", "suggest": [{"t": "On the Origin of Species", "a": "Charles Darwin", "free": true}, {"t": "Dialogues Concerning Two New Sciences", "a": "Galileo Galilei", "free": true}, {"t": "Surely You're Joking, Mr. Feynman!", "a": "Richard Feynman"}, {"t": "The Structure of Scientific Revolutions", "a": "Thomas Kuhn"}]}, {"id": "islamic-science", "name": "Islamic Golden Age", "suggest": [{"t": "The House of Wisdom", "a": "Jonathan Lyons"}, {"t": "Lost Enlightenment", "a": "S. Frederick Starr"}]}, {"id": "life", "name": "Science for Everyday Life", "suggest": [{"t": "Range", "a": "David Epstein"}, {"t": "The Selfish Gene", "a": "Richard Dawkins"}, {"t": "Peak", "a": "Anders Ericsson & Robert Pool"}]}]}, {"id": "history", "name": "History & Warriors", "color": "#7a2e14", "blurb": "Emperors, generals and warrior traditions: what made them win, and what you can borrow.", "shelves": [{"id": "rome", "name": "Rome & the Ancient World", "suggest": [{"t": "The Gallic War", "a": "Julius Caesar", "free": true}, {"t": "Plutarch's Lives", "a": "Plutarch", "free": true}, {"t": "The Twelve Caesars", "a": "Suetonius", "free": true}, {"t": "Rubicon", "a": "Tom Holland"}]}, {"id": "islamic-empire", "name": "The Islamic Empire", "suggest": [{"t": "The Great Arab Conquests", "a": "Hugh Kennedy"}, {"t": "Destiny Disrupted", "a": "Tamim Ansary"}, {"t": "The Sword of Allah", "a": "A. I. Akram"}, {"t": "Lords of the Horizons", "a": "Jason Goodwin"}]}, {"id": "commanders", "name": "Great Commanders", "suggest": [{"t": "The Campaigns of Alexander", "a": "Arrian"}, {"t": "Napoleon: A Life", "a": "Andrew Roberts"}, {"t": "The Fifteen Decisive Battles of the World", "a": "Edward Creasy", "free": true}]}, {"id": "warrior", "name": "The Warrior's Way", "suggest": [{"t": "The Book of Five Rings", "a": "Miyamoto Musashi"}, {"t": "Bushido: The Soul of Japan", "a": "Inazo Nitobe", "free": true}, {"t": "Hagakure", "a": "Yamamoto Tsunetomo"}, {"t": "Extreme Ownership", "a": "Jocko Willink & Leif Babin"}, {"t": "Gates of Fire", "a": "Steven Pressfield"}]}]}, {"id": "mind", "name": "Philosophy & Wisdom", "color": "#1d2a6b", "blurb": "From Athens and the Stoics to the East: how to think, act and live well.", "shelves": [{"id": "greeks", "name": "Ancient Greeks", "suggest": [{"t": "Nicomachean Ethics", "a": "Aristotle", "free": true}, {"t": "The Republic", "a": "Plato", "free": true}, {"t": "Apology", "a": "Plato", "free": true}, {"t": "The Histories", "a": "Herodotus", "free": true}]}, {"id": "stoicism", "name": "Stoicism", "suggest": [{"t": "Discourses", "a": "Epictetus", "free": true}, {"t": "Enchiridion", "a": "Epictetus", "free": true}, {"t": "Moral Letters to Lucilius", "a": "Seneca", "free": true}]}, {"id": "classics", "name": "Classics & Strategy", "suggest": [{"t": "The Prince", "a": "Niccolò Machiavelli", "free": true}, {"t": "Tao Te Ching", "a": "Laozi", "free": true}, {"t": "The Analects", "a": "Confucius", "free": true}, {"t": "Self-Reliance", "a": "Ralph Waldo Emerson", "free": true}]}]}, {"id": "psych", "name": "Psychology & Decisions", "color": "#5c2340", "blurb": "How minds go wrong, and how to decide better under uncertainty.", "shelves": [{"id": "behavioral", "name": "Behavioral Science", "suggest": [{"t": "Misbehaving", "a": "Richard Thaler"}, {"t": "Predictably Irrational", "a": "Dan Ariely"}, {"t": "The Righteous Mind", "a": "Jonathan Haidt"}]}, {"id": "risk", "name": "Risk & Uncertainty", "suggest": [{"t": "Fooled by Randomness", "a": "Nassim Nicholas Taleb"}, {"t": "The Black Swan", "a": "Nassim Nicholas Taleb"}, {"t": "Thinking in Bets", "a": "Annie Duke"}, {"t": "Against the Gods", "a": "Peter L. Bernstein"}]}, {"id": "thinking", "name": "Mental Models & Clear Thinking", "suggest": [{"t": "Unfair Advantage", "a": "Shane Parrish (out Feb 23, 2027)"}, {"t": "Poor Charlie's Almanack", "a": "Charles T. Munger"}, {"t": "Thinking in Bets", "a": "Annie Duke"}]}]}, {"id": "business", "name": "Business & Strategy", "color": "#6b4a0c", "blurb": "Competitive advantage, and how great operators build and run companies.", "shelves": [{"id": "strategy", "name": "Strategy", "suggest": [{"t": "7 Powers", "a": "Hamilton Helmer"}, {"t": "Competitive Strategy", "a": "Michael E. Porter"}, {"t": "Playing to Win", "a": "A.G. Lafley & Roger Martin"}]}, {"id": "operators", "name": "Founders & Operators", "suggest": [{"t": "The Effective Executive", "a": "Peter Drucker"}, {"t": "The Hard Thing About Hard Things", "a": "Ben Horowitz"}, {"t": "The Autobiography of Benjamin Franklin", "a": "Benjamin Franklin", "free": true}]}]}, {"id": "work", "name": "Habits & Performance", "color": "#0b5d63", "blurb": "Systems for focus, discipline and getting better every day.", "shelves": [{"id": "habits", "name": "Habits & Discipline", "suggest": [{"t": "The Power of Habit", "a": "Charles Duhigg"}, {"t": "Tiny Habits", "a": "BJ Fogg"}, {"t": "Can't Hurt Me", "a": "David Goggins"}, {"t": "Discipline Is Destiny", "a": "Ryan Holiday"}]}, {"id": "focus", "name": "Focus & Mastery", "suggest": [{"t": "Essentialism", "a": "Greg McKeown"}, {"t": "Flow", "a": "Mihaly Csikszentmihalyi"}, {"t": "So Good They Can't Ignore You", "a": "Cal Newport"}, {"t": "Mastery", "a": "Robert Greene"}]}]}]}
+{
+ "libraries": [
+  {
+   "blurb": "Investing principles, then sector by sector: how each industry makes money and where it breaks.",
+   "color": "#1f4d3a",
+   "id": "finance",
+   "name": "Finance & Investing",
+   "shelves": [
+    {
+     "id": "foundations",
+     "name": "Investing Foundations",
+     "suggest": [
+      {
+       "a": "Howard Marks",
+       "t": "The Most Important Thing"
+      },
+      {
+       "a": "Peter Lynch",
+       "t": "One Up On Wall Street"
+      },
+      {
+       "a": "Philip Fisher",
+       "t": "Common Stocks and Uncommon Profits"
+      },
+      {
+       "a": "John C. Bogle",
+       "t": "The Little Book of Common Sense Investing"
+      },
+      {
+       "a": "Edwin Lefèvre",
+       "free": true,
+       "t": "Reminiscences of a Stock Operator"
+      }
+     ]
+    },
+    {
+     "id": "tech",
+     "name": "Tech",
+     "suggest": [
+      {
+       "a": "Andrew S. Grove",
+       "t": "Only the Paranoid Survive"
+      },
+      {
+       "a": "Brad Stone",
+       "t": "The Everything Store"
+      },
+      {
+       "a": "Walter Isaacson",
+       "t": "The Innovators"
+      }
+     ]
+    },
+    {
+     "id": "industrials",
+     "name": "Industrials",
+     "suggest": [
+      {
+       "a": "Womack, Jones & Roos",
+       "t": "The Machine That Changed the World"
+      },
+      {
+       "a": "Jeffrey Liker",
+       "t": "The Toyota Way"
+      },
+      {
+       "a": "Womack & Jones",
+       "t": "Lean Thinking"
+      }
+     ]
+    },
+    {
+     "id": "aviation",
+     "name": "Aviation",
+     "suggest": [
+      {
+       "a": "John Newhouse",
+       "t": "The Sporty Game"
+      },
+      {
+       "a": "Robert Gandt",
+       "t": "Skygods"
+      },
+      {
+       "t": "Boeing Versus Airbus",
+       "a": "John Newhouse"
+      }
+     ]
+    },
+    {
+     "id": "materials",
+     "name": "Materials & Energy",
+     "suggest": [
+      {
+       "a": "Daniel Yergin",
+       "t": "The Quest"
+      },
+      {
+       "a": "Thomas Hager",
+       "t": "The Alchemy of Air"
+      },
+      {
+       "t": "The Elements of Power",
+       "a": "David S. Abraham"
+      }
+     ]
+    },
+    {
+     "id": "realestate",
+     "name": "Real Estate",
+     "suggest": [
+      {
+       "a": "Edward Glaeser",
+       "t": "Triumph of the City"
+      },
+      {
+       "a": "James Randel",
+       "t": "Confessions of a Real Estate Entrepreneur"
+      },
+      {
+       "t": "Order Without Design",
+       "a": "Alain Bertaud"
+      }
+     ]
+    },
+    {
+     "id": "banking",
+     "name": "Banks & Financials",
+     "suggest": [
+      {
+       "a": "Michael Lewis",
+       "t": "Liar's Poker"
+      },
+      {
+       "a": "Andrew Ross Sorkin",
+       "t": "Too Big to Fail"
+      },
+      {
+       "a": "Ron Chernow",
+       "t": "The House of Morgan"
+      },
+      {
+       "a": "David Carey & John Morris",
+       "t": "King of Capital"
+      }
+     ]
+    },
+    {
+     "id": "consumer",
+     "name": "Consumer & Retail",
+     "suggest": [
+      {
+       "a": "Howard Schultz",
+       "t": "Pour Your Heart Into It"
+      },
+      {
+       "a": "Will Guidara",
+       "t": "Unreasonable Hospitality"
+      },
+      {
+       "t": "Built from Scratch",
+       "a": "Bernie Marcus and Arthur Blank"
+      }
+     ]
+    },
+    {
+     "id": "healthcare",
+     "name": "Healthcare",
+     "suggest": [
+      {
+       "a": "Barry Werth",
+       "t": "The Billion-Dollar Molecule"
+      },
+      {
+       "a": "Siddhartha Mukherjee",
+       "t": "The Gene"
+      },
+      {
+       "a": "Marty Makary",
+       "t": "The Price We Pay"
+      },
+      {
+       "a": "Michael E. Porter & Elizabeth Olmsted Teisberg",
+       "t": "Redefining Health Care"
+      }
+     ]
+    },
+    {
+     "id": "macro",
+     "name": "Macro & Markets",
+     "suggest": [
+      {
+       "a": "Charles Kindleberger",
+       "t": "Manias, Panics, and Crashes"
+      },
+      {
+       "a": "George Soros",
+       "t": "The Alchemy of Finance"
+      },
+      {
+       "a": "Adam Smith",
+       "free": true,
+       "t": "The Wealth of Nations"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "The people who worked out how the world works, and the ideas from science you can use in your own life.",
+   "color": "#0b4f6c",
+   "id": "science",
+   "name": "Science & Discovery",
+   "shelves": [
+    {
+     "id": "pioneers",
+     "name": "Great Scientists",
+     "suggest": [
+      {
+       "a": "Charles Darwin",
+       "free": true,
+       "t": "On the Origin of Species"
+      },
+      {
+       "a": "Galileo Galilei",
+       "free": true,
+       "t": "Dialogues Concerning Two New Sciences"
+      },
+      {
+       "a": "Richard Feynman",
+       "t": "Surely You're Joking, Mr. Feynman!"
+      },
+      {
+       "a": "Thomas Kuhn",
+       "t": "The Structure of Scientific Revolutions"
+      }
+     ]
+    },
+    {
+     "id": "islamic-science",
+     "name": "Islamic Golden Age",
+     "suggest": [
+      {
+       "a": "S. Frederick Starr",
+       "t": "Lost Enlightenment"
+      },
+      {
+       "a": "George Saliba",
+       "t": "Islamic Science and the Making of the European Renaissance"
+      },
+      {
+       "a": "Ehsan Masood",
+       "t": "Science and Islam: A History"
+      }
+     ]
+    },
+    {
+     "id": "life",
+     "name": "Science for Everyday Life",
+     "suggest": [
+      {
+       "a": "David Epstein",
+       "t": "Range"
+      },
+      {
+       "a": "Anders Ericsson & Robert Pool",
+       "t": "Peak"
+      },
+      {
+       "t": "The Vital Question",
+       "a": "Nick Lane"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "Emperors, generals and warrior traditions: what made them win, and what you can borrow.",
+   "color": "#7a2e14",
+   "id": "history",
+   "name": "History & Warriors",
+   "shelves": [
+    {
+     "id": "rome",
+     "name": "Rome & the Ancient World",
+     "suggest": [
+      {
+       "a": "Plutarch",
+       "free": true,
+       "t": "Plutarch's Lives"
+      },
+      {
+       "a": "Suetonius",
+       "free": true,
+       "t": "The Twelve Caesars"
+      },
+      {
+       "a": "Tom Holland",
+       "t": "Rubicon"
+      }
+     ]
+    },
+    {
+     "id": "islamic-empire",
+     "name": "The Islamic Empire",
+     "suggest": [
+      {
+       "a": "Hugh Kennedy",
+       "t": "The Great Arab Conquests"
+      },
+      {
+       "a": "Tamim Ansary",
+       "t": "Destiny Disrupted"
+      },
+      {
+       "a": "A. I. Akram",
+       "t": "The Sword of Allah"
+      },
+      {
+       "a": "Jason Goodwin",
+       "t": "Lords of the Horizons"
+      }
+     ]
+    },
+    {
+     "id": "commanders",
+     "name": "Great Commanders",
+     "suggest": [
+      {
+       "a": "Andrew Roberts",
+       "t": "Napoleon: A Life"
+      },
+      {
+       "a": "Edward Creasy",
+       "free": true,
+       "t": "The Fifteen Decisive Battles of the World"
+      },
+      {
+       "t": "Grant",
+       "a": "Ron Chernow"
+      }
+     ]
+    },
+    {
+     "id": "warrior",
+     "name": "The Warrior's Way",
+     "suggest": [
+      {
+       "a": "Yamamoto Tsunetomo",
+       "t": "Hagakure"
+      },
+      {
+       "a": "Jocko Willink & Leif Babin",
+       "t": "Extreme Ownership"
+      },
+      {
+       "a": "Steven Pressfield",
+       "t": "Gates of Fire"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "From Athens and the Stoics to the East: how to think, act and live well.",
+   "color": "#1d2a6b",
+   "id": "mind",
+   "name": "Philosophy & Wisdom",
+   "shelves": [
+    {
+     "id": "greeks",
+     "name": "Ancient Greeks",
+     "suggest": [
+      {
+       "a": "Aristotle",
+       "free": true,
+       "t": "Nicomachean Ethics"
+      },
+      {
+       "a": "Herodotus",
+       "free": true,
+       "t": "The Histories"
+      },
+      {
+       "t": "History of the Peloponnesian War",
+       "a": "Thucydides",
+       "free": true
+      }
+     ]
+    },
+    {
+     "id": "stoicism",
+     "name": "Stoicism",
+     "suggest": [
+      {
+       "a": "Epictetus",
+       "free": true,
+       "t": "Discourses"
+      },
+      {
+       "a": "Epictetus",
+       "free": true,
+       "t": "Enchiridion"
+      },
+      {
+       "a": "Seneca",
+       "free": true,
+       "t": "Moral Letters to Lucilius"
+      }
+     ]
+    },
+    {
+     "id": "classics",
+     "name": "Classics & Strategy",
+     "suggest": [
+      {
+       "a": "Laozi",
+       "free": true,
+       "t": "Tao Te Ching"
+      },
+      {
+       "a": "Confucius",
+       "free": true,
+       "t": "The Analects"
+      },
+      {
+       "a": "Ralph Waldo Emerson",
+       "free": true,
+       "t": "Self-Reliance"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "How minds go wrong, and how to decide better under uncertainty.",
+   "color": "#5c2340",
+   "id": "psych",
+   "name": "Psychology & Decisions",
+   "shelves": [
+    {
+     "id": "behavioral",
+     "name": "Behavioral Science",
+     "suggest": [
+      {
+       "a": "Dan Ariely",
+       "t": "Predictably Irrational"
+      },
+      {
+       "a": "Jonathan Haidt",
+       "t": "The Righteous Mind"
+      },
+      {
+       "t": "Nudge",
+       "a": "Richard Thaler and Cass Sunstein"
+      }
+     ]
+    },
+    {
+     "id": "risk",
+     "name": "Risk & Uncertainty",
+     "suggest": [
+      {
+       "a": "Nassim Nicholas Taleb",
+       "t": "The Black Swan"
+      },
+      {
+       "a": "Annie Duke",
+       "t": "Thinking in Bets"
+      },
+      {
+       "a": "Peter L. Bernstein",
+       "t": "Against the Gods"
+      }
+     ]
+    },
+    {
+     "id": "thinking",
+     "name": "Mental Models & Clear Thinking",
+     "suggest": [
+      {
+       "a": "Shane Parrish (out Feb 23, 2027)",
+       "t": "Unfair Advantage"
+      },
+      {
+       "a": "Annie Duke",
+       "t": "Thinking in Bets"
+      },
+      {
+       "a": "Peter Bevelin",
+       "t": "Seeking Wisdom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "Competitive advantage, and how great operators build and run companies.",
+   "color": "#6b4a0c",
+   "id": "business",
+   "name": "Business & Strategy",
+   "shelves": [
+    {
+     "id": "strategy",
+     "name": "Strategy",
+     "suggest": [
+      {
+       "a": "Michael E. Porter",
+       "t": "Competitive Strategy"
+      },
+      {
+       "a": "A.G. Lafley & Roger Martin",
+       "t": "Playing to Win"
+      },
+      {
+       "t": "Competition Demystified",
+       "a": "Bruce Greenwald and Judd Kahn"
+      }
+     ]
+    },
+    {
+     "id": "operators",
+     "name": "Founders & Operators",
+     "suggest": [
+      {
+       "a": "Peter Drucker",
+       "t": "The Effective Executive"
+      },
+      {
+       "a": "Ben Horowitz",
+       "t": "The Hard Thing About Hard Things"
+      },
+      {
+       "a": "Colin Bryar & Bill Carr",
+       "t": "Working Backwards"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "blurb": "Systems for focus, discipline and getting better every day.",
+   "color": "#0b5d63",
+   "id": "work",
+   "name": "Habits & Performance",
+   "shelves": [
+    {
+     "id": "habits",
+     "name": "Habits & Discipline",
+     "suggest": [
+      {
+       "a": "David Goggins",
+       "t": "Can't Hurt Me"
+      },
+      {
+       "a": "Ryan Holiday",
+       "t": "Discipline Is Destiny"
+      },
+      {
+       "t": "Better Than Before",
+       "a": "Gretchen Rubin"
+      }
+     ]
+    },
+    {
+     "id": "focus",
+     "name": "Focus & Mastery",
+     "suggest": [
+      {
+       "a": "Mihaly Csikszentmihalyi",
+       "t": "Flow"
+      },
+      {
+       "a": "Cal Newport",
+       "t": "So Good They Can't Ignore You"
+      },
+      {
+       "a": "Robert Greene",
+       "t": "Mastery"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
