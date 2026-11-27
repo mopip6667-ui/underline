@@ -1109,5 +1109,90 @@
   "shelf": "classics",
   "source": "hourly",
   "title": "Tao Te Ching"
+ },
+ {
+  "id": "liars-poker-2026112713",
+  "title": "Liar's Poker",
+  "author": "Michael Lewis",
+  "color": "#2a2f4d",
+  "library": "finance",
+  "shelf": "banking",
+  "order": 161,
+  "source": "hourly",
+  "createdAt": 1795805578697,
+  "cards": [
+   {
+    "apply": "Notice what your team's stories celebrate. If the legends are about nerve rather than judgment, ask whether that's the behaviour you want to reward.",
+    "meaning": "The book opens with Salomon chairman John Gutfreund challenging star trader John Meriwether to a single hand of liar's poker for a million dollars. Meriwether raises the stakes and Gutfreund backs off. Lewis uses the scene to show a culture where bravado and nerve were the currency of status.",
+    "text": "A $1 million bet sets the tone for the whole firm",
+    "type": "idea"
+   },
+   {
+    "apply": "Write down three practices in your industry that only look strange to an outsider. Explaining them to a newcomer this week will test whether they still make sense.",
+    "meaning": "Lewis, with a Princeton art history degree and an LSE economics master's, joined Salomon's 1985 training class and became a bond salesman in London. His outsider eye is the book's lens: he describes a world insiders took for granted.",
+    "text": "An art history major lands on a bond trading floor",
+    "type": "idea"
+   },
+   {
+    "apply": "In a new role, map who actually controls resources and decisions, not just the org chart. Spend an hour with the person whose P&L or budget matters most.",
+    "meaning": "The trainee program was a jungle of seating cliques, humiliating questions and jockeying for a desk. What trainees really learned was who held power: the traders who made money, and the managers who could place you near them.",
+    "text": "Training class taught the hierarchy before the markets",
+    "type": "idea"
+   },
+   {
+    "apply": "Check which one number your team is judged on. Add one quality measure, like client retention or error rate, so the scoreboard doesn't crowd out judgment.",
+    "meaning": "Salesmen and traders who made the most money for the firm earned the floor's crude top title, and their opinions carried weight regardless of rank. Lewis shows how a single scoreboard shapes everything: manners, ethics and who gets heard.",
+    "text": "Status on the floor was measured in profit, nothing else",
+    "type": "idea"
+   },
+   {
+    "apply": "When a sector you cover suddenly booms, identify the policy or structural change behind it. Ask what happens to margins if that change reverses.",
+    "meaning": "Lewis argues the 1980s bond boom began when the Fed under Paul Volcker began targeting the money supply rather than interest rates. Rates swung wildly, bonds became a trading market, and firms like Salomon profited from the volatility itself.",
+    "text": "Volcker's 1979 shift turned sleepy bonds into a casino",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for forced sellers in your market: owners who must sell for rules, taxes or funding reasons. Their urgency is often where the best prices come from.",
+    "meaning": "In the early 1980s, savings and loans were bleeding money, and a change in rules and tax treatment let them sell mortgage loans and book the losses. Salomon's desk under Lewis Ranieri bought, packaged and traded them, building the mortgage-backed securities market.",
+    "text": "Mortgage bonds were born from a crisis at the thrifts",
+    "type": "idea"
+   },
+   {
+    "apply": "Before a trade or deal, ask who on the other side knows more than you, and why. If you can't name your edge, assume the counterparty has it.",
+    "meaning": "Salomon's traders profited because they stood in the middle of huge volumes and knew who was buying and selling before anyone else. Lewis makes clear that much of the money came from information position, not superior foresight.",
+    "text": "Whoever sees the order flow holds the edge",
+    "type": "idea"
+   },
+   {
+    "apply": "When someone pitches you a product, ask what they gain if you buy and whether they're selling from inventory. Get one independent view before committing.",
+    "meaning": "Lewis describes the pressure on salesmen to unload bonds the firm wanted to get rid of onto trusting clients. A sale that pleased the trading desk could cost a customer badly, and that tension between firm and client runs through the book.",
+    "text": "The customer can be the firm's dumping ground",
+    "type": "idea"
+   },
+   {
+    "apply": "List the fastest-growing segment in your field that your firm isn't in. Write one paragraph on why, and whether that reason still holds.",
+    "meaning": "While Salomon dominated government and mortgage bonds, Michael Milken's Drexel Burnham Lambert built the high-yield market that financed 1980s takeovers. Lewis shows how a firm proud of its strengths can be blind to the next big thing.",
+    "text": "Salomon missed junk bonds while Drexel ran away with them",
+    "type": "idea"
+   },
+   {
+    "apply": "When analysing a company, read the terms of any rescue or strategic investment. Preferred stock often gives the investor a far better deal than common holders get.",
+    "meaning": "In 1987 Ronald Perelman sought to buy a large block of Salomon shares, and management looked for a friendly investor. Warren Buffett's Berkshire Hathaway bought $700 million of Salomon preferred stock, helping fend off the takeover.",
+    "text": "A raider at the gates, and Buffett to the rescue",
+    "type": "idea"
+   },
+   {
+    "apply": "Stress-test your plans for a 30% drop in revenue. Note which costs you could cut quickly and which would lock you in.",
+    "meaning": "Salomon grew fast, opening offices and hiring heavily, then faced falling profits, the October 1987 crash and cuts. Lewis shows how a firm built for boom times struggled when the markets that fed it cooled.",
+    "text": "Rapid expansion, then the 1987 crash and layoffs",
+    "type": "idea"
+   },
+   {
+    "apply": "After a strong year, separate the results you caused from those the market handed you. Keep the skill, and plan as if the tailwind will end.",
+    "meaning": "Lewis left in 1988, struck that he had been paid hugely as a young man for work he felt lacked lasting value. His conclusion: Wall Street rewards position and timing as much as talent, and pretending otherwise is self-flattery.",
+    "text": "Big pay often rewards being in the right seat",
+    "type": "idea"
+   }
+  ]
  }
 ]
