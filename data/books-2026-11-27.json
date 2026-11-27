@@ -168,5 +168,90 @@
   "shelf": "operators",
   "source": "hourly",
   "title": "The Effective Executive"
+ },
+ {
+  "id": "lost-enlightenment-2026112702",
+  "title": "Lost Enlightenment",
+  "author": "S. Frederick Starr",
+  "color": "#23305a",
+  "library": "science",
+  "shelf": "islamic-science",
+  "order": 150,
+  "source": "hourly",
+  "createdAt": 1795765979809,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "The golden age had a Central Asian heart",
+    "meaning": "Starr argues that many of the great minds we call 'Arab' science came from Khorasan and Transoxiana: today's Uzbekistan, Turkmenistan, Afghanistan and eastern Iran. Baghdad gathered talent, but much of it was born and trained in the east.",
+    "apply": "When you credit a success this week, ask where the talent was actually developed, not just where it ended up. Recognise the teams that feed your star performers."
+   },
+   {
+    "type": "idea",
+    "text": "Silk Road cities were rich before Islam arrived",
+    "meaning": "Merv, Bukhara, Samarkand and Balkh were trading hubs mixing Persian, Greek, Buddhist, Zoroastrian, Christian and Jewish traditions. That wealth, literacy and openness to outsiders were the soil the later flowering grew from.",
+    "apply": "Map the 'trade routes' in your own work: which teams or clients bring you new information? Spend an hour with one you rarely talk to."
+   },
+   {
+    "type": "idea",
+    "text": "The Abbasid revolution was launched from Merv",
+    "meaning": "The uprising that overthrew the Umayyads in 750 began in Khorasan, led by Abu Muslim. The new dynasty owed its power to the east, and eastern families such as the Barmakids of Balkh became its powerful viziers.",
+    "apply": "Notice who backed you early on a project. Return the favour by giving them visibility or a seat at the next big decision."
+   },
+   {
+    "type": "idea",
+    "text": "Paper from Samarkand spread knowledge cheaply",
+    "meaning": "Papermaking took hold in Samarkand by the late 700s, by tradition learned from Chinese captives, and soon spread west. Cheap writing material made copying, translating and keeping records far easier, powering the age of scholarship.",
+    "apply": "Look for one 'paper' upgrade: a cheap tool or template that makes sharing knowledge on your team easier. Roll it out this week."
+   },
+   {
+    "type": "idea",
+    "text": "Al-Khwarizmi gave us algebra and the algorithm",
+    "meaning": "Born in Khwarazm, he worked in Baghdad and wrote the book whose title gave us 'algebra'; his name, Latinised, became 'algorithm.' His work on Hindu numerals helped carry place-value arithmetic to Europe.",
+    "apply": "Turn one recurring task into a written step-by-step procedure, as al-Khwarizmi did for equations, so anyone can repeat it."
+   },
+   {
+    "type": "idea",
+    "text": "Al-Farabi became the 'Second Teacher' after Aristotle",
+    "meaning": "From the Syr Darya region, al-Farabi worked to reconcile Greek philosophy with Islamic thought and wrote on logic, music and the ideal state. Later thinkers ranked him second only to Aristotle as a teacher of philosophy.",
+    "apply": "Take two ideas your team treats as opposed, say speed and quality, and write one paragraph on how they can work together."
+   },
+   {
+    "type": "idea",
+    "text": "Ibn Sina organised all of medicine into one Canon",
+    "meaning": "Born near Bukhara, Ibn Sina (Avicenna) wrote the Canon of Medicine, a systematic encyclopedia used in European universities for centuries. He also wrote widely on philosophy, showing the range these scholars aimed for.",
+    "apply": "Build a one-page 'canon' for your field: the key rules, ratios and sources you rely on. Share it with a newer colleague."
+   },
+   {
+    "type": "idea",
+    "text": "Al-Biruni measured the Earth and studied India",
+    "meaning": "From Khwarazm, al-Biruni estimated the Earth's radius using a mountain and the horizon, and wrote a careful study of Indian religion and science. Starr presents him as a model of empirical, open-minded inquiry.",
+    "apply": "Before judging a competitor or market, study it on its own terms. Write down three things it does well before listing its flaws."
+   },
+   {
+    "type": "idea",
+    "text": "Patrons made the science, and could also crush it",
+    "meaning": "Rulers like the Samanids of Bukhara funded libraries and scholars. But patronage cut both ways: Mahmud of Ghazni gathered scholars at his court partly by pressure, and their freedom depended on a ruler's mood.",
+    "apply": "Diversify your 'patrons': make sure your best work is known to more than one senior sponsor so no single person controls your future."
+   },
+   {
+    "type": "idea",
+    "text": "Omar Khayyam was a mathematician before a poet",
+    "meaning": "Khayyam, from Nishapur, solved cubic equations geometrically and helped reform the Persian calendar. His fame in the West as a poet hides that he was one of the era's leading scientists.",
+    "apply": "Ask a colleague what skill they have outside their job title. You may find hidden expertise your team could use."
+   },
+   {
+    "type": "idea",
+    "text": "Starr argues decline began before the Mongols",
+    "meaning": "The Mongol destruction of Merv and other cities in the 1220s was catastrophic. But Starr argues creativity was already fading as state-backed orthodoxy and madrasa curricula narrowed inquiry; historians debate how much weight to give this.",
+    "apply": "Check whether your own team rewards only safe answers. Invite one dissenting view in your next meeting and protect whoever offers it."
+   },
+   {
+    "type": "idea",
+    "text": "Openness built the golden age; closing ended it",
+    "meaning": "The book's lesson is that the region thrived when it mixed cultures, traded ideas and tolerated debate, and faltered when those habits weakened. Knowledge is not lost only through invasion but through narrowing curiosity.",
+    "apply": "Schedule one hour this week to read outside your sector. Note one idea you could borrow for your current work."
+   }
+  ]
  }
 ]
