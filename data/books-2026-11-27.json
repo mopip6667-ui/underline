@@ -1279,5 +1279,90 @@
   "shelf": "industrials",
   "source": "hourly",
   "title": "The Machine That Changed the World"
+ },
+ {
+  "id": "only-the-paranoid-survive-2026112715",
+  "author": "Andrew S. Grove",
+  "cards": [
+   {
+    "apply": "List the two or three assumptions your business, or a company you cover, depends on most. Note what would have to happen for each to break.",
+    "meaning": "Grove's core idea: some moments shift a business's fundamentals so much that the old way of winning stops working. Handled well, they open new heights; ignored, they start a long decline.",
+    "text": "A strategic inflection point quietly rewrites your industry's rules",
+    "type": "idea"
+   },
+   {
+    "apply": "Ask one question this week: what is the most likely way our current success turns against us?",
+    "meaning": "Grove's motto, from the book's preface. He didn't mean fear for its own sake: past success makes leaders stop looking for threats, so a healthy paranoia keeps you scanning for what could change.",
+    "text": "Success breeds complacency. Complacency breeds failure. Only the paranoid survive.",
+    "type": "quote"
+   },
+   {
+    "apply": "For a holding or your own employer, rank which force could grow tenfold soonest, and watch it monthly.",
+    "meaning": "Building on Michael Porter's competitive forces, Grove asks what happens when one force, such as a rival, supplier, customer or new technology, suddenly gets ten times stronger. That magnitude marks an inflection point.",
+    "text": "Watch for a '10X' change in any force acting on you",
+    "type": "idea"
+   },
+   {
+    "apply": "Identify your key complementor and check whether its roadmap still fits yours.",
+    "meaning": "Grove adds a sixth force: complementors, the businesses whose products make yours more valuable, as software did for Intel's chips. When their technology shifts, your position can change without any competitor moving.",
+    "text": "Complementors matter as much as competitors",
+    "type": "idea"
+   },
+   {
+    "apply": "When a familiar playbook underperforms twice in a row, treat it as a possible signal, not bad luck.",
+    "meaning": "Grove says the shift rarely arrives with a clear announcement. It shows up as a feeling that 'something is different': customers act oddly, tactics that worked stop working, the numbers wobble before they break.",
+    "text": "You sense an inflection point long before you can prove it",
+    "type": "idea"
+   },
+   {
+    "apply": "Have a 20-minute chat with someone close to customers and ask what has surprised them lately.",
+    "meaning": "The people who see change first are usually middle managers and salespeople close to customers and technology, not executives. Grove urges leaders to seek them out, because bad news travels slowly up a hierarchy.",
+    "text": "Listen to the Cassandras on the front lines",
+    "type": "idea"
+   },
+   {
+    "apply": "Run a short debate on one ambiguous trend: assign someone to argue it's real and someone to argue it's noise.",
+    "meaning": "Grove offers tests: is your key competitor about to change? Is your key complementor? Do people around you seem to be 'losing it'? He also argues for open debate, since arguing out the data is how a company tells a real shift from a blip.",
+    "text": "Separate signal from noise with a few blunt questions",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one long-running project and ask: if I'd just been hired, would I keep funding this?",
+    "meaning": "In 1985, with Intel losing the memory-chip business to Japanese makers, Grove asked Gordon Moore what a new CEO would do if the board replaced them. Moore said: get out of memories. They did, and bet Intel on microprocessors.",
+    "text": "Ask what a new CEO would do, then do it yourself",
+    "type": "idea"
+   },
+   {
+    "apply": "Map an industry you follow by layer and note who leads each one; check whether integrated players are losing share.",
+    "meaning": "Grove's case study: computer makers once built everything, from chips to software to sales. The PC broke the industry into layers, each won by specialists. Firms that clung to the vertical model, he argues, were hurt badly.",
+    "text": "Computing flipped from vertical stacks to horizontal layers",
+    "type": "idea"
+   },
+   {
+    "apply": "Notice where your team is busy with side projects while a core problem goes untouched, and name it.",
+    "meaning": "Grove describes how management reacts: first denial, then escape into unrelated projects, and only later acceptance and real action. The longer the first two stages last, the less strength is left to change course.",
+    "text": "Leaders go through denial and diversion before they accept",
+    "type": "idea"
+   },
+   {
+    "apply": "Give yourself a fixed window to explore options on an open question, then set a date to decide.",
+    "meaning": "Through a shift, Grove recommends a period of wide experimentation to learn what the new world rewards, followed by a hard focus on the chosen direction. Crossing the 'valley of death' means committing before all the data is in.",
+    "text": "Let chaos reign, then rein in chaos",
+    "type": "idea"
+   },
+   {
+    "apply": "Write down which of your core skills could be automated or commoditised in five years, and start one hedge.",
+    "meaning": "Grove's final chapter applies the framework to individuals: technology and industry shifts can make a skill set obsolete. He says you are responsible for your own career and should watch for changes the way a company should.",
+    "text": "Your career has inflection points too",
+    "type": "idea"
+   }
+  ],
+  "color": "#3d0d1e",
+  "createdAt": 1795812805880,
+  "library": "finance",
+  "order": 163,
+  "shelf": "tech",
+  "source": "hourly",
+  "title": "Only the Paranoid Survive"
  }
 ]
