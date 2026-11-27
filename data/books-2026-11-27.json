@@ -684,5 +684,90 @@
   "shelf": "risk",
   "source": "hourly",
   "title": "Against the Gods"
+ },
+ {
+  "id": "triumph-of-the-city-2026112708",
+  "author": "Edward Glaeser",
+  "cards": [
+   {
+    "apply": "This week, swap one video call for an in-person meeting or site visit and note what you learn that wouldn't have come up remotely.",
+    "meaning": "Glaeser's core definition: a city's value is proximity. Packing people close together makes it cheap to trade, hire, learn and copy, which is why urban workers earn more and ideas move faster.",
+    "text": "Cities are the absence of physical space between people and companies.",
+    "type": "quote"
+   },
+   {
+    "apply": "Find the densest cluster of experts in your field, a conference, meetup or office floor, and spend an hour there listening rather than pitching.",
+    "meaning": "From Renaissance Florence to Silicon Valley, Glaeser argues that clusters of talented people learn from each other. Knowledge spills over in hallways and cafés, so skills compound faster in dense places.",
+    "text": "Density makes people smarter by spreading ideas face to face",
+    "type": "idea"
+   },
+   {
+    "apply": "When judging a market, look at mobility and incomes over time for newcomers, not just the poverty rate at a single point.",
+    "meaning": "Cities don't make people poor; they attract poor people seeking a better life. Slums like Mumbai's Dharavi can be on-ramps to opportunity, so the right test is whether residents move up over time.",
+    "text": "Urban poverty is often a sign of a city's success",
+    "type": "idea"
+   },
+   {
+    "apply": "Check your portfolio or employer for single-industry concentration, and list one way you'd reduce exposure if that sector slumped.",
+    "meaning": "Detroit's auto giants made it rich but crowded out the small, diverse firms that keep cities adaptive. When the industry shrank and cars let people and plants leave, the city had little to fall back on.",
+    "text": "Detroit declined by betting everything on one giant industry",
+    "type": "idea"
+   },
+   {
+    "apply": "Before approving a big fixed investment this week, ask what demand is proven, and whether the same money would go further on skills.",
+    "meaning": "Glaeser warns against the 'edifice error': declining cities building stadiums, monorails and convention centres hoping to revive. Structures without demand sit empty; education and human capital drive real recovery.",
+    "text": "Invest in people, not shiny new buildings",
+    "type": "idea"
+   },
+   {
+    "apply": "When underwriting a city for real estate or a branch office, pull its share of degree holders and its trend over ten years.",
+    "meaning": "Across American cities, a higher share of college-educated adults predicts faster growth in incomes and population. Skills help cities reinvent themselves when their original industries fade, as Boston and New York did.",
+    "text": "Skilled residents are the best predictor of urban growth",
+    "type": "idea"
+   },
+   {
+    "apply": "For any city you invest in or move to, check how many permits were issued last year relative to job growth; tight supply means rising rents.",
+    "meaning": "When cities cap heights or freeze whole neighbourhoods as historic, demand keeps rising while supply can't. Glaeser argues this pushes prices up in places like New York, Paris and coastal California.",
+    "text": "Limits on building make great cities unaffordable",
+    "type": "idea"
+   },
+   {
+    "apply": "Compare median home price to median income in two cities you follow; the cheaper ratio often signals where people and jobs will flow.",
+    "meaning": "Houston and Atlanta grew fast partly through easy permitting and cheap land, which keeps homes affordable. Glaeser notes people move for opportunity per dollar, not only for warm weather.",
+    "text": "Sun Belt cities grow because they let builders build",
+    "type": "idea"
+   },
+   {
+    "apply": "Estimate your own commuting miles this week and pick one trip to replace with transit, cycling or walking.",
+    "meaning": "Apartment dwellers who walk, take transit and share walls use far less energy than suburban households who drive everywhere. Glaeser argues that if you love nature, crowding into cities protects it.",
+    "text": "Dense city living is greener than a leafy suburb",
+    "type": "idea"
+   },
+   {
+    "apply": "When modelling a property, separate returns that rely on tax breaks from returns the asset earns on its own.",
+    "meaning": "Glaeser points to the mortgage interest deduction, federal highway spending and suburban-friendly rules as tilting Americans toward big houses far from city centres. Those choices carry real environmental and fiscal costs.",
+    "text": "Public policy quietly subsidises sprawl",
+    "type": "idea"
+   },
+   {
+    "apply": "Look at the basics, such as transit reliability or service response times, before your next decision about where to locate a team.",
+    "meaning": "Nineteenth-century cities were deadly until investments like clean water systems and better policing made them safe. Glaeser sees core public services as what lets density pay off rather than spread disease and crime.",
+    "text": "Healthy cities were built with clean water and safe streets",
+    "type": "idea"
+   },
+   {
+    "apply": "When you assess a program or a donation, ask whether it helps people gain skills and options or mainly preserves a location.",
+    "meaning": "Glaeser's closing lesson: policy should invest in people, wherever they live, rather than prop up struggling places. Mobility to opportunity often does more good than subsidies meant to freeze a declining town.",
+    "text": "Help poor people, not poor places",
+    "type": "idea"
+   }
+  ],
+  "color": "#1f3a5f",
+  "createdAt": 1795787562241,
+  "library": "finance",
+  "order": 156,
+  "shelf": "realestate",
+  "source": "hourly",
+  "title": "Triumph of the City"
  }
 ]
