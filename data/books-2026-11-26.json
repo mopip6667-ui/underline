@@ -1971,5 +1971,90 @@
   "shelf": "warrior",
   "source": "hourly",
   "title": "The Book of Five Rings"
+ },
+ {
+  "id": "tiny-habits-2026112623",
+  "author": "BJ Fogg",
+  "cards": [
+   {
+    "apply": "Pick one habit you keep skipping and ask which of the three failed: motivation, ability or prompt. Fix only that one.",
+    "meaning": "Fogg's model is B=MAP: a behavior occurs when Motivation, Ability and a Prompt converge at the same moment. When something doesn't happen, one of the three is missing, so you can diagnose a failed habit instead of blaming yourself.",
+    "text": "Behavior happens when motivation, ability and a prompt meet",
+    "type": "idea"
+   },
+   {
+    "apply": "Rewrite one goal so you could still do it on your worst, most tired day this week.",
+    "meaning": "Motivation is unreliable: it spikes after a scare or an inspiring talk, then fades. Fogg argues habits built on motivation collapse when the wave drops, so design for your low-motivation days, not your best ones.",
+    "text": "Stop relying on motivation; it rises and falls like a wave",
+    "type": "idea"
+   },
+   {
+    "apply": "Shrink a habit you want to under 30 seconds, like opening the model file or reading one 10-K paragraph.",
+    "meaning": "Making a behavior very easy raises ability so much that it works even when motivation is low. Fogg's own start was flossing one tooth. The tiny version builds the routine first; growth follows naturally once it is automatic.",
+    "text": "Make the new behavior tiny: one push-up, one tooth flossed",
+    "type": "idea"
+   },
+   {
+    "apply": "Write one recipe today: \"After I sit down at my desk, I will write my top priority on a sticky note.\"",
+    "meaning": "Prompts are the most overlooked part of change. Fogg's recipe is: \"After I [existing routine], I will [new tiny behavior].\" An established routine like pouring coffee becomes a reliable reminder that needs no willpower or app.",
+    "text": "Anchor every habit to something you already do daily",
+    "type": "idea"
+   },
+   {
+    "apply": "For the next five days, do a two-second celebration the instant you finish your tiny habit. Notice if it sticks faster.",
+    "meaning": "Fogg's central claim is that emotions create habits. A quick, genuine celebration right after the behavior, a fist pump or a \"nailed it\", produces a feeling he calls Shine, which helps the brain encode the routine.",
+    "text": "Celebrate immediately: feelings, not repetition, wire in habits",
+    "type": "idea"
+   },
+   {
+    "apply": "Brainstorm ten behaviors for one work goal, then choose the one that is both effective and easy to start.",
+    "meaning": "Instead of choosing a habit at random, list many specific behaviors that could serve your aspiration. Then plot them by impact and by how likely you are to actually do them. \"Golden behaviors\" score high on both.",
+    "text": "Map a swarm of options, then pick the golden behaviors",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one stalled task and name its weakest link. If it's mental effort, write a template so the next run is easier.",
+    "meaning": "Ability depends on time, money, physical effort, mental effort and fit with your routine; the weakest link sets the difficulty. Find the factor that blocks you and redesign around it, rather than trying harder.",
+    "text": "Ask what makes a behavior hard, then remove that barrier",
+    "type": "idea"
+   },
+   {
+    "apply": "Define the starter step for your hardest recurring task, like opening the deck, and commit only to that tomorrow.",
+    "meaning": "A starter step is the first move of a behavior, like putting on running shoes. Doing just that often carries you into the rest. Scaling back to a smaller version on hard days keeps the chain alive.",
+    "text": "Use starter steps when the full habit feels too big",
+    "type": "idea"
+   },
+   {
+    "apply": "Choose one recurring irritation at work and attach a tiny habit to it, like a deep breath or a quick note.",
+    "meaning": "Fogg calls these pearl habits: an irritant, like a noisy neighbour or a slow meeting start, becomes the prompt for something positive. The annoyance that once spoiled the moment now triggers a helpful routine.",
+    "text": "Turn daily annoyances into prompts for good habits",
+    "type": "idea"
+   },
+   {
+    "apply": "Review one tiny habit you've done for a week. If it feels automatic, let it grow a little on its own terms.",
+    "meaning": "Tiny habits rarely stay tiny. Once a behavior is automatic, you naturally do more of it, and success with one habit builds confidence that spreads to others. Fogg compares this to growing a garden.",
+    "text": "Habits grow and multiply once the tiny version takes root",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one unwanted habit, like checking email first thing, and remove its prompt: close the tab before you leave tonight.",
+    "meaning": "For unwanted habits Fogg uses the same model in reverse: remove the prompt, make the behavior harder, or swap in a new behavior. Start by untangling a specific, small part of the habit rather than attacking it all at once.",
+    "text": "To break a bad habit, redesign it instead of fighting it",
+    "type": "idea"
+   },
+   {
+    "apply": "When a habit fails this week, write one sentence on the design flaw and one tweak, then try again.",
+    "meaning": "Fogg's maxims are to help people do what they already want to do and help people feel successful. Failed attempts aren't character flaws but design flaws, and like any skill, behavior design improves with practice.",
+    "text": "Change is a skill: help yourself do what you already want",
+    "type": "idea"
+   }
+  ],
+  "color": "#3d4a12",
+  "createdAt": 1795755159954,
+  "library": "work",
+  "order": 147,
+  "shelf": "habits",
+  "source": "hourly",
+  "title": "Tiny Habits"
  }
 ]
