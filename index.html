@@ -135,7 +135,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
 .rfeed{height:100%;overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain;scrollbar-width:none}
 .rfeed::-webkit-scrollbar{display:none}
 .reel{position:relative;height:100%;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;background:var(--c,#13242e);user-select:none;-webkit-user-select:none;touch-action:pan-y}
-.reel .bg{position:absolute;inset:-8%;background:radial-gradient(120% 80% at 20% 0%,rgba(255,255,255,.22),transparent 60%),linear-gradient(165deg,var(--c),#000 150%);filter:hue-rotate(calc(var(--s,0)*16deg));transition:filter 1.1s ease}.reel.act .bg{animation:kb 16s ease-in-out infinite alternate;will-change:transform}
+.reel .bg{position:absolute;inset:-8%;background:radial-gradient(120% 80% at 20% 0%,rgba(255,255,255,.22),transparent 60%),linear-gradient(165deg,var(--c),#000 150%);}.reel.act .bg{animation:kb 16s ease-in-out infinite alternate;will-change:transform}
 .reel .blob{position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.2),transparent 68%);}.reel.act .blob{animation:drift 11s ease-in-out infinite alternate}.reel.act .blob.b2{animation-duration:14s;animation-delay:-4s}.reel.act .blob.b3{animation-duration:9s;animation-delay:-2s}
 .reel .blob.b1{left:-22%;top:12%}.reel .blob.b2{right:-30%;bottom:6%;background:radial-gradient(circle,rgba(255,210,63,.22),transparent 68%)}.reel .blob.b3{left:30%;top:-18%;width:52%}
 .reel .ghost{position:absolute;left:-4%;right:-4%;top:50%;transform:translateY(-50%) rotate(-8deg);font:800 clamp(120px,46vw,230px)/.9 Manrope,system-ui,sans-serif;letter-spacing:-.04em;color:#fff;opacity:.06;white-space:nowrap;overflow:hidden;pointer-events:none;text-transform:uppercase}
@@ -201,6 +201,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
 @media (max-width:360px){.scene{padding-left:20px;padding-right:66px}.rfoot{left:20px;right:66px}}
 @media (max-height:760px){.card.long .meaning{font-size:14px;line-height:1.4}.card.long .apply{font-size:13.5px;line-height:1.38}.card.xlong .meaning{font-size:13.5px;line-height:1.36}.card.xlong .apply{font-size:13px;line-height:1.35;padding:9px 12px}.card.xlong .q,.card.xlong .i{font-size:clamp(19px,3vh,24px)}}
 @media (max-height:660px){.card.long .q,.card.long .i{font-size:19px}.card.xlong .q,.card.xlong .i{font-size:18px}.card.xlong .meaning{font-size:12.5px;line-height:1.32}.card.xlong .apply{font-size:12px;line-height:1.3;padding:8px 10px}.card.long .meaning{font-size:13px;line-height:1.36}.card.long .apply{font-size:12.5px;line-height:1.34}.card.xlong{gap:8px}}
+.card,.reel{content-visibility:auto;contain-intrinsic-size:auto 100dvh}
+.reel{contain:strict}.reel.act,.reel[data-d]{content-visibility:visible}
+.reel.act .bg,.reel.act .blob{will-change:transform}
+.feed,.rfeed{-webkit-overflow-scrolling:touch}
 </style>
 </head>
 <body>
@@ -270,6 +274,6 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--hl);outline-offset:
   <div class="rscroll" id="rScroll"><article class="rbody" id="rBody"></article></div>
 </div>
 <div class="toast" id="toast" role="status" hidden></div>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>

@@ -463,7 +463,7 @@ function openReels() {
 function closeReels() { stopPlayer(); RV.open = false; reels.hidden = true; const id = RV.list[RV.idx] && RV.list[RV.idx].id; rfeed.innerHTML = ''; RV.idx = -1; if (id && scope.kind !== 'library' && scope.kind !== 'shelf') { const k = list().findIndex(c => c.id === id); if (k >= 0) feed.scrollTop = k * feed.clientHeight; } }
 function syncSound() { const on = RV.sound, b = $('#rvSound'); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? 'Voice on' : 'Voice off'); b.style.opacity = on ? 1 : .55; reels.querySelector('.wv').style.display = on ? '' : 'none'; }
 function stopVoice() { RV.voice = 'none'; RV.speechDone = true; try { AU.pause(); } catch {} if (TTS) try { speechSynthesis.cancel(); } catch {} }
-function stopPlayer() { clearInterval(RV.timer); RV.timer = null; if (RV.anim) { cancelAnimationFrame(RV.anim); RV.anim = 0; rfeed.style.scrollSnapType = ''; } stopVoice(); }
+function stopPlayer() { clearInterval(RV.timer); RV.timer = null; RV.anim = 0; clearTimeout(RV.slideT); clearTimeout(settleT); stopVoice(); }
 function pickVoice() {
   if (!TTS) return null; const vs = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
   const en = vs.filter(v => /^en(-|_|$)/i.test(v.lang)); if (!en.length) return null;
@@ -474,8 +474,7 @@ function activate(i) {
   if (!RV.open || i < 0 || i >= RV.list.length || i === RV.idx) return;
   stopVoice();
   const old = rfeed.children[RV.idx]; if (old) { old.classList.remove('act'); old.querySelectorAll('.scene').forEach(s => s.classList.remove('on', 'out')); }
-  for (const j of [i - 1, i, i + 1]) dress(j);
-  for (let j = Math.max(0, RV.idx - 3); j <= Math.min(RV.list.length - 1, RV.idx + 3); j++) if (RV.idx >= 0 && Math.abs(j - i) > 1) undress(j);
+  dress(i);
   RV.idx = i; RV.user = false; RV.s = -1;
   const el = rfeed.children[i], c = RV.list[i]; RV.el = el; RV.scenes = el._scenes; el.classList.add('act');
   segsEl.innerHTML = RV.scenes.map(() => '<i><b></b></i>').join('');
@@ -483,8 +482,28 @@ function activate(i) {
   $('#rvShare').innerHTML = I.copy; $('#rvBook').innerHTML = I.book;
   RV.cover = coverUp(); applyPause(true);
   warm(i); playScene(0);
-  warm(i + 1); warm(i - 1);
+  settleLater();
 }
+// after the swipe settles: prepare the neighbours and fetch their narration, one file at a time
+let settleT = 0;
+function settleLater() { clearTimeout(settleT); settleT = setTimeout(settle, 260); }
+function settle() {
+  if (!RV.open || RV.anim) { settleLater(); return; }
+  const i = RV.idx;
+  const run = () => {
+    dress(i + 1); dress(i - 1);
+    rfeed.querySelectorAll('.reel[data-d]').forEach(el => { const j = +el.dataset.i; if (Math.abs(j - i) > 1) undress(j); });
+    queueWarm([i + 1, i - 1]);
+  };
+  (window.requestIdleCallback || (f => setTimeout(f, 30)))(run, { timeout: 500 });
+}
+let warmQ = [], warmBusy = false;
+function queueWarm(idxs) {
+  warmQ = [];
+  idxs.forEach(j => { const sc = rfeed.children[j] && rfeed.children[j]._scenes; if (sc) sc.forEach(s => { if (s.path && !ABLOB.has(s.path)) warmQ.push(s.path); }); });
+  if (!warmBusy) pumpWarm();
+}
+async function pumpWarm() { warmBusy = true; while (warmQ.length) { await fetchAudio(warmQ.shift()); } warmBusy = false; }
 function warm(i) { const sc = rfeed.children[i] && rfeed.children[i]._scenes; if (sc) sc.forEach(s => { if (s.path) fetchAudio(s.path); }); }
 function playScene(k) {
   const S = RV.scenes[k]; if (!S) return;
@@ -498,7 +517,7 @@ function playScene(k) {
   [...segsEl.children].forEach((e, j) => { e.className = j < k ? 'done' : j === k ? 'cur' : ''; e.style.setProperty('--d', (S.dur / 1000) + 's'); });
   try { AU.pause(); if (TTS) speechSynthesis.cancel(); } catch {}
   if (RV.sound && !RV.paused) startVoice(S);
-  clearInterval(RV.timer); RV.timer = setInterval(tick, 50);
+  RV.last = performance.now(); clearInterval(RV.timer); RV.timer = setInterval(tick, 100);
 }
 function startVoice(S) {
   RV.speechDone = false;
@@ -525,20 +544,21 @@ function speakTTS(S) {
 AU.addEventListener('ended', () => { if (RV.voice === 'audio') RV.speechDone = true; });
 AU.addEventListener('error', () => { if (RV.voice === 'audio') audioFail(); });
 function tick() {
+  const now = performance.now(), dt = Math.min(250, now - (RV.last || now)); RV.last = now;
   if (RV.paused || !RV.open) return;
-  RV.elapsed += 50;
+  RV.elapsed += dt;
   if (RV.sound && RV.voice === 'none' && RV.scenes[RV.s] && RV.elapsed <= 200) startVoice(RV.scenes[RV.s]);   // voice switched on, or was blocked until now
   const voicing = RV.sound && RV.voice !== 'none' && !RV.speechDone && RV.elapsed < RV.dur * 2.2 + 2500;
   if (RV.elapsed >= RV.dur && !voicing) nextScene();
 }
-function slideTo(k, ms) {
-  if (RV.anim) cancelAnimationFrame(RV.anim);
-  const from = rfeed.scrollTop, to = k * rfeed.clientHeight;
-  if (REDUCED || from === to) { rfeed.scrollTop = to; return; }
-  rfeed.style.scrollSnapType = 'none';
-  const t0 = performance.now(), ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  const step = now => { const t = Math.min(1, (now - t0) / (ms || 360)); rfeed.scrollTop = from + (to - from) * ease(t); if (t < 1) RV.anim = requestAnimationFrame(step); else { RV.anim = 0; rfeed.style.scrollSnapType = ''; rfeed.scrollTop = to; } };
-  RV.anim = requestAnimationFrame(step);
+function slideTo(k) {
+  const to = k * rfeed.clientHeight;
+  if (REDUCED || rfeed.scrollTop === to) { rfeed.scrollTop = to; return; }
+  RV.anim = 1; clearTimeout(RV.slideT);
+  rfeed.scrollTo({ top: to, behavior: 'smooth' });          // compositor-driven, keeps snap points
+  const done = () => { RV.anim = 0; rfeed.removeEventListener('scrollend', done); clearTimeout(RV.slideT); settleLater(); };
+  rfeed.addEventListener('scrollend', done);
+  RV.slideT = setTimeout(done, 700);                        // browsers without scrollend
 }
 function goReel(k) { if (k < 0 || k >= RV.list.length) return false; activate(k); slideTo(k); return true; }   // clip starts as it slides in, no dead pause
 function nextScene() {
@@ -564,7 +584,7 @@ rfeed.addEventListener('scroll', () => { if (RV.anim || rvRaf) return; rvRaf = r
 // touch: sides skip a scene instantly, middle pauses (double-tap saves), hold pauses
 let rvDown = null, rvMid = 0;
 rfeed.addEventListener('pointerdown', e => {
-  if (RV.anim) { cancelAnimationFrame(RV.anim); RV.anim = 0; rfeed.style.scrollSnapType = ''; }
+  RV.anim = 0;
   rvDown = { x: e.clientX, y: e.clientY, moved: false, held: false };
   const d = rvDown; d.h = setTimeout(() => { if (rvDown === d && !d.moved) { d.held = true; RV.hold = true; applyPause(); } }, 280);
 });
@@ -626,7 +646,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '9';
+const APP_VERSION = '10';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
