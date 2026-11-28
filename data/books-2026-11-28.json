@@ -338,5 +338,90 @@
   "shelf": "pioneers",
   "source": "hourly",
   "title": "Surely You're Joking, Mr. Feynman!"
+ },
+ {
+  "id": "playing-to-win-2026112804",
+  "author": "A.G. Lafley & Roger L. Martin",
+  "cards": [
+   {
+    "apply": "Take your team's current 'strategy' doc and underline every sentence that is an actual choice. Rewrite the rest or cut it.",
+    "meaning": "Lafley and Martin define strategy as an integrated set of choices that positions a firm to win. A budget, a mission statement or a list of initiatives is not a strategy unless it says what you will and won't do.",
+    "text": "Strategy is a set of choices, not a plan or a vision.",
+    "type": "idea"
+   },
+   {
+    "apply": "Answer the five questions for one product or client on a single page. Note where two answers contradict each other.",
+    "meaning": "The book's 'strategy choice cascade' asks: what is our winning aspiration, where will we play, how will we win there, what capabilities must we have, and what management systems support them. Each answer must fit the ones above and below it.",
+    "text": "Five questions cascade: aspiration, where, how, capabilities, systems.",
+    "type": "idea"
+   },
+   {
+    "apply": "Write one sentence on what 'winning' means in your coverage area or market, in terms a customer or competitor would recognise.",
+    "meaning": "A winning aspiration defines what victory looks like with customers and against rivals. The authors argue that firms which aim merely to participate drift into mediocre returns, because nothing forces hard trade-offs.",
+    "text": "Aim to win, not just to take part.",
+    "type": "idea"
+   },
+   {
+    "apply": "List three segments or deals you are pursuing. Pick the one you would drop if you had to, and ask what that frees up.",
+    "meaning": "Where-to-play choices cover geographies, customer segments, product categories, channels and stages of the value chain. Saying no to attractive fields is as important as saying yes, because resources are finite.",
+    "text": "Where to play: choose your field, and what you'll avoid.",
+    "type": "idea"
+   },
+   {
+    "apply": "For a company you follow, decide whether it wins on cost or differentiation, and find the margin data that proves it.",
+    "meaning": "Following Porter, the authors say a firm wins either by having a lower cost structure than rivals or by offering something customers value enough to pay more for. Trying to do both half-way usually means doing neither.",
+    "text": "How to win: lower cost or real differentiation.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pair each target market on your list with a specific reason you would beat the current leader there. Cross out any with no answer.",
+    "meaning": "The two choices form the heart of the strategy. A great way of winning is useless on the wrong field, and an attractive market is worthless if you have no way to beat incumbents there.",
+    "text": "Where to play and how to win must be chosen together.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for a gap between price tiers in a market you know. Ask whether a product could own the middle with a premium story.",
+    "meaning": "P&G repositioned Olay from a tired, low-priced brand into anti-ageing skincare for women worried about signs of ageing, priced between mass and prestige brands and sold in mass retail. A new where-to-play plus how-to-win revived the brand.",
+    "text": "Olay won by moving up into 'masstige.'",
+    "type": "idea"
+   },
+   {
+    "apply": "Sketch your firm's four or five key capabilities as a map and draw lines where one supports another. Weak links show where to invest.",
+    "meaning": "Core capabilities are the activities that make your how-to-win real. The authors map them as an activity system, where each capability strengthens the others, which makes the whole hard to copy.",
+    "text": "Capabilities are a reinforcing system, not a list.",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one metric your team reviews weekly. Ask whether it measures progress on your strategy, or only activity.",
+    "meaning": "Strategy fails without systems, structures and measures that support it: planning processes, budgets, talent development and metrics. Systems should track whether the strategy is working, not just whether the numbers were hit.",
+    "text": "Management systems make the choices stick.",
+    "type": "idea"
+   },
+   {
+    "apply": "Before your next investment or project decision, write down the three conditions that must hold for it to work, and test the shakiest first.",
+    "meaning": "Instead of arguing over which option is best, the authors recommend listing what would have to be true for each option to succeed, then testing the conditions people doubt most. It turns debate into analysis.",
+    "text": "Ask 'What would have to be true?'",
+    "type": "idea"
+   },
+   {
+    "apply": "Check your plan against these traps. If you are fighting on more than two fronts, choose which one to pause.",
+    "meaning": "The book names traps such as trying to do everything, attacking the strongest competitor head-on first, fighting on too many fronts, and pursuing goals with no where-to-play or how-to-win attached. Each avoids real choice.",
+    "text": "Beware the classic strategy traps.",
+    "type": "idea"
+   },
+   {
+    "apply": "Explain your unit's where-to-play and how-to-win to a junior colleague in two minutes. If you can't, sharpen it.",
+    "meaning": "The choice cascade applies to brands, categories, business units and the whole firm, and the choices at each level must nest. Front-line managers make strategic choices too, so everyone needs to understand the logic.",
+    "text": "Strategy happens at every level of the company.",
+    "type": "idea"
+   }
+  ],
+  "color": "#3a1846",
+  "createdAt": 1795859570391,
+  "library": "business",
+  "order": 176,
+  "shelf": "strategy",
+  "source": "hourly",
+  "title": "Playing to Win"
  }
 ]
