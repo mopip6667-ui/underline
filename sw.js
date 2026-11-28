@@ -1,7 +1,7 @@
 // Underline service worker.
 // App code and library data: network-first (always the newest version when online), cached copy when offline.
 // Icons: cache-first. Bump VERSION on every app release.
-const VERSION = 'v8';
+const VERSION = 'v9';
 const SHELL = 'underline-shell-' + VERSION;
 const DATA = 'underline-data';
 const SHELL_FILES = ['./', './index.html', './app.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];

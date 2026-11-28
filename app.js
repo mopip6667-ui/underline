@@ -388,7 +388,17 @@ const reels = $('#reels'), rfeed = $('#rfeed'), segsEl = $('#segs');
 const TTS = 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const AU = new Audio(); AU.preload = 'auto'; AU.setAttribute('playsinline', '');   // one persistent player: iOS only lets an element that was started by a tap keep playing
-const PRE = new Audio(); PRE.preload = 'auto';                                    // warms the next clip's file
+const ABLOB = new Map(), AURL = new Map();                                        // narration files fetched ahead into memory, so each line starts instantly
+function fetchAudio(path) {
+  if (ABLOB.has(path)) return ABLOB.get(path);
+  const tryUrl = async u => { const r = await fetch(u); if (!r.ok) throw new Error(r.status); return URL.createObjectURL(await r.blob()); };
+  const p = tryUrl(path).catch(e => { if (NATIVE) return tryUrl(REMOTE + path); throw e; })
+    .then(u => { AURL.set(path, u); return u; })
+    .catch(() => { ABLOB.delete(path); return null; });
+  ABLOB.set(path, p);
+  if (ABLOB.size > 90) { const old = ABLOB.keys().next().value; const u = AURL.get(old); if (u) { try { URL.revokeObjectURL(u); } catch {} } ABLOB.delete(old); AURL.delete(old); }
+  return p;
+}
 let AUD = {};                                                                     // narration manifest (data/audio/manifest.json), filled by the weekly voice job
 let RV = { list: [], el: null, idx: -1, scenes: [], s: -1, elapsed: 0, dur: 0, paused: false, hold: false, user: false, cover: false, timer: null, voice: 'none', speechDone: true, sound: store.get('underline.reels.sound', true) !== false, open: false, anim: 0 };
 const CHECK = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
@@ -412,7 +422,7 @@ function scenesOf(c) {
     if (a && a.d > 0) { s.ad = a.d; s.path = `data/audio/${ent.f}/${s.role}.m4a`; }
     s.d0 = s.role === 'apply' ? (s.ad ? .85 : .5) : .15;
     if (s.end) { s.step = .3; s.dur = Math.max(3000, (s.ad || 0) * 1000 + 900); continue; }
-    if (s.ad) { s.step = clamp((s.ad - s.d0 - .3) / Math.max(1, s.n), .15, .5); s.dur = Math.max(2800, (s.ad + .6) * 1000); }   // words land in time with the voice
+    if (s.ad) { s.step = clamp((s.ad - s.d0 - .3) / Math.max(1, s.n), .15, .5); s.dur = Math.max(2600, (s.ad + .3) * 1000); }   // words land in time with the voice
     else { s.step = s.role === 'idea' ? .34 : .3; s.dur = clamp((s.n * s.step + s.d0 + 1.7) * 1000, 3000, 11000); }
   }
   return D;
@@ -472,10 +482,10 @@ function activate(i) {
   const sv = $('#rvSave'); sv.innerHTML = I.save; sv.setAttribute('aria-pressed', String(saved.includes(c.id)));
   $('#rvShare').innerHTML = I.copy; $('#rvBook').innerHTML = I.book;
   RV.cover = coverUp(); applyPause(true);
-  playScene(0);
-  warm(i + 1);
+  warm(i); playScene(0);
+  warm(i + 1); warm(i - 1);
 }
-function warm(i) { const sc = rfeed.children[i] && rfeed.children[i]._scenes; if (sc && sc[0] && sc[0].path) { try { PRE.src = sc[0].path; } catch {} } }
+function warm(i) { const sc = rfeed.children[i] && rfeed.children[i]._scenes; if (sc) sc.forEach(s => { if (s.path) fetchAudio(s.path); }); }
 function playScene(k) {
   const S = RV.scenes[k]; if (!S) return;
   const els = RV.el.querySelectorAll('.scene'), prev = RV.s;
@@ -488,13 +498,13 @@ function playScene(k) {
   [...segsEl.children].forEach((e, j) => { e.className = j < k ? 'done' : j === k ? 'cur' : ''; e.style.setProperty('--d', (S.dur / 1000) + 's'); });
   try { AU.pause(); if (TTS) speechSynthesis.cancel(); } catch {}
   if (RV.sound && !RV.paused) startVoice(S);
-  clearInterval(RV.timer); RV.timer = setInterval(tick, 100);
+  clearInterval(RV.timer); RV.timer = setInterval(tick, 50);
 }
 function startVoice(S) {
   RV.speechDone = false;
   if (S.path) {
     RV.voice = 'audio'; RV.tried = 0;
-    try { AU.src = S.path; AU.currentTime = 0; const p = AU.play(); if (p && p.catch) p.catch(() => audioFail()); } catch { audioFail(); }
+    try { AU._path = S.path; AU.src = AURL.get(S.path) || S.path; AU.currentTime = 0; const p = AU.play(); if (p && p.catch) p.catch(() => audioFail()); } catch { audioFail(); }
   } else speakTTS(S);
 }
 function audioFail() {
@@ -516,7 +526,7 @@ AU.addEventListener('ended', () => { if (RV.voice === 'audio') RV.speechDone = t
 AU.addEventListener('error', () => { if (RV.voice === 'audio') audioFail(); });
 function tick() {
   if (RV.paused || !RV.open) return;
-  RV.elapsed += 100;
+  RV.elapsed += 50;
   if (RV.sound && RV.voice === 'none' && RV.scenes[RV.s] && RV.elapsed <= 200) startVoice(RV.scenes[RV.s]);   // voice switched on, or was blocked until now
   const voicing = RV.sound && RV.voice !== 'none' && !RV.speechDone && RV.elapsed < RV.dur * 2.2 + 2500;
   if (RV.elapsed >= RV.dur && !voicing) nextScene();
@@ -527,7 +537,7 @@ function slideTo(k, ms) {
   if (REDUCED || from === to) { rfeed.scrollTop = to; return; }
   rfeed.style.scrollSnapType = 'none';
   const t0 = performance.now(), ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  const step = now => { const t = Math.min(1, (now - t0) / (ms || 480)); rfeed.scrollTop = from + (to - from) * ease(t); if (t < 1) RV.anim = requestAnimationFrame(step); else { RV.anim = 0; rfeed.style.scrollSnapType = ''; rfeed.scrollTop = to; } };
+  const step = now => { const t = Math.min(1, (now - t0) / (ms || 360)); rfeed.scrollTop = from + (to - from) * ease(t); if (t < 1) RV.anim = requestAnimationFrame(step); else { RV.anim = 0; rfeed.style.scrollSnapType = ''; rfeed.scrollTop = to; } };
   RV.anim = requestAnimationFrame(step);
 }
 function goReel(k) { if (k < 0 || k >= RV.list.length) return false; activate(k); slideTo(k); return true; }   // clip starts as it slides in, no dead pause
@@ -616,7 +626,7 @@ async function load() {
   if (NATIVE) { renderDaily(); scheduleDaily(); if (P.SplashScreen) P.SplashScreen.hide().catch(() => {}); }
 }
 load();
-const APP_VERSION = '8';
+const APP_VERSION = '9';
 if (!NATIVE && 'serviceWorker' in navigator && location.protocol !== 'file:') {
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
