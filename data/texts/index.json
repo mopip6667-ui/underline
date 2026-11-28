@@ -1,1 +1,153 @@
-{"books": {"meditations": "meditations.json", "art-of-war": "art-of-war.json", "walden": "walden.json", "shortness-of-life": "shortness-of-life.json", "aristotle": "aristotle.json", "the-republic-2026112618": "the-republic.json", "enchiridion-2026112706": "enchiridion.json", "the-twelve-caesars-2026112709": "the-twelve-caesars.json", "the-wealth-of-nations-2026112710": "wealth-of-nations.json", "tao-te-ching-2026112712": "tao-te-ching.json", "nicomachean-ethics-2026112718": "nicomachean-ethics.json", "history-of-the-peloponnesian-war-2026112806": "peloponnesian-war.json", "moral-letters-to-lucilius-2026112807": "moral-letters.json"}, "titles": {"apology": "apology.json", "nicomacheanethics": "nicomachean-ethics.json", "artofwar": "art-of-war.json", "discourses": "discourses.json", "enchiridion": "enchiridion.json", "autobiographyofbenjaminfranklin": "franklin-autobiography.json", "gallicwar": "gallic-war.json", "histories": "histories.json", "meditations": "meditations.json", "moralletterstolucilius": "moral-letters.json", "ontheoriginofspecies": "origin-of-species.json", "selfreliance": "self-reliance.json", "ontheshortnessoflife": "shortness-of-life.json", "taoteching": "tao-te-ching.json", "analects": "the-analects.json", "prince": "the-prince.json", "republic": "the-republic.json", "walden": "walden.json", "wealthofnations": "wealth-of-nations.json", "twelvecaesars": "the-twelve-caesars.json", "livesofthecaesars": "the-twelve-caesars.json", "historyofthepeloponnesianwar": "peloponnesian-war.json"}, "meta": {"apology.json": {"title": "Apology", "author": "Plato", "chapters": 2}, "aristotle.json": {"title": "Nicomachean Ethics", "author": "Aristotle", "chapters": 15}, "art-of-war.json": {"title": "The Art of War", "author": "Sun Tzu", "chapters": 20}, "discourses.json": {"title": "Discourses", "author": "Epictetus", "chapters": 6}, "enchiridion.json": {"title": "Enchiridion", "author": "Epictetus", "chapters": 53}, "franklin-autobiography.json": {"title": "The Autobiography of Benjamin Franklin", "author": "Benjamin Franklin", "chapters": 20}, "gallic-war.json": {"title": "The Gallic War", "author": "Julius Caesar", "chapters": 7}, "histories.json": {"title": "The Histories", "author": "Herodotus", "chapters": 10}, "meditations.json": {"title": "Meditations", "author": "Marcus Aurelius", "chapters": 12}, "moral-letters.json": {"title": "Moral Letters to Lucilius", "author": "Seneca", "chapters": 128}, "origin-of-species.json": {"title": "On the Origin of Species", "author": "Charles Darwin", "chapters": 18}, "self-reliance.json": {"title": "Self-Reliance", "author": "Ralph Waldo Emerson", "chapters": 1}, "shortness-of-life.json": {"title": "On the Shortness of Life", "author": "Seneca", "chapters": 20}, "tao-te-ching.json": {"title": "Tao Te Ching", "author": "Laozi", "chapters": 7}, "the-analects.json": {"title": "The Analects", "author": "Confucius", "chapters": 20}, "the-prince.json": {"title": "The Prince", "author": "Niccolò Machiavelli", "chapters": 30}, "the-republic.json": {"title": "The Republic", "author": "Plato", "chapters": 12}, "walden.json": {"title": "Walden", "author": "Henry David Thoreau", "chapters": 18}, "wealth-of-nations.json": {"title": "The Wealth of Nations", "author": "Adam Smith", "chapters": 74}, "the-twelve-caesars.json": {"title": "The Twelve Caesars", "author": "Suetonius", "chapters": 12}, "nicomachean-ethics.json": {"title": "Nicomachean Ethics", "author": "Aristotle", "chapters": 12}, "peloponnesian-war.json": {"title": "History of the Peloponnesian War", "author": "Thucydides", "chapters": 26}}}
+{
+"books": {
+"meditations": "meditations.json",
+"art-of-war": "art-of-war.json",
+"walden": "walden.json",
+"shortness-of-life": "shortness-of-life.json",
+"aristotle": "aristotle.json",
+"the-republic-2026112618": "the-republic.json",
+"enchiridion-2026112706": "enchiridion.json",
+"the-twelve-caesars-2026112709": "the-twelve-caesars.json",
+"the-wealth-of-nations-2026112710": "wealth-of-nations.json",
+"tao-te-ching-2026112712": "tao-te-ching.json",
+"nicomachean-ethics-2026112718": "nicomachean-ethics.json",
+"history-of-the-peloponnesian-war-2026112806": "peloponnesian-war.json",
+"moral-letters-to-lucilius-2026112807": "moral-letters.json"
+},
+"titles": {
+"apology": "apology.json",
+"nicomacheanethics": "nicomachean-ethics.json",
+"artofwar": "art-of-war.json",
+"discourses": "discourses.json",
+"enchiridion": "enchiridion.json",
+"autobiographyofbenjaminfranklin": "franklin-autobiography.json",
+"gallicwar": "gallic-war.json",
+"histories": "histories.json",
+"meditations": "meditations.json",
+"moralletterstolucilius": "moral-letters.json",
+"ontheoriginofspecies": "origin-of-species.json",
+"selfreliance": "self-reliance.json",
+"ontheshortnessoflife": "shortness-of-life.json",
+"taoteching": "tao-te-ching.json",
+"analects": "the-analects.json",
+"prince": "the-prince.json",
+"republic": "the-republic.json",
+"walden": "walden.json",
+"wealthofnations": "wealth-of-nations.json",
+"twelvecaesars": "the-twelve-caesars.json",
+"livesofthecaesars": "the-twelve-caesars.json",
+"historyofthepeloponnesianwar": "peloponnesian-war.json"
+},
+"meta": {
+"apology.json": {
+"title": "Apology",
+"author": "Plato",
+"chapters": 2
+},
+"aristotle.json": {
+"title": "Nicomachean Ethics",
+"author": "Aristotle",
+"chapters": 15
+},
+"art-of-war.json": {
+"title": "The Art of War",
+"author": "Sun Tzu",
+"chapters": 20
+},
+"discourses.json": {
+"title": "Discourses",
+"author": "Epictetus",
+"chapters": 6
+},
+"enchiridion.json": {
+"title": "Enchiridion",
+"author": "Epictetus",
+"chapters": 53
+},
+"franklin-autobiography.json": {
+"title": "The Autobiography of Benjamin Franklin",
+"author": "Benjamin Franklin",
+"chapters": 20
+},
+"gallic-war.json": {
+"title": "The Gallic War",
+"author": "Julius Caesar",
+"chapters": 7
+},
+"histories.json": {
+"title": "The Histories",
+"author": "Herodotus",
+"chapters": 10
+},
+"meditations.json": {
+"title": "Meditations",
+"author": "Marcus Aurelius",
+"chapters": 12
+},
+"moral-letters.json": {
+"title": "Moral Letters to Lucilius",
+"author": "Seneca",
+"chapters": 128
+},
+"origin-of-species.json": {
+"title": "On the Origin of Species",
+"author": "Charles Darwin",
+"chapters": 18
+},
+"self-reliance.json": {
+"title": "Self-Reliance",
+"author": "Ralph Waldo Emerson",
+"chapters": 1
+},
+"shortness-of-life.json": {
+"title": "On the Shortness of Life",
+"author": "Seneca",
+"chapters": 20
+},
+"tao-te-ching.json": {
+"title": "Tao Te Ching",
+"author": "Laozi",
+"chapters": 7
+},
+"the-analects.json": {
+"title": "The Analects",
+"author": "Confucius",
+"chapters": 20
+},
+"the-prince.json": {
+"title": "The Prince",
+"author": "Niccolò Machiavelli",
+"chapters": 30
+},
+"the-republic.json": {
+"title": "The Republic",
+"author": "Plato",
+"chapters": 12
+},
+"walden.json": {
+"title": "Walden",
+"author": "Henry David Thoreau",
+"chapters": 18
+},
+"wealth-of-nations.json": {
+"title": "The Wealth of Nations",
+"author": "Adam Smith",
+"chapters": 74
+},
+"the-twelve-caesars.json": {
+"title": "The Twelve Caesars",
+"author": "Suetonius",
+"chapters": 12
+},
+"nicomachean-ethics.json": {
+"title": "Nicomachean Ethics",
+"author": "Aristotle",
+"chapters": 12
+},
+"peloponnesian-war.json": {
+"title": "History of the Peloponnesian War",
+"author": "Thucydides",
+"chapters": 26
+}
+}
+}
