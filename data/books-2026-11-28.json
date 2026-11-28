@@ -253,5 +253,90 @@
   "shelf": "habits",
   "source": "hourly",
   "title": "Better Than Before"
+ },
+ {
+  "id": "surely-youre-joking-mr-feynman-2026112803",
+  "author": "Richard P. Feynman",
+  "cards": [
+   {
+    "apply": "Before touching your next broken model or process, spend ten minutes writing down how it should work and where it could fail.",
+    "meaning": "A chapter title quoting a man amazed that young Feynman paced and reasoned before touching a broken radio. Understanding the system first made the fix fast and sure.",
+    "text": "He fixes radios by thinking!",
+    "type": "quote"
+   },
+   {
+    "apply": "Learn one technique your peers don't use, from an adjacent field or an old book, and try it on a stuck problem.",
+    "meaning": "Feynman learned odd tricks, like differentiating under the integral sign, from an old textbook. When colleagues were stuck on an integral, his unusual method often cracked it.",
+    "text": "A different box of tools beats a better copy of everyone's",
+    "type": "idea"
+   },
+   {
+    "apply": "In your next review, state your honest objection plainly. Leaders value the one person who doesn't just nod.",
+    "meaning": "At Los Alamos, Niels Bohr sought out the young Feynman to test ideas, because he wasn't in awe and would bluntly say when an idea was wrong.",
+    "text": "Be the person who says 'that's crazy' to the boss",
+    "type": "idea"
+   },
+   {
+    "apply": "Audit one control you trust this week: passwords, approvals or data access. Look for the human shortcut, not the technical flaw.",
+    "meaning": "For fun, Feynman cracked filing cabinets and safes holding atomic secrets. The weak points were human: default combinations, and numbers he quietly read off safes left open.",
+    "text": "Security is often weaker than the people guarding it think",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one question in your field you find interesting for no reason and spend an hour on it, with no deliverable.",
+    "meaning": "Burned out at Cornell, Feynman decided to do physics only for enjoyment. Watching a plate wobble in the cafeteria, he worked out its motion, and that play led back to his Nobel work.",
+    "text": "When work stops being fun, go back to playing",
+    "type": "idea"
+   },
+   {
+    "apply": "Explain a metric you use daily to a colleague using a real example from your own data, not its textbook definition.",
+    "meaning": "Teaching in Brazil, Feynman found students who could recite definitions perfectly but couldn't recognise the same idea in the light outside the window. They'd memorised, not understood.",
+    "text": "Knowing the words is not knowing the thing",
+    "type": "idea"
+   },
+   {
+    "apply": "Book one hour this week for a skill unrelated to your job and accept being bad at it.",
+    "meaning": "Feynman took up drawing in his forties, played bongo drums and learned to read Mayan numerals. Being a beginner kept him curious and humble.",
+    "text": "Learn something far outside your field, badly at first",
+    "type": "idea"
+   },
+   {
+    "apply": "Before signing off on a report or deck, read the full document yourself, not the summary or the author's reputation.",
+    "meaning": "On California's textbook commission, Feynman read every math book and found them full of errors. A book delivered with blank pages still got ratings from other reviewers.",
+    "text": "Actually read the thing everyone else is rating",
+    "type": "idea"
+   },
+   {
+    "apply": "Check one analysis you rely on: does it have real controls and tested assumptions, or just the look of rigour?",
+    "meaning": "Feynman likened bad research to islanders building fake runways and hoping planes would land. Everything looks right, but the essential ingredient, rigorous honesty, is missing.",
+    "text": "Cargo cult science copies the form and misses the substance",
+    "type": "idea"
+   },
+   {
+    "apply": "Write down the strongest case against your current investment thesis or plan, then look for evidence for it.",
+    "meaning": "From his 1974 Caltech commencement speech, reprinted as the book's last chapter. Self-deception comes before deceiving anyone else, so the hardest discipline is doubting your own favourite results.",
+    "text": "You must not fool yourself—and you are the easiest person to fool.",
+    "type": "quote"
+   },
+   {
+    "apply": "In your next memo, add a short section listing the risks and data that could prove your recommendation wrong.",
+    "meaning": "Feynman asked scientists to lean over backwards: publish the details that might invalidate their result, not just the ones that support it. Integrity means showing your weak spots.",
+    "text": "Report everything that could make you wrong",
+    "type": "idea"
+   },
+   {
+    "apply": "When your numbers disagree with consensus, check them carefully, then report them as they are rather than nudging toward the expected answer.",
+    "meaning": "After Millikan's slightly wrong electron charge, later measurements crept up only gradually. Feynman argued researchers discarded results that strayed too far from the accepted figure.",
+    "text": "Fear of disagreeing with authority slows the truth",
+    "type": "idea"
+   }
+  ],
+  "color": "#2c2552",
+  "createdAt": 1795855983053,
+  "library": "science",
+  "order": 175,
+  "shelf": "pioneers",
+  "source": "hourly",
+  "title": "Surely You're Joking, Mr. Feynman!"
  }
 ]
