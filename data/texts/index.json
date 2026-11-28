@@ -10,7 +10,8 @@
 "the-twelve-caesars-2026112709": "the-twelve-caesars.json",
 "the-wealth-of-nations-2026112710": "wealth-of-nations.json",
 "tao-te-ching-2026112712": "tao-te-ching.json",
-"nicomachean-ethics-2026112718": "nicomachean-ethics.json"
+"nicomachean-ethics-2026112718": "nicomachean-ethics.json",
+"history-of-the-peloponnesian-war-2026112806": "peloponnesian-war.json"
 },
 "titles": {
 "apology": "apology.json",
@@ -33,7 +34,8 @@
 "walden": "walden.json",
 "wealthofnations": "wealth-of-nations.json",
 "twelvecaesars": "the-twelve-caesars.json",
-"livesofthecaesars": "the-twelve-caesars.json"
+"livesofthecaesars": "the-twelve-caesars.json",
+"historyofthepeloponnesianwar": "peloponnesian-war.json"
 },
 "meta": {
 "apology.json": {
@@ -140,6 +142,11 @@
 "title": "Nicomachean Ethics",
 "author": "Aristotle",
 "chapters": 12
+},
+"peloponnesian-war.json": {
+"title": "History of the Peloponnesian War",
+"author": "Thucydides",
+"chapters": 26
 }
 }
 }

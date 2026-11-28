@@ -508,5 +508,90 @@
     "apply": "Before adopting a powerful new tool at work, write down one use you'd refuse and why."
    }
   ]
+ },
+ {
+  "id": "history-of-the-peloponnesian-war-2026112806",
+  "author": "Thucydides",
+  "cards": [
+   {
+    "apply": "Write your next memo for the reader a year from now: state the facts, the reasoning and what you expect, not just today's headline.",
+    "meaning": "Thucydides chose usefulness over entertainment. He admits the \"absence of romance\" may make his history less pleasing, but expects that people who want to understand events, since human nature repeats, will find it valuable.",
+    "text": "I have written my work, not as an essay which is to win the applause of the moment, but as a possession for all time.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before you rely on a key number in a model or deal, confirm it with a second independent source.",
+    "meaning": "He says he didn't trust the first account he heard or his own impressions. Witnesses of the same event told it differently, out of partiality for one side or faulty memory, so he checked reports against each other with as much care as possible.",
+    "text": "Test every eyewitness story against the others.",
+    "type": "idea"
+   },
+   {
+    "apply": "In your next dispute or negotiation, write down the stated complaint and, separately, the shift in power or incentives underneath it.",
+    "meaning": "He separates the stated grievances (Epidamnus, Potidaea) from the real cause: a shifting balance of power. The political scientist Graham Allison later called a rising power alarming an established one the \"Thucydides Trap.\"",
+    "text": "The growth of the power of Athens, and the alarm which this inspired in Lacedaemon, made war inevitable.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before a tough conversation, list what the other side fears, what status they need to protect, and what they stand to gain.",
+    "meaning": "Athenian envoys at Sparta explain why Athens took and kept its empire. Their trio of security, status and gain is still a compact way to read why states, firms and people act as they do.",
+    "text": "…under the pressure of three of the strongest motives, fear, honour, and interest.",
+    "type": "quote"
+   },
+   {
+    "apply": "Name one area where you're behind and stop hiding it: set one concrete step to close the gap this week.",
+    "meaning": "In his Funeral Oration, Pericles praises an Athens where wealth is used rather than displayed, and where shame lies in giving up, not in being poor. It's an ideal of effort and civic merit over birth.",
+    "text": "…place the real disgrace of poverty not in owning to the fact but in declining the struggle against it.",
+    "type": "quote"
+   },
+   {
+    "apply": "Write one sentence on what your team does better than anyone else, then check whether your habits this week actually live up to it.",
+    "meaning": "Pericles presents Athens as open, versatile and self-governing, a model for all Greece. Thucydides puts this high ideal right before the plague, so the speech reads partly as a portrait of what the war would test and erode.",
+    "text": "In short, I say that as a city we are the school of Hellas.",
+    "type": "quote"
+   },
+   {
+    "apply": "When a crisis hits your team, set and say out loud the one standard you'll keep no matter what, before shortcuts become normal.",
+    "meaning": "Thucydides caught the plague himself and records its symptoms so it could be recognised if it returned. He also shows the social collapse: with death so near, people stopped fearing the law or the gods and chased quick pleasure.",
+    "text": "The plague broke the city's morals as well as its bodies.",
+    "type": "idea"
+   },
+   {
+    "apply": "When you're angry about a decision, sleep on it and reargue it the next day purely on what serves your long-term interest.",
+    "meaning": "Diodotus says this in the Mytilenean debate, after Athens had voted in anger to kill the whole male population of a rebel city. He argues from self-interest, not pity, and wins; a second ship arrives just in time to stop the order.",
+    "text": "I think the two things most opposed to good counsel are haste and passion.",
+    "type": "quote"
+   },
+   {
+    "apply": "Watch for labels in your organisation that recast caution as disloyalty or recklessness as courage, and call one out plainly.",
+    "meaning": "Describing the civil war at Corcyra, Thucydides shows how faction corrupts language: \"reckless audacity\" became loyalty and \"prudent hesitation\" cowardice. Once words are bent, trust and moderation vanish.",
+    "text": "Words had to change their ordinary meaning and to take that which was now given them.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before a negotiation, judge your real leverage and BATNA honestly; hoping the other side will be fair is not a strategy.",
+    "meaning": "The Athenians say this to the neutral islanders of Melos, who refuse to submit. Melos falls and its men are killed. Thucydides lets the dialogue show raw power politics, and the arrogance that comes just before Athens' disaster in Sicily.",
+    "text": "Right, as the world goes, is only in question between equals in power, while the strong do what they can and the weak suffer what they must.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before your next big bet, ask the most cautious person you know for the case against it, and set a point at which you'll cut losses.",
+    "meaning": "Swayed by Alcibiades over Nicias' warnings, Athens sent a vast force to conquer Sicily (415–413 BC). It ended in catastrophe: fleet and army were destroyed, and in his words \"few out of many returned home.\"",
+    "text": "The Sicilian expedition: overreach turns into total ruin.",
+    "type": "idea"
+   },
+   {
+    "apply": "Look for one internal rivalry in your team that's costing more than any competitor, and raise it with the people involved this week.",
+    "meaning": "Thucydides judges that after Pericles died, rival leaders courted the crowd for personal gain and policy suffered. The narrative breaks off in 411 BC amid an oligarchic coup; Athens finally surrendered in 404 BC.",
+    "text": "Athens did more damage to itself than Sparta did.",
+    "type": "idea"
+   }
+  ],
+  "color": "#5a1e1e",
+  "createdAt": 1795866873957,
+  "library": "mind",
+  "order": 178,
+  "shelf": "greeks",
+  "source": "hourly",
+  "title": "History of the Peloponnesian War"
  }
 ]
