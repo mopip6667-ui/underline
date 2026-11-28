@@ -423,5 +423,90 @@
   "shelf": "strategy",
   "source": "hourly",
   "title": "Playing to Win"
+ },
+ {
+  "id": "the-gene-2026112805",
+  "title": "The Gene",
+  "author": "Siddhartha Mukherjee",
+  "color": "#0e3a3a",
+  "library": "finance",
+  "shelf": "healthcare",
+  "order": 177,
+  "source": "hourly",
+  "createdAt": 1795863195169,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "A family's history of mental illness frames the story",
+    "meaning": "Mukherjee opens with relatives who lived with schizophrenia and bipolar disorder, and asks what he may have inherited. The science of the gene is personal: it shapes how families understand risk, blame and fate.",
+    "apply": "Pick one inherited trait in your field (a company culture, a legacy system) and ask what is truly fixed versus learned."
+   },
+   {
+    "type": "idea",
+    "text": "Mendel's peas: heredity comes in discrete units",
+    "meaning": "Working in a monastery garden, Gregor Mendel showed that traits pass on as separate units that don't blend away. His 1865 paper was largely ignored until it was rediscovered around 1900.",
+    "apply": "Revisit one overlooked report or idea in your team's archive; good insights are often early, not wrong."
+   },
+   {
+    "type": "idea",
+    "text": "Darwin had evolution but no mechanism for inheritance",
+    "meaning": "Natural selection needed variation to be preserved across generations, but Darwin's era assumed traits blended together. Mendel's units were the missing piece, and joining the two took decades.",
+    "apply": "When a thesis has a gap you can't explain, name it explicitly in your memo instead of papering over it."
+   },
+   {
+    "type": "idea",
+    "text": "Eugenics turned a young science into a weapon",
+    "meaning": "Francis Galton coined 'eugenics', and the idea spread to forced sterilisation laws in the US, upheld in Buck v. Bell in 1927, and then to Nazi Germany. Bad science dressed as certainty caused immense harm.",
+    "apply": "Before acting on a model's output about people, ask who it could wrongly label and how you'd catch that."
+   },
+   {
+    "type": "idea",
+    "text": "The double helix revealed how genes copy themselves",
+    "meaning": "In 1953 Watson and Crick proposed DNA's double-helix structure, relying on X-ray data from Rosalind Franklin. Two paired strands explained at once how information is stored and faithfully copied.",
+    "apply": "Credit the data-gatherers on your next deliverable; the analyst who built the dataset deserves a name on it."
+   },
+   {
+    "type": "idea",
+    "text": "Genes are instructions: DNA to RNA to protein",
+    "meaning": "A gene is a stretch of code that is transcribed into RNA and translated into a protein, which does the cell's work. Cracking this genetic code turned heredity into readable information.",
+    "apply": "Map one process you own from input to output in three steps; clarity about the chain shows where errors creep in."
+   },
+   {
+    "type": "idea",
+    "text": "Scientists paused gene splicing to write safety rules",
+    "meaning": "When recombinant DNA let researchers move genes between organisms, many feared accidents. At Asilomar in 1975 they agreed on containment rules before pressing ahead, an early case of science policing itself.",
+    "apply": "For a risky new project, agree on guardrails with stakeholders before launch rather than after the first incident."
+   },
+   {
+    "type": "idea",
+    "text": "Genentech turned gene cloning into an industry",
+    "meaning": "Founded in 1976, Genentech used engineered bacteria to make human proteins, including insulin, approved in 1982. It showed that genetic know-how could become products, patents and a new biotech sector.",
+    "apply": "When valuing a biotech, separate the platform (repeatable science) from any single drug's pipeline risk."
+   },
+   {
+    "type": "idea",
+    "text": "The genome held far fewer genes than expected",
+    "meaning": "The Human Genome Project, with a draft announced in 2000, found only about 20,000 protein-coding genes. Complexity comes less from gene count than from how genes are switched on, combined and regulated.",
+    "apply": "Don't judge a company by headcount or asset count; look at how well its pieces are coordinated."
+   },
+   {
+    "type": "idea",
+    "text": "A gene is rarely destiny; context shapes outcomes",
+    "meaning": "Most traits and many diseases depend on many genes plus environment and chance. Even a strong risk gene may not show up in everyone who carries it, which makes simple genetic predictions misleading.",
+    "apply": "Treat any single risk factor in a forecast as a probability shift, not a verdict, and size positions accordingly."
+   },
+   {
+    "type": "idea",
+    "text": "Epigenetics: experience can mark how genes behave",
+    "meaning": "Chemical tags on DNA and its packaging change which genes are active without altering the code. Studies of people conceived during the Dutch Hunger Winter of 1944–45 linked early famine to later health effects.",
+    "apply": "Notice the 'tags' on your team: early habits and incentives often outlast the people who set them."
+   },
+   {
+    "type": "idea",
+    "text": "Editing genes brings power and hard choices",
+    "meaning": "Gene therapy suffered a setback when Jesse Gelsinger died in a 1999 trial, and CRISPR later made editing far easier. Mukherjee argues we must decide which uses heal and which cross lines we shouldn't.",
+    "apply": "Before adopting a powerful new tool at work, write down one use you'd refuse and why."
+   }
+  ]
  }
 ]
