@@ -83,5 +83,90 @@
         "apply": "For any industry you follow, write down the main government levers that could shift market share, not just costs."
       }
     ]
+  },
+  {
+    "id": "the-hard-thing-about-hard-things-2026112801",
+    "title": "The Hard Thing About Hard Things",
+    "author": "Ben Horowitz",
+    "color": "#3d1f0d",
+    "library": "business",
+    "shelf": "operators",
+    "order": 173,
+    "source": "hourly",
+    "createdAt": 1795848787238,
+    "cards": [
+      {
+        "type": "idea",
+        "text": "The Struggle has no recipe; you lead through it anyway.",
+        "meaning": "Horowitz opens with Loudcloud nearly dying in the dot-com bust and its reinvention as Opsware, sold to HP for $1.6 billion in 2007. His point: management books describe easy problems; the hard ones have no formula, only judgment under pressure.",
+        "apply": "Write down the one problem you keep avoiding because there's no playbook for it, and schedule an hour this week to decide your next move."
+      },
+      {
+        "type": "idea",
+        "text": "Tell it like it is, especially when the news is bad.",
+        "meaning": "A CEO who spins bad news loses trust and loses help. Shared openly, a problem gets many minds working on it; hidden, it stays the leader's alone and usually grows.",
+        "apply": "In your next team update, state the worst open issue plainly, with numbers, and ask who has ideas to fix it."
+      },
+      {
+        "type": "idea",
+        "text": "Lay people off quickly, honestly, and in person.",
+        "meaning": "Horowitz's steps: don't delay once decided, because word leaks; explain the real reason; have managers tell their own people; and have the CEO show up afterward to own the decision.",
+        "apply": "If you're facing a hard people decision, set a date for it now rather than letting it drift another month."
+      },
+      {
+        "type": "idea",
+        "text": "Take care of people, products and profits, in that order.",
+        "meaning": "A good place to work is not perks; it is a place where people can focus on their work and know good work gets rewarded. Without that, product and profits follow downhill.",
+        "apply": "Ask two teammates what most gets in the way of their work, then remove one of those blockers this week."
+      },
+      {
+        "type": "idea",
+        "text": "Train your people; few things a manager does matter more.",
+        "meaning": "Drawing on Andy Grove, Horowitz argues a few hours of a manager's training ripple through every hour the employee works afterward. Startups skip it because they feel too busy, then pay in confusion and churn.",
+        "apply": "Write a one-page guide to how you do one core task, like building a model or reviewing a deal, and share it with a junior colleague."
+      },
+      {
+        "type": "idea",
+        "text": "One-on-ones are the employee's meeting, not yours.",
+        "meaning": "The direct report sets the agenda: problems, ideas, frustrations. The manager mostly listens and asks good questions, which surfaces issues that never come up in status meetings.",
+        "apply": "Before your next one-on-one, ask the other person to bring the topics, and open with: what's the biggest thing slowing you down?"
+      },
+      {
+        "type": "idea",
+        "text": "Hire for strengths, not for a lack of weaknesses.",
+        "meaning": "Candidates with no glaring flaws are often mediocre at everything. Decide what world-class strength the role needs, find someone exceptional at it, and accept the weaknesses that come with them.",
+        "apply": "For your next hire or project partner, write the one strength that matters most before you look at résumés."
+      },
+      {
+        "type": "idea",
+        "text": "Look for ambition for the company, not just for oneself.",
+        "meaning": "Horowitz distinguishes people who want the team to win from people who want themselves to win at the team's expense. The second kind can turn an organisation political, so he screens for it.",
+        "apply": "In your next interview, ask the candidate about a past win and listen for whether they credit the team's result or only their own role."
+      },
+      {
+        "type": "idea",
+        "text": "Management debt comes due, like technical debt.",
+        "meaning": "Expedient fixes, such as splitting one job between two people or giving a big raise to stop a resignation, solve today's problem but create bigger costs later: confusion, resentment, and copycat demands.",
+        "apply": "List one shortcut you took recently to avoid a hard conversation, and decide how you'll pay it down before it compounds."
+      },
+      {
+        "type": "idea",
+        "text": "Wartime and peacetime call for different CEOs.",
+        "meaning": "In peacetime a company has an edge and can broaden and empower. In wartime it faces an existential threat and needs focus, speed and command. Leaders must recognise which mode they're in and switch.",
+        "apply": "Ask whether your team or the company you cover is in peace or war, and check whether its current priorities match that mode."
+      },
+      {
+        "type": "idea",
+        "text": "There's no silver bullet, only lots of lead bullets.",
+        "meaning": "Facing a stronger competitor at Opsware, Horowitz says the clever partnership or deal rarely saves you. Usually the answer is the grinding work of making the product better.",
+        "apply": "If a project is losing ground, drop the search for a shortcut and list three concrete product or quality fixes to ship."
+      },
+      {
+        "type": "idea",
+        "text": "The hardest skill is managing your own psychology.",
+        "meaning": "Horowitz describes the loneliness and fear of running a company that might fail. The CEO's real job is to keep making clear decisions while feeling terrible, and not to let emotion drive the call.",
+        "apply": "When you're under stress this week, write the decision you're facing and the facts on one page before acting on it."
+      }
+    ]
   }
 ]
