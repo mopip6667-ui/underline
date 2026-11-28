@@ -593,5 +593,90 @@
   "shelf": "greeks",
   "source": "hourly",
   "title": "History of the Peloponnesian War"
+ },
+ {
+  "id": "moral-letters-to-lucilius-2026112807",
+  "author": "Seneca",
+  "cards": [
+   {
+    "apply": "Audit last week's calendar and mark every meeting you'd decline if it cost you money. Decline one of them this week.",
+    "meaning": "Letter I opens the collection with its core claim: possessions can be lost or returned, but time spent is gone for good. Seneca notes we demand repayment for small loans yet let others take our hours without a thought.",
+    "text": "Nothing, Lucilius, is ours, except time.",
+    "type": "quote"
+   },
+   {
+    "apply": "Pick one book or report relevant to your work and finish it before opening anything new.",
+    "meaning": "In Letter II Seneca warns against restless reading that hops between many authors. A mind that never settles takes nothing in, just as a plant that's moved constantly never puts down roots.",
+    "text": "Everywhere means nowhere.",
+    "type": "quote"
+   },
+   {
+    "apply": "Write down the number that would truly be 'enough' for one financial goal, and judge your next big purchase against it.",
+    "meaning": "Seneca borrows the thought from Epicurus. Poverty is a matter of appetite, not of balance: someone who always wants more never feels secure, whatever they own.",
+    "text": "It is not the man who has too little, but the man who craves more, that is poor.",
+    "type": "quote"
+   },
+   {
+    "apply": "Book a coffee with someone whose judgment you admire, and offer to mentor one junior colleague this month.",
+    "meaning": "Letter VII argues that crowds quietly pass their vices on to us. Seneca advises choosing company that raises your standards, and also welcoming those you can help, since 'men learn while they teach.'",
+    "text": "Associate with those who will make a better man of you.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before your next anxious decision, write down the worst case, how likely it really is, and what you'd do if it happened.",
+    "meaning": "Letter XIII separates what is actually happening from what we fear might. Many dreaded events never arrive, and much of our pain is rehearsal, so Seneca asks us to test whether a fear has real evidence behind it.",
+    "text": "We suffer more often in imagination than in reality.",
+    "type": "quote"
+   },
+   {
+    "apply": "Review your goals list, drop anything you haven't touched in a month, and commit fully to the top two.",
+    "meaning": "In Letter XVI Seneca says it matters more to hold to resolutions already made than to keep making noble new ones. Progress comes from daily practice, not from a growing list of intentions.",
+    "text": "Keep the promises you've made before making new ones",
+    "type": "idea"
+   },
+   {
+    "apply": "Spend one weekend day on a bare-bones budget. Notice how little you actually need, then use that to size your emergency fund calmly.",
+    "meaning": "Letter XVIII recommends setting aside days to live on the cheapest food and roughest clothes. Rehearsing hardship while times are good shows you it is bearable, which removes much of its power to frighten you.",
+    "text": "Is this the condition that I feared?",
+    "type": "quote"
+   },
+   {
+    "apply": "List three subscriptions, tools or obligations you maintain mainly from habit, and cancel one.",
+    "meaning": "Seneca observes that big households, retinues and estates create endless demands and dependencies. The more you hold, the more you have to guard and the more fortune can take from you.",
+    "text": "Most people are owned by their possessions",
+    "type": "idea"
+   },
+   {
+    "apply": "Before switching jobs, cities or teams to fix a frustration, name what part of it you'd bring with you.",
+    "meaning": "Letter XXVIII answers a friend who travelled to escape unhappiness and found it came along. Our troubles travel with us; changing the inner state matters more than changing the scenery.",
+    "text": "You need a change of soul rather than a change of climate.",
+    "type": "quote"
+   },
+   {
+    "apply": "Treat the most junior person in your next meeting exactly as you'd treat the most senior, and ask for their view first.",
+    "meaning": "In Letter XLVII Seneca urges treating enslaved people humanely, reminding Romans that fortune can reverse anyone's status. He adds that 'all men are slaves to fear', so judge people by character, not rank.",
+    "text": "No master is harsher than fear, greed or ambition",
+    "type": "idea"
+   },
+   {
+    "apply": "Write one sentence describing what success looks like for you in a year. Use it to say no to one opportunity this week.",
+    "meaning": "Letter LXXI says plans fail because they lack a clear aim. Like an archer, you must know the target before skill can help; without one, every opportunity looks the same and chance runs your life.",
+    "text": "When a man does not know what harbour he is making for, no wind is the right wind.",
+    "type": "quote"
+   },
+   {
+    "apply": "Tonight, write down the one thing that would make today feel complete, and do it before bed.",
+    "meaning": "Letter CI warns against postponing life to some future point. Since no one is promised tomorrow, Seneca advises treating each day as complete in itself and finishing it with nothing important left undone.",
+    "text": "Begin at once to live, and count each separate day as a separate life.",
+    "type": "quote"
+   }
+  ],
+  "color": "#3b2f0f",
+  "createdAt": 1795870427750,
+  "library": "mind",
+  "order": 179,
+  "shelf": "stoicism",
+  "source": "hourly",
+  "title": "Moral Letters to Lucilius"
  }
 ]
