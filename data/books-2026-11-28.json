@@ -678,5 +678,90 @@
   "shelf": "stoicism",
   "source": "hourly",
   "title": "Moral Letters to Lucilius"
+ },
+ {
+  "id": "reminiscences-of-a-stock-operator-2026112808",
+  "author": "Edwin Lefèvre",
+  "cards": [
+   {
+    "apply": "Before your next idea, find one historical analogue — a past cycle or similar company — and note how that story ended.",
+    "meaning": "Livingston (Livermore's stand-in) says this early in Chapter I. Markets repeat because human nature doesn't change: the same greed and fear drive every boom and bust, only the tickers differ.",
+    "text": "There is nothing new in Wall Street. There can’t be because speculation is as old as the hills.",
+    "type": "quote"
+   },
+   {
+    "apply": "Keep a simple log this week of your predictions on a stock or deal and what actually happened. Patterns show up on paper.",
+    "meaning": "As a teenage quote-board boy he logged price patterns in a notebook, treating the tape as a record of behaviour. His edge began as careful observation, not tips or theories.",
+    "text": "He learned to read prices before he learned to trade",
+    "type": "idea"
+   },
+   {
+    "apply": "Take one small, real position in a skill you're learning — a model you defend, a pitch you give — and review the result honestly.",
+    "meaning": "From Chapter III. After going broke at bucket shops and in real brokerages, he concludes no book or mentor could substitute for the lessons the market forced on him through real losses.",
+    "text": "The game taught me the game.",
+    "type": "quote"
+   },
+   {
+    "apply": "Write down the exact price or metric that would prove your current thesis wrong, before it happens.",
+    "meaning": "Chapter III. Arguments can always be rationalised; a loss can't. He treats the market's verdict as the final word on whether his reading was right, not his own reasoning.",
+    "text": "When I am wrong only one thing convinces me of it, and that is, to lose money.",
+    "type": "quote"
+   },
+   {
+    "apply": "Review a winner you sold early. Note what made you exit and set a rule for when you'll hold next time.",
+    "meaning": "Chapter V, the book's most famous line. Being right on direction is common; staying with a winning position through noise until the big move plays out is rare and is where the money is made.",
+    "text": "It never was my thinking that made the big money for me. It was always my sitting.",
+    "type": "quote"
+   },
+   {
+    "apply": "Before analysing a single name, write one line on the sector or market trend it sits in.",
+    "meaning": "Old Partridge's refrain, \"It's a bull market, you know,\" teaches Livingston that the broad trend matters more than every dip. Jumping in and out of swings costs the big position.",
+    "text": "Trade the whole market's direction, not individual fluctuations",
+    "type": "idea"
+   },
+   {
+    "apply": "On your next trade or deal, list what confirms the move is underway rather than what you hope will start it.",
+    "meaning": "Chapter X. He waits until price action shows which way is easier — up or down — and then commits. The job is to identify that direction, not to predict a top or bottom.",
+    "text": "Prices, like everything else, move along the line of least resistance.",
+    "type": "quote"
+   },
+   {
+    "apply": "Check your portfolio or pipeline for one position you're holding only on hope. Decide on it today.",
+    "meaning": "Chapter X. He argues hope and fear are wired backwards for speculators: we hope when we should fear a growing loss, and fear when we should hope a profit will grow.",
+    "text": "In speculation when the market goes against you you hope that every day will be the last day",
+    "type": "quote"
+   },
+   {
+    "apply": "Set a stop-loss level or a review trigger for each open position this week.",
+    "meaning": "Chapter XII. Cutting losers and letting winners run sounds obvious, yet most people do the reverse — selling gains to feel right and nursing losses to avoid admitting error.",
+    "text": "Always sell what shows you a loss and keep what shows you a profit.",
+    "type": "quote"
+   },
+   {
+    "apply": "Next time you get a tip, write your own thesis for it first. If you can't, pass.",
+    "meaning": "Several of his worst losses came from acting on someone else's conviction, including a cotton trader's advice he followed against his own reading. Borrowed opinions carry no edge and no exit plan.",
+    "text": "Tips and inside stories are a trap, even from friends",
+    "type": "idea"
+   },
+   {
+    "apply": "Check average daily volume before sizing your next position so you know how long an exit would take.",
+    "meaning": "Later chapters describe him distributing large blocks and running pools, where selling too fast would crush the price. Liquidity, not just analysis, shapes how a big position is built and unwound.",
+    "text": "Big operators need buyers, so they move markets with patience",
+    "type": "idea"
+   },
+   {
+    "apply": "Start a short \"don'ts\" list from your last three mistakes at work and pin it where you'll see it.",
+    "meaning": "Chapter III. He frames each blow-up as tuition, then codifies what not to do. His fortunes rose and fell repeatedly, which makes the book as much about discipline as triumph.",
+    "text": "All my life I have made mistakes, but in losing money I have gained experience and accumulated a lot of valuable don’ts.",
+    "type": "quote"
+   }
+  ],
+  "color": "#102a4a",
+  "createdAt": 1795874218827,
+  "library": "finance",
+  "order": 180,
+  "shelf": "foundations",
+  "source": "hourly",
+  "title": "Reminiscences of a Stock Operator"
  }
 ]
