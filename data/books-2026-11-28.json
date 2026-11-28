@@ -1,172 +1,257 @@
 [
-  {
-    "id": "the-sporty-game-2026112800",
-    "title": "The Sporty Game",
-    "author": "John Newhouse",
-    "color": "#16324f",
-    "library": "finance",
-    "shelf": "aviation",
-    "order": 172,
-    "source": "hourly",
-    "createdAt": 1795845209864,
-    "cards": [
-      {
-        "type": "idea",
-        "text": "Every new airliner is a bet-the-company wager",
-        "meaning": "Newhouse borrowed the industry's own phrase: building jetliners is a 'sporty game'. Launching a new model can cost more than the maker is worth, so one failed program can sink the company.",
-        "apply": "List the single project your company or a holding could least afford to fail, and size it against the balance sheet."
-      },
-      {
-        "type": "idea",
-        "text": "Break-even sits hundreds of planes and many years away",
-        "meaning": "Huge up-front design and tooling costs mean a programme only pays back after hundreds of deliveries, often a decade or more after launch. Early planes are sold at a loss in the hope of volume later.",
-        "apply": "For any long-cycle business you cover, estimate units to break-even and how many years that implies at current order rates."
-      },
-      {
-        "type": "idea",
-        "text": "The learning curve makes later planes much cheaper to build",
-        "meaning": "Workers and suppliers get faster with every unit, so costs fall steeply as output rises. That is why makers price early planes below cost: they are buying their way down the curve.",
-        "apply": "Ask management how unit costs have moved with cumulative volume, not just with time."
-      },
-      {
-        "type": "idea",
-        "text": "Launch customers hold the power and know it",
-        "meaning": "A new jet needs a big, credible airline to order first. Those launch customers shape the design and extract steep discounts, because the manufacturer can't start without them.",
-        "apply": "In a negotiation this week, identify who is the 'launch customer' whose yes unlocks everything, and what they will demand for it."
-      },
-      {
-        "type": "idea",
-        "text": "The 747 nearly broke Boeing",
-        "meaning": "Pan Am's Juan Trippe pushed Boeing into the jumbo jet. Cost overruns and a downturn in the early 1970s forced deep layoffs in Seattle, before the 747 went on to define long-haul flying for decades.",
-        "apply": "When a client or customer drives your biggest bet, stress-test what happens if the market turns just as you deliver."
-      },
-      {
-        "type": "idea",
-        "text": "Two trijets split one market and both lost",
-        "meaning": "Lockheed's L-1011 TriStar and McDonnell Douglas's DC-10 chased the same mid-size demand. Neither sold enough to earn back its costs, and Lockheed eventually left the airliner business.",
-        "apply": "Check whether a market you're analysing can support every competitor now entering it, or only one."
-      },
-      {
-        "type": "idea",
-        "text": "An engine contract helped bankrupt Rolls-Royce",
-        "meaning": "Rolls-Royce's RB211 engine for the TriStar ran far over budget, and in 1971 the company collapsed and was nationalised. Lockheed, its partner, needed US government loan guarantees to survive.",
-        "apply": "Map the single supplier whose failure would stop your product, and ask what you'd do the day it happened."
-      },
-      {
-        "type": "idea",
-        "text": "Engine makers fight their own sporty game",
-        "meaning": "Pratt & Whitney, General Electric and Rolls-Royce compete fiercely to be on each new airframe, since an engine choice locks in decades of spare parts and service revenue.",
-        "apply": "When valuing an equipment seller, separate the one-time sale from the aftermarket stream it locks in."
-      },
-      {
-        "type": "idea",
-        "text": "Stretching a proven design beats starting from scratch",
-        "meaning": "Derivatives of existing planes reuse tooling, certification and know-how, so they cost far less and carry less risk. Clean-sheet designs win markets but can ruin makers that misjudge demand.",
-        "apply": "Before a new initiative, ask whether an upgrade of something that already works would get 80% of the benefit."
-      },
-      {
-        "type": "idea",
-        "text": "Airbus was a political project that learned to compete",
-        "meaning": "European governments backed the Airbus consortium to break US dominance. Its A300 sold slowly at first, but state support let it hang on long enough to become a real commercial rival.",
-        "apply": "When a competitor has patient, non-commercial backing, model a longer price war than profit logic alone would suggest."
-      },
-      {
-        "type": "idea",
-        "text": "The Eastern Airlines deal opened America to Airbus",
-        "meaning": "In the late 1970s Eastern, under Frank Borman, took A300s on very generous terms after a trial. The deal gave Airbus its first big US foothold and showed how far it would go to win a market.",
-        "apply": "Think about which one marquee customer would make your product credible, and what you could offer to land them."
-      },
-      {
-        "type": "idea",
-        "text": "Governments and national pride are part of the industry",
-        "meaning": "Export financing, subsidies, defence work and diplomacy all shape who wins orders. Newhouse shows airliner sales are as much statecraft as engineering or price.",
-        "apply": "For any industry you follow, write down the main government levers that could shift market share, not just costs."
-      }
-    ]
-  },
-  {
-    "id": "the-hard-thing-about-hard-things-2026112801",
-    "title": "The Hard Thing About Hard Things",
-    "author": "Ben Horowitz",
-    "color": "#3d1f0d",
-    "library": "business",
-    "shelf": "operators",
-    "order": 173,
-    "source": "hourly",
-    "createdAt": 1795848787238,
-    "cards": [
-      {
-        "type": "idea",
-        "text": "The Struggle has no recipe; you lead through it anyway.",
-        "meaning": "Horowitz opens with Loudcloud nearly dying in the dot-com bust and its reinvention as Opsware, sold to HP for $1.6 billion in 2007. His point: management books describe easy problems; the hard ones have no formula, only judgment under pressure.",
-        "apply": "Write down the one problem you keep avoiding because there's no playbook for it, and schedule an hour this week to decide your next move."
-      },
-      {
-        "type": "idea",
-        "text": "Tell it like it is, especially when the news is bad.",
-        "meaning": "A CEO who spins bad news loses trust and loses help. Shared openly, a problem gets many minds working on it; hidden, it stays the leader's alone and usually grows.",
-        "apply": "In your next team update, state the worst open issue plainly, with numbers, and ask who has ideas to fix it."
-      },
-      {
-        "type": "idea",
-        "text": "Lay people off quickly, honestly, and in person.",
-        "meaning": "Horowitz's steps: don't delay once decided, because word leaks; explain the real reason; have managers tell their own people; and have the CEO show up afterward to own the decision.",
-        "apply": "If you're facing a hard people decision, set a date for it now rather than letting it drift another month."
-      },
-      {
-        "type": "idea",
-        "text": "Take care of people, products and profits, in that order.",
-        "meaning": "A good place to work is not perks; it is a place where people can focus on their work and know good work gets rewarded. Without that, product and profits follow downhill.",
-        "apply": "Ask two teammates what most gets in the way of their work, then remove one of those blockers this week."
-      },
-      {
-        "type": "idea",
-        "text": "Train your people; few things a manager does matter more.",
-        "meaning": "Drawing on Andy Grove, Horowitz argues a few hours of a manager's training ripple through every hour the employee works afterward. Startups skip it because they feel too busy, then pay in confusion and churn.",
-        "apply": "Write a one-page guide to how you do one core task, like building a model or reviewing a deal, and share it with a junior colleague."
-      },
-      {
-        "type": "idea",
-        "text": "One-on-ones are the employee's meeting, not yours.",
-        "meaning": "The direct report sets the agenda: problems, ideas, frustrations. The manager mostly listens and asks good questions, which surfaces issues that never come up in status meetings.",
-        "apply": "Before your next one-on-one, ask the other person to bring the topics, and open with: what's the biggest thing slowing you down?"
-      },
-      {
-        "type": "idea",
-        "text": "Hire for strengths, not for a lack of weaknesses.",
-        "meaning": "Candidates with no glaring flaws are often mediocre at everything. Decide what world-class strength the role needs, find someone exceptional at it, and accept the weaknesses that come with them.",
-        "apply": "For your next hire or project partner, write the one strength that matters most before you look at résumés."
-      },
-      {
-        "type": "idea",
-        "text": "Look for ambition for the company, not just for oneself.",
-        "meaning": "Horowitz distinguishes people who want the team to win from people who want themselves to win at the team's expense. The second kind can turn an organisation political, so he screens for it.",
-        "apply": "In your next interview, ask the candidate about a past win and listen for whether they credit the team's result or only their own role."
-      },
-      {
-        "type": "idea",
-        "text": "Management debt comes due, like technical debt.",
-        "meaning": "Expedient fixes, such as splitting one job between two people or giving a big raise to stop a resignation, solve today's problem but create bigger costs later: confusion, resentment, and copycat demands.",
-        "apply": "List one shortcut you took recently to avoid a hard conversation, and decide how you'll pay it down before it compounds."
-      },
-      {
-        "type": "idea",
-        "text": "Wartime and peacetime call for different CEOs.",
-        "meaning": "In peacetime a company has an edge and can broaden and empower. In wartime it faces an existential threat and needs focus, speed and command. Leaders must recognise which mode they're in and switch.",
-        "apply": "Ask whether your team or the company you cover is in peace or war, and check whether its current priorities match that mode."
-      },
-      {
-        "type": "idea",
-        "text": "There's no silver bullet, only lots of lead bullets.",
-        "meaning": "Facing a stronger competitor at Opsware, Horowitz says the clever partnership or deal rarely saves you. Usually the answer is the grinding work of making the product better.",
-        "apply": "If a project is losing ground, drop the search for a shortcut and list three concrete product or quality fixes to ship."
-      },
-      {
-        "type": "idea",
-        "text": "The hardest skill is managing your own psychology.",
-        "meaning": "Horowitz describes the loneliness and fear of running a company that might fail. The CEO's real job is to keep making clear decisions while feeling terrible, and not to let emotion drive the call.",
-        "apply": "When you're under stress this week, write the decision you're facing and the facts on one page before acting on it."
-      }
-    ]
-  }
+ {
+  "id": "the-sporty-game-2026112800",
+  "title": "The Sporty Game",
+  "author": "John Newhouse",
+  "color": "#16324f",
+  "library": "finance",
+  "shelf": "aviation",
+  "order": 172,
+  "source": "hourly",
+  "createdAt": 1795845209864,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "Every new airliner is a bet-the-company wager",
+    "meaning": "Newhouse borrowed the industry's own phrase: building jetliners is a 'sporty game'. Launching a new model can cost more than the maker is worth, so one failed program can sink the company.",
+    "apply": "List the single project your company or a holding could least afford to fail, and size it against the balance sheet."
+   },
+   {
+    "type": "idea",
+    "text": "Break-even sits hundreds of planes and many years away",
+    "meaning": "Huge up-front design and tooling costs mean a programme only pays back after hundreds of deliveries, often a decade or more after launch. Early planes are sold at a loss in the hope of volume later.",
+    "apply": "For any long-cycle business you cover, estimate units to break-even and how many years that implies at current order rates."
+   },
+   {
+    "type": "idea",
+    "text": "The learning curve makes later planes much cheaper to build",
+    "meaning": "Workers and suppliers get faster with every unit, so costs fall steeply as output rises. That is why makers price early planes below cost: they are buying their way down the curve.",
+    "apply": "Ask management how unit costs have moved with cumulative volume, not just with time."
+   },
+   {
+    "type": "idea",
+    "text": "Launch customers hold the power and know it",
+    "meaning": "A new jet needs a big, credible airline to order first. Those launch customers shape the design and extract steep discounts, because the manufacturer can't start without them.",
+    "apply": "In a negotiation this week, identify who is the 'launch customer' whose yes unlocks everything, and what they will demand for it."
+   },
+   {
+    "type": "idea",
+    "text": "The 747 nearly broke Boeing",
+    "meaning": "Pan Am's Juan Trippe pushed Boeing into the jumbo jet. Cost overruns and a downturn in the early 1970s forced deep layoffs in Seattle, before the 747 went on to define long-haul flying for decades.",
+    "apply": "When a client or customer drives your biggest bet, stress-test what happens if the market turns just as you deliver."
+   },
+   {
+    "type": "idea",
+    "text": "Two trijets split one market and both lost",
+    "meaning": "Lockheed's L-1011 TriStar and McDonnell Douglas's DC-10 chased the same mid-size demand. Neither sold enough to earn back its costs, and Lockheed eventually left the airliner business.",
+    "apply": "Check whether a market you're analysing can support every competitor now entering it, or only one."
+   },
+   {
+    "type": "idea",
+    "text": "An engine contract helped bankrupt Rolls-Royce",
+    "meaning": "Rolls-Royce's RB211 engine for the TriStar ran far over budget, and in 1971 the company collapsed and was nationalised. Lockheed, its partner, needed US government loan guarantees to survive.",
+    "apply": "Map the single supplier whose failure would stop your product, and ask what you'd do the day it happened."
+   },
+   {
+    "type": "idea",
+    "text": "Engine makers fight their own sporty game",
+    "meaning": "Pratt & Whitney, General Electric and Rolls-Royce compete fiercely to be on each new airframe, since an engine choice locks in decades of spare parts and service revenue.",
+    "apply": "When valuing an equipment seller, separate the one-time sale from the aftermarket stream it locks in."
+   },
+   {
+    "type": "idea",
+    "text": "Stretching a proven design beats starting from scratch",
+    "meaning": "Derivatives of existing planes reuse tooling, certification and know-how, so they cost far less and carry less risk. Clean-sheet designs win markets but can ruin makers that misjudge demand.",
+    "apply": "Before a new initiative, ask whether an upgrade of something that already works would get 80% of the benefit."
+   },
+   {
+    "type": "idea",
+    "text": "Airbus was a political project that learned to compete",
+    "meaning": "European governments backed the Airbus consortium to break US dominance. Its A300 sold slowly at first, but state support let it hang on long enough to become a real commercial rival.",
+    "apply": "When a competitor has patient, non-commercial backing, model a longer price war than profit logic alone would suggest."
+   },
+   {
+    "type": "idea",
+    "text": "The Eastern Airlines deal opened America to Airbus",
+    "meaning": "In the late 1970s Eastern, under Frank Borman, took A300s on very generous terms after a trial. The deal gave Airbus its first big US foothold and showed how far it would go to win a market.",
+    "apply": "Think about which one marquee customer would make your product credible, and what you could offer to land them."
+   },
+   {
+    "type": "idea",
+    "text": "Governments and national pride are part of the industry",
+    "meaning": "Export financing, subsidies, defence work and diplomacy all shape who wins orders. Newhouse shows airliner sales are as much statecraft as engineering or price.",
+    "apply": "For any industry you follow, write down the main government levers that could shift market share, not just costs."
+   }
+  ]
+ },
+ {
+  "id": "the-hard-thing-about-hard-things-2026112801",
+  "title": "The Hard Thing About Hard Things",
+  "author": "Ben Horowitz",
+  "color": "#3d1f0d",
+  "library": "business",
+  "shelf": "operators",
+  "order": 173,
+  "source": "hourly",
+  "createdAt": 1795848787238,
+  "cards": [
+   {
+    "type": "idea",
+    "text": "The Struggle has no recipe; you lead through it anyway.",
+    "meaning": "Horowitz opens with Loudcloud nearly dying in the dot-com bust and its reinvention as Opsware, sold to HP for $1.6 billion in 2007. His point: management books describe easy problems; the hard ones have no formula, only judgment under pressure.",
+    "apply": "Write down the one problem you keep avoiding because there's no playbook for it, and schedule an hour this week to decide your next move."
+   },
+   {
+    "type": "idea",
+    "text": "Tell it like it is, especially when the news is bad.",
+    "meaning": "A CEO who spins bad news loses trust and loses help. Shared openly, a problem gets many minds working on it; hidden, it stays the leader's alone and usually grows.",
+    "apply": "In your next team update, state the worst open issue plainly, with numbers, and ask who has ideas to fix it."
+   },
+   {
+    "type": "idea",
+    "text": "Lay people off quickly, honestly, and in person.",
+    "meaning": "Horowitz's steps: don't delay once decided, because word leaks; explain the real reason; have managers tell their own people; and have the CEO show up afterward to own the decision.",
+    "apply": "If you're facing a hard people decision, set a date for it now rather than letting it drift another month."
+   },
+   {
+    "type": "idea",
+    "text": "Take care of people, products and profits, in that order.",
+    "meaning": "A good place to work is not perks; it is a place where people can focus on their work and know good work gets rewarded. Without that, product and profits follow downhill.",
+    "apply": "Ask two teammates what most gets in the way of their work, then remove one of those blockers this week."
+   },
+   {
+    "type": "idea",
+    "text": "Train your people; few things a manager does matter more.",
+    "meaning": "Drawing on Andy Grove, Horowitz argues a few hours of a manager's training ripple through every hour the employee works afterward. Startups skip it because they feel too busy, then pay in confusion and churn.",
+    "apply": "Write a one-page guide to how you do one core task, like building a model or reviewing a deal, and share it with a junior colleague."
+   },
+   {
+    "type": "idea",
+    "text": "One-on-ones are the employee's meeting, not yours.",
+    "meaning": "The direct report sets the agenda: problems, ideas, frustrations. The manager mostly listens and asks good questions, which surfaces issues that never come up in status meetings.",
+    "apply": "Before your next one-on-one, ask the other person to bring the topics, and open with: what's the biggest thing slowing you down?"
+   },
+   {
+    "type": "idea",
+    "text": "Hire for strengths, not for a lack of weaknesses.",
+    "meaning": "Candidates with no glaring flaws are often mediocre at everything. Decide what world-class strength the role needs, find someone exceptional at it, and accept the weaknesses that come with them.",
+    "apply": "For your next hire or project partner, write the one strength that matters most before you look at résumés."
+   },
+   {
+    "type": "idea",
+    "text": "Look for ambition for the company, not just for oneself.",
+    "meaning": "Horowitz distinguishes people who want the team to win from people who want themselves to win at the team's expense. The second kind can turn an organisation political, so he screens for it.",
+    "apply": "In your next interview, ask the candidate about a past win and listen for whether they credit the team's result or only their own role."
+   },
+   {
+    "type": "idea",
+    "text": "Management debt comes due, like technical debt.",
+    "meaning": "Expedient fixes, such as splitting one job between two people or giving a big raise to stop a resignation, solve today's problem but create bigger costs later: confusion, resentment, and copycat demands.",
+    "apply": "List one shortcut you took recently to avoid a hard conversation, and decide how you'll pay it down before it compounds."
+   },
+   {
+    "type": "idea",
+    "text": "Wartime and peacetime call for different CEOs.",
+    "meaning": "In peacetime a company has an edge and can broaden and empower. In wartime it faces an existential threat and needs focus, speed and command. Leaders must recognise which mode they're in and switch.",
+    "apply": "Ask whether your team or the company you cover is in peace or war, and check whether its current priorities match that mode."
+   },
+   {
+    "type": "idea",
+    "text": "There's no silver bullet, only lots of lead bullets.",
+    "meaning": "Facing a stronger competitor at Opsware, Horowitz says the clever partnership or deal rarely saves you. Usually the answer is the grinding work of making the product better.",
+    "apply": "If a project is losing ground, drop the search for a shortcut and list three concrete product or quality fixes to ship."
+   },
+   {
+    "type": "idea",
+    "text": "The hardest skill is managing your own psychology.",
+    "meaning": "Horowitz describes the loneliness and fear of running a company that might fail. The CEO's real job is to keep making clear decisions while feeling terrible, and not to let emotion drive the call.",
+    "apply": "When you're under stress this week, write the decision you're facing and the facts on one page before acting on it."
+   }
+  ]
+ },
+ {
+  "id": "better-than-before-2026112802",
+  "author": "Gretchen Rubin",
+  "cards": [
+   {
+    "apply": "Write down when you did your best work last month and what conditions surrounded it. Design one habit around that pattern this week.",
+    "meaning": "Rubin argues the biggest mistake in habit change is copying someone else's system. What works depends on your nature: morning or night person, abstainer or moderator, marathoner or sprinter. Self-knowledge comes before any technique.",
+    "text": "Know yourself first: no habit strategy fits everyone",
+    "type": "idea"
+   },
+   {
+    "apply": "Guess your Tendency and that of one colleague. Next time you assign them work, frame it to match: reasons for a Questioner, a deadline someone checks for an Obliger.",
+    "meaning": "Rubin sorts people by how they meet outer expectations (from others) and inner ones (from themselves). Upholders meet both, Questioners only what makes sense to them, Obligers outer but not inner, and Rebels resist both.",
+    "text": "The Four Tendencies: how you respond to expectations",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one personal goal you keep dropping and tell a specific person you'll report progress to them every Friday.",
+    "meaning": "Obligers, in Rubin's view the largest group, reliably show up for others but let their own goals slide. The fix is not more willpower but building in external accountability: a partner, a coach, a deadline someone else will notice.",
+    "text": "Obligers need outer accountability to keep promises to themselves",
+    "type": "idea"
+   },
+   {
+    "apply": "Track one thing for seven days, such as hours of focused work or money spent on takeout, with a simple tally. Review it Sunday.",
+    "meaning": "The Strategy of Monitoring holds that tracking a behaviour changes it, often without any other effort. People who record what they eat, spend or how they use their time tend to make better choices simply because they see the numbers.",
+    "text": "Monitoring: what you measure, you tend to manage",
+    "type": "idea"
+   },
+   {
+    "apply": "Set a fixed bedtime alarm this week and keep it for five nights before adding any other new habit.",
+    "meaning": "Rubin calls four areas foundational because they strengthen self-control everywhere else: getting enough sleep, moving, eating and drinking right, and uncluttering. When these slip, every other habit gets harder.",
+    "text": "Foundation habits: fix sleep, movement, food and clutter first",
+    "type": "idea"
+   },
+   {
+    "apply": "Block a recurring 45-minute slot for one important but non-urgent task, like reading filings or learning a skill, and treat it as a meeting.",
+    "meaning": "Putting an activity on the calendar at a set time removes the daily debate about whether to do it. Rubin even schedules unstructured time for herself, because what isn't scheduled tends not to happen.",
+    "text": "Scheduling turns a decision into a default",
+    "type": "idea"
+   },
+   {
+    "apply": "Choose one temptation, like checking email or snacks, and test full abstention for five days. Note whether it felt easier or harder than moderation.",
+    "meaning": "Some people find it easier to give something up completely than to have a bit, because 'none' ends the inner negotiation. Others feel deprived by strict rules and do better with occasional indulgence. Knowing which you are prevents fighting your own nature.",
+    "text": "Abstainers quit entirely; Moderators do better with a little",
+    "type": "idea"
+   },
+   {
+    "apply": "Use your next natural transition, such as a new project or month, to launch one habit you've been postponing.",
+    "meaning": "Moments of transition, such as a new job, a move or a new year, loosen old habits and are ideal for starting new ones. Occasionally a 'lightning bolt', a sudden insight or event, changes a habit instantly without effort.",
+    "text": "Clean slates and lightning bolts make change easier",
+    "type": "idea"
+   },
+   {
+    "apply": "Add one step of friction to your worst time-waster, such as logging out of a site, and remove one step from a habit you want.",
+    "meaning": "We do more of what is easy and less of what takes effort. Rubin suggests making good habits frictionless and bad ones awkward, for example by laying out gym clothes or deleting an app so it must be reinstalled.",
+    "text": "Convenience and inconvenience steer behaviour more than intent",
+    "type": "idea"
+   },
+   {
+    "apply": "Write down the excuse you use most often to skip a habit. When you hear yourself say it this week, label it out loud.",
+    "meaning": "Rubin catalogues the excuses we invoke to break our own rules, such as the 'false choice', 'this doesn't count', 'tomorrow' and 'one-coin' loopholes. Naming them makes them easier to catch in the moment.",
+    "text": "Spot the loopholes you use to excuse yourself",
+    "type": "idea"
+   },
+   {
+    "apply": "Pick one task you avoid and pair it with something you like, such as doing expense reports only with a good coffee.",
+    "meaning": "Coupling two activities, such as only listening to a favourite podcast while exercising, makes the harder habit more appealing. Pairing also creates a cue, since one activity reminds you of the other.",
+    "text": "Pairing: link a habit you need to one you enjoy",
+    "type": "idea"
+   },
+   {
+    "apply": "Finish the sentence 'I'm the kind of person who…' for one habit you want. Act on that statement once each day this week.",
+    "meaning": "Our habits are shaped by how we describe ourselves. If you see yourself as 'not a morning person' or 'a foodie', habits that clash with that label struggle. Rubin suggests examining these labels and changing the ones that hold you back.",
+    "text": "Identity: habits stick when they fit who you think you are",
+    "type": "idea"
+   }
+  ],
+  "color": "#0f3d4a",
+  "createdAt": 1795852355416,
+  "library": "work",
+  "order": 174,
+  "shelf": "habits",
+  "source": "hourly",
+  "title": "Better Than Before"
+ }
 ]
