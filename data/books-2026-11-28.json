@@ -1,0 +1,87 @@
+[
+  {
+    "id": "the-sporty-game-2026112800",
+    "title": "The Sporty Game",
+    "author": "John Newhouse",
+    "color": "#16324f",
+    "library": "finance",
+    "shelf": "aviation",
+    "order": 172,
+    "source": "hourly",
+    "createdAt": 1795845209864,
+    "cards": [
+      {
+        "type": "idea",
+        "text": "Every new airliner is a bet-the-company wager",
+        "meaning": "Newhouse borrowed the industry's own phrase: building jetliners is a 'sporty game'. Launching a new model can cost more than the maker is worth, so one failed program can sink the company.",
+        "apply": "List the single project your company or a holding could least afford to fail, and size it against the balance sheet."
+      },
+      {
+        "type": "idea",
+        "text": "Break-even sits hundreds of planes and many years away",
+        "meaning": "Huge up-front design and tooling costs mean a programme only pays back after hundreds of deliveries, often a decade or more after launch. Early planes are sold at a loss in the hope of volume later.",
+        "apply": "For any long-cycle business you cover, estimate units to break-even and how many years that implies at current order rates."
+      },
+      {
+        "type": "idea",
+        "text": "The learning curve makes later planes much cheaper to build",
+        "meaning": "Workers and suppliers get faster with every unit, so costs fall steeply as output rises. That is why makers price early planes below cost: they are buying their way down the curve.",
+        "apply": "Ask management how unit costs have moved with cumulative volume, not just with time."
+      },
+      {
+        "type": "idea",
+        "text": "Launch customers hold the power and know it",
+        "meaning": "A new jet needs a big, credible airline to order first. Those launch customers shape the design and extract steep discounts, because the manufacturer can't start without them.",
+        "apply": "In a negotiation this week, identify who is the 'launch customer' whose yes unlocks everything, and what they will demand for it."
+      },
+      {
+        "type": "idea",
+        "text": "The 747 nearly broke Boeing",
+        "meaning": "Pan Am's Juan Trippe pushed Boeing into the jumbo jet. Cost overruns and a downturn in the early 1970s forced deep layoffs in Seattle, before the 747 went on to define long-haul flying for decades.",
+        "apply": "When a client or customer drives your biggest bet, stress-test what happens if the market turns just as you deliver."
+      },
+      {
+        "type": "idea",
+        "text": "Two trijets split one market and both lost",
+        "meaning": "Lockheed's L-1011 TriStar and McDonnell Douglas's DC-10 chased the same mid-size demand. Neither sold enough to earn back its costs, and Lockheed eventually left the airliner business.",
+        "apply": "Check whether a market you're analysing can support every competitor now entering it, or only one."
+      },
+      {
+        "type": "idea",
+        "text": "An engine contract helped bankrupt Rolls-Royce",
+        "meaning": "Rolls-Royce's RB211 engine for the TriStar ran far over budget, and in 1971 the company collapsed and was nationalised. Lockheed, its partner, needed US government loan guarantees to survive.",
+        "apply": "Map the single supplier whose failure would stop your product, and ask what you'd do the day it happened."
+      },
+      {
+        "type": "idea",
+        "text": "Engine makers fight their own sporty game",
+        "meaning": "Pratt & Whitney, General Electric and Rolls-Royce compete fiercely to be on each new airframe, since an engine choice locks in decades of spare parts and service revenue.",
+        "apply": "When valuing an equipment seller, separate the one-time sale from the aftermarket stream it locks in."
+      },
+      {
+        "type": "idea",
+        "text": "Stretching a proven design beats starting from scratch",
+        "meaning": "Derivatives of existing planes reuse tooling, certification and know-how, so they cost far less and carry less risk. Clean-sheet designs win markets but can ruin makers that misjudge demand.",
+        "apply": "Before a new initiative, ask whether an upgrade of something that already works would get 80% of the benefit."
+      },
+      {
+        "type": "idea",
+        "text": "Airbus was a political project that learned to compete",
+        "meaning": "European governments backed the Airbus consortium to break US dominance. Its A300 sold slowly at first, but state support let it hang on long enough to become a real commercial rival.",
+        "apply": "When a competitor has patient, non-commercial backing, model a longer price war than profit logic alone would suggest."
+      },
+      {
+        "type": "idea",
+        "text": "The Eastern Airlines deal opened America to Airbus",
+        "meaning": "In the late 1970s Eastern, under Frank Borman, took A300s on very generous terms after a trial. The deal gave Airbus its first big US foothold and showed how far it would go to win a market.",
+        "apply": "Think about which one marquee customer would make your product credible, and what you could offer to land them."
+      },
+      {
+        "type": "idea",
+        "text": "Governments and national pride are part of the industry",
+        "meaning": "Export financing, subsidies, defence work and diplomacy all shape who wins orders. Newhouse shows airliner sales are as much statecraft as engineering or price.",
+        "apply": "For any industry you follow, write down the main government levers that could shift market share, not just costs."
+      }
+    ]
+  }
+]
