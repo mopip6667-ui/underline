@@ -1619,5 +1619,90 @@
         "apply": "Set aside 30 unscheduled minutes this week to think or read about a question that has no immediate payoff."
       }
     ]
+  },
+  {
+    "id": "so-good-they-cant-ignore-you-2026112719",
+    "author": "Cal Newport",
+    "cards": [
+      {
+        "apply": "Write down what you actually enjoy in your current job that you didn't enjoy at first. Notice how much of it came from getting competent.",
+        "meaning": "Newport argues that few people have clear pre-existing passions, and that telling them to find one first breeds anxiety and job-hopping. Studies he cites suggest passion usually grows after you get good at work, not before.",
+        "text": "\"Follow your passion\" is bad career advice",
+        "type": "idea"
+      },
+      {
+        "apply": "Stop waiting for certainty about your 'true calling'. Commit fully to the best opportunity already in front of you for the next 90 days.",
+        "meaning": "Before Apple, Jobs was drifting between Zen interests and odd jobs. Apple began as a small, lucky side venture that grew. His passion followed the success, which undercuts the story he later told in his Stanford speech.",
+        "text": "Steve Jobs didn't follow a passion into Apple",
+        "type": "idea"
+      },
+      {
+        "apply": "Pick the one skill your boss or clients value most and decide what 'undeniably good' at it would look like by year-end.",
+        "meaning": "Steve Martin's advice to aspiring performers, given in a TV interview, gives the book its title. Instead of asking what the world can offer you, focus on what you can offer the world.",
+        "text": "Be so good they can't ignore you.",
+        "type": "quote"
+      },
+      {
+        "apply": "When frustrated at work this week, swap 'is this job right for me?' for 'what would make my output clearly better?'",
+        "meaning": "The passion mindset asks what your job offers you, so you notice every flaw. The craftsman mindset asks what value you are producing, so you focus on improving. Newport says the second is what builds great careers.",
+        "text": "Adopt the craftsman mindset, not the passion mindset",
+        "type": "idea"
+      },
+      {
+        "apply": "List your three most valuable skills. Circle the one fewest of your peers have and plan how to deepen it.",
+        "meaning": "The traits people want in a dream job, like creativity, impact and control, are rare and valuable. To get them you must offer something rare and valuable in return. Newport calls that stock of skills career capital.",
+        "text": "Great work requires career capital: rare, valuable skills",
+        "type": "idea"
+      },
+      {
+        "apply": "Block 60 minutes for a task slightly too hard for you, such as a tougher model or analysis, and ask an expert to critique it.",
+        "meaning": "Most knowledge workers plateau because they stop pushing. Like musicians or chess players, you build skill by doing hard, focused practice just beyond your ability and getting honest feedback, which feels uncomfortable.",
+        "text": "Deliberate practice means stretching past comfort",
+        "type": "idea"
+      },
+      {
+        "apply": "Decide whether your field rewards one deep skill or a mix. Then name the single next skill that adds the most value.",
+        "meaning": "In a winner-take-all field, one skill matters most, such as writing for a TV writer. In an auction field, many combinations of skills can be valuable. Knowing which you're in tells you what capital to build.",
+        "text": "Pick a capital market: winner-take-all or auction",
+        "type": "idea"
+      },
+      {
+        "apply": "Identify one part of your work you'd like more say over, such as hours, projects or methods, and note what leverage you'd need to ask for it.",
+        "meaning": "Having a say in what you do and how you do it is linked to job satisfaction and engagement. Newport treats control as the key reward to buy once you have built enough career capital.",
+        "text": "Control is the dream-job trait worth spending capital on",
+        "type": "idea"
+      },
+      {
+        "apply": "Before any bold move, check if people would already pay you for this skill. If not, build the capital first.",
+        "meaning": "Quitting to 'be your own boss' without rare skills often fails, because nobody will pay for what you offer. Newport warns that control acquired without career capital isn't sustainable.",
+        "text": "Control trap one: grabbing freedom before you have skills",
+        "type": "idea"
+      },
+      {
+        "apply": "If asked to stay with a promotion that cuts your autonomy, test the alternative: will clients or another firm pay for your work on your terms?",
+        "meaning": "Once you're valuable enough to demand more control, your employer has the most reason to keep you on their terms. Newport's test is the law of financial viability: pursue control only if people will pay for it.",
+        "text": "Control trap two: employers resist your growing freedom",
+        "type": "idea"
+      },
+      {
+        "apply": "Run one small bet this month: a short memo, a pilot or a side analysis that tests a bigger idea cheaply.",
+        "meaning": "A unifying mission makes work meaningful, but good missions sit at the cutting edge of a field, the 'adjacent possible'. You get there through expertise, then test ideas with small, fast experiments that give concrete feedback.",
+        "text": "A mission needs capital first, then little bets",
+        "type": "idea"
+      },
+      {
+        "apply": "For your next piece of work, ask what would make a colleague forward it, and share it where your peers already gather.",
+        "meaning": "Newport's law of remarkability: a mission-driven project succeeds when it compels people to remark on it and is launched where remarking is easy, such as a community that shares such work.",
+        "text": "Remarkable projects make people talk, in the right venue",
+        "type": "idea"
+      }
+    ],
+    "color": "#1f4a3a",
+    "createdAt": 1795827155646,
+    "library": "work",
+    "order": 167,
+    "shelf": "focus",
+    "source": "hourly",
+    "title": "So Good They Can't Ignore You"
   }
 ]
